@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Mørk baggrund som hovedprojektet */
+body {
+  background-color: #0a0f1c;
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+}

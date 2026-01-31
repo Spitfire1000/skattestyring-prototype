@@ -1,0 +1,469 @@
+# Claude Code Opgave: Opret Skattestyring som Selvstændigt Projekt
+
+## Mål
+
+Opret et **helt selvstændigt React-projekt** for Skattestyring-prototypen. Det skal:
+
+1. **Køre på egen port** - `localhost:5174` (så det ikke konflikter med hovedprojektet på 5173)
+2. **Være selvstændigt** - Eget projekt der kan udvikles uafhængigt
+3. **Kunne integreres senere** - Koden kan flyttes til hovedprojektet når det er klar
+
+---
+
+## Trin 1: Opret nyt Vite + React + TypeScript projekt
+
+```bash
+# Opret nyt projekt i en separat mappe
+cd ~/projects  # eller hvor du har dine projekter
+npm create vite@latest skattestyring-prototype -- --template react-ts
+
+# Gå ind i mappen
+cd skattestyring-prototype
+
+# Installer dependencies
+npm install
+
+# Installer Tailwind CSS
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+---
+
+## Trin 2: Konfigurer til port 5174
+
+Opdater `vite.config.ts`:
+
+```typescript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 5174,        // Kører på 5174 i stedet for 5173
+    strictPort: true,  // Fejl hvis porten er optaget (i stedet for at vælge anden)
+  }
+})
+```
+
+---
+
+## Trin 3: Konfigurer Tailwind
+
+Opdater `tailwind.config.js`:
+
+```javascript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+Opdater `src/index.css`:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mørk baggrund som hovedprojektet */
+body {
+  background-color: #0a0f1c;
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+```
+
+---
+
+## Trin 4: Mappestruktur
+
+```
+skattestyring-prototype/
+├── src/
+│   ├── components/
+│   │   ├── FlowBox.tsx              # Genbrugelig boks
+│   │   ├── FlowArrow.tsx            # Pil/streg mellem bokse
+│   │   ├── FlowSection.tsx          # Sektion med titel
+│   │   └── index.ts                 # Eksporter
+│   │
+│   ├── sections/
+│   │   ├── KontiSektion.tsx         # Mine konti
+│   │   ├── AktiverSektion.tsx       # Mine aktiver  
+│   │   ├── KlassificeringSektion.tsx# Aktie/Kapitalindkomst
+│   │   ├── BeregningSektion.tsx     # Skatteberegning
+│   │   └── FradragsbankSektion.tsx  # Tab-tracking
+│   │
+│   ├── types/
+│   │   └── skat.ts                  # TypeScript types
+│   │
+│   ├── data/
+│   │   └── testdata.ts              # Dummy data til prototype
+│   │
+│   ├── App.tsx                      # Hovedkomponent
+│   ├── main.tsx                     # Entry point
+│   └── index.css                    # Tailwind + basis styling
+│
+├── README.md                        # Dokumentation
+├── vite.config.ts
+├── tailwind.config.js
+├── package.json
+└── tsconfig.json
+```
+
+---
+
+## Trin 5: Komponenter
+
+### FlowBox.tsx
+
+```tsx
+interface FlowBoxProps {
+  title: string;
+  subtitle?: string;
+  items?: string[];
+  highlight?: boolean;
+  className?: string;
+}
+
+export function FlowBox({ title, subtitle, items, highlight, className = '' }: FlowBoxProps) {
+  return (
+    <div className={`
+      border border-white/30 
+      rounded-lg 
+      p-4 
+      min-w-[140px]
+      ${highlight ? 'border-white/60' : ''}
+      ${className}
+    `}>
+      <div className="text-sm font-medium text-white">{title}</div>
+      {subtitle && (
+        <div className="text-xs text-white/50 mt-1">{subtitle}</div>
+      )}
+      {items && items.length > 0 && (
+        <ul className="mt-2 text-xs text-white/70 space-y-1">
+          {items.map((item, i) => (
+            <li key={i}>• {item}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+```
+
+### FlowArrow.tsx
+
+```tsx
+interface FlowArrowProps {
+  direction?: 'down' | 'right';
+  label?: string;
+}
+
+export function FlowArrow({ direction = 'down', label }: FlowArrowProps) {
+  if (direction === 'down') {
+    return (
+      <div className="flex flex-col items-center py-2">
+        <div className="w-px h-6 bg-white/30"></div>
+        <div className="text-white/50 text-lg">↓</div>
+        {label && <div className="text-xs text-white/40 mt-1">{label}</div>}
+      </div>
+    );
+  }
+  
+  return (
+    <div className="flex items-center px-2">
+      <div className="h-px w-6 bg-white/30"></div>
+      <div className="text-white/50">→</div>
+      {label && <div className="text-xs text-white/40 ml-1">{label}</div>}
+    </div>
+  );
+}
+```
+
+### FlowSection.tsx
+
+```tsx
+interface FlowSectionProps {
+  title: string;
+  description?: string;
+  children: React.ReactNode;
+}
+
+export function FlowSection({ title, description, children }: FlowSectionProps) {
+  return (
+    <div className="border border-white/20 rounded-xl p-6">
+      <div className="text-lg font-semibold text-white mb-1">{title}</div>
+      {description && (
+        <div className="text-sm text-white/50 mb-4">{description}</div>
+      )}
+      <div className="flex flex-wrap gap-4">
+        {children}
+      </div>
+    </div>
+  );
+}
+```
+
+---
+
+## Trin 6: App.tsx - Hovedvisning
+
+```tsx
+import { FlowBox } from './components/FlowBox';
+import { FlowArrow } from './components/FlowArrow';
+import { FlowSection } from './components/FlowSection';
+
+function App() {
+  return (
+    <div className="min-h-screen bg-[#0a0f1c] p-8">
+      {/* Header */}
+      <div className="text-center mb-8">
+        <h1 className="text-2xl font-bold text-white">SKATTESTYRING - PROTOTYPE</h1>
+        <p className="text-white/50 mt-2">Visuel oversigt over dataflow</p>
+        <p className="text-xs text-white/30 mt-1">localhost:5174 • Separat udvikling</p>
+      </div>
+
+      {/* Flow */}
+      <div className="max-w-4xl mx-auto space-y-2">
+        
+        {/* Profil */}
+        <div className="flex justify-center">
+          <FlowBox 
+            title="PROFIL" 
+            subtitle="Fra ProfileContext"
+            highlight
+          />
+        </div>
+
+        <FlowArrow direction="down" label="Brugerens data" />
+
+        {/* Konti */}
+        <FlowSection 
+          title="MINE KONTI" 
+          description="Hvor har brugeren sine penge?"
+        >
+          <FlowBox title="FRIT DEPOT" subtitle="Nordnet" />
+          <FlowBox title="FRIT DEPOT" subtitle="Saxo" />
+          <FlowBox title="ASK" subtitle="Nordnet" />
+          <FlowBox title="RATEPENSION" subtitle="Nordea" />
+          <FlowBox title="ALDERSOPSPARING" subtitle="PFA" />
+        </FlowSection>
+
+        <FlowArrow direction="down" label="Indeholder" />
+
+        {/* Aktiver */}
+        <FlowSection 
+          title="MINE AKTIVER" 
+          description="Data fra 'Mine Positioner' i hovedprojektet"
+        >
+          <FlowBox 
+            title="AKTIER" 
+            subtitle="Noterede"
+            items={['Novo Nordisk', 'Apple', 'Tesla']}
+          />
+          <FlowBox 
+            title="ETF'er" 
+            subtitle="Positivliste"
+            items={['iShares World', 'Sparindex']}
+          />
+          <FlowBox 
+            title="ETF'er" 
+            subtitle="IKKE positivliste"
+            items={['iShares Gold']}
+          />
+          <FlowBox 
+            title="OBLIGATIONER" 
+            items={['Realkredit DK']}
+          />
+          <FlowBox 
+            title="KRYPTO" 
+            items={['Bitcoin', 'Ethereum']}
+          />
+        </FlowSection>
+
+        <FlowArrow direction="down" label="Klassificeres til" />
+
+        {/* Klassificering */}
+        <FlowSection 
+          title="KLASSIFICERING" 
+          description="Hvilken indkomsttype?"
+        >
+          <FlowBox 
+            title="AKTIEINDKOMST" 
+            subtitle="27% / 42%"
+            items={[
+              'Aktier (realisation)',
+              'ETF positivliste (lager)',
+              'Udbytter'
+            ]}
+          />
+          <FlowBox 
+            title="KAPITALINDKOMST" 
+            subtitle="~37% (asymmetrisk)"
+            items={[
+              'ETF ikke-positivliste',
+              'Obligationer',
+              'Optioner/Warrants/CFD',
+              'Krypto'
+            ]}
+          />
+        </FlowSection>
+
+        <FlowArrow direction="down" label="Beregner" />
+
+        {/* Skatteberegning */}
+        <FlowSection 
+          title="SKATTEBEREGNING" 
+          description="Hvad skal betales?"
+        >
+          <FlowBox 
+            title="VIA ÅRSOPGØRELSE" 
+            subtitle="Rubrik 66/67/39"
+            items={[
+              'Aktieindkomst (27%/42%)',
+              'Kapitalindkomst (~37%)'
+            ]}
+          />
+          <FlowBox 
+            title="ASK" 
+            subtitle="17% lager"
+            items={['Trækkes automatisk']}
+          />
+          <FlowBox 
+            title="PENSION" 
+            subtitle="15,3% PAL"
+            items={['Trækkes automatisk']}
+          />
+          <FlowBox 
+            title="BØRNEOPSPARING" 
+            subtitle="0%"
+            items={['Skattefri']}
+          />
+        </FlowSection>
+
+        <FlowArrow direction="down" label="Tab gemmes i" />
+
+        {/* Fradragsbank */}
+        <FlowSection 
+          title="FRADRAGSBANK" 
+          description="Tab der kan bruges til at reducere fremtidig skat"
+        >
+          <FlowBox 
+            title="AKTIE-TAB" 
+            subtitle="Noterede"
+            items={[
+              'Mod aktiegevinster',
+              'Mod udbytter',
+              'Ægtefælle: JA'
+            ]}
+          />
+          <FlowBox 
+            title="AKTIE-TAB" 
+            subtitle="Unoterede"
+            items={[
+              'Mod AL aktieindkomst',
+              'Ægtefælle: JA'
+            ]}
+          />
+          <FlowBox 
+            title="KAPITAL-TAB" 
+            subtitle="Generel"
+            items={[
+              'Mod kapitalindkomst',
+              'IKKE mod fin. kontrakter',
+              'Ægtefælle: JA'
+            ]}
+          />
+          <FlowBox 
+            title="KAPITAL-TAB" 
+            subtitle="Finansielle kontrakter"
+            items={[
+              '⚠️ KUN mod andre fin.kontr.',
+              'Meget begrænset!',
+              'Ægtefælle: JA'
+            ]}
+          />
+          <FlowBox 
+            title="ISOLERET TAB" 
+            subtitle="ASK"
+            items={[
+              'Kun samme ASK',
+              '⚠️ Tabes ved lukning!',
+              'Ægtefælle: NEJ'
+            ]}
+          />
+          <FlowBox 
+            title="ISOLERET TAB" 
+            subtitle="Pension"
+            items={[
+              'Kun samme pension',
+              'Kan IKKE deles',
+              'Ægtefælle: NEJ'
+            ]}
+          />
+        </FlowSection>
+
+        {/* Footer */}
+        <div className="text-center mt-8 pt-8 border-t border-white/10">
+          <p className="text-white/30 text-sm">
+            Dette er en visuel prototype. Ingen beregninger udføres endnu.
+          </p>
+          <p className="text-white/20 text-xs mt-2">
+            Når strukturen er godkendt, integreres dette i hovedprojektet.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
+export default App;
+```
+
+---
+
+## Trin 7: Start projektet
+
+```bash
+npm run dev
+```
+
+Åbn browser på: **http://localhost:5174**
+
+---
+
+## Forventet resultat
+
+En side der viser hele skatteberegnings-flowet med:
+- Simple hvide bokse med tynde rammer
+- Pile der viser dataflow
+- Gruppering i sektioner
+- Ingen rigtig funktionalitet - kun visuel struktur
+
+---
+
+## Når prototypen er klar
+
+1. **Review strukturen** med makker
+2. **Tilføj/fjern bokse** efter behov
+3. **Når godkendt:** Kopier `src/`-indholdet til hovedprojektets `src/Skattestyring/`
+4. **Integrer** med eksisterende ProfileContext og Position-data
+
+---
+
+## Vigtige noter
+
+- **Port 5174** - Konflikter ikke med hovedprojektet (5173)
+- **Selvstændigt** - Kan udvikles mens makker arbejder på andet
+- **Tailwind CSS** - Samme styling-system som hovedprojektet
+- **Samme farver** - `bg-[#0a0f1c]` matcher hovedprojektet
