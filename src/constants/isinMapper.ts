@@ -1,0 +1,3455 @@
+// Auto-genereret core-liste (~2000 værdipapirer)
+// Genereret: 2026-02-06 21:48
+
+import type { AktivType } from "../types/skat";
+
+export const ISIN_TO_AKTIVTYPE: Record<string, AktivType> = {
+  "DK0062498333": "AKTIE_DK",  // Novo Nordisk B A/S
+  "DK0060079531": "AKTIE_DK",  // DSV A/S
+  "DK0061539921": "AKTIE_DK",  // Vestas Wind Systems A/S
+  "DK0010274414": "AKTIE_DK",  // Danske Bank A/S
+  "DK0060448595": "AKTIE_DK",  // Coloplast B A/S
+  "DK0060252690": "AKTIE_DK",  // Pandora A/S
+  "DK0060336014": "AKTIE_DK",  // Novonesis (Novozymes A/S) B
+  "DK0010181759": "AKTIE_DK",  // Carlsberg B A/S
+  "DK0060094928": "AKTIE_DK",  // Ørsted A/S
+  "DK0010244508": "AKTIE_DK",  // A.P. Møller - Mærsk B A/S
+  "DK0010272202": "AKTIE_DK",  // Genmab A/S
+  "DK0010272632": "AKTIE_DK",  // GN Store Nord A/S
+  "DK0060738599": "AKTIE_DK",  // Demant A/S
+  "DK0060636678": "AKTIE_DK",  // Tryg A/S
+  "DK0060542181": "AKTIE_DK",  // ISS A/S
+  "DK0010234467": "AKTIE_DK",  // FLSmidth & Co. A/S
+  "DK0060055861": "AKTIE_DK",  // ChemoMetec A/S
+  "DK0060854669": "AKTIE_DK",  // Ringkjøbing Landbobank A/S
+  "DK0010307958": "AKTIE_DK",  // Jyske Bank A/S
+  "DK0060257814": "AKTIE_DK",  // Zealand Pharma A/S
+  "DK0010287663": "AKTIE_DK",  // NKT A/S
+  "DK0063855168": "AKTIE_DK",  // Rockwool A/S ser. B
+  "DK0060946788": "AKTIE_DK",  // Ambu A/S
+  "DK0010311471": "AKTIE_DK",  // AL Sydbank A/S
+  "DK0010244425": "AKTIE_DK",  // A.P. Møller - Mærsk A A/S
+  "DK0015998017": "AKTIE_DK",  // Bavarian Nordic A/S
+  "DK0060952919": "AKTIE_DK",  // Netcompany Group A/S
+  "DK0061804770": "AKTIE_DK",  // H. Lundbeck A/S B
+  "DK0060634707": "AKTIE_DK",  // Royal UNIBREW A/S
+  "DK0061802139": "AKTIE_DK",  // ALK-Abelló B A/S
+  "DK0010253921": "AKTIE_DK",  // Schouw & Co. A/S
+  "DK0060083210": "AKTIE_DK",  // D/S Norden
+  "DK0015250344": "AKTIE_DK",  // Alm. Brand A/S
+  "DK0060700516": "AKTIE_DK",  // Per Aarsleff Holding A/S B
+  "DK0060136273": "AKTIE_DK",  // Djurslands Bank A/S
+  "DK0060497295": "AKTIE_DK",  // Matas A/S
+  "DK0060696300": "AKTIE_DK",  // Scandinavian Tobacco Group A/S
+  "DK0010274844": "AKTIE_DK",  // Solar B A/S
+  "DK0060655629": "AKTIE_DK",  // DFDS A/S
+  "DK0062266474": "AKTIE_DK",  // Gubra A/S
+  "DK0060952240": "AKTIE_DK",  // Better Collective A/S
+  "DK0061141215": "AKTIE_DK",  // NTG Nordic Transport Group A/S
+  "DK0010295922": "AKTIE_DK",  // Skjern Bank A/S
+  "DK0060670776": "AKTIE_DK",  // Sparekassen Sjælland-Fyn A/S
+  "DK0063855085": "AKTIE_DK",  // Rockwool A/S ser. A
+  "DK0061295797": "AKTIE_DK",  // Curasight A/S
+  "DK0060907293": "AKTIE_DK",  // Nilfisk Holding A/S
+  "DK0010181676": "AKTIE_DK",  // Carlsberg A A/S
+  "DK0010230630": "AKTIE_DK",  // Grønlandsbanken A/S
+  "DK0061686714": "AKTIE_DK",  // Brdr. A & O Johansen A/S B
+  "DK0010231877": "AKTIE_DK",  // SKAKO A/S
+  "DK0061804697": "AKTIE_DK",  // H. Lundbeck A/S A
+  "DK0061027356": "AKTIE_DK",  // SP Group A/S
+  "DK0010255975": "AKTIE_DK",  // MT Højgaard Holding A/S
+  "DK0010218429": "AKTIE_DK",  // Bang & Olufsen A/S
+  "DK0060580512": "AKTIE_DK",  // NNIT A/S
+  "DK0060817898": "AKTIE_DK",  // GreenMobility A/S
+  "DK0060030286": "AKTIE_DK",  // cBrain A/S
+  "DK0061411964": "AKTIE_DK",  // Cessatech A/S
+  "DK0010201102": "AKTIE_DK",  // Københavns Lufthavne A/S
+  "DK0060014751": "AKTIE_DK",  // Harboes Bryggeri B A/S
+  "DK0010201532": "AKTIE_DK",  // Lån og Spar Bank A/S
+  "DK0060726743": "AKTIE_DK",  // Tivoli A/S
+  "DK0015202451": "AKTIE_DK",  // H+H International A/S
+  "DK0010267129": "AKTIE_DK",  // RTX A/S
+  "DK0061026119": "AKTIE_DK",  // Freetrailer Group A/S
+  "DK0010237643": "AKTIE_DK",  // PARKEN Sport & Entertainment A/S
+  "DK0060485019": "AKTIE_DK",  // Roblon B A/S
+  "DK0061282464": "AKTIE_DK",  // Jeudan A/S
+  "DK0060299063": "AKTIE_DK",  // Danske Andelskassers Bank A/S
+  "DK0010270347": "AKTIE_DK",  // North Media A/S
+  "DK0010263722": "AKTIE_DK",  // AGF A/S B
+  "DK0010247600": "AKTIE_DK",  // Gyldendal B A/S
+  "DK0010268366": "AKTIE_DK",  // Columbus A/S
+  "DK0061675279": "AKTIE_DK",  // Hove A/S
+  "DK0010213628": "AKTIE_DK",  // Luxor B A/S
+  "DK0060000107": "AKTIE_DK",  // Lollands Bank A/S
+  "DK0060133841": "AKTIE_DK",  // Møns Bank A/S
+  "DK0060520377": "AKTIE_DK",  // Fynske Bank A/S
+  "DK0061408580": "AKTIE_DK",  // Dataproces Group A/S
+  "DK0061078425": "AKTIE_DK",  // STENOCARE A/S
+  "DK0011048619": "AKTIE_DK",  // BioPorto A/S
+  "DK0060124691": "AKTIE_DK",  // Gabriel Holding A/S
+  "DK0010218189": "AKTIE_DK",  // Flügger group A/S B
+  "DK0060477263": "AKTIE_DK",  // Asetek A/S
+  "DK0061417730": "AKTIE_DK",  // BactiQuant A/S
+  "DK0061537206": "AKTIE_DK",  // TROPHY GAMES Development A/S
+  "DK0060522746": "AKTIE_DK",  // Fast Ejendom Danmark A/S
+  "DK0061140407": "AKTIE_DK",  // Danish Aerospace Company A/S
+  "DK0015205637": "AKTIE_DK",  // Dantax A/S
+  "DK0061412855": "AKTIE_DK",  // HusCompagniet A/S
+  "DK0060915478": "AKTIE_DK",  // TCM Group A/S
+  "DK0010253764": "AKTIE_DK",  // Kreditbanken A/S
+  "DK0010125848": "AKTIE_DK",  // Rias B A/S
+  "DK0010271584": "AKTIE_DK",  // Cemat A/S
+  "DK0061540770": "AKTIE_DK",  // DonkeyRepublic Holding A/S
+  "DK0061407699": "AKTIE_DK",  // Alefarm Brewing A/S
+  "DK0060135978": "AKTIE_DK",  // Hvidbjerg Bank A/S
+  "DK0061278199": "AKTIE_DK",  // FOM Technologies A/S
+  "DK0062502894": "AKTIE_DK",  // Strategic Partners A/S
+  "DK0061677135": "AKTIE_DK",  // Q-Interline A/S
+  "DK0010247956": "AKTIE_DK",  // Brøndbyernes IF Fodbold A/S
+  "DK0060816148": "AKTIE_DK",  // Unlimit Group A/S
+  "DK0010158500": "AKTIE_DK",  // Park Street A/S A
+  "DK0060056166": "AKTIE_DK",  // FirstFarms A/S
+  "DK0010305077": "AKTIE_DK",  // Ennogie Solar Group A/S
+  "DK0064532444": "AKTIE_DK",  // WindowMaster International A/S
+  "DK0061155009": "AKTIE_DK",  // Pharma Equity Group A/S
+  "DK0010129089": "AKTIE_DK",  // Brd. Klee B A/S
+  "DK0060038933": "AKTIE_DK",  // Scandinavian Investment Group A/S
+  "DK0061286101": "AKTIE_DK",  // Mdundo.com A/S
+  "DK0061675006": "AKTIE_DK",  // Scandinavian Medical Solutions A/S
+  "DK0061113511": "AKTIE_DK",  // Konsolidator A/S
+  "DK0061274529": "AKTIE_DK",  // LED iBond International A/S
+  "DK0061030574": "AKTIE_DK",  // ViroGates A/S
+  "DK0060101483": "AKTIE_DK",  // Erria A/S
+  "DK0061152170": "AKTIE_DK",  // Rovsing A/S
+  "DK0060137594": "AKTIE_DK",  // Prime Office A/S
+  "DK0061670205": "AKTIE_DK",  // Brain+ A/S
+  "DK0061277894": "AKTIE_DK",  // Det Østasiatiske Kompagni A/S
+  "DK0010212570": "AKTIE_DK",  // Newcap Holding A/S
+  "DK0061031978": "AKTIE_DK",  // Risk Intelligence A/S
+  "DK0060040913": "AKTIE_DK",  // Wirtek A/S
+  "DK0010128008": "AKTIE_DK",  // Papirfabrikken Invest A/S
+  "DK0061277977": "AKTIE_DK",  // Monsenso A/S
+  "DK0060868966": "AKTIE_DK",  // Aalborg Boldspilklub A/S
+  "DK0064307672": "AKTIE_DK",  // Mendole A/S
+  "DK0061536828": "AKTIE_DK",  // Impero A/S
+  "DK0060568145": "AKTIE_DK",  // FastPassCorp A/S
+  "DK0060093607": "AKTIE_DK",  // Copenhagen Capital A/S Stam
+  "DK0010271238": "AKTIE_DK",  // Strategic Investments A/S
+  "DK0061805660": "AKTIE_DK",  // Swiss Properties Invest A/S
+  "DK0061417144": "AKTIE_DK",  // Nexcom A/S
+  "DK0010258995": "AKTIE_DK",  // Agat Ejendomme A/S
+  "DK0060955854": "AKTIE_DK",  // Agillic A/S
+  "DK0061930641": "AKTIE_DK",  // Copenhagen Capital A/S 40% Pref 2032
+  "DK0060118453": "AKTIE_DK",  // EgnsINVEST Ejd., Tyskland A/S
+  "DK0060093524": "AKTIE_DK",  // German High Street Properties A/S
+  "DK0010249309": "AKTIE_DK",  // Glunz & Jensen Holding A/S
+  "DK0010247527": "AKTIE_DK",  // Gyldendal A A/S
+  "DK0061555539": "AKTIE_DK",  // Movinn A/S
+  "DK0061273125": "AKTIE_DK",  // Shape Robotics A/S
+  "DK0061412772": "AKTIE_DK",  // CADELER A/S
+  "DK0060520450": "AKTIE_DK",  // NAPATECH
+  "DK0061123312": "AKTIE_DK",  // FluoGuide A/S
+  "DK0060945467": "AKTIE_DK",  // 5TH PLANET GAMES
+  "DK0060775872": "AKTIE_DK",  // Initiator Pharma A/S
+  "DK0061535507": "AKTIE_DK",  // Loyal Solutions A/S
+  "DK0060668796": "AKTIE_DK",  // Photocat A/S
+  "US67066G1040": "AKTIE_UDENLANDSK",  // NVIDIA
+  "US0378331005": "AKTIE_UDENLANDSK",  // Apple
+  "US02079K1079": "AKTIE_UDENLANDSK",  // Alphabet C
+  "US02079K3059": "AKTIE_UDENLANDSK",  // Alphabet A
+  "US5949181045": "AKTIE_UDENLANDSK",  // Microsoft
+  "US0231351067": "AKTIE_UDENLANDSK",  // Amazon.com
+  "US8740391003": "AKTIE_UDENLANDSK",  // Taiwan Semiconductor Manufacturing ADR
+  "US30303M1027": "AKTIE_UDENLANDSK",  // Meta Platforms A
+  "US11135F1012": "AKTIE_UDENLANDSK",  // Broadcom
+  "US88160R1014": "AKTIE_UDENLANDSK",  // Tesla
+  "US0846701086": "AKTIE_UDENLANDSK",  // Berkshire Hathaway A
+  "US0846707026": "AKTIE_UDENLANDSK",  // Berkshire Hathaway B
+  "US9311421039": "AKTIE_UDENLANDSK",  // Walmart
+  "US5324571083": "AKTIE_UDENLANDSK",  // Eli Lilly
+  "US46625H1005": "AKTIE_UDENLANDSK",  // JP Morgan Chase
+  "US88032Q1094": "AKTIE_UDENLANDSK",  // Tencent Holdings Ltd.
+  "US92826C8394": "AKTIE_UDENLANDSK",  // Visa
+  "US83404D1090": "AKTIE_UDENLANDSK",  // SoftBank Group Corp.
+  "US4781601046": "AKTIE_UDENLANDSK",  // Johnson & Johnson
+  "US30231G1022": "AKTIE_UDENLANDSK",  // Exxon Mobil
+  "USN070592100": "AKTIE_UDENLANDSK",  // ASML Holding
+  "US57636Q1040": "AKTIE_UDENLANDSK",  // Mastercard
+  "US22160K1051": "AKTIE_UDENLANDSK",  // Costco Wholesale
+  "US5951121038": "AKTIE_UDENLANDSK",  // Micron Technology
+  "US68389X1054": "AKTIE_UDENLANDSK",  // Oracle
+  "US64110L1061": "ETF_IKKE_POSITIVLISTE",  // Netflix
+  "US00287Y1091": "AKTIE_UDENLANDSK",  // AbbVie
+  "US4370761029": "AKTIE_UDENLANDSK",  // Home Depot
+  "US0605051046": "AKTIE_UDENLANDSK",  // Bank Of America
+  "US7427181091": "AKTIE_UDENLANDSK",  // Procter & Gamble
+  "US01609W1027": "AKTIE_UDENLANDSK",  // Alibaba Group ADR
+  "US1912161007": "AKTIE_UDENLANDSK",  // Coca-Cola
+  "US1667641005": "AKTIE_UDENLANDSK",  // Chevron
+  "US3696043013": "AKTIE_UDENLANDSK",  // GE Aerospace
+  "US7711951043": "AKTIE_UDENLANDSK",  // Roche Holding AG
+  "US0079031078": "AKTIE_UDENLANDSK",  // Advanced Micro Devices
+  "US17275R1023": "AKTIE_UDENLANDSK",  // Cisco Systems
+  "US8923313071": "AKTIE_UDENLANDSK",  // Toyota Motor ADR
+  "US69608A1088": "AKTIE_UDENLANDSK",  // Palantir Technologies
+  "US1491231015": "AKTIE_UDENLANDSK",  // Caterpillar
+  "US66987V1098": "AKTIE_UDENLANDSK",  // Novartis ADR
+  "US5128073062": "AKTIE_UDENLANDSK",  // Lam Research
+  "US38141G1040": "AKTIE_UDENLANDSK",  // Goldman Sachs
+  "US4042804066": "AKTIE_UDENLANDSK",  // HSBC
+  "US9497461015": "AKTIE_UDENLANDSK",  // Wells Fargo
+  "US58933Y1055": "AKTIE_UDENLANDSK",  // Merck & Co
+  "US6174464486": "AKTIE_UDENLANDSK",  // Morgan Stanley
+  "US4592001014": "AKTIE_UDENLANDSK",  // IBM
+  "US75513E1010": "AKTIE_UDENLANDSK",  // RTX
+  "US7181721090": "AKTIE_UDENLANDSK",  // Philip Morris
+  "US0258161092": "AKTIE_UDENLANDSK",  // American Express
+  "US91324P1021": "AKTIE_UDENLANDSK",  // UnitedHealth Group
+  "US0382221051": "AKTIE_UDENLANDSK",  // Applied Materials
+  "US4581401001": "AKTIE_UDENLANDSK",  // Intel
+  "US8835561023": "AKTIE_UDENLANDSK",  // Thermo Fisher Scientific
+  "US5801351017": "AKTIE_UDENLANDSK",  // McDonald's
+  "US8725901040": "AKTIE_UDENLANDSK",  // T-Mobile US
+  "US8030542042": "AKTIE_UDENLANDSK",  // SAP ADR
+  "US7802593050": "AKTIE_UDENLANDSK",  // Shell ADR
+  "US6068221042": "AKTIE_UDENLANDSK",  // Mitsubishi UFJ Financial Group
+  "US1729674242": "AKTIE_UDENLANDSK",  // Citigroup
+  "US7134481081": "AKTIE_UDENLANDSK",  // PepsiCo
+  "US2546871060": "AKTIE_UDENLANDSK",  // Walt Disney
+  "US8825081040": "AKTIE_UDENLANDSK",  // Texas Instruments
+  "US6701002056": "AKTIE_UDENLANDSK",  // Novo Nordisk ADR
+  "US36828A1016": "AKTIE_UDENLANDSK",  // GE Vernova
+  "US0970231058": "AKTIE_UDENLANDSK",  // Boeing
+  "US00206R1023": "AKTIE_UDENLANDSK",  // AT&T
+  "US0028241000": "AKTIE_UDENLANDSK",  // Abbott Laboratories
+  "US0320951017": "AKTIE_UDENLANDSK",  // Amphenol
+  "US3755581036": "AKTIE_UDENLANDSK",  // Gilead Sciences
+  "US0311621009": "AKTIE_UDENLANDSK",  // Amgen
+  "US8085131055": "AKTIE_UDENLANDSK",  // Charles Schwab
+  "US05964H1059": "AKTIE_UDENLANDSK",  // Banco Santander ADR
+  "US79466L3024": "AKTIE_UDENLANDSK",  // Salesforce
+  "US65339F1012": "AKTIE_UDENLANDSK",  // NextEra Energy
+  "US4824801009": "AKTIE_UDENLANDSK",  // KLA
+  "US2358511028": "AKTIE_UDENLANDSK",  // Danaher
+  "US8725401090": "AKTIE_UDENLANDSK",  // TJX Companies
+  "US09290D1019": "AKTIE_UDENLANDSK",  // BlackRock
+  "US46120E6023": "AKTIE_UDENLANDSK",  // Intuitive Surgical
+  "US0886061086": "AKTIE_UDENLANDSK",  // BHP Group ADR
+  "US92343V1044": "AKTIE_UDENLANDSK",  // Verizon Communications
+  "US0404132054": "AKTIE_UDENLANDSK",  // Arista Networks
+  "US0326541051": "AKTIE_UDENLANDSK",  // Analog Devices
+  "US9047678035": "AKTIE_UDENLANDSK",  // Unilever ADR
+  "US90353T1007": "AKTIE_UDENLANDSK",  // Uber Technologies
+  "US84265V1052": "AKTIE_UDENLANDSK",  // Southern Copper
+  "US09260D1072": "AKTIE_UDENLANDSK",  // Blackstone
+  "US5486611073": "AKTIE_UDENLANDSK",  // Lowe's
+  "US2441991054": "AKTIE_UDENLANDSK",  // Deere & Co.
+  "US7170811035": "AKTIE_UDENLANDSK",  // Pfizer
+  "US9078181081": "AKTIE_UDENLANDSK",  // Union Pacific
+  "US4335785071": "AKTIE_UDENLANDSK",  // Hitachi Ltd.
+  "US4385161066": "AKTIE_UDENLANDSK",  // Honeywell International
+  "US7475251036": "AKTIE_UDENLANDSK",  // QUALCOMM
+  "US8356993076": "AKTIE_UDENLANDSK",  // Sony ADR
+  "US09857L1089": "AKTIE_UDENLANDSK",  // Booking
+  "US7223041028": "AKTIE_UDENLANDSK",  // PDD ADR
+  "US5398301094": "AKTIE_UDENLANDSK",  // Lockheed Martin
+  "US8636671013": "AKTIE_UDENLANDSK",  // Stryker
+  "US14040H1059": "AKTIE_UDENLANDSK",  // Capital One Financial
+  "US78409V1044": "AKTIE_UDENLANDSK",  // S&P Global
+  "US86562M2098": "AKTIE_UDENLANDSK",  // Sumitomo Mitsui Financial ADR
+  "US1104481072": "AKTIE_UDENLANDSK",  // British American Tobacco ADR
+  "US05946K1016": "AKTIE_UDENLANDSK",  // Banco Bilbao Vizcaya Argentaria ADR
+  "US95040Q1040": "AKTIE_UDENLANDSK",  // Welltower
+  "US03524A1088": "AKTIE_UDENLANDSK",  // Anheuser-Busch InBev ADR
+  "US20825C1045": "AKTIE_UDENLANDSK",  // ConocoPhillips
+  "US05606L1008": "AKTIE_UDENLANDSK",  // BYD Co
+  "US03831W1080": "AKTIE_UDENLANDSK",  // Applovin A
+  "US74340W1036": "AKTIE_UDENLANDSK",  // Prologis
+  "US7010941042": "AKTIE_UDENLANDSK",  // Parker-Hannifin
+  "US7433151039": "AKTIE_UDENLANDSK",  // Progressive
+  "US1101221083": "AKTIE_UDENLANDSK",  // Bristol-Myers Squibb
+  "US4612021034": "AKTIE_UDENLANDSK",  // Intuit
+  "US37733W2044": "AKTIE_UDENLANDSK",  // GSK ADR
+  "US6516391066": "AKTIE_UDENLANDSK",  // Newmont
+  "US0420682058": "AKTIE_UDENLANDSK",  // Arm Holdings ADR
+  "US40412C1018": "AKTIE_UDENLANDSK",  // HCA Healthcare
+  "US92532F1003": "AKTIE_UDENLANDSK",  // Vertex Pharmaceuticals
+  "US1011371077": "AKTIE_UDENLANDSK",  // Boston Scientific
+  "US80105N1054": "AKTIE_UDENLANDSK",  // Sanofi ADR
+  "US60687Y1091": "AKTIE_UDENLANDSK",  // Mizuho Financial Group ADR
+  "US7672041008": "AKTIE_UDENLANDSK",  // Rio Tinto ADR
+  "US0530151036": "AKTIE_UDENLANDSK",  // Automatic Data Processing
+  "US00724F1012": "AKTIE_UDENLANDSK",  // Adobe
+  "US02209S1033": "AKTIE_UDENLANDSK",  // Altria Group
+  "US8552441094": "AKTIE_UDENLANDSK",  // Starbucks
+  "US6974351057": "AKTIE_UDENLANDSK",  // Palo Alto Networks
+  "US81762P1021": "AKTIE_UDENLANDSK",  // ServiceNow
+  "US1266501006": "AKTIE_UDENLANDSK",  // CVS Health
+  "US20030N1019": "AKTIE_UDENLANDSK",  // Comcast A
+  "US9898251049": "AKTIE_UDENLANDSK",  // Zurich Insurance Group AG Ltd
+  "US58733R1023": "AKTIE_UDENLANDSK",  // MercadoLibre
+  "US58155Q1031": "AKTIE_UDENLANDSK",  // McKesson
+  "US8425871071": "AKTIE_UDENLANDSK",  // Southern Company
+  "US12572Q1058": "AKTIE_UDENLANDSK",  // CME Group A
+  "US8716071076": "AKTIE_UDENLANDSK",  // Synopsys
+  "US9113121068": "AKTIE_UDENLANDSK",  // United Parcel Service
+  "US6668071029": "AKTIE_UDENLANDSK",  // Northrop Grumman
+  "US2193501051": "AKTIE_UDENLANDSK",  // Corning
+  "US98421U1088": "AKTIE_UDENLANDSK",  // Xiaomi Corporation
+  "US26441C2044": "AKTIE_UDENLANDSK",  // Duke Energy
+  "US45866F1049": "AKTIE_UDENLANDSK",  // Intercontinental Exchange
+  "US3695501086": "AKTIE_UDENLANDSK",  // General Dynamics
+  "US22788C1053": "AKTIE_UDENLANDSK",  // CrowdStrike A
+  "US6153691059": "AKTIE_UDENLANDSK",  // Moody's
+  "US6934751057": "AKTIE_UDENLANDSK",  // PNC Financial Services Group
+  "US6541061031": "AKTIE_UDENLANDSK",  // Nike
+  "US0556221044": "AKTIE_UDENLANDSK",  // BP ADR
+  "US21037T1097": "AKTIE_UDENLANDSK",  // Constellation Energy
+  "US94106L1098": "AKTIE_UDENLANDSK",  // Waste Management
+  "US8243481061": "AKTIE_UDENLANDSK",  // Sherwin-Williams
+  "US06738E2046": "AKTIE_UDENLANDSK",  // Barclays ADR
+  "US48251W1045": "AKTIE_UDENLANDSK",  // KKR & Co
+  "US9581021055": "AKTIE_UDENLANDSK",  // Western Digital
+  "US5717481023": "AKTIE_UDENLANDSK",  // Marsh & McLennan Companies
+  "US6362744095": "AKTIE_UDENLANDSK",  // National Grid Transco ADR
+  "US88579Y1010": "AKTIE_UDENLANDSK",  // 3M
+  "US9029733048": "AKTIE_UDENLANDSK",  // U.S. Bancorp
+  "US5719032022": "AKTIE_UDENLANDSK",  // Marriott International A
+  "US5394391099": "AKTIE_UDENLANDSK",  // Lloyds Banking ADR
+  "US31428X1063": "AKTIE_UDENLANDSK",  // FedEx
+  "US35671D8570": "AKTIE_UDENLANDSK",  // Freeport-McMoRan
+  "US80004C2008": "AKTIE_UDENLANDSK",  // Sandisk
+  "US2910111044": "AKTIE_UDENLANDSK",  // Emerson Electric
+  "US4432011082": "AKTIE_UDENLANDSK",  // Howmet Aerospace
+  "US0640581007": "AKTIE_UDENLANDSK",  // Bank Of New York Mellon
+  "US64110W1027": "AKTIE_UDENLANDSK",  // NetEase ADR
+  "US75886F1075": "AKTIE_UDENLANDSK",  // Regeneron Pharmaceuticals
+  "US4568371037": "AKTIE_UDENLANDSK",  // ING Group ADR
+  "US2788651006": "AKTIE_UDENLANDSK",  // EcoLab
+  "US1729081059": "AKTIE_UDENLANDSK",  // Cintas
+  "US2310211063": "AKTIE_UDENLANDSK",  // Cummins
+  "US03027X1000": "AKTIE_UDENLANDSK",  // American Tower REIT
+  "US61174X1090": "AKTIE_UDENLANDSK",  // Monster Beverage
+  "US29444U7000": "AKTIE_UDENLANDSK",  // Equinix
+  "US25809K1051": "AKTIE_UDENLANDSK",  // Doordash
+  "US67103H1077": "AKTIE_UDENLANDSK",  // O'Reilly Automotive
+  "US6092071058": "AKTIE_UDENLANDSK",  // Mondelez International A
+  "US9694571004": "AKTIE_UDENLANDSK",  // Williams Companies
+  "US24703L2025": "AKTIE_UDENLANDSK",  // Dell Technologies C
+  "US1255231003": "AKTIE_UDENLANDSK",  // Cigna
+  "US4523081093": "AKTIE_UDENLANDSK",  // Illinois Tool Works
+  "US6558441084": "AKTIE_UDENLANDSK",  // Norfolk Southern
+  "US37045V1008": "AKTIE_UDENLANDSK",  // General Motors
+  "US0367521038": "AKTIE_UDENLANDSK",  // Elevance Health
+  "US1273871087": "AKTIE_UDENLANDSK",  // Cadence Design Systems
+  "US0090661010": "AKTIE_UDENLANDSK",  // Airbnb A
+  "US03769M1062": "AKTIE_UDENLANDSK",  // Apollo Global Management
+  "US43300A2033": "AKTIE_UDENLANDSK",  // Hilton Worldwide
+  "US8936411003": "AKTIE_UDENLANDSK",  // Transdigm Group
+  "US74762E1029": "AKTIE_UDENLANDSK",  // Quanta Services
+  "US6390572070": "AKTIE_UDENLANDSK",  // NatWest ADR
+  "US89832Q1094": "AKTIE_UDENLANDSK",  // Truist Financial
+  "US03073E1055": "AKTIE_UDENLANDSK",  // Cencora
+  "US1941621039": "AKTIE_UDENLANDSK",  // Colgate-Palmolive
+  "US1264081035": "AKTIE_UDENLANDSK",  // CSX
+  "US92537N1081": "AKTIE_UDENLANDSK",  // Vertiv Holdings A
+  "US7607591002": "AKTIE_UDENLANDSK",  // Republic Services
+  "US6200763075": "AKTIE_UDENLANDSK",  // Motorola Solutions
+  "US49456B1017": "AKTIE_UDENLANDSK",  // Kinder Morgan
+  "US29446M1027": "AKTIE_UDENLANDSK",  // Equinor ADR
+  "US6937181088": "AKTIE_UDENLANDSK",  // PACCAR
+  "US9344231041": "AKTIE_UDENLANDSK",  // Warner Bros. Discovery A
+  "US7707001027": "AKTIE_UDENLANDSK",  // Robinhood Markets A
+  "US8288061091": "AKTIE_UDENLANDSK",  // Simon Property Group
+  "US3635761097": "AKTIE_UDENLANDSK",  // Arthur J. Gallagher & Co
+  "US5024311095": "AKTIE_UDENLANDSK",  // L3Harris Technologies
+  "US0255371017": "AKTIE_UDENLANDSK",  // American Electric Power
+  "US6544453037": "AKTIE_UDENLANDSK",  // NINTENDO UNS.ADR/0,25O.N.
+  "US5738741041": "AKTIE_UDENLANDSK",  // Marvell Technology
+  "US29273V1008": "AKTIE_UDENLANDSK",  // Energy Transfer LP Unit
+  "US7185461040": "AKTIE_UDENLANDSK",  // Phillips 66
+  "US0010551028": "AKTIE_UDENLANDSK",  // Aflac
+  "US26874R1086": "AKTIE_UDENLANDSK",  // Eni ADR
+  "US7782961038": "AKTIE_UDENLANDSK",  // Ross Stores
+  "US26875P1012": "AKTIE_UDENLANDSK",  // EOG Resources
+  "US89417E1091": "AKTIE_UDENLANDSK",  // Travelers Companies
+  "US0533321024": "AKTIE_UDENLANDSK",  // AutoZone
+  "US56585A1025": "AKTIE_UDENLANDSK",  // Marathon Petroleum
+  "US0758871091": "AKTIE_UDENLANDSK",  // Becton, Dickinson And Co
+  "US34959E1091": "AKTIE_UDENLANDSK",  // Fortinet
+  "US7561091049": "AKTIE_UDENLANDSK",  // Realty Income REIT
+  "US0091581068": "AKTIE_UDENLANDSK",  // Air Products And Chemicals
+  "US81141R1005": "AKTIE_UDENLANDSK",  // Sea ADR A
+  "US91913Y1001": "AKTIE_UDENLANDSK",  // Valero Energy
+  "US18915M1071": "AKTIE_UDENLANDSK",  // Cloudflare
+  "US05722G1004": "AKTIE_UDENLANDSK",  // Baker Hughes A
+  "US2538681030": "AKTIE_UDENLANDSK",  // Digital Realty Trust
+  "US8740602052": "AKTIE_UDENLANDSK",  // Takeda Pharmaceutical ADR
+  "US0200021014": "AKTIE_UDENLANDSK",  // Allstate
+  "US3848021040": "AKTIE_UDENLANDSK",  // W.W. Grainger
+  "US8168511090": "AKTIE_UDENLANDSK",  // DBA Sempra
+  "US98978V1035": "AKTIE_UDENLANDSK",  // Zoetis A
+  "US6098391054": "AKTIE_UDENLANDSK",  // Monolithic Power Systems
+  "US7595301083": "AKTIE_UDENLANDSK",  // RELX ADR
+  "US3453708600": "AKTIE_UDENLANDSK",  // Ford Motor
+  "US3119001044": "AKTIE_UDENLANDSK",  // Fastenal
+  "US1468691027": "AKTIE_UDENLANDSK",  // Carvana
+  "US77311W1018": "AKTIE_UDENLANDSK",  // Rocket Companies
+  "US14149Y1082": "AKTIE_UDENLANDSK",  // Cardinal Health
+  "US25243Q2057": "AKTIE_UDENLANDSK",  // Diageo ADR
+  "US8334451098": "AKTIE_UDENLANDSK",  // Snowflake Inc.
+  "US9113631090": "AKTIE_UDENLANDSK",  // United Rentals
+  "US25746U1097": "AKTIE_UDENLANDSK",  // Dominion Energy
+  "US14448C1045": "AKTIE_UDENLANDSK",  // Carrier Global
+  "US0311001004": "AKTIE_UDENLANDSK",  // Ametek
+  "US45168D1046": "AKTIE_UDENLANDSK",  // IDEXX Laboratories
+  "US04016X1019": "AKTIE_UDENLANDSK",  // argenx ADR
+  "US6826801036": "AKTIE_UDENLANDSK",  // ONEOK
+  "US0527691069": "AKTIE_UDENLANDSK",  // Autodesk
+  "US1696561059": "AKTIE_UDENLANDSK",  // Chipotle Mexican Grill
+  "US31488V1070": "AKTIE_UDENLANDSK",  // Ferguson
+  "US03076C1062": "AKTIE_UDENLANDSK",  // Ameriprise Financial
+  "US59156R1086": "AKTIE_UDENLANDSK",  // MetLife
+  "US74460D1090": "AKTIE_UDENLANDSK",  // Public Storage
+  "US2855121099": "AKTIE_UDENLANDSK",  // Electronic Arts
+  "US12504L1098": "AKTIE_UDENLANDSK",  // CBRE Group
+  "US6311031081": "AKTIE_UDENLANDSK",  // Nasdaq
+  "US4055521003": "AKTIE_UDENLANDSK",  // Haleon ADR
+  "US92840M1027": "AKTIE_UDENLANDSK",  // Vistra
+  "US22052L1044": "AKTIE_UDENLANDSK",  // Corteva
+  "US02043Q1076": "AKTIE_UDENLANDSK",  // Alnylam Pharmaceuticals
+  "US87612E1064": "AKTIE_UDENLANDSK",  // Target
+  "US7739031091": "AKTIE_UDENLANDSK",  // Rockwell Automation
+  "US25278X1090": "AKTIE_UDENLANDSK",  // Diamondback Energy
+  "US5949724083": "AKTIE_UDENLANDSK",  // Strategy A
+  "US23331A1097": "AKTIE_UDENLANDSK",  // D.R. Horton
+  "US6315122092": "AKTIE_UDENLANDSK",  // Naspers Ltd
+  "US28176E1082": "AKTIE_UDENLANDSK",  // Edwards Lifesciences
+  "US16411R2085": "AKTIE_UDENLANDSK",  // Cheniere Energy
+  "US98389B1008": "AKTIE_UDENLANDSK",  // Xcel Energy
+  "US4228061093": "AKTIE_UDENLANDSK",  // Heico
+  "US38059T1060": "AKTIE_UDENLANDSK",  // Gold Fields ADR
+  "US9884981013": "AKTIE_UDENLANDSK",  // Yum! Brands
+  "US2473617023": "AKTIE_UDENLANDSK",  // Delta Air Lines
+  "US00215W1009": "AKTIE_UDENLANDSK",  // ASE Technology ADR
+  "US87612G1013": "AKTIE_UDENLANDSK",  // Targa Resources
+  "US8740541094": "AKTIE_UDENLANDSK",  // Take-Two Interactive Software
+  "US30161N1019": "AKTIE_UDENLANDSK",  // Exelon
+  "US03938L2034": "AKTIE_UDENLANDSK",  // Arcelor Mittal ADR
+  "US00846U1016": "AKTIE_UDENLANDSK",  // Agilent Technologies
+  "US29364G1031": "AKTIE_UDENLANDSK",  // Entergy
+  "US6703461052": "AKTIE_UDENLANDSK",  // Nucor
+  "US00783V1044": "AKTIE_UDENLANDSK",  // Adyen N.V. Unsponsored ADR (Netherlands)
+  "US55354G1004": "AKTIE_UDENLANDSK",  // MSCI
+  "US7710491033": "AKTIE_UDENLANDSK",  // Roblox A
+  "US8807701029": "AKTIE_UDENLANDSK",  // Teradyne
+  "US6795801009": "AKTIE_UDENLANDSK",  // Old Dominion Freight Line
+  "US5010441013": "AKTIE_UDENLANDSK",  // Kroger
+  "US5950171042": "AKTIE_UDENLANDSK",  // Microchip Technology
+  "US2786421030": "AKTIE_UDENLANDSK",  // eBay
+  "US98138H1014": "AKTIE_UDENLANDSK",  // Workday A
+  "US9291601097": "AKTIE_UDENLANDSK",  // Vulcan Materials
+  "US9297401088": "AKTIE_UDENLANDSK",  // Westinghouse Air Brake Technologies
+  "US0268747849": "AKTIE_UDENLANDSK",  // American International Group
+  "US4381283088": "AKTIE_UDENLANDSK",  // Honda Motor ADR
+  "US1924461023": "AKTIE_UDENLANDSK",  // Cognizant Technology Solutions A
+  "US1999081045": "AKTIE_UDENLANDSK",  // Comfort Systems USA
+  "US74435K2042": "AKTIE_UDENLANDSK",  // Prudential ADR
+  "US5178341070": "AKTIE_UDENLANDSK",  // Las Vegas Sands
+  "US8816242098": "AKTIE_UDENLANDSK",  // Teva Pharmaceutical Industries ADR
+  "US7445731067": "AKTIE_UDENLANDSK",  // Public Service Enterprise
+  "US4278661081": "AKTIE_UDENLANDSK",  // The Hershey
+  "US4165151048": "AKTIE_UDENLANDSK",  // Hartford Insurance Group
+  "US19260Q1076": "AKTIE_UDENLANDSK",  // Coinbase Global, Inc. - 3Class A
+  "US8718291078": "AKTIE_UDENLANDSK",  // Sysco
+  "US3073051027": "AKTIE_UDENLANDSK",  // Fanuc Corporation
+  "US7611521078": "AKTIE_UDENLANDSK",  // ResMed
+  "US6745991058": "AKTIE_UDENLANDSK",  // Occidental Petroleum
+  "US0567521085": "AKTIE_UDENLANDSK",  // Baidu ADR
+  "US5732841060": "AKTIE_UDENLANDSK",  // Martin Marietta Materials
+  "US2172041061": "AKTIE_UDENLANDSK",  // Copart
+  "US6549022043": "AKTIE_UDENLANDSK",  // Nokia ADR
+  "US07725L1026": "AKTIE_UDENLANDSK",  // BeOne Medicines
+  "US7443201022": "AKTIE_UDENLANDSK",  // Prudential Financial
+  "US49271V1008": "AKTIE_UDENLANDSK",  // Keurig Dr Pepper
+  "US49338L1035": "AKTIE_UDENLANDSK",  // Keysight Technologies
+  "US45687V1061": "AKTIE_UDENLANDSK",  // Ingersoll Rand
+  "US7766961061": "AKTIE_UDENLANDSK",  // Roper Technologies
+  "US3167731005": "AKTIE_UDENLANDSK",  // Fifth Third Bancorp
+  "US36266G1076": "AKTIE_UDENLANDSK",  // GE Healthcare Technologies
+  "US58507V1070": "AKTIE_UDENLANDSK",  // Medline
+  "US89677Q1076": "AKTIE_UDENLANDSK",  // Trip.com ADR
+  "US23804L1035": "AKTIE_UDENLANDSK",  // Datadog A
+  "US21873S1087": "AKTIE_UDENLANDSK",  // CoreWeave
+  "US47215P1066": "AKTIE_UDENLANDSK",  // JD.com ADR
+  "US70450Y1038": "AKTIE_UDENLANDSK",  // PayPal
+  "US92276F1003": "AKTIE_UDENLANDSK",  // Ventas
+  "US92939U1060": "AKTIE_UDENLANDSK",  // WEC Energy Group
+  "US55024U1097": "AKTIE_UDENLANDSK",  // Lumentum
+  "US55261F1049": "AKTIE_UDENLANDSK",  // M&T Bank
+  "US9100471096": "AKTIE_UDENLANDSK",  // United Airlines
+  "US8574771031": "AKTIE_UDENLANDSK",  // State Street
+  "US1717793095": "AKTIE_UDENLANDSK",  // Ciena
+  "US69331C1080": "AKTIE_UDENLANDSK",  // Pacific Gas & Electric
+  "US7835132033": "AKTIE_UDENLANDSK",  // Ryanair ADR
+  "US7731211089": "AKTIE_UDENLANDSK",  // Rocket Lab
+  "US45262P1021": "AKTIE_UDENLANDSK",  // Imperial Brands PLC American Depositary 
+  "US3377381088": "AKTIE_UDENLANDSK",  // Fiserv
+  "US7043261079": "AKTIE_UDENLANDSK",  // Paychex
+  "US6863301015": "AKTIE_UDENLANDSK",  // Orix ADR
+  "US68902V1070": "AKTIE_UDENLANDSK",  // Otis Worldwide
+  "US90353W1036": "AKTIE_UDENLANDSK",  // Ubiquiti
+  "US5184391044": "AKTIE_UDENLANDSK",  // Estee Lauder Companies
+  "US4228062083": "AKTIE_UDENLANDSK",  // Heico A
+  "US49177J1025": "AKTIE_UDENLANDSK",  // Kenvue
+  "US4943681035": "AKTIE_UDENLANDSK",  // Kimberly-Clark
+  "US26884L1098": "AKTIE_UDENLANDSK",  // EQT
+  "US2091151041": "AKTIE_UDENLANDSK",  // Consolidated Edison
+  "US92857W3088": "AKTIE_UDENLANDSK",  // Vodafone ADR
+  "US22822V1017": "AKTIE_UDENLANDSK",  // Crown Castle
+  "US98419M1009": "AKTIE_UDENLANDSK",  // Xylem
+  "US9802283088": "AKTIE_UDENLANDSK",  // Woodside Energy Group ADR
+  "US7547301090": "AKTIE_UDENLANDSK",  // Raymond James Financial
+  "US19247G1076": "AKTIE_UDENLANDSK",  // Coherent
+  "US8522341036": "AKTIE_UDENLANDSK",  // Block A
+  "US0937121079": "AKTIE_UDENLANDSK",  // Bloom Energy A
+  "US4576693075": "AKTIE_UDENLANDSK",  // Insmed
+  "US3032501047": "AKTIE_UDENLANDSK",  // Fair Isaac
+  "US17133Q5027": "AKTIE_UDENLANDSK",  // Chunghwa Telecom ADR
+  "US29084Q1004": "AKTIE_UDENLANDSK",  // EMCOR Group
+  "US5380341090": "AKTIE_UDENLANDSK",  // Live Nation Entertainment
+  "US2566771059": "AKTIE_UDENLANDSK",  // Dollar General
+  "US05464C1018": "AKTIE_UDENLANDSK",  // Axon Enterprise
+  "US0394831020": "AKTIE_UDENLANDSK",  // Archer Daniels Midland
+  "US31620M1062": "AKTIE_UDENLANDSK",  // Fidelity National Information Services
+  "US45841N1072": "AKTIE_UDENLANDSK",  // Interactive Brokers Group A
+  "US46266C1053": "AKTIE_UDENLANDSK",  // IQVIA
+  "US2787681061": "AKTIE_UDENLANDSK",  // EchoStar
+  "US9256521090": "AKTIE_UDENLANDSK",  // VICI Properties
+  "US7757111049": "AKTIE_UDENLANDSK",  // Rollins
+  "US22266T1097": "AKTIE_UDENLANDSK",  // Coupang A
+  "US42824C1099": "AKTIE_UDENLANDSK",  // Hewlett Packard Enterprise
+  "US2600031080": "AKTIE_UDENLANDSK",  // Dover
+  "US9224751084": "AKTIE_UDENLANDSK",  // Veeva Systems A
+  "US90384S3031": "AKTIE_UDENLANDSK",  // Ulta Beauty
+  "US4461501045": "AKTIE_UDENLANDSK",  // Huntington Bank
+  "US50212V1008": "AKTIE_UDENLANDSK",  // LPL Financial
+  "US2948216088": "AKTIE_UDENLANDSK",  // Ericsson B ADR
+  "US30225T1025": "AKTIE_UDENLANDSK",  // Extra Space Storage
+  "US8760301072": "AKTIE_UDENLANDSK",  // Tapestry
+  "US4062161017": "AKTIE_UDENLANDSK",  // Halliburton
+  "US8793601050": "AKTIE_UDENLANDSK",  // Teledyne Technologies
+  "US5007541064": "AKTIE_UDENLANDSK",  // Kraft Heinz
+  "US12503M1080": "AKTIE_UDENLANDSK",  // Cboe Global Markets
+  "US8923561067": "AKTIE_UDENLANDSK",  // Tractor Supply
+  "US21036P1084": "AKTIE_UDENLANDSK",  // Constellation Brands
+  "US75734B1008": "AKTIE_UDENLANDSK",  // Reddit
+  "US1746101054": "AKTIE_UDENLANDSK",  // Citizens Financial Group
+  "US5260571048": "AKTIE_UDENLANDSK",  // Lennar A
+  "US0495601058": "AKTIE_UDENLANDSK",  // Atmos Energy
+  "US0236081024": "AKTIE_UDENLANDSK",  // Ameren
+  "US30212P3038": "AKTIE_UDENLANDSK",  // Expedia
+  "US16119P1084": "AKTIE_UDENLANDSK",  // Charter Communications A
+  "US5926881054": "AKTIE_UDENLANDSK",  // Mettler-Toledo International
+  "US8581191009": "AKTIE_UDENLANDSK",  // Steel Dynamics
+  "US5004723038": "AKTIE_UDENLANDSK",  // Koninklijke Philips
+  "US35137L1052": "AKTIE_UDENLANDSK",  // Fox A
+  "US6935061076": "AKTIE_UDENLANDSK",  // PPG Industries
+  "US16411Q1013": "AKTIE_UDENLANDSK",  // Cheniere Energy Partners, LP Common Unit
+  "US6658591044": "AKTIE_UDENLANDSK",  // Northern Trust
+  "US6293775085": "AKTIE_UDENLANDSK",  // NRG Energy
+  "US6323071042": "AKTIE_UDENLANDSK",  // Natera
+  "US2521311074": "AKTIE_UDENLANDSK",  // DexCom
+  "US09062X1037": "AKTIE_UDENLANDSK",  // Biogen
+  "US8447411088": "AKTIE_UDENLANDSK",  // Southwest Airlines
+  "US3379321074": "AKTIE_UDENLANDSK",  // FirstEnergy
+  "US0844231029": "AKTIE_UDENLANDSK",  // W.R. Berkley
+  "US98980G1022": "AKTIE_UDENLANDSK",  // Zscaler
+  "US03990B1017": "AKTIE_UDENLANDSK",  // Ares Management A
+  "US1720621010": "AKTIE_UDENLANDSK",  // Cincinnati Financial
+  "US7591EP1005": "AKTIE_UDENLANDSK",  // Regions Financial
+  "US87165B1035": "AKTIE_UDENLANDSK",  // Synchrony Financial
+  "US25179M1036": "AKTIE_UDENLANDSK",  // Devon Energy
+  "US60937P1066": "AKTIE_UDENLANDSK",  // MongoDB A
+  "US5705351048": "AKTIE_UDENLANDSK",  // Markel
+  "US31946M1036": "AKTIE_UDENLANDSK",  // First Citizens BancShares A
+  "US69351T1060": "AKTIE_UDENLANDSK",  // PPL
+  "US98980L1017": "AKTIE_UDENLANDSK",  // Zoom Communications A
+  "US2333311072": "AKTIE_UDENLANDSK",  // DTE Energy
+  "US5260573028": "AKTIE_UDENLANDSK",  // Lennar B
+  "US46284V1017": "AKTIE_UDENLANDSK",  // Iron Mountain REIT
+  "US15189T1079": "AKTIE_UDENLANDSK",  // CenterPoint Energy
+  "US1651677353": "AKTIE_UDENLANDSK",  // Expand Energy
+  "US00217D1000": "AKTIE_UDENLANDSK",  // AST SpaceMobile A
+  "US4435106079": "AKTIE_UDENLANDSK",  // Hubbell
+  "US0494681010": "AKTIE_UDENLANDSK",  // Atlassian A
+  "US3703341046": "AKTIE_UDENLANDSK",  // General Mills
+  "US7458671010": "AKTIE_UDENLANDSK",  // PulteGroup
+  "US8610121027": "AKTIE_UDENLANDSK",  // STMicroelectronics N.V. ADR
+  "US92345Y1064": "AKTIE_UDENLANDSK",  // Verisk Analytics
+  "US4663131039": "AKTIE_UDENLANDSK",  // Jabil
+  "US09075V1026": "AKTIE_UDENLANDSK",  // BioNTech ADR
+  "US65535H2085": "AKTIE_UDENLANDSK",  // Nomura ADR
+  "US30040W1080": "AKTIE_UDENLANDSK",  // Eversource Energy
+  "US6821891057": "AKTIE_UDENLANDSK",  // ON Semiconductor
+  "US9699041011": "AKTIE_UDENLANDSK",  // Williams-Sonoma
+  "US35137L2043": "AKTIE_UDENLANDSK",  // Fox B
+  "US3364331070": "AKTIE_UDENLANDSK",  // First Solar
+  "US9108734057": "AKTIE_UDENLANDSK",  // United Micro Electronics ADR
+  "US1152361010": "AKTIE_UDENLANDSK",  // Brown & Brown
+  "US6819191064": "AKTIE_UDENLANDSK",  // Omnicom Group
+  "US4932671088": "AKTIE_UDENLANDSK",  // KeyCorp
+  "US2371941053": "AKTIE_UDENLANDSK",  // Darden Restaurants
+  "US0304201033": "AKTIE_UDENLANDSK",  // American Water Works
+  "US83406F1021": "AKTIE_UDENLANDSK",  // SoFi Technologies
+  "US2810201077": "AKTIE_UDENLANDSK",  // Edison International
+  "US1713401024": "AKTIE_UDENLANDSK",  // Church & Dwight
+  "US04626A1034": "AKTIE_UDENLANDSK",  // Astera Labs
+  "US0534841012": "AKTIE_UDENLANDSK",  // Avalonbay Communities
+  "US88031M1099": "AKTIE_UDENLANDSK",  // Tenaris ADR
+  "US88262P1021": "AKTIE_UDENLANDSK",  // Texas Pacific Land
+  "US5253271028": "AKTIE_UDENLANDSK",  // Leidos
+  "US2567461080": "AKTIE_UDENLANDSK",  // Dollar Tree
+  "US29476L1070": "AKTIE_UDENLANDSK",  // Equity Residential
+  "US2199481068": "AKTIE_UDENLANDSK",  // Corpay
+  "US2944291051": "AKTIE_UDENLANDSK",  // Equifax
+  "US8926721064": "AKTIE_UDENLANDSK",  // Tradeweb Markets A
+  "US12541W2098": "AKTIE_UDENLANDSK",  // C.H. Robinson Worldwide
+  "US4523271090": "AKTIE_UDENLANDSK",  // Illumina
+  "US4448591028": "AKTIE_UDENLANDSK",  // Humana
+  "US5049221055": "AKTIE_UDENLANDSK",  // Labcorp
+  "US1475281036": "AKTIE_UDENLANDSK",  // Caseys General Stores
+  "US1270971039": "AKTIE_UDENLANDSK",  // Coterra Energy
+  "US5404241086": "AKTIE_UDENLANDSK",  // Loews
+  "US62944T1051": "AKTIE_UDENLANDSK",  // NVR
+  "US92333F1012": "AKTIE_UDENLANDSK",  // Venture Global
+  "US2315611010": "AKTIE_UDENLANDSK",  // Curtiss-Wright
+  "US11133T1034": "AKTIE_UDENLANDSK",  // Broadridge Financial Solutions
+  "US4601461035": "AKTIE_UDENLANDSK",  // International Paper
+  "US92338C1036": "AKTIE_UDENLANDSK",  // Veralto
+  "US9024941034": "AKTIE_UDENLANDSK",  // Tyson Foods
+  "US92343E1029": "AKTIE_UDENLANDSK",  // VeriSign
+  "US9807451037": "AKTIE_UDENLANDSK",  // Woodward
+  "US9418481035": "AKTIE_UDENLANDSK",  // Waters
+  "US5015562037": "AKTIE_UDENLANDSK",  // Kyocera Corporation
+  "US1258961002": "AKTIE_UDENLANDSK",  // CMS Energy
+  "US2605571031": "AKTIE_UDENLANDSK",  // Dow
+  "US3021301094": "AKTIE_UDENLANDSK",  // Expeditors International of Washington
+  "US5312297550": "AKTIE_UDENLANDSK",  // Liberty Media C Formula One
+  "US9837931008": "AKTIE_UDENLANDSK",  // XPO Logistics
+  "US22160N1090": "AKTIE_UDENLANDSK",  // CoStar Group
+  "US45857P8068": "AKTIE_UDENLANDSK",  // Intercontinental Hotels ADR
+  "US4456581077": "AKTIE_UDENLANDSK",  // J.B. Hunt Transport Services
+  "US7802871084": "AKTIE_UDENLANDSK",  // Royal Gold
+  "US74624M1027": "AKTIE_UDENLANDSK",  // Pure Storage A
+  "US65473P1057": "AKTIE_UDENLANDSK",  // NiSource
+  "US6951561090": "AKTIE_UDENLANDSK",  // Packaging Corp of America
+  "US74834L1008": "AKTIE_UDENLANDSK",  // Quest Diagnostics
+  "US7512121010": "AKTIE_UDENLANDSK",  // Ralph Lauren
+  "US4824971042": "AKTIE_UDENLANDSK",  // KE Holdings
+  "US50077B2079": "AKTIE_UDENLANDSK",  // Kratos Defense & Security Solutions
+  "US3724601055": "AKTIE_UDENLANDSK",  // Genuine Parts
+  "US91307C1027": "AKTIE_UDENLANDSK",  // United Therapeutics
+  "US45337C1027": "AKTIE_UDENLANDSK",  // Incyte
+  "US9621661043": "AKTIE_UDENLANDSK",  // Weyerhaeuser
+  "US98850P1093": "AKTIE_UDENLANDSK",  // Yum China
+  "US74144T1088": "AKTIE_UDENLANDSK",  // T. Rowe Price Group
+  "US74251V1026": "AKTIE_UDENLANDSK",  // Principal Financial Group
+  "US14316J1088": "AKTIE_UDENLANDSK",  // The Carlyle Group
+  "US37940X1028": "AKTIE_UDENLANDSK",  // Global Payments
+  "US5500211090": "AKTIE_UDENLANDSK",  // Lululemon Athletica
+  "US5312297717": "AKTIE_UDENLANDSK",  // Liberty Media A Formula One
+  "US88023U1016": "AKTIE_UDENLANDSK",  // Somnigroup International
+  "US64110D1046": "AKTIE_UDENLANDSK",  // NetApp
+  "US15135B1017": "AKTIE_UDENLANDSK",  // Centene
+  "US00827B1061": "AKTIE_UDENLANDSK",  // Affirm A
+  "US9120081099": "AKTIE_UDENLANDSK",  // US Foods
+  "US30063P1057": "ETF_IKKE_POSITIVLISTE",  // Exact Sciences
+  "US51817R2058": "AKTIE_UDENLANDSK",  // LATAM Airlines Group
+  "US74743L1008": "AKTIE_UDENLANDSK",  // Qnity Electronics
+  "US4227041062": "AKTIE_UDENLANDSK",  // Hecla Mining
+  "US5763231090": "AKTIE_UDENLANDSK",  // MasTec
+  "US8330341012": "AKTIE_UDENLANDSK",  // Snap-On
+  "US78410G1040": "AKTIE_UDENLANDSK",  // Sba Communications A
+  "US3723032062": "AKTIE_UDENLANDSK",  // Genmab ADR
+  "US1220171060": "AKTIE_UDENLANDSK",  // Burlington Stores
+  "US4595061015": "AKTIE_UDENLANDSK",  // International Flavors & Fragrances
+  "US00187Y1001": "AKTIE_UDENLANDSK",  // APi Group
+  "US76155X1000": "AKTIE_UDENLANDSK",  // Revolution Medicines
+  "US2533931026": "AKTIE_UDENLANDSK",  // Dick's Sporting Goods
+  "US0126531013": "AKTIE_UDENLANDSK",  // Albemarle
+  "US86800U3023": "AKTIE_UDENLANDSK",  // Super Micro Computer
+  "US12514G1085": "AKTIE_UDENLANDSK",  // CDW
+  "US69370C1009": "AKTIE_UDENLANDSK",  // PTC
+  "US78467J1007": "AKTIE_UDENLANDSK",  // SS&C Technologies
+  "US34959J1088": "AKTIE_UDENLANDSK",  // Fortive
+  "US26614N1028": "AKTIE_UDENLANDSK",  // DuPont De Nemours
+  "US5261071071": "AKTIE_UDENLANDSK",  // Lennox International
+  "US1512908898": "AKTIE_UDENLANDSK",  // CEMEX ADR
+  "US5797802064": "AKTIE_UDENLANDSK",  // McCormick & Company
+  "US40434L1052": "AKTIE_UDENLANDSK",  // HP
+  "US30034W1062": "AKTIE_UDENLANDSK",  // Evergy
+  "US5797801074": "AKTIE_UDENLANDSK",  // McCormick & Company Voting
+  "US0584981064": "AKTIE_UDENLANDSK",  // Ball
+  "US98956P1021": "AKTIE_UDENLANDSK",  // Zimmer Biomet
+  "US01741R1023": "AKTIE_UDENLANDSK",  // Allegheny Technologies
+  "US45073V1089": "AKTIE_UDENLANDSK",  // ITT
+  "US1442851036": "AKTIE_UDENLANDSK",  // Carpenter Technology
+  "US7595091023": "AKTIE_UDENLANDSK",  // Reliance
+  "US88033G4073": "AKTIE_UDENLANDSK",  // Tenet Healthcare
+  "US0188021085": "AKTIE_UDENLANDSK",  // Alliant Energy
+  "US05605H1005": "AKTIE_UDENLANDSK",  // BWX Technologies
+  "US45784P1012": "AKTIE_UDENLANDSK",  // Insulet
+  "US55405Y1001": "AKTIE_UDENLANDSK",  // MACOM Technology Solutions
+  "US65290E1010": "AKTIE_UDENLANDSK",  // Nextpower A
+  "US8832031012": "AKTIE_UDENLANDSK",  // Textron
+  "US46982L1089": "AKTIE_UDENLANDSK",  // Jacobs Engineering Group
+  "US76954A1034": "AKTIE_UDENLANDSK",  // Rivian Automotive A
+  "US29362U1043": "AKTIE_UDENLANDSK",  // Entegris
+  "US4364401012": "AKTIE_UDENLANDSK",  // Hologic
+  "US9553061055": "AKTIE_UDENLANDSK",  // West Pharmaceutical Services
+  "US90138F1021": "AKTIE_UDENLANDSK",  // Twilio A
+  "US92556V1061": "AKTIE_UDENLANDSK",  // Viatris
+  "US9426221019": "AKTIE_UDENLANDSK",  // Watsco B
+  "US9426222009": "AKTIE_UDENLANDSK",  // Watsco
+  "US75524B1044": "AKTIE_UDENLANDSK",  // RBC Bearings
+  "US87256C1018": "AKTIE_UDENLANDSK",  // TKO Group
+  "US7601251041": "AKTIE_UDENLANDSK",  // Rentokil Initial ADR
+  "US27579R1041": "AKTIE_UDENLANDSK",  // East West Bancorp
+  "US2971781057": "AKTIE_UDENLANDSK",  // Essex Property Trust
+  "US46187W1071": "AKTIE_UDENLANDSK",  // Invitation Homes
+  "US60770K1079": "AKTIE_UDENLANDSK",  // Moderna
+  "US8887871080": "AKTIE_UDENLANDSK",  // Toast
+  "US48020Q1076": "AKTIE_UDENLANDSK",  // Jones Lang LaSalle
+  "US2435371073": "AKTIE_UDENLANDSK",  // Deckers Outdoor
+  "US6556631025": "AKTIE_UDENLANDSK",  // Nordson
+  "US2166485019": "AKTIE_UDENLANDSK",  // The Cooper Companies
+  "US0357108390": "AKTIE_UDENLANDSK",  // Annaly Capital Management
+  "US5339001068": "AKTIE_UDENLANDSK",  // Lincoln Electric
+  "US92936U1097": "AKTIE_UDENLANDSK",  // W. P. Carey REIT
+  "US21871X1090": "AKTIE_UDENLANDSK",  // Corebridge Financial
+  "US31620R3030": "AKTIE_UDENLANDSK",  // Fidelity National Financial
+  "US44332N1063": "AKTIE_UDENLANDSK",  // H World Group ADR
+  "US65249B2088": "AKTIE_UDENLANDSK",  // News B
+  "US59522J1034": "AKTIE_UDENLANDSK",  // Mid-America Apartment Communities
+  "US8666741041": "AKTIE_UDENLANDSK",  // Sun Communities
+  "US58506Q1094": "AKTIE_UDENLANDSK",  // Medpace
+  "US55306N1046": "AKTIE_UDENLANDSK",  // MKS
+  "US72348N1090": "AKTIE_UDENLANDSK",  // Pinnacle Financial Partners
+  "US8962391004": "AKTIE_UDENLANDSK",  // Trimble
+  "US3156161024": "AKTIE_UDENLANDSK",  // F5
+  "US4485791028": "AKTIE_UDENLANDSK",  // Hyatt Hotels A
+  "US1423391002": "AKTIE_UDENLANDSK",  // Carlisle Companies
+  "US83175M2052": "AKTIE_UDENLANDSK",  // Smith & Nephew
+  "US0536111091": "AKTIE_UDENLANDSK",  // Avery Dennison
+  "US45167R1041": "AKTIE_UDENLANDSK",  // IDEX
+  "US6247561029": "AKTIE_UDENLANDSK",  // Mueller Industries
+  "US82846H4056": "AKTIE_UDENLANDSK",  // QXO
+  "US87422Q1094": "AKTIE_UDENLANDSK",  // Talen Energy
+  "US50202M1027": "AKTIE_UDENLANDSK",  // Li Auto ADR
+  "US9345502036": "AKTIE_UDENLANDSK",  // Warner Music Group A
+  "US49446R1095": "AKTIE_UDENLANDSK",  // Kimco Realty
+  "US9022521051": "AKTIE_UDENLANDSK",  // Tyler Technologies
+  "US0138721065": "AKTIE_UDENLANDSK",  // Alcoa
+  "US5745991068": "AKTIE_UDENLANDSK",  // Masco
+  "US7496851038": "AKTIE_UDENLANDSK",  // RPM International
+  "US6792951054": "AKTIE_UDENLANDSK",  // Okta A
+  "US4464131063": "AKTIE_UDENLANDSK",  // Huntington Ingalls Industries
+  "US3841091040": "AKTIE_UDENLANDSK",  // Graco
+  "US1252691001": "AKTIE_UDENLANDSK",  // CF Industries
+  "US84473L1052": "AKTIE_UDENLANDSK",  // South32 Ltd (When-Issued) American Depos
+  "US1890541097": "AKTIE_UDENLANDSK",  // Clorox
+  "US36118L1061": "AKTIE_UDENLANDSK",  // Futu ADR
+  "US71377A1034": "AKTIE_UDENLANDSK",  // Performance Food Group
+  "US8894781033": "AKTIE_UDENLANDSK",  // Toll Brothers
+  "US3546131018": "AKTIE_UDENLANDSK",  // Franklin Resources
+  "US1844961078": "AKTIE_UDENLANDSK",  // Clean Harbors
+  "US79589L1061": "AKTIE_UDENLANDSK",  // Samsara A
+  "US0865161014": "AKTIE_UDENLANDSK",  // Best Buy
+  "US9037311076": "AKTIE_UDENLANDSK",  // UL Solutions
+  "US95082P1057": "AKTIE_UDENLANDSK",  // WESCO International
+  "US89055F1030": "AKTIE_UDENLANDSK",  // TopBuild
+  "US6687711084": "AKTIE_UDENLANDSK",  // Gen Digital
+  "US7588491032": "AKTIE_UDENLANDSK",  // Regency Centers
+  "US4404521001": "AKTIE_UDENLANDSK",  // Hormel Foods
+  "US98980A1051": "AKTIE_UDENLANDSK",  // ZTO Express (Cayman) A ADR
+  "US89400J1079": "AKTIE_UDENLANDSK",  // TransUnion
+  "US1156371007": "AKTIE_UDENLANDSK",  // Brown Forman A
+  "US65249B1098": "AKTIE_UDENLANDSK",  // News A
+  "US29977A1051": "AKTIE_UDENLANDSK",  // Evercore A
+  "US1261171003": "AKTIE_UDENLANDSK",  // CNA Financial
+  "US7509171069": "AKTIE_UDENLANDSK",  // Rambus
+  "US7593516047": "AKTIE_UDENLANDSK",  // Reinsurance Group of America
+  "US4622221004": "AKTIE_UDENLANDSK",  // Ionis Pharmaceuticals
+  "US04010L1035": "AKTIE_UDENLANDSK",  // Ares Capital
+  "US6819361006": "AKTIE_UDENLANDSK",  // Omega Healthcare Investors
+  "US1156372096": "AKTIE_UDENLANDSK",  // Brown Forman B
+  "US70975L1070": "AKTIE_UDENLANDSK",  // Penumbra
+  "US4180561072": "AKTIE_UDENLANDSK",  // Hasbro
+  "US83444M1018": "AKTIE_UDENLANDSK",  // Solventum
+  "US04351P1012": "AKTIE_UDENLANDSK",  // Ascendis Pharma ADR
+  "US29530P1021": "AKTIE_UDENLANDSK",  // Erie Indemnity A
+  "US25754A2015": "AKTIE_UDENLANDSK",  // Domino's Pizza
+  "US5128161099": "AKTIE_UDENLANDSK",  // Lamar Advertising A
+  "US7587501039": "AKTIE_UDENLANDSK",  // Regal Rexnord
+  "US12008R1077": "AKTIE_UDENLANDSK",  // Builders Firstsource
+  "US8545021011": "AKTIE_UDENLANDSK",  // Stanley Black & Decker
+  "US00790R1041": "AKTIE_UDENLANDSK",  // Advanced Drainage Systems
+  "US0316521006": "AKTIE_UDENLANDSK",  // Amkor Technology
+  "US1271903049": "AKTIE_UDENLANDSK",  // CACI International A
+  "US00971T1016": "AKTIE_UDENLANDSK",  // Akamai Technologies
+  "US1910981026": "AKTIE_UDENLANDSK",  // Coca-Cola Consolidated
+  "US98422D1054": "AKTIE_UDENLANDSK",  // XPeng A ADR
+  "US98954M2008": "AKTIE_UDENLANDSK",  // Zillow Group C Capital Stock
+  "US44107P1049": "AKTIE_UDENLANDSK",  // Host Hotels & Resorts
+  "US72352L1061": "AKTIE_UDENLANDSK",  // Pinterest A
+  "US8606301021": "AKTIE_UDENLANDSK",  // Stifel Financial
+  "US98954M1018": "AKTIE_UDENLANDSK",  // Zillow Group A
+  "US3802371076": "AKTIE_UDENLANDSK",  // GoDaddy A
+  "US05550J1016": "AKTIE_UDENLANDSK",  // BJ's Wholesale Club
+  "US02005N1000": "AKTIE_UDENLANDSK",  // Ally Financial
+  "US23345M1071": "AKTIE_UDENLANDSK",  // DT Midstream
+  "US29472R1086": "AKTIE_UDENLANDSK",  // Equity Lifestyle Properties
+  "US36467J1088": "AKTIE_UDENLANDSK",  // Gaming and Leisure Properties
+  "US4262811015": "AKTIE_UDENLANDSK",  // Jack Henry & Associates
+  "US00766T1007": "AKTIE_UDENLANDSK",  // AECOM
+  "US9139031002": "AKTIE_UDENLANDSK",  // Universal Health Services
+  "US40131M1099": "AKTIE_UDENLANDSK",  // Guardant Health
+  "US77543R1023": "AKTIE_UDENLANDSK",  // Roku A
+  "US26142V1052": "AKTIE_UDENLANDSK",  // DraftKings A
+  "US3580291066": "AKTIE_UDENLANDSK",  // Fresenius Medical Care ADR
+  "US88339J1051": "AKTIE_UDENLANDSK",  // The Trade Desk A
+  "US91529Y1064": "AKTIE_UDENLANDSK",  // Unum Group
+  "US0162551016": "AKTIE_UDENLANDSK",  // Align Technology
+  "US64125C1099": "AKTIE_UDENLANDSK",  // Neurocrine Biosciences
+  "US29452E1010": "AKTIE_UDENLANDSK",  // Equitable Holdings
+  "US15118V2079": "AKTIE_UDENLANDSK",  // Celsius
+  "US2576511099": "AKTIE_UDENLANDSK",  // Donaldson
+  "US8826811098": "AKTIE_UDENLANDSK",  // Texas Roadhouse
+  "US10806X1028": "AKTIE_UDENLANDSK",  // BridgeBio Pharma
+  "US9026531049": "AKTIE_UDENLANDSK",  // Udr
+  "US1921085049": "AKTIE_UDENLANDSK",  // Coeur Mining
+  "US71424F1057": "AKTIE_UDENLANDSK",  // Permian Resources
+  "US00123Q1040": "AKTIE_UDENLANDSK",  // AGNC Investment
+  "US9892071054": "AKTIE_UDENLANDSK",  // Zebra Technologies A
+  "US87162W1009": "AKTIE_UDENLANDSK",  // TD Synnex
+  "US3205171057": "AKTIE_UDENLANDSK",  // First Horizon National
+  "US28414H1032": "AKTIE_UDENLANDSK",  // Elanco Animal Health
+  "US30161Q1040": "AKTIE_UDENLANDSK",  // Exelixis
+  "US8175651046": "AKTIE_UDENLANDSK",  // Service International
+  "US04621X1081": "AKTIE_UDENLANDSK",  // Assurant
+  "US4859241048": "AKTIE_UDENLANDSK",  // Karman
+  "US9831341071": "AKTIE_UDENLANDSK",  // Wynn Resorts
+  "US2283681060": "AKTIE_UDENLANDSK",  // Crown Holdings
+  "US1725731079": "AKTIE_UDENLANDSK",  // Circle Internet Group
+  "US0080731088": "AKTIE_UDENLANDSK",  // AeroVironment
+  "US9604131022": "AKTIE_UDENLANDSK",  // Westlake
+  "US3795772082": "AKTIE_UDENLANDSK",  // Globus Medical A
+  "US4435731009": "AKTIE_UDENLANDSK",  // HubSpot
+  "US4415931009": "AKTIE_UDENLANDSK",  // Houlihan Lokey A
+  "US37959E1029": "AKTIE_UDENLANDSK",  // Globe Life
+  "US8336351056": "AKTIE_UDENLANDSK",  // Sociedad Quimica y Minera ADR
+  "US47233W1099": "AKTIE_UDENLANDSK",  // Jefferies Financial Group
+  "US8326964058": "AKTIE_UDENLANDSK",  // The J.M Smucker Company
+  "US69932A2042": "AKTIE_UDENLANDSK",  // Paramount Skydance
+  "US42250P1030": "AKTIE_UDENLANDSK",  // Healthpeak Properties
+  "US94419L1017": "AKTIE_UDENLANDSK",  // Wayfair A
+  "US6501111073": "AKTIE_UDENLANDSK",  // New York Times
+  "US02665T3068": "AKTIE_UDENLANDSK",  // American Homes 4 Rent
+  "US29358P1012": "AKTIE_UDENLANDSK",  // The Ensign Group
+  "US0076CA1045": "AKTIE_UDENLANDSK",  // Aegon N.V ADR
+  "US69047Q1022": "AKTIE_UDENLANDSK",  // Ovintiv
+  "US1331311027": "AKTIE_UDENLANDSK",  // Camden Property Trust
+  "US7234841010": "AKTIE_UDENLANDSK",  // Pinnacle West Capital
+  "US7140461093": "AKTIE_UDENLANDSK",  // Revvity
+  "US8592411016": "AKTIE_UDENLANDSK",  // Sterling Infrastructure
+  "US0718131099": "AKTIE_UDENLANDSK",  // Baxter International
+  "US5184151042": "AKTIE_UDENLANDSK",  // Lattice Semiconductor
+  "US16679L1098": "AKTIE_UDENLANDSK",  // Chewy A
+  "US3168411052": "AKTIE_UDENLANDSK",  // Figma
+  "US09061G1013": "AKTIE_UDENLANDSK",  // BioMarin Pharmaceutical
+  "US05370A1088": "AKTIE_UDENLANDSK",  // Avidity Biosciences
+  "US3666511072": "AKTIE_UDENLANDSK",  // Gartner
+  "US8318652091": "AKTIE_UDENLANDSK",  // A.O Smith
+  "US2674751019": "AKTIE_UDENLANDSK",  // Dycom Industries
+  "US78473E1038": "AKTIE_UDENLANDSK",  // SPX Technologies
+  "US20717M1036": "AKTIE_UDENLANDSK",  // Confluent A
+  "US0259321042": "AKTIE_UDENLANDSK",  // American Financial Group
+  "US2244081046": "AKTIE_UDENLANDSK",  // Crane Company
+  "US6078281002": "AKTIE_UDENLANDSK",  // Modine Manufacturing
+  "US78709Y1055": "AKTIE_UDENLANDSK",  // Saia
+  "US46222L1089": "AKTIE_UDENLANDSK",  // IonQ
+  "US6153942023": "AKTIE_UDENLANDSK",  // Moog A
+  "US6153943013": "AKTIE_UDENLANDSK",  // Moog B
+  "US40171V1008": "AKTIE_UDENLANDSK",  // Guidewire Software
+  "US84472E1029": "AKTIE_UDENLANDSK",  // SouthState Bank
+  "US82982T1060": "AKTIE_UDENLANDSK",  // SiTime
+  "US03820C1053": "AKTIE_UDENLANDSK",  // Applied Industrial Technologies
+  "US33829M1018": "AKTIE_UDENLANDSK",  // Five Below
+  "US29670G1022": "AKTIE_UDENLANDSK",  // Essential Utilities
+  "US70959W1036": "AKTIE_UDENLANDSK",  // Penske Automotive Group
+  "US9478901096": "AKTIE_UDENLANDSK",  // Webster Financial
+  "US21874C1027": "AKTIE_UDENLANDSK",  // Core & Main A
+  "US23918K1088": "AKTIE_UDENLANDSK",  // DaVita
+  "US5588681057": "AKTIE_UDENLANDSK",  // Madrigal Pharmaceuticals
+  "US03674X1063": "AKTIE_UDENLANDSK",  // Antero Resources
+  "US4039491000": "AKTIE_UDENLANDSK",  // HF Sinclair
+  "US2540671011": "AKTIE_UDENLANDSK",  // Dillard's
+  "US67059N1081": "AKTIE_UDENLANDSK",  // Nutanix A
+  "US7841171033": "AKTIE_UDENLANDSK",  // SEI Investments
+  "US0997241064": "AKTIE_UDENLANDSK",  // BorgWarner
+  "US72147K1088": "AKTIE_UDENLANDSK",  // Pilgrim's Pride
+  "US86627T1088": "AKTIE_UDENLANDSK",  // Summit Therapeutics ADR
+  "US09073M1045": "AKTIE_UDENLANDSK",  // Bio-Techne
+  "US9427491025": "AKTIE_UDENLANDSK",  // Watts Water Technologies A
+  "US6907421019": "AKTIE_UDENLANDSK",  // Owens Corning
+  "US6802231042": "AKTIE_UDENLANDSK",  // Old Republic International
+  "US3647601083": "AKTIE_UDENLANDSK",  // Gap
+  "US0995021062": "AKTIE_UDENLANDSK",  // Booz Allen Hamilton
+  "US1011211018": "AKTIE_UDENLANDSK",  // Boston Properties
+  "US6475812060": "AKTIE_UDENLANDSK",  // New Oriental Education & Technology Grou
+  "US03852U1060": "AKTIE_UDENLANDSK",  // Aramark
+  "US97650W1080": "AKTIE_UDENLANDSK",  // Wintrust Financial
+  "US0900401060": "AKTIE_UDENLANDSK",  // Bilibili ADR
+  "US3687361044": "AKTIE_UDENLANDSK",  // Generac Holdings
+  "US2681501092": "AKTIE_UDENLANDSK",  // Dynatrace
+  "US83443Q1031": "AKTIE_UDENLANDSK",  // Solstice Advanced Materials
+  "US2772761019": "AKTIE_UDENLANDSK",  // EastGroup Properties
+  "US9027881088": "AKTIE_UDENLANDSK",  // UMB Financial
+  "US9576381092": "AKTIE_UDENLANDSK",  // Western Alliance Bancorp
+  "US60871R2094": "AKTIE_UDENLANDSK",  // Molson Coors B
+  "US5533681012": "AKTIE_UDENLANDSK",  // MP Materials
+  "US29261A1007": "AKTIE_UDENLANDSK",  // Encompass Health
+  "US6800331075": "AKTIE_UDENLANDSK",  // Old National Bancorp
+  "US91332U1016": "AKTIE_UDENLANDSK",  // Unity Software
+  "US5529531015": "AKTIE_UDENLANDSK",  // MGM Resorts International
+  "US52661A1088": "AKTIE_UDENLANDSK",  // Leonardo DRS
+  "US16115Q3083": "AKTIE_UDENLANDSK",  // Chart Industries
+  "US0235861004": "AKTIE_UDENLANDSK",  // U-Haul Holding Ser N
+  "US85423L1035": "AKTIE_UDENLANDSK",  // StandardAero
+  "US62914V1061": "AKTIE_UDENLANDSK",  // NIO ADR A
+  "US34354P1057": "AKTIE_UDENLANDSK",  // Flowserve
+  "US29414B1044": "AKTIE_UDENLANDSK",  // EPAM Systems
+  "US6882392011": "AKTIE_UDENLANDSK",  // Oshkosh
+  "US0079731008": "AKTIE_UDENLANDSK",  // Advanced Energy Industries
+  "US36467W1099": "AKTIE_UDENLANDSK",  // GameStop
+  "US08265T2087": "AKTIE_UDENLANDSK",  // Bentley Systems B
+  "US02156V1098": "AKTIE_UDENLANDSK",  // Oklo A
+  "US00508Y1029": "AKTIE_UDENLANDSK",  // Acuity
+  "US7811541090": "AKTIE_UDENLANDSK",  // Rubrik
+  "US8322482071": "AKTIE_UDENLANDSK",  // Smithfield Foods
+  "US0528001094": "AKTIE_UDENLANDSK",  // Autoliv
+  "US4990491049": "AKTIE_UDENLANDSK",  // Knight-Swift Transportation
+  "US73278L1052": "AKTIE_UDENLANDSK",  // Pool
+  "US88162G1031": "AKTIE_UDENLANDSK",  // Tetra Tech
+  "US87305R1095": "AKTIE_UDENLANDSK",  // TTM Technologies
+  "US0152711091": "AKTIE_UDENLANDSK",  // Alexandria Real Estate Equities
+  "US49714P1084": "AKTIE_UDENLANDSK",  // Kinsale Capital Group
+  "US8910921084": "AKTIE_UDENLANDSK",  // Toro
+  "US01973R1014": "AKTIE_UDENLANDSK",  // Allison Transmission
+  "US9897011071": "AKTIE_UDENLANDSK",  // Zions Bank
+  "US00130H1059": "AKTIE_UDENLANDSK",  // AES
+  "US03743Q1085": "AKTIE_UDENLANDSK",  // APA
+  "US2058871029": "AKTIE_UDENLANDSK",  // ConAgra Brands
+  "US02376R1023": "AKTIE_UDENLANDSK",  // American Airlines
+  "US88023B1035": "AKTIE_UDENLANDSK",  // Tempus AI
+  "US6833441057": "AKTIE_UDENLANDSK",  // Onto Innovation
+  "US40637H1095": "AKTIE_UDENLANDSK",  // Halozyme Therapeutics
+  "US60871R1005": "AKTIE_UDENLANDSK",  // Molson Coors Beverage Company A
+  "US2017231034": "AKTIE_UDENLANDSK",  // Commercial Metals
+  "US2298991090": "AKTIE_UDENLANDSK",  // Cullen/Frost Bankers
+  "US88034P1093": "AKTIE_UDENLANDSK",  // Tencent Music Entertainment A ADR
+  "US0130911037": "AKTIE_UDENLANDSK",  // Albertsons Companies A
+  "US2561631068": "AKTIE_UDENLANDSK",  // DocuSign
+  "US05464T1043": "AKTIE_UDENLANDSK",  // Axsome Therapeutics
+  "US60855R1005": "AKTIE_UDENLANDSK",  // Molina Healthcare
+  "US8064071025": "AKTIE_UDENLANDSK",  // Henry Schein
+  "US9202531011": "AKTIE_UDENLANDSK",  // Valmont Industries
+  "US04280A1007": "AKTIE_UDENLANDSK",  // Arrowhead Pharmaceuticals
+  "US3137451015": "AKTIE_UDENLANDSK",  // Federal Realty Investment Trust
+  "US1598641074": "AKTIE_UDENLANDSK",  // Charles River Laboratories International
+  "US35969L1089": "AKTIE_UDENLANDSK",  // Full Truck Alliance A ADR
+  "US5653941030": "AKTIE_UDENLANDSK",  // Maplebear
+  "US76169C1009": "AKTIE_UDENLANDSK",  // Rexford Industrial Realty
+  "US03676B1026": "AKTIE_UDENLANDSK",  // Antero Midstream
+  "US6708371033": "AKTIE_UDENLANDSK",  // OGE Energy
+  "US3981823038": "AKTIE_UDENLANDSK",  // American Healthcare Reit
+  "US0235865062": "AKTIE_UDENLANDSK",  // U-Haul Holding
+  "US1972361026": "AKTIE_UDENLANDSK",  // Columbia Banking System
+  "US2044481040": "AKTIE_UDENLANDSK",  // Compania de Minas Buenaventura ADR
+  "US61945C1036": "AKTIE_UDENLANDSK",  // Mosaic
+  "US83304A1060": "AKTIE_UDENLANDSK",  // Snap A
+  "US5018892084": "AKTIE_UDENLANDSK",  // LKQ
+  "US83088M1027": "AKTIE_UDENLANDSK",  // Skyworks Solutions
+  "US00370M1036": "AKTIE_UDENLANDSK",  // Abivax SA - American Depositary Shares
+  "US45780R1014": "AKTIE_UDENLANDSK",  // Installed Building Products
+  "US0084921008": "AKTIE_UDENLANDSK",  // Agree Realty REIT
+  "US2296631094": "AKTIE_UDENLANDSK",  // CubeSmart
+  "US20464U1007": "AKTIE_UDENLANDSK",  // Compass A
+  "US2774321002": "AKTIE_UDENLANDSK",  // Eastman Chemical
+  "US74164M1080": "AKTIE_UDENLANDSK",  // Primerica
+  "US7835491082": "AKTIE_UDENLANDSK",  // Ryder System
+  "US0010841023": "AKTIE_UDENLANDSK",  // AGCO
+  "US14174T1079": "AKTIE_UDENLANDSK",  // CareTrust REIT
+  "US75281A1097": "AKTIE_UDENLANDSK",  // Range Resources
+  "US36165L1089": "AKTIE_UDENLANDSK",  // GDS ADR
+  "US11120U1051": "AKTIE_UDENLANDSK",  // Brixmor Property Group
+  "US45867G1013": "AKTIE_UDENLANDSK",  // InterDigital
+  "US98983L1089": "AKTIE_UDENLANDSK",  // Zurn Elkay Water Solutions
+  "US3493811034": "AKTIE_UDENLANDSK",  // Figure Technology Solutions
+  "US8808901081": "AKTIE_UDENLANDSK",  // Ternium ADR
+  "US05561Q2012": "AKTIE_UDENLANDSK",  // BOK Financial
+  "US0082521081": "AKTIE_UDENLANDSK",  // Affiliated Managers Group
+  "US4778391049": "AKTIE_UDENLANDSK",  // JBT Marel
+  "US0905722072": "AKTIE_UDENLANDSK",  // Bio-Rad Laboratories A
+  "US53566V1061": "AKTIE_UDENLANDSK",  // Lineage
+  "US74006W2070": "AKTIE_UDENLANDSK",  // Praxis Precision Medicines
+  "US5627501092": "AKTIE_UDENLANDSK",  // Manhattan Associates
+  "US5370081045": "AKTIE_UDENLANDSK",  // Littelfuse
+  "US04247X1028": "AKTIE_UDENLANDSK",  // Armstrong World Industries
+  "US44951W1062": "AKTIE_UDENLANDSK",  // IES
+  "US6374171063": "AKTIE_UDENLANDSK",  // NNN Reit
+  "US9026811052": "AKTIE_UDENLANDSK",  // UGI
+  "US2005251036": "AKTIE_UDENLANDSK",  // Commerce Bancshares
+  "US6081901042": "AKTIE_UDENLANDSK",  // Mohawk Industries
+  "US0905721082": "AKTIE_UDENLANDSK",  // Bio-Rad Laboratories B
+  "US5367971034": "AKTIE_UDENLANDSK",  // Lithia Motors
+  "US6361801011": "AKTIE_UDENLANDSK",  // National Fuel Gas
+  "US29445S1006": "AKTIE_UDENLANDSK",  // EquipmentShare.com
+  "US74275K1088": "AKTIE_UDENLANDSK",  // Procore Technologies
+  "US78781J1097": "AKTIE_UDENLANDSK",  // Sailpoint
+  "US1167941087": "AKTIE_UDENLANDSK",  // Bruker
+  "US74164F1030": "AKTIE_UDENLANDSK",  // Primoris Services
+  "US0383361039": "AKTIE_UDENLANDSK",  // AptarGroup
+  "US8290731053": "AKTIE_UDENLANDSK",  // Simpson Manufacturing
+  "US09175A2069": "AKTIE_UDENLANDSK",  // BitMine Immersion Technologies, Inc.
+  "US32054K1034": "AKTIE_UDENLANDSK",  // First Industrial Realty Trust
+  "US46817M1071": "AKTIE_UDENLANDSK",  // Jackson Financial
+  "US5962781010": "AKTIE_UDENLANDSK",  // Middleby
+  "US1344291091": "AKTIE_UDENLANDSK",  // Campbell Soup
+  "US1858991011": "AKTIE_UDENLANDSK",  // Cleveland-Cliffs
+  "US9182041080": "AKTIE_UDENLANDSK",  // V.F.
+  "US7599161095": "AKTIE_UDENLANDSK",  // Repligen
+  "US8726571016": "AKTIE_UDENLANDSK",  // TPG A
+  "US33768G1076": "AKTIE_UDENLANDSK",  // FirstCash
+  "US5341871094": "AKTIE_UDENLANDSK",  // Lincoln National
+  "US0381692070": "AKTIE_UDENLANDSK",  // Applied Digital
+  "US52736R1023": "AKTIE_UDENLANDSK",  // Levi Strauss & Co A
+  "US16935C1099": "AKTIE_UDENLANDSK",  // Chime Financial
+  "US8010561020": "AKTIE_UDENLANDSK",  // Sanmina
+  "US29605J1060": "AKTIE_UDENLANDSK",  // ESAB
+  "US5011471027": "AKTIE_UDENLANDSK",  // Krystal Biotech
+  "US3030751057": "AKTIE_UDENLANDSK",  // FactSet Research Systems
+  "US09581B1035": "AKTIE_UDENLANDSK",  // Blue Owl Capital A
+  "US7050151056": "AKTIE_UDENLANDSK",  // Pearson ADR
+  "US74736K1016": "AKTIE_UDENLANDSK",  // Qorvo
+  "US92243G1085": "AKTIE_UDENLANDSK",  // Vaxcyte
+  "US8299331004": "AKTIE_UDENLANDSK",  // Sirius XM
+  "US0003602069": "AKTIE_UDENLANDSK",  // AAON
+  "US4571871023": "AKTIE_UDENLANDSK",  // Ingredion
+  "US9197941076": "AKTIE_UDENLANDSK",  // Valley National Bancorp
+  "US72703H1014": "AKTIE_UDENLANDSK",  // Planet Fitness
+  "US1489291021": "AKTIE_UDENLANDSK",  // Cava Group
+  "US2372661015": "AKTIE_UDENLANDSK",  // Darling Ingredients
+  "US5303073051": "AKTIE_UDENLANDSK",  // Liberty Broadband C
+  "US5303071071": "AKTIE_UDENLANDSK",  // Liberty Broadband A
+  "US6267551025": "AKTIE_UDENLANDSK",  // Murphy USA
+  "US8168501018": "AKTIE_UDENLANDSK",  // Semtech
+  "US6866881021": "AKTIE_UDENLANDSK",  // Ormat Technologies
+  "US70432V1026": "AKTIE_UDENLANDSK",  // Paycom Software
+  "US9741551033": "AKTIE_UDENLANDSK",  // Wingstop
+  "US23282W6057": "AKTIE_UDENLANDSK",  // Cytokinetics
+  "US85254J1025": "AKTIE_UDENLANDSK",  // Stag Industrial
+  "US05352A1007": "AKTIE_UDENLANDSK",  // Avantor
+  "US05329W1027": "AKTIE_UDENLANDSK",  // AutoNation
+  "US6707031075": "AKTIE_UDENLANDSK",  // Nuvalent A
+  "US68268W1036": "AKTIE_UDENLANDSK",  // OneMain
+  "US5534981064": "AKTIE_UDENLANDSK",  // MSA Safety
+  "US5309093087": "AKTIE_UDENLANDSK",  // Liberty Live Holdings- Series C Liberty 
+  "US0517741072": "AKTIE_UDENLANDSK",  // Aurora Innovation A
+  "US57667L1070": "AKTIE_UDENLANDSK",  // Match Group
+  "US9168961038": "AKTIE_UDENLANDSK",  // Uranium Energy
+  "US5747951003": "AKTIE_UDENLANDSK",  // Masimo
+  "US0427351004": "AKTIE_UDENLANDSK",  // Arrow Electronics
+  "US4511071064": "AKTIE_UDENLANDSK",  // Idacorp
+  "US3434121022": "AKTIE_UDENLANDSK",  // Fluor
+  "US21044C1071": "AKTIE_UDENLANDSK",  // Construction Partners
+  "US00912X3026": "AKTIE_UDENLANDSK",  // Air Lease A
+  "US92763W1036": "AKTIE_UDENLANDSK",  // Vipshop ADR
+  "US34964C1062": "AKTIE_UDENLANDSK",  // Fortune Brands Home & Security
+  "US70202L1026": "AKTIE_UDENLANDSK",  // Parsons
+  "US3397501012": "AKTIE_UDENLANDSK",  // Floor & Decor
+  "US5309091008": "AKTIE_UDENLANDSK",  // Liberty Live Holdings - Series A
+  "US01749D1054": "AKTIE_UDENLANDSK",  // Allegro MicroSystems
+  "US7436061052": "AKTIE_UDENLANDSK",  // Prosperity Bancshares
+  "US8873891043": "AKTIE_UDENLANDSK",  // Timken
+  "US64361Q1013": "AKTIE_UDENLANDSK",  // Viper Energy Partners
+  "US3563901046": "AKTIE_UDENLANDSK",  // Freedom Holding
+  "US5218652049": "AKTIE_UDENLANDSK",  // Lear
+  "US7416231022": "AKTIE_UDENLANDSK",  // Primo Brands
+  "US26969P1084": "AKTIE_UDENLANDSK",  // Eagle Materials
+  "US48553T1060": "AKTIE_UDENLANDSK",  // Kanzhun ADR
+  "US1096411004": "AKTIE_UDENLANDSK",  // Brinker International
+  "US6177001095": "AKTIE_UDENLANDSK",  // Morningstar
+  "US1251051066": "AKTIE_UDENLANDSK",  // CD Projekt S.A. American Depositary Rece
+  "US76243J1051": "AKTIE_UDENLANDSK",  // Rhythm Pharmaceuticals
+  "US3138551086": "AKTIE_UDENLANDSK",  // Federal Signal
+  "US10950A1060": "AKTIE_UDENLANDSK",  // Brightspring Health Services
+  "US70438V1061": "AKTIE_UDENLANDSK",  // Paylocity
+  "US9290891004": "AKTIE_UDENLANDSK",  // Voya Financial
+  "US3789735079": "AKTIE_UDENLANDSK",  // Globalstar
+  "US31847R1023": "AKTIE_UDENLANDSK",  // First American
+  "US60741F1049": "AKTIE_UDENLANDSK",  // Mobileye Global A
+  "US6536561086": "AKTIE_UDENLANDSK",  // NICE ADR
+  "US72703X1063": "AKTIE_UDENLANDSK",  // Planet Labs A
+  "US1851231068": "AKTIE_UDENLANDSK",  // Clearwater Analytics
+  "US28618M1062": "AKTIE_UDENLANDSK",  // Element Solutions
+  "US1924221039": "AKTIE_UDENLANDSK",  // Cognex
+  "US42226A1079": "AKTIE_UDENLANDSK",  // HealthEquity
+  "US87151X1019": "AKTIE_UDENLANDSK",  // Symbotic
+  "US85571B1052": "AKTIE_UDENLANDSK",  // Starwood Property Trust
+  "US3614481030": "AKTIE_UDENLANDSK",  // GATX
+  "US6515871076": "AKTIE_UDENLANDSK",  // NewMarket
+  "US1727551004": "AKTIE_UDENLANDSK",  // Cirrus Logic
+  "US20459V1052": "AKTIE_UDENLANDSK",  // CompoSecure
+  "US26701L1008": "AKTIE_UDENLANDSK",  // Dutch Bros
+  "US3025201019": "AKTIE_UDENLANDSK",  // F.N.B.
+  "US62955J1034": "AKTIE_UDENLANDSK",  // NOV
+  "US1033041013": "AKTIE_UDENLANDSK",  // Boyd Gaming
+  "US1474481041": "AKTIE_UDENLANDSK",  // Casella Waste Systems A
+  "US4282911084": "AKTIE_UDENLANDSK",  // Hexcel
+  "US9258151029": "AKTIE_UDENLANDSK",  // Vicor
+  "US65336K1034": "AKTIE_UDENLANDSK",  // Nexstar Media Group A
+  "US5132721045": "AKTIE_UDENLANDSK",  // Lamb Weston
+  "US82982L1035": "AKTIE_UDENLANDSK",  // SiteOne Landscape Supply
+  "US55825T1034": "AKTIE_UDENLANDSK",  // Madison Square Garden Sports A
+  "US90278Q1085": "AKTIE_UDENLANDSK",  // UFP Packaging
+  "US5770811025": "AKTIE_UDENLANDSK",  // Mattel
+  "US6811161099": "AKTIE_UDENLANDSK",  // Ollie's Bargain Oulet
+  "US7391281067": "AKTIE_UDENLANDSK",  // Powell Industries
+  "US1714841087": "AKTIE_UDENLANDSK",  // Churchill Downs
+  "US3773221029": "AKTIE_UDENLANDSK",  // Glaukos
+  "US3463751087": "AKTIE_UDENLANDSK",  // FormFactor
+  "US7055731035": "AKTIE_UDENLANDSK",  // Pegasystems
+  "US90364P1057": "AKTIE_UDENLANDSK",  // UiPath A
+  "US85208M1027": "AKTIE_UDENLANDSK",  // Sprouts Farmers Market
+  "US37637Q1058": "AKTIE_UDENLANDSK",  // Glacier Bancorp
+  "US36262G1013": "AKTIE_UDENLANDSK",  // GXO Logistics
+  "US1431301027": "AKTIE_UDENLANDSK",  // CarMax
+  "US4972661064": "AKTIE_UDENLANDSK",  // Kirby
+  "US00090Q1031": "AKTIE_UDENLANDSK",  // ADT
+  "US69349H1077": "AKTIE_UDENLANDSK",  // TXNM Energy
+  "US26740W1099": "AKTIE_UDENLANDSK",  // D-Wave Quantum
+  "US16359R1032": "AKTIE_UDENLANDSK",  // Chemed
+  "US5463471053": "AKTIE_UDENLANDSK",  // Louisiana-Pacific
+  "US5502411037": "AKTIE_UDENLANDSK",  // Lumen Technologies
+  "US9170471026": "AKTIE_UDENLANDSK",  // Urban Outfitters
+  "GB0009895292": "AKTIE_UDENLANDSK",  // AstraZeneca PLC
+  "CH0012221716": "AKTIE_UDENLANDSK",  // ABB Ltd
+  "SE0015811963": "AKTIE_UDENLANDSK",  // Investor AB ser. B
+  "SE0015811955": "AKTIE_UDENLANDSK",  // Investor AB ser. A
+  "SE0017486889": "AKTIE_UDENLANDSK",  // Atlas Copco AB ser. A
+  "SE0017486897": "AKTIE_UDENLANDSK",  // Atlas Copco AB ser. B
+  "SE0000115420": "AKTIE_UDENLANDSK",  // Volvo, AB ser. A
+  "SE0000115446": "AKTIE_UDENLANDSK",  // Volvo, AB ser. B
+  "NO0010096985": "AKTIE_UDENLANDSK",  // EQUINOR
+  "FI4000297767": "AKTIE_UDENLANDSK",  // Nordea Bank Abp
+  "SE0007100607": "AKTIE_UDENLANDSK",  // Svenska Handelsbanken ser. B
+  "SE0000667891": "AKTIE_UDENLANDSK",  // Sandvik AB
+  "NL0010273215": "AKTIE_UDENLANDSK",  // ASML HOLDING
+  "SE0007100581": "AKTIE_UDENLANDSK",  // ASSA ABLOY AB ser. B
+  "NO0010161896": "AKTIE_UDENLANDSK",  // DNB BANK ASA
+  "SE0000242455": "AKTIE_UDENLANDSK",  // Swedbank AB ser A
+  "SE0000120784": "AKTIE_UDENLANDSK",  // Skandinaviska Enskilda Banken ser. C
+  "SE0000148884": "AKTIE_UDENLANDSK",  // Skandinaviska Enskilda Banken ser. A
+  "FI0009000681": "AKTIE_UDENLANDSK",  // Nokia Corporation
+  "SE0021921269": "AKTIE_UDENLANDSK",  // SAAB AB ser. B
+  "SE0012853455": "AKTIE_UDENLANDSK",  // EQT AB
+  "SE0000108656": "AKTIE_UDENLANDSK",  // Ericsson, Telefonab. L M ser. B
+  "SE0015961594": "AKTIE_UDENLANDSK",  // Corem Property Group AB ser. D
+  "SE0015658109": "AKTIE_UDENLANDSK",  // Epiroc AB ser. A
+  "SE0000106270": "AKTIE_UDENLANDSK",  // Hennes & Mauritz AB, H & M ser. B
+  "SE0000108649": "AKTIE_UDENLANDSK",  // Ericsson, Telefonab. L M ser. A
+  "CH0012032048": "AKTIE_UDENLANDSK",  // Roche Holding AG
+  "NO0013536151": "AKTIE_UDENLANDSK",  // KONGSBERG GRUPPEN
+  "CH0012032113": "AKTIE_UDENLANDSK",  // Roche Holding AG
+  "SE0007100599": "AKTIE_UDENLANDSK",  // Svenska Handelsbanken ser. A
+  "SE0015658117": "AKTIE_UDENLANDSK",  // Epiroc AB ser. B
+  "FR0000121014": "AKTIE_UDENLANDSK",  // Lvmh Moet Hennessy Louis Vuitton SE
+  "SE0018768707": "AKTIE_UDENLANDSK",  // Sampo Plc SDB
+  "SE0015961909": "AKTIE_UDENLANDSK",  // Hexagon AB ser. B
+  "NO0010063308": "AKTIE_UDENLANDSK",  // TELENOR
+  "GB0005405286": "AKTIE_UDENLANDSK",  // HSBC Holdings PLC
+  "FR0000052292": "AKTIE_UDENLANDSK",  // Hermes International
+  "IE000S9YS762": "AKTIE_UDENLANDSK",  // Linde
+  "FR0000120321": "AKTIE_UDENLANDSK",  // L'Oreal
+  "SE0000695876": "AKTIE_UDENLANDSK",  // Alfa Laval AB
+  "SE0000107203": "AKTIE_UDENLANDSK",  // Industrivärden, AB ser. C
+  "SE0000190126": "AKTIE_UDENLANDSK",  // Industrivärden, AB ser. A
+  "CH0038863350": "AKTIE_UDENLANDSK",  // Nestle SA
+  "DE0007164600": "AKTIE_UDENLANDSK",  // Sap SE
+  "DE000TRAT0N7": "AKTIE_UDENLANDSK",  // TRATON SE
+  "DE0007236101": "AKTIE_UDENLANDSK",  // Siemens AG
+  "SE0009922164": "AKTIE_UDENLANDSK",  // Essity AB ser. B
+  "SE0009922156": "AKTIE_UDENLANDSK",  // Essity AB ser. A
+  "FI4000552500": "AKTIE_UDENLANDSK",  // Sampo Plc A
+  "GB00BP6MXD84": "AKTIE_UDENLANDSK",  // SHELL PLC
+  "ES0148396007": "AKTIE_UDENLANDSK",  // Industria De Diseno Textil SA
+  "SE0020050417": "AKTIE_UDENLANDSK",  // Boliden AB
+  "NO0005052605": "AKTIE_UDENLANDSK",  // NORSK HYDRO
+  "SE0000667925": "AKTIE_UDENLANDSK",  // Telia Company AB
+  "NO0010345853": "AKTIE_UDENLANDSK",  // AKER BP
+  "FR0000120271": "AKTIE_UDENLANDSK",  // TotalEnergies ADR
+  "ES0113900J37": "AKTIE_UDENLANDSK",  // Banco Santander SA
+  "DE0005557508": "AKTIE_UDENLANDSK",  // Deutsche Telekom AG
+  "NL0000235190": "AKTIE_UDENLANDSK",  // Airbus SE
+  "SE0010100958": "AKTIE_UDENLANDSK",  // Latour, Investmentab. ser. B
+  "DE0008404005": "AKTIE_UDENLANDSK",  // Allianz SE
+  "IE00B4BNMY34": "AKTIE_UDENLANDSK",  // Accenture A
+  "SE0015949201": "AKTIE_UDENLANDSK",  // Lifco AB ser.B
+  "FR0000121972": "AKTIE_UDENLANDSK",  // Schneider Electric SE
+  "NO0010582521": "AKTIE_UDENLANDSK",  // GJENSIDIGE FORSIKRING
+  "IE00B8KQN827": "AKTIE_UDENLANDSK",  // Eaton
+  "CH0244767585": "AKTIE_UDENLANDSK",  // UBS Group
+  "SE0000108847": "AKTIE_UDENLANDSK",  // Lundbergföretagen AB, L E ser. B
+  "SE0000872095": "AKTIE_UDENLANDSK",  // Swedish Orphan Biovitrum AB
+  "IE00BTN1Y115": "AKTIE_UDENLANDSK",  // Medtronic
+  "GB00BVZK7T90": "AKTIE_UDENLANDSK",  // Unilever PLC
+  "CH0044328745": "AKTIE_UDENLANDSK",  // Chubb
+  "ES0144580Y14": "AKTIE_UDENLANDSK",  // Iberdrola SA
+  "FR0000073272": "AKTIE_UDENLANDSK",  // Safran SA
+  "DE000ENER6Y0": "AKTIE_UDENLANDSK",  // Siemens Energy AG
+  "BE0974293251": "AKTIE_UDENLANDSK",  // Anheuser-Busch InBev SA/NV
+  "FR0000121667": "AKTIE_UDENLANDSK",  // EssilorLuxottica SA
+  "SE0005190220": "AKTIE_UDENLANDSK",  // Tele2 AB ser. A
+  "NO0003054108": "AKTIE_UDENLANDSK",  // MOWI
+  "ES0113211835": "AKTIE_UDENLANDSK",  // Banco Bilbao Vizcaya Argentaria S.A.
+  "NO0003733800": "AKTIE_UDENLANDSK",  // ORKLA
+  "SE0005190238": "AKTIE_UDENLANDSK",  // Tele2 AB ser. B
+  "SE0000113250": "AKTIE_UDENLANDSK",  // Skanska AB ser. B
+  "IT0005239360": "AKTIE_UDENLANDSK",  // UniCredit SpA
+  "NO0010208051": "AKTIE_UDENLANDSK",  // YARA INTERNATIONAL
+  "SE0000108227": "AKTIE_UDENLANDSK",  // SKF, AB ser. B
+  "SE0000108201": "AKTIE_UDENLANDSK",  // SKF, AB ser. A
+  "GB0007188757": "AKTIE_UDENLANDSK",  // Rio Tinto plc
+  "SE0012673267": "AKTIE_UDENLANDSK",  // Evolution AB
+  "IT0000072618": "AKTIE_UDENLANDSK",  // Intesa Sanpaolo SpA
+  "GB00B63H8491": "AKTIE_UDENLANDSK",  // Rolls-Royce Holdings PLC
+  "FR0000131104": "AKTIE_UDENLANDSK",  // BNP Paribas SA
+  "NL0013654783": "AKTIE_UDENLANDSK",  // PROSUS
+  "FR0000120578": "AKTIE_UDENLANDSK",  // Sanofi
+  "FR0000120073": "AKTIE_UDENLANDSK",  // Air Liquide
+  "IE00BK9ZQ967": "AKTIE_UDENLANDSK",  // Trane Technologies
+  "IT0003128367": "AKTIE_UDENLANDSK",  // Enel SpA
+  "GB0002875804": "AKTIE_UDENLANDSK",  // British American Tobacco PLC
+  "SE0000163594": "AKTIE_UDENLANDSK",  // Securitas AB ser. B
+  "FR0000130403": "AKTIE_UDENLANDSK",  // Christian Dior SE
+  "CH0210483332": "AKTIE_UDENLANDSK",  // Compagnie Financiere Richemont Sa
+  "SE0005127818": "AKTIE_UDENLANDSK",  // Sagax AB B
+  "SE0004635878": "AKTIE_UDENLANDSK",  // Sagax AB A
+  "FI0009007611": "AKTIE_UDENLANDSK",  // Stora Enso Oyj ser. R
+  "FI0009007603": "AKTIE_UDENLANDSK",  // Stora Enso Oyj ser. A
+  "IE00BKVD2N49": "AKTIE_UDENLANDSK",  // Seagate Technology
+  "GB00BN7SWP63": "AKTIE_UDENLANDSK",  // GSK
+  "SE0000114837": "AKTIE_UDENLANDSK",  // Trelleborg AB ser. B
+  "SE0021309614": "AKTIE_UDENLANDSK",  // Autoliv Inc. SDB
+  "SE0014781795": "AKTIE_UDENLANDSK",  // Addtech AB ser. B
+  "NO0011202772": "AKTIE_UDENLANDSK",  // VÅR ENERGI ASA
+  "SE0001515552": "AKTIE_UDENLANDSK",  // Indutrade AB
+  "SE0000112724": "AKTIE_UDENLANDSK",  // Svenska Cellulosa AB SCA ser. B
+  "SE0000171886": "AKTIE_UDENLANDSK",  // Svenska Cellulosa AB SCA ser. A
+  "IE00BY7QL619": "AKTIE_UDENLANDSK",  // Johnson Controls International
+  "IE0001827041": "AKTIE_UDENLANDSK",  // CRH
+  "FR0000120628": "AKTIE_UDENLANDSK",  // AXA
+  "NO0010310956": "AKTIE_UDENLANDSK",  // SALMAR
+  "SE0017832488": "AKTIE_UDENLANDSK",  // Fastighets AB Balder ser. B
+  "ES0140609019": "AKTIE_UDENLANDSK",  // CaixaBank, S.A
+  "NO0010631567": "AKTIE_UDENLANDSK",  // SPAREBANK 1 SØR-NORGE ASA
+  "SE0015192067": "AKTIE_UDENLANDSK",  // Nordnet AB
+  "SE0000171100": "AKTIE_UDENLANDSK",  // SSAB AB ser. A
+  "IE00BLP1HW54": "AKTIE_UDENLANDSK",  // Aon
+  "SE0015988019": "AKTIE_UDENLANDSK",  // NIBE Industrier AB ser. B
+  "SE0000120669": "AKTIE_UDENLANDSK",  // SSAB AB ser. B
+  "NO0003053605": "AKTIE_UDENLANDSK",  // STOREBRAND
+  "DE0007030009": "AKTIE_UDENLANDSK",  // Rheinmetall
+  "GB0007980591": "AKTIE_UDENLANDSK",  // BP PLC
+  "SE0006993770": "AKTIE_UDENLANDSK",  // Axfood AB
+  "NL0011821202": "AKTIE_UDENLANDSK",  // ING GROEP N.V.
+  "DE0008430026": "AKTIE_UDENLANDSK",  // Münchener Rückversicherungs-Gesellschaft
+  "FR0000125486": "AKTIE_UDENLANDSK",  // Vinci SA
+  "SE0021628898": "AKTIE_UDENLANDSK",  // Volvo Car AB ser. B
+  "DE0005140008": "AKTIE_UDENLANDSK",  // Deutsche Bank
+  "SE0011337708": "AKTIE_UDENLANDSK",  // AAK AB
+  "NO0010234552": "AKTIE_UDENLANDSK",  // AKER
+  "SE0015949748": "AKTIE_UDENLANDSK",  // Beijer Ref AB ser. B
+  "GB0031348658": "AKTIE_UDENLANDSK",  // Barclays PLC
+  "GB00BDR05C01": "AKTIE_UDENLANDSK",  // National Grid PLC
+  "GB0008706128": "AKTIE_UDENLANDSK",  // Lloyds Banking Group PLC
+  "FR0010208488": "AKTIE_UDENLANDSK",  // Engie SA
+  "IE000IVNQZ81": "AKTIE_UDENLANDSK",  // TE Connectivity
+  "GB0002634946": "AKTIE_UDENLANDSK",  // BAE Systems PLC
+  "NL0011585146": "AKTIE_UDENLANDSK",  // Ferrari N.V
+  "DE0007100000": "AKTIE_UDENLANDSK",  // Mercedes Benz Group
+  "SE0000202624": "AKTIE_UDENLANDSK",  // Getinge AB ser. B
+  "NL0009538784": "AKTIE_UDENLANDSK",  // NXP Semiconductors
+  "SE0012454072": "AKTIE_UDENLANDSK",  // Avanza Bank Holding AB
+  "SE0023135298": "AKTIE_UDENLANDSK",  // NOBA Bank Group AB
+  "SE0011090018": "AKTIE_UDENLANDSK",  // Holmen AB ser. B
+  "DE0005190003": "AKTIE_UDENLANDSK",  // Bayerische Motoren Werke AG
+  "IT0000062072": "AKTIE_UDENLANDSK",  // Generali
+  "SE0000379190": "AKTIE_UDENLANDSK",  // Castellum AB
+  "DE0006231004": "AKTIE_UDENLANDSK",  // Infineon Technologies AG
+  "DE0005190037": "AKTIE_UDENLANDSK",  // Bayerische Motoren Werke AG PRF PERPETUA
+  "SE0011090000": "AKTIE_UDENLANDSK",  // Holmen AB ser. A
+  "DE0005552004": "AKTIE_UDENLANDSK",  // Deutsche Post AG
+  "DE0006599905": "AKTIE_UDENLANDSK",  // Merck KGAA
+  "SE0014960373": "AKTIE_UDENLANDSK",  // SWECO AB ser. B
+  "SE0014960365": "AKTIE_UDENLANDSK",  // SWECO AB ser. A
+  "GB00BM8PJY71": "AKTIE_UDENLANDSK",  // NatWest Group Plc
+  "NO0010736879": "AKTIE_UDENLANDSK",  // VEND MARKETPLACES ASA
+  "IT0003132476": "AKTIE_UDENLANDSK",  // Eni SpA
+  "DE0007664005": "AKTIE_UDENLANDSK",  // Volkswagen AG
+  "DE0007664039": "AKTIE_UDENLANDSK",  // Volkswagen AG ZC PRF PERPETUAL EUR
+  "FR0000121329": "AKTIE_UDENLANDSK",  // Thales
+  "BE0003739530": "AKTIE_UDENLANDSK",  // UCB SA
+  "FR0000045072": "AKTIE_UDENLANDSK",  // Credit Agricole SA
+  "FR0000130809": "AKTIE_UDENLANDSK",  // Societe Generale SA
+  "GB00BRXH2664": "AKTIE_UDENLANDSK",  // Anglogold Ashanti
+  "NL0015001FS8": "AKTIE_UDENLANDSK",  // Ferrovial SE
+  "NO0010571680": "AKTIE_UDENLANDSK",  // WALLENIUS WILHELMSEN
+  "DE000SHL1006": "AKTIE_UDENLANDSK",  // Siemens Healthineers AG
+  "BE0003565737": "AKTIE_UDENLANDSK",  // KBC Groupe NV
+  "GB00B2B0DG97": "AKTIE_UDENLANDSK",  // RELX
+  "FR0000120644": "AKTIE_UDENLANDSK",  // Danone SA
+  "DE000ENAG999": "AKTIE_UDENLANDSK",  // E. On SE
+  "NL0010832176": "AKTIE_UDENLANDSK",  // Argen X SE
+  "DE000BAY0017": "AKTIE_UDENLANDSK",  // Bayer AG
+  "DE000BASF111": "AKTIE_UDENLANDSK",  // Basf SE
+  "FR0000133308": "AKTIE_UDENLANDSK",  // Orange.
+  "GB00BDCPN049": "AKTIE_UDENLANDSK",  // Coca-Cola Europacific Partners
+  "NO0010209331": "AKTIE_UDENLANDSK",  // PROTECTOR FORSIKRING
+  "FR0000125007": "AKTIE_UDENLANDSK",  // Cie de Saint-Gobain
+  "GB0004082847": "AKTIE_UDENLANDSK",  // Standard Chartered PLC
+  "GB00BSZBP530": "AKTIE_UDENLANDSK",  // Reckitt Benckiser Group
+  "NL0000009165": "AKTIE_UDENLANDSK",  // HEINEKEN
+  "SE0014990966": "AKTIE_UDENLANDSK",  // Lagercrantz Group AB ser B
+  "ES0105046017": "AKTIE_UDENLANDSK",  // Aena S.M.E. S.A.
+  "SE0022419784": "AKTIE_UDENLANDSK",  // SECTRA AB ser B
+  "SE0007692850": "AKTIE_UDENLANDSK",  // Camurus AB
+  "CH0012214059": "AKTIE_UDENLANDSK",  // Holcim Ltd
+  "GB0002374006": "AKTIE_UDENLANDSK",  // Diageo PLC
+  "DE0005810055": "AKTIE_UDENLANDSK",  // Deutsche Boerse AG
+  "CH0432492467": "AKTIE_UDENLANDSK",  // Alcon
+  "SE0007100359": "AKTIE_UDENLANDSK",  // Pandox AB ser. B
+  "GB00B0SWJX34": "AKTIE_UDENLANDSK",  // London Stock Exchange Group
+  "SE0017072259": "AKTIE_UDENLANDSK",  // Intea Fastigheter AB ser. B
+  "CH0114405324": "AKTIE_UDENLANDSK",  // Garmin
+  "DE0007037129": "AKTIE_UDENLANDSK",  // RWE AG
+  "DE000CBK1001": "AKTIE_UDENLANDSK",  // Commerzbank AG
+  "GB00BTK05J60": "AKTIE_UDENLANDSK",  // Anglo American PLC
+  "DE000PAG9113": "AKTIE_UDENLANDSK",  // Porsche
+  "DE0006047004": "AKTIE_UDENLANDSK",  // Heidelberg Materials
+  "NO0012470089": "AKTIE_UDENLANDSK",  // TOMRA SYSTEMS
+  "SE0025158629": "AKTIE_UDENLANDSK",  // Mycronic AB
+  "GB00BD6K4575": "AKTIE_UDENLANDSK",  // Compass Group Plc
+  "FR0010307819": "AKTIE_UDENLANDSK",  // Legrand SA
+  "NL0012969182": "AKTIE_UDENLANDSK",  // ADYEN
+  "NL0015000IY2": "AKTIE_UDENLANDSK",  // UNIVERSAL MUSIC GROUP
+  "GB00BMX86B70": "AKTIE_UDENLANDSK",  // Haleon plc
+  "CH0013841017": "AKTIE_UDENLANDSK",  // Lonza Group AG
+  "GB0000456144": "AKTIE_UDENLANDSK",  // Antofagasta PLC
+  "CH0008742519": "AKTIE_UDENLANDSK",  // Swisscom AG
+  "BE0003816338": "AKTIE_UDENLANDSK",  // CMB.TECH NV
+  "NO0005638858": "AKTIE_UDENLANDSK",  // OLAV THON EIENDOMSSELSKAP
+  "NO0006000900": "AKTIE_UDENLANDSK",  // SPAREBANKEN NORGE
+  "SE0009806607": "AKTIE_UDENLANDSK",  // Munters Group AB
+  "CH0024638196": "AKTIE_UDENLANDSK",  // Schindler Holding AG
+  "FI0009013403": "AKTIE_UDENLANDSK",  // KONE Corporation
+  "ES0130670112": "AKTIE_UDENLANDSK",  // Endesa S.A.
+  "DE0006048432": "AKTIE_UDENLANDSK",  // Henkel AG & Co. KGAA PRF PERPETUAL EUR
+  "DE000DTR0CK8": "AKTIE_UDENLANDSK",  // Daimler Truck
+  "NL0000334118": "AKTIE_UDENLANDSK",  // ASM International N.V.
+  "GB00B1YW4409": "AKTIE_UDENLANDSK",  // 3i Group PLC
+  "CH0024638212": "AKTIE_UDENLANDSK",  // Schindler Holding AG
+  "FR0000121485": "AKTIE_UDENLANDSK",  // Kering SA
+  "IE00BDB6Q211": "AKTIE_UDENLANDSK",  // Willis Towers Watson
+  "SE0009778848": "AKTIE_UDENLANDSK",  // Medicover AB ser. B
+  "SE0001664707": "AKTIE_UDENLANDSK",  // Catena AB
+  "CH1430134226": "AKTIE_UDENLANDSK",  // Amrize
+  "DE0006048408": "AKTIE_UDENLANDSK",  // Henkel AG & Co. KGAA
+  "IT0003856405": "AKTIE_UDENLANDSK",  // Leonardo S.p.A.
+  "NL0011794037": "AKTIE_UDENLANDSK",  // Ahold Delhaize
+  "FR0014003TT8": "AKTIE_UDENLANDSK",  // Dassault Systemes SE
+  "DE0008402215": "AKTIE_UDENLANDSK",  // Hannover Ruck SE
+  "GB0007908733": "AKTIE_UDENLANDSK",  // SSE Plc
+  "IE00BYTBXV33": "AKTIE_UDENLANDSK",  // Ryanair Holdings Plc
+  "GB0007099541": "AKTIE_UDENLANDSK",  // Prudential PLC
+  "IT0003796171": "AKTIE_UDENLANDSK",  // Poste Italiane
+  "NO0003055501": "AKTIE_UDENLANDSK",  // NORDIC SEMICONDUCTOR
+  "NO0003096208": "AKTIE_UDENLANDSK",  // LERØY SEAFOOD GROUP
+  "SE0024171458": "AKTIE_UDENLANDSK",  // Asker Healthcare Group AB
+  "GB00BLGZ9862": "AKTIE_UDENLANDSK",  // Tesco PLC
+  "IT0004176001": "AKTIE_UDENLANDSK",  // Prysmian S.p.A
+  "CH0010645932": "AKTIE_UDENLANDSK",  // Givaudan SA
+  "NO0006390301": "AKTIE_UDENLANDSK",  // SPAREBANK 1 SMN
+  "SE0000106205": "AKTIE_UDENLANDSK",  // Peab AB ser. B
+  "SE0018012635": "AKTIE_UDENLANDSK",  // Wihlborgs Fastigheter AB
+  "NO0010571698": "AKTIE_UDENLANDSK",  // WILH. WILHELMSEN HOLDING SER. A
+  "DE000TLX1005": "AKTIE_UDENLANDSK",  // Talanx AG
+  "SE0014504817": "AKTIE_UDENLANDSK",  // Loomis AB
+  "NL00150001Q9": "AKTIE_UDENLANDSK",  // Stellantis N.V
+  "DE0005785604": "AKTIE_UDENLANDSK",  // Fresenius SE & Co. KGaA
+  "CH0024608827": "AKTIE_UDENLANDSK",  // Partners Group Holding AG
+  "CH0010570759": "AKTIE_UDENLANDSK",  // Chocoladefabriken Lindt & Sprungli AG.
+  "NO0012851874": "AKTIE_UDENLANDSK",  // DOF GROUP ASA
+  "GB0031215220": "AKTIE_UDENLANDSK",  // Carnival PLC
+  "NO0010751910": "AKTIE_UDENLANDSK",  // SPAREBANK 1 ØSTLANDET
+  "DE000A1EWWW0": "AKTIE_UDENLANDSK",  // Adidas AG
+  "IT0005508921": "AKTIE_UDENLANDSK",  // Banca Monte dei Paschi di Siena SpA
+  "SE0010323311": "AKTIE_UDENLANDSK",  // BioArctic AB ser. B
+  "CH0010570767": "AKTIE_UDENLANDSK",  // Chocoladefabriken Lindt & Sprungli AG.
+  "DE0006070006": "AKTIE_UDENLANDSK",  // Hochtief AG
+  "SE0011166974": "AKTIE_UDENLANDSK",  // Fabege AB
+  "IE00BWT6H894": "AKTIE_UDENLANDSK",  // Flutter Entertainment
+  "SE0017780133": "AKTIE_UDENLANDSK",  // Wallenstam AB ser. B
+  "GB00B2QPKJ12": "AKTIE_UDENLANDSK",  // Fresnillo PLC
+  "SE0007074281": "AKTIE_UDENLANDSK",  // HEXPOL AB ser. B
+  "ES0116870314": "AKTIE_UDENLANDSK",  // Naturgy Energy Group S.A.
+  "GB00BH4HKS39": "AKTIE_UDENLANDSK",  // Vodafone Group PLC
+  "NL0000687663": "AKTIE_UDENLANDSK",  // AerCap Holdings
+  "SE0023615638": "AKTIE_UDENLANDSK",  // Asmodee Group AB ser. B
+  "NL0011540547": "AKTIE_UDENLANDSK",  // ABN AMRO BANK N.V.
+  "NO0010576010": "AKTIE_UDENLANDSK",  // WILH. WILHELMSEN HOLDING SER. B
+  "SE0001662230": "AKTIE_UDENLANDSK",  // Husqvarna AB ser. B
+  "SE0001662222": "AKTIE_UDENLANDSK",  // Husqvarna AB ser. A
+  "CH0418792922": "AKTIE_UDENLANDSK",  // Sika AG
+  "FR0014004L86": "AKTIE_UDENLANDSK",  // Dassault Aviation
+  "SE0000170375": "AKTIE_UDENLANDSK",  // Hufvudstaden AB ser. A
+  "CH0014852781": "AKTIE_UDENLANDSK",  // Swiss Life Holding AG
+  "NO0010840515": "ETF_IKKE_POSITIVLISTE",  // AXACTOR ASA
+  "DE000A1MME74": "ETF_IKKE_POSITIVLISTE",  // Netfonds AG
+  "NO0010852213": "ETF_IKKE_POSITIVLISTE",  // EXACT THERAPEUTICS
+  "LU0496786905": "ETF_POSITIVLISTE",  // Amundi Australia S&P/ASX 200 UCITS ETF D
+  "LU1829218749": "ETF_IKKE_POSITIVLISTE",  // Amundi Bloomberg Equal-weight Commodity 
+  "LU1900069219": "ETF_IKKE_POSITIVLISTE",  // Amundi Bloomberg Equal-weight Commodity 
+  "LU1681046931": "ETF_IKKE_POSITIVLISTE",  // Amundi CAC 40 ESG UCITS ETF DR - EUR (C)
+  "LU2439735890": "ETF_OBLIGATIONSBASERET",  // Amundi China CNY Bonds UCITS ETF DR (C)
+  "LU3206583067": "ETF_POSITIVLISTE",  // Amundi Core DAX UCITS ETF Acc
+  "IE000N85G7P8": "ETF_POSITIVLISTE",  // Amundi Core MSCI USA UCITS ETF EUR Hedge
+  "LU3206582929": "ETF_POSITIVLISTE",  // Amundi Core MSCI World Swap UCITS ETF EU
+  "IE000BI8OT95": "ETF_POSITIVLISTE",  // Amundi Core MSCI World UCITS ETF Acc
+  "IE000H7PE775": "ETF_POSITIVLISTE",  // Amundi Core MSCI World UCITS ETF EUR Hed
+  "IE000UBAW7M3": "ETF_POSITIVLISTE",  // Amundi Core S&P 500 UCITS ETF Acc
+  "LU2370241684": "ETF_OBLIGATIONSBASERET",  // Amundi Corporate Green Bond UCITS ETF Ac
+  "DE000ETF9090": "ETF_IKKE_POSITIVLISTE",  // Amundi DAX 50 ESG II UCITS ETF Dist
+  "LU2240851688": "ETF_IKKE_POSITIVLISTE",  // Amundi DAX 50 ESG UCITS ETF DR (C)
+  "LU0252633754": "ETF_IKKE_POSITIVLISTE",  // Amundi DAX III UCITS ETF Acc
+  "LU2090062436": "ETF_IKKE_POSITIVLISTE",  // Amundi DAX III UCITS ETF Dist
+  "LU2611732046": "ETF_IKKE_POSITIVLISTE",  // Amundi DAX UCITS ETF Dist
+  "LU2611731741": "ETF_IKKE_POSITIVLISTE",  // Amundi DIVDAX UCITS ETF Dist
+  "LU2611732632": "ETF_IKKE_POSITIVLISTE",  // Amundi DJ Switzerland Titans 30 UCITS ET
+  "FR0007056841": "ETF_IKKE_POSITIVLISTE",  // Amundi Dow Jones Industrial Average UCIT
+  "FR0010655712": "ETF_IKKE_POSITIVLISTE",  // Amundi ETF DAX UCITS ETF DR
+  "FR0010754200": "ETF_IKKE_POSITIVLISTE",  // Amundi ETF Govies 0-6 Months Euro Invest
+  "FR0010755611": "ETF_POSITIVLISTE",  // Amundi ETF Leveraged MSCI USA Daily UCIT
+  "FR0010717090": "ETF_POSITIVLISTE",  // Amundi ETF MSCI EMU High Dividend UCITS 
+  "FR0010821819": "ETF_POSITIVLISTE",  // Amundi ETF MSCI Europe Ex EMU ESG Leader
+  "FR0010756114": "ETF_POSITIVLISTE",  // Amundi ETF MSCI World Ex EMU UCITS ETF
+  "FR0010790980": "ETF_POSITIVLISTE",  // Amundi ETF Stoxx Europe 50 UCITS ETF
+  "LU3178805456": "ETF_IKKE_POSITIVLISTE",  // Amundi EUR Cash Active UCITS ETF Acc
+  "LU2300294316": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Corporate Bond 0-1Y ESG UCITS
+  "LU1686830065": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Corporate Bond 0-1Y ESG UCITS
+  "LU2037748774": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Corporate Bond 0-3Y ESG UCITS
+  "LU1525418643": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Corporate Bond 1-5Y ESG UCITS
+  "LU1681039647": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Corporate Bond ESG UCITS ETF 
+  "LU1437018168": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Corporate Bond ESG UCITS ETF 
+  "LU1737653987": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Corporate Bond ESG UCITS ETF 
+  "LU1829219127": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Corporate Bond PAB Net Zero A
+  "LU2089238625": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Corporate Bond UCITS ETF Acc
+  "LU1931975079": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Corporate Bond UCITS ETF Dist
+  "LU1681041114": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Floating Rate Corporate Bond 
+  "LU1812090543": "ETF_OBLIGATIONSBASERET",  // Amundi EUR High Yield Corporate Bond ESG
+  "LU2970735911": "ETF_OBLIGATIONSBASERET",  // Amundi EUR High Yield Corporate Bond UCI
+  "FR0010510800": "ETF_IKKE_POSITIVLISTE",  // Amundi EUR Overnight Return UCITS ETF Ac
+  "LU1617164998": "ETF_OBLIGATIONSBASERET",  // Amundi EUR Short Term High Yield Corpora
+  "LU2439113387": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Aggregate Bond ESG UCITS ETF
+  "LU2182388236": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Aggregate Bond ESG UCITS ETF
+  "LU1650487413": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 1-3Y UCITS E
+  "LU1650487926": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 1-3Y UCITS E
+  "LU1650488494": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 3-5Y UCITS E
+  "LU1650488817": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 3-5Y UCITS E
+  "LU1287023003": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 5-7Y UCITS E
+  "LU2090062865": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 5-7Y UCITS E
+  "LU1287023185": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 7-10Y UCITS 
+  "LU2090062949": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 7-10Y UCITS 
+  "LU1650489385": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 10-15Y UCITS
+  "LU1650489898": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 10-15Y UCITS
+  "LU1287023268": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 15+Y UCITS E
+  "LU2090062782": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 15+Y UCITS E
+  "LU1686832277": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond 25+Y UCITS E
+  "LU1437018598": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond UCITS ETF Ac
+  "LU1737653714": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Bond UCITS ETF Di
+  "LU2356220926": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Green Bond UCITS 
+  "LU1650491282": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Inflation-Linked 
+  "LU1650491795": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Inflation-Linked 
+  "LU2924150282": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Low Duration Tilt
+  "LU1681046261": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Government Tilted Green Bond
+  "LU1681040496": "ETF_OBLIGATIONSBASERET",  // Amundi Euro High Yield Bond ESG UCITS ET
+  "LU1829219556": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Highest Rated Macro-Weighted
+  "LU1829219713": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Highest Rated Macro-Weighted
+  "LU1287023342": "ETF_OBLIGATIONSBASERET",  // Amundi Euro Highest Rated Macro-Weighted
+  "LU1390062245": "ETF_IKKE_POSITIVLISTE",  // Amundi Euro Inflation Expectations 2-10Y
+  "FR0010424135": "ETF_POSITIVLISTE",  // Amundi EURO STOXX 50 Daily (-1x) Inverse
+  "FR0010424143": "ETF_POSITIVLISTE",  // Amundi EURO STOXX 50 Daily (-2x) Inverse
+  "FR0010468983": "ETF_POSITIVLISTE",  // Amundi EURO STOXX 50 Daily (2x) Leverage
+  "LU1681047236": "ETF_POSITIVLISTE",  // Amundi EURO STOXX 50 UCITS ETF DR - EUR 
+  "LU1681047319": "ETF_POSITIVLISTE",  // Amundi EURO STOXX 50 UCITS ETF DR - EUR 
+  "LU1829219390": "ETF_POSITIVLISTE",  // Amundi Euro Stoxx Banks UCITS ETF Acc
+  "LU2611732558": "ETF_POSITIVLISTE",  // Amundi Euro Stoxx Select Dividend30 UCIT
+  "LU2611732129": "ETF_IKKE_POSITIVLISTE",  // Amundi F.A.Z. 100 UCITS ETF Dist
+  "FR001400YYJ0": "ETF_POSITIVLISTE",  // Amundi Finanzen.net MSCI World UCITS ETF
+  "LU2780871823": "ETF_OBLIGATIONSBASERET",  // Amundi Fixed Maturity 2027 German Bund G
+  "LU2780871401": "ETF_OBLIGATIONSBASERET",  // Amundi Fixed Maturity 2028 Euro Governme
+  "LU2780871666": "ETF_OBLIGATIONSBASERET",  // Amundi Fixed Maturity 2028 Euro Governme
+  "LU1650492256": "ETF_IKKE_POSITIVLISTE",  // Amundi FTSE 100 UCITS ETF Dist
+  "LU1832418773": "ETF_IKKE_POSITIVLISTE",  // Amundi FTSE EPRA NAREIT Global Developed
+  "FR0010869578": "ETF_IKKE_POSITIVLISTE",  // Amundi German Bund Daily (-2x) Inverse U
+  "LU2470620845": "ETF_OBLIGATIONSBASERET",  // Amundi Global Aggregate Bond 1-5Y ESG UC
+  "LU2470620761": "ETF_OBLIGATIONSBASERET",  // Amundi Global Aggregate Bond 1-5Y ESG UC
+  "LU2439733507": "ETF_OBLIGATIONSBASERET",  // Amundi Global Aggregate Bond ESG - UCITS
+  "LU2439734141": "ETF_OBLIGATIONSBASERET",  // Amundi Global Aggregate Bond ESG UCITS E
+  "LU1737654019": "ETF_OBLIGATIONSBASERET",  // Amundi Global Aggregate Bond UCITS ETF D
+  "LU1563454310": "ETF_OBLIGATIONSBASERET",  // Amundi Global Aggregate Green Bond UCITS
+  "LU1563454823": "ETF_OBLIGATIONSBASERET",  // Amundi Global Aggregate Green Bond UCITS
+  "LU1981859819": "ETF_OBLIGATIONSBASERET",  // Amundi Global Aggregate Proceeds Bond 1-
+  "LU1681046006": "ETF_IKKE_POSITIVLISTE",  // Amundi Global Bioenergy UCITS ETF EUR Ac
+  "LU2780870932": "ETF_OBLIGATIONSBASERET",  // Amundi Global Corporate Bond 1-5Y Highes
+  "LU1686830909": "ETF_OBLIGATIONSBASERET",  // Amundi Global Emerging Bond Markit iBoxx
+  "LU0832436512": "ETF_IKKE_POSITIVLISTE",  // Amundi Global Equity Quality Income UCIT
+  "LU1691909508": "ETF_IKKE_POSITIVLISTE",  // Amundi Global Gender Equality UCITS ETF 
+  "LU1910940268": "ETF_OBLIGATIONSBASERET",  // Amundi Global Government Inflation-Linke
+  "FR0010930644": "ETF_IKKE_POSITIVLISTE",  // Amundi Global Hydrogen UCITS ETF - Acc
+  "LU1681046691": "ETF_OBLIGATIONSBASERET",  // Amundi Govt Bond Highest Rated Euro Inve
+  "LU1681046774": "ETF_OBLIGATIONSBASERET",  // Amundi Govt Bond Lowest Rated Euro Inves
+  "LU1681046857": "ETF_OBLIGATIONSBASERET",  // Amundi Govt Bond Lowest Rated Euro Inves
+  "FR0010655746": "ETF_IKKE_POSITIVLISTE",  // Amundi IBEX 35 UCITS ETF Acc
+  "LU1737652823": "ETF_IKKE_POSITIVLISTE",  // Amundi Index FTSE EPRA NAREIT Global UCI
+  "LU1708330235": "ETF_IKKE_POSITIVLISTE",  // Amundi Index J.P. Morgan GBI Global Govi
+  "LU1737653631": "ETF_IKKE_POSITIVLISTE",  // Amundi Index J.P. Morgan GBI Global Govi
+  "LU1737652583": "ETF_POSITIVLISTE",  // Amundi Index MSCI Emerging Markets UCITS
+  "LU1737652310": "ETF_POSITIVLISTE",  // Amundi Index MSCI Europe UCITS ETF DR (D
+  "FR0010245514": "ETF_IKKE_POSITIVLISTE",  // Amundi Japan Topix II Ucits ETF
+  "FR0011475078": "ETF_IKKE_POSITIVLISTE",  // Amundi Japan TOPIX II UCITS ETF EUR Hedg
+  "LU1681037864": "ETF_IKKE_POSITIVLISTE",  // Amundi Japan TOPIX UCITS ETF - Daily Hed
+  "IE0004W4ZVJ5": "ETF_OBLIGATIONSBASERET",  // Amundi JP Morgan INR India Government Bo
+  "LU1681038912": "ETF_IKKE_POSITIVLISTE",  // Amundi JPX-Nikkei 400 UCITS ETF - EUR (C
+  "LU0252634307": "ETF_IKKE_POSITIVLISTE",  // Amundi LevDax Daily (2x) leveraged UCITS
+  "LU2090062600": "ETF_IKKE_POSITIVLISTE",  // Amundi LevDax Daily (2x) leveraged UCITS
+  "LU2872291948": "ETF_IKKE_POSITIVLISTE",  // Amundi Lifecycle 2030 UCITS ETF Acc
+  "LU2872292086": "ETF_IKKE_POSITIVLISTE",  // Amundi Lifecycle 2033 UCITS ETF Acc
+  "LU2872292169": "ETF_IKKE_POSITIVLISTE",  // Amundi Lifecycle 2036 UCITS ETF Acc
+  "LU2872292243": "ETF_IKKE_POSITIVLISTE",  // Amundi Lifecycle 2039 UCITS ETF Acc
+  "DE000ETF9074": "ETF_IKKE_POSITIVLISTE",  // Amundi MDAX ESG II UCITS ETF Dist
+  "LU2611731667": "ETF_IKKE_POSITIVLISTE",  // Amundi MDAX ESG UCITS ETF Dist
+  "FR0011857234": "ETF_IKKE_POSITIVLISTE",  // Amundi MDAX UCITS ETF Dist
+  "LU1900068161": "ETF_POSITIVLISTE",  // Amundi MSCI AC Asia Ex Japan UCITS ETF A
+  "LU2439119236": "ETF_POSITIVLISTE",  // Amundi MSCI AC Far East Ex Japan ESG Lea
+  "IE0000ZVYDH0": "ETF_POSITIVLISTE",  // Amundi MSCI ACWI SRI Climate Paris Align
+  "LU1829220216": "ETF_POSITIVLISTE",  // Amundi MSCI All Country World UCITS ETF 
+  "LU1900066207": "ETF_POSITIVLISTE",  // Amundi MSCI Brazil UCITS ETF Acc
+  "LU2572256746": "ETF_POSITIVLISTE",  // Amundi MSCI China A II UCITS ETF Dist
+  "FR0011720911": "ETF_POSITIVLISTE",  // Amundi MSCI China A UCITS ETF Acc
+  "LU1900068914": "ETF_POSITIVLISTE",  // Amundi MSCI China ESG Leaders Extra UCIT
+  "LU1900067940": "ETF_POSITIVLISTE",  // Amundi MSCI China ESG Leaders Extra UCIT
+  "LU1841731745": "ETF_POSITIVLISTE",  // Amundi MSCI China UCITS ETF Acc
+  "LU2023678878": "ETF_POSITIVLISTE",  // Amundi MSCI Digital Economy and Metavers
+  "LU2023678282": "ETF_POSITIVLISTE",  // Amundi MSCI Disruptive Technology ESG Sc
+  "LU1781541849": "ETF_POSITIVLISTE",  // Amundi MSCI EM Asia ESG Broad Transition
+  "LU2300294589": "ETF_POSITIVLISTE",  // Amundi MSCI EM Asia SRI Climate Paris Al
+  "LU1681044480": "ETF_POSITIVLISTE",  // Amundi MSCI Em Asia UCITS ETF - EUR (C)
+  "LU1681045024": "ETF_POSITIVLISTE",  // Amundi MSCI EM Latin America UCITS ETF -
+  "LU2109787551": "ETF_POSITIVLISTE",  // Amundi MSCI Emerging ESG Leaders UCITS E
+  "LU2345046655": "ETF_POSITIVLISTE",  // Amundi MSCI Emerging Ex China ESG Select
+  "LU2009202107": "ETF_POSITIVLISTE",  // Amundi MSCI Emerging Ex China UCITS ETF 
+  "LU2573966905": "ETF_POSITIVLISTE",  // Amundi MSCI Emerging Markets II UCITS ET
+  "FR0010429068": "ETF_POSITIVLISTE",  // Amundi MSCI Emerging Markets III UCITS E
+  "LU1861138961": "ETF_POSITIVLISTE",  // Amundi MSCI Emerging Markets SRI Climate
+  "LU2059756754": "ETF_POSITIVLISTE",  // Amundi MSCI Emerging Markets SRI Climate
+  "LU1681045370": "ETF_POSITIVLISTE",  // Amundi MSCI Emerging Markets UCITS ETF -
+  "LU0908501058": "ETF_POSITIVLISTE",  // Amundi MSCI EMU ESG Broad Transition UCI
+  "LU1602144575": "ETF_POSITIVLISTE",  // Amundi MSCI EMU ESG Leaders Select UCITS
+  "LU1598689153": "ETF_POSITIVLISTE",  // Amundi MSCI EMU Small Cap ESG CTB Net Ze
+  "LU2109787635": "ETF_POSITIVLISTE",  // Amundi MSCI EMU SRI Climate Paris Aligne
+  "LU1646360971": "ETF_POSITIVLISTE",  // Amundi MSCI EMU UCITS ETF Dist
+  "LU1598690169": "ETF_POSITIVLISTE",  // Amundi MSCI EMU Value Factor UCITS ETF D
+  "LU2608817958": "ETF_POSITIVLISTE",  // Amundi MSCI Europe Action UCITS ETF Dist
+  "LU2130768844": "ETF_POSITIVLISTE",  // Amundi MSCI Europe Climate Paris Aligned
+  "LU1681042609": "ETF_POSITIVLISTE",  // Amundi MSCI Europe ESG Broad Transition 
+  "LU2678230652": "ETF_POSITIVLISTE",  // Amundi MSCI Europe ESG Broad Transition 
+  "LU2873560481": "ETF_POSITIVLISTE",  // Amundi MSCI Europe ESG Broad Transition 
+  "LU1940199711": "ETF_POSITIVLISTE",  // Amundi MSCI Europe ESG Leaders UCITS ETF
+  "LU1598688189": "ETF_POSITIVLISTE",  // Amundi MSCI Europe Growth UCITS ETF Dist
+  "LU1681041973": "ETF_POSITIVLISTE",  // Amundi MSCI Europe High Dividend Factor 
+  "FR0010261198": "ETF_POSITIVLISTE",  // Amundi MSCI Europe II UCITS ETF Acc
+  "LU1681041627": "ETF_POSITIVLISTE",  // Amundi MSCI Europe Minimum Volatility Fa
+  "LU1681041460": "ETF_POSITIVLISTE",  // Amundi MSCI Europe Momentum Factor UCITS
+  "LU1681041890": "ETF_POSITIVLISTE",  // Amundi MSCI Europe Quality Factor UCITS 
+  "LU2572257470": "ETF_POSITIVLISTE",  // Amundi MSCI Europe Small Cap ESG Broad T
+  "LU1861137484": "ETF_POSITIVLISTE",  // Amundi MSCI Europe SRI Climate Paris Ali
+  "LU2023679090": "ETF_POSITIVLISTE",  // Amundi MSCI Future Mobility ESG Screened
+  "FR0010405431": "ETF_POSITIVLISTE",  // Amundi MSCI Greece UCITS ETF Dist
+  "FR0010361683": "ETF_POSITIVLISTE",  // Amundi MSCI India II UCITS ETF EUR Acc
+  "LU1681043086": "ETF_POSITIVLISTE",  // Amundi MSCI India UCITS ETF - EUR (C)
+  "LU1900065811": "ETF_POSITIVLISTE",  // Amundi MSCI Indonesia UCITS ETF Acc
+  "LU2300294746": "ETF_POSITIVLISTE",  // Amundi MSCI Japan ESG Broad Transition U
+  "LU1602144732": "ETF_POSITIVLISTE",  // Amundi MSCI Japan ESG Broad Transition U
+  "LU2269164310": "ETF_POSITIVLISTE",  // Amundi MSCI Japan SRI Climate Paris Alig
+  "LU2233156749": "ETF_POSITIVLISTE",  // Amundi MSCI Japan SRI Climate Paris Alig
+  "LU1781541252": "ETF_POSITIVLISTE",  // Amundi MSCI Japan UCITS ETF Acc
+  "LU2090063673": "ETF_POSITIVLISTE",  // Amundi MSCI Japan UCITS ETF Dist
+  "LU2133056387": "ETF_POSITIVLISTE",  // Amundi MSCI Japan UCITS ETF EUR Hedged D
+  "LU1900066975": "ETF_POSITIVLISTE",  // Amundi MSCI Korea UCITS ETF Acc
+  "LU2023678449": "ETF_POSITIVLISTE",  // Amundi MSCI Millennials ESG Screened UCI
+  "FR0010524777": "ETF_POSITIVLISTE",  // Amundi MSCI New Energy ESG Screened UCIT
+  "LU1681044647": "ETF_POSITIVLISTE",  // Amundi MSCI Nordic UCITS ETF - EUR (C)
+  "IE000MJIXFE0": "ETF_POSITIVLISTE",  // Amundi MSCI North America ESG Broad Tran
+  "LU2572257397": "ETF_POSITIVLISTE",  // Amundi MSCI Pacific ESG Broad Transition
+  "LU1602144906": "ETF_POSITIVLISTE",  // Amundi MSCI Pacific Ex Japan SRI Climate
+  "LU2402389261": "ETF_POSITIVLISTE",  // Amundi MSCI Pacific Ex Japan SRI Climate
+  "LU1220245556": "ETF_POSITIVLISTE",  // Amundi MSCI Pacific Ex Japan UCITS ETF D
+  "LU1861132840": "ETF_POSITIVLISTE",  // Amundi MSCI Robotics & AI UCITS ETF Acc
+  "LU1900066033": "ETF_POSITIVLISTE",  // Amundi MSCI Semiconductors UCITS ETF Acc
+  "LU2037748345": "ETF_POSITIVLISTE",  // Amundi MSCI Smart Cities UCITS ETF ACC
+  "LU1681044993": "ETF_POSITIVLISTE",  // Amundi MSCI Switzerland UCITS ETF - CHF 
+  "LU1681044720": "ETF_POSITIVLISTE",  // Amundi MSCI Switzerland UCITS ETF - EUR 
+  "LU1900067601": "ETF_POSITIVLISTE",  // Amundi MSCI Turkey UCITS ETF Acc
+  "LU2368674631": "ETF_POSITIVLISTE",  // Amundi MSCI UK IMI SRI Climate Paris Ali
+  "LU1327051279": "ETF_POSITIVLISTE",  // Amundi MSCI USA Daily (-1x) Inverse UCIT
+  "IE000QQ8Z0D8": "ETF_POSITIVLISTE",  // Amundi MSCI USA ESG Broad Transition UCI
+  "IE0004TFW0R5": "ETF_POSITIVLISTE",  // Amundi MSCI USA ESG Leaders Extra UCITS 
+  "IE000VML2GZ3": "ETF_POSITIVLISTE",  // Amundi MSCI USA ESG Leaders Extra UCITS 
+  "IE0008TKP6O7": "ETF_POSITIVLISTE",  // Amundi MSCI USA ESG Leaders Extra UCITS 
+  "IE000PEAJOT0": "ETF_POSITIVLISTE",  // Amundi MSCI USA ESG Leaders UCITS ETF Ac
+  "IE000IP0UC52": "ETF_POSITIVLISTE",  // Amundi MSCI USA ESG Leaders UCITS ETF Ac
+  "IE000XL4IXU1": "ETF_POSITIVLISTE",  // Amundi MSCI USA Ex Mega Cap UCITS ETF Ac
+  "IE000YBGJ9I4": "ETF_POSITIVLISTE",  // Amundi MSCI USA Mega Cap UCITS ETF Acc
+  "LU1589349734": "ETF_POSITIVLISTE",  // Amundi MSCI USA Minimum Volatility Facto
+  "IE000R85HL30": "ETF_POSITIVLISTE",  // Amundi MSCI USA SRI Climate Paris Aligne
+  "IE000FSN19U2": "ETF_POSITIVLISTE",  // Amundi MSCI USA UCITS ETF Acc
+  "IE000IEGVMH6": "ETF_POSITIVLISTE",  // Amundi MSCI USA UCITS ETF Dist
+  "FR0010527275": "ETF_POSITIVLISTE",  // Amundi MSCI Water ESG Screened UCITS ETF
+  "FR0014010HV4": "ETF_POSITIVLISTE",  // Amundi MSCI World (2X) Leveraged UCITS E
+  "IE000CL68Z69": "ETF_POSITIVLISTE",  // Amundi MSCI World Climate Paris Aligned 
+  "FR0014003FW1": "ETF_POSITIVLISTE",  // Amundi MSCI World Climate Paris Aligned 
+  "IE0001GSQ2O9": "ETF_POSITIVLISTE",  // Amundi MSCI World ESG Broad Transition U
+  "IE0000CRTTJ9": "ETF_POSITIVLISTE",  // Amundi MSCI World ESG Broad Transition U
+  "IE00016PSX47": "ETF_POSITIVLISTE",  // Amundi MSCI World ESG Leaders UCITS ETF 
+  "IE0004CIQ1O4": "ETF_POSITIVLISTE",  // Amundi MSCI World ESG Selection UCITS ET
+  "LU1681045537": "ETF_POSITIVLISTE",  // Amundi MSCI World Ex Europe UCITS ETF - 
+  "IE00085PWS28": "ETF_POSITIVLISTE",  // Amundi MSCI World Ex USA UCITS ETF Acc
+  "IE0009BI8Z04": "ETF_POSITIVLISTE",  // Amundi MSCI World Ex USA UCITS ETF Dist
+  "LU0533032859": "ETF_POSITIVLISTE",  // Amundi MSCI World Financials UCITS ETF E
+  "LU0533033238": "ETF_POSITIVLISTE",  // Amundi MSCI World Health Care UCITS ETF 
+  "FR0010315770": "ETF_POSITIVLISTE",  // Amundi MSCI World II UCITS ETF Dist
+  "LU2572257124": "ETF_POSITIVLISTE",  // Amundi MSCI World III UCITS ETF Dist
+  "IE000AZV0AS3": "ETF_POSITIVLISTE",  // Amundi MSCI World IMI Value Advanced UCI
+  "LU0533033667": "ETF_POSITIVLISTE",  // Amundi MSCI World Information Technology
+  "IE0001DKJVC2": "ETF_POSITIVLISTE",  // Amundi MSCI World Minimum Volatility Adv
+  "IE0001FQFU60": "ETF_POSITIVLISTE",  // Amundi MSCI World Momentum Advanced UCIT
+  "IE000UZZ5D45": "ETF_POSITIVLISTE",  // Amundi MSCI World Small Cap ESG Broad Tr
+  "IE000Y77LGG9": "ETF_POSITIVLISTE",  // Amundi MSCI World SRI Climate Paris Alig
+  "IE000K1P4V37": "ETF_POSITIVLISTE",  // Amundi MSCI World SRI Climate Paris Alig
+  "IE000004V778": "ETF_POSITIVLISTE",  // Amundi MSCI World SRI Climate Paris Alig
+  "LU1681043599": "ETF_POSITIVLISTE",  // Amundi MSCI World UCITS ETF - EUR (C)
+  "IE000CNSFAR2": "ETF_POSITIVLISTE",  // Amundi MSCI World UCITS ETF DR - USD (D)
+  "DE000ETF7029": "ETF_IKKE_POSITIVLISTE",  // Amundi Multi-Asset Portfolio Defensive U
+  "DE000ETF7037": "ETF_IKKE_POSITIVLISTE",  // Amundi Multi-Asset Portfolio Offensive U
+  "DE000ETF7011": "ETF_IKKE_POSITIVLISTE",  // Amundi Multi-Asset Portfolio UCITS ETF D
+  "FR0010342592": "ETF_POSITIVLISTE",  // Amundi Nasdaq-100 Daily (2x) Leveraged U
+  "LU1829221024": "ETF_POSITIVLISTE",  // Amundi Nasdaq-100 II UCITS ETF Acc
+  "LU2197908721": "ETF_POSITIVLISTE",  // Amundi Nasdaq-100 II UCITS ETF Dist
+  "LU1681038599": "ETF_POSITIVLISTE",  // Amundi NASDAQ-100 UCITS ETF - Daily Hedg
+  "LU1681038243": "ETF_POSITIVLISTE",  // Amundi NASDAQ-100 UCITS ETF - EUR (C)
+  "LU2611731824": "ETF_IKKE_POSITIVLISTE",  // Amundi NYSE Arca Gold BUGS UCITS ETF Dis
+  "LU1287022708": "ETF_IKKE_POSITIVLISTE",  // Amundi Pan Africa UCITS ETF Acc
+  "LU2572256662": "ETF_IKKE_POSITIVLISTE",  // Amundi PEA Dow Jones Industrial Average 
+  "LU1681042864": "ETF_POSITIVLISTE",  // Amundi PEA MSCI USA ESG Leaders UCITS ET
+  "IE0003XJA0J9": "ETF_POSITIVLISTE",  // Amundi Prime All Country World UCITS ETF
+  "IE0009HF1MK9": "ETF_POSITIVLISTE",  // Amundi Prime All Country World UCITS ETF
+  "LU2300295123": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime Emerging Markets UCITS ETF 
+  "LU2233156582": "ETF_OBLIGATIONSBASERET",  // Amundi Prime Euro Gov Bonds 0-1y UCITS E
+  "LU2089238898": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime Euro Govies UCITS ETF DR (C
+  "LU1931975152": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime Euro Govies UCITS ETF DR (D
+  "LU2089238039": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime Europe UCITS ETF DR (C)
+  "LU1931974262": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime Europe UCITS ETF DR (D)
+  "LU2089238112": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime Eurozone UCITS ETF DR (C)
+  "LU1931974429": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime Eurozone UCITS ETF DR (D)
+  "LU2089238971": "ETF_OBLIGATIONSBASERET",  // Amundi Prime Global Government Bond UCIT
+  "LU1931975236": "ETF_OBLIGATIONSBASERET",  // Amundi Prime Global Government Bond UCIT
+  "IE0009DRDY20": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime Global UCITS ETF Acc
+  "IE000QIF5N15": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime Global UCITS ETF Dist
+  "LU2089238385": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime Japan UCITS ETF DR (C)
+  "LU1931974775": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime Japan UCITS ETF DR (D)
+  "LU2089239193": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime US Treasury UCITS ETF DR (C
+  "LU1931975319": "ETF_IKKE_POSITIVLISTE",  // Amundi Prime US Treasury UCITS ETF DR (D
+  "IE0005E8B9S4": "ETF_IKKE_POSITIVLISTE",  // Amundi Russell 1000 Growth UCITS ETF Acc
+  "LU1681038672": "ETF_IKKE_POSITIVLISTE",  // Amundi Russell 2000 UCITS ETF - EUR (C)
+  "LU3104524593": "ETF_POSITIVLISTE",  // Amundi S&P 400 US Mid Cap UCITS ETF Acc
+  "LU1681048127": "ETF_POSITIVLISTE",  // Amundi S&P 500 Buyback UCITS ETF - EUR (
+  "IE000O5FBC47": "ETF_POSITIVLISTE",  // Amundi S&P 500 Climate Paris Aligned UCI
+  "IE000UZTA1X0": "ETF_POSITIVLISTE",  // Amundi S&P 500 Climate Paris Aligned UCI
+  "IE000Z8J5HD7": "ETF_POSITIVLISTE",  // Amundi S&P 500 Climate Transition UCITS 
+  "IE000LAP5Z18": "ETF_POSITIVLISTE",  // Amundi S&P 500 Equal Weight ESG Leaders 
+  "IE000M86QRT4": "ETF_POSITIVLISTE",  // Amundi S&P 500 Equal Weight ESG UCITS ET
+  "LU2991918421": "ETF_POSITIVLISTE",  // Amundi S&P 500 Equal Weight UCITS ETF Ac
+  "LU0496786574": "ETF_POSITIVLISTE",  // Amundi S&P 500 II UCITS ETF EUR Dist
+  "LU0959211243": "ETF_POSITIVLISTE",  // Amundi S&P 500 II UCITS ETF EUR Hedged D
+  "LU0496786657": "ETF_POSITIVLISTE",  // Amundi S&P 500 II UCITS ETF USD Dist
+  "IE000KXCEXR3": "ETF_POSITIVLISTE",  // Amundi S&P 500 Screened UCITS ETF - Acc
+  "LU1681049109": "ETF_POSITIVLISTE",  // Amundi S&P 500 UCITS ETF - DAILY HEDGED 
+  "LU1681048804": "ETF_POSITIVLISTE",  // Amundi S&P 500 UCITS ETF - EUR (C)
+  "LU2932780914": "ETF_POSITIVLISTE",  // Amundi S&P Eurozone Climate Paris Aligne
+  "LU2195226068": "ETF_POSITIVLISTE",  // Amundi S&P Eurozone PAB Net Zero Ambitio
+  "LU1681048630": "ETF_POSITIVLISTE",  // Amundi S&P Global Luxury UCITS ETF - EUR
+  "IE000XLJ2JQ9": "ETF_POSITIVLISTE",  // Amundi S&P SmallCap 600 Screened UCITS E
+  "IE000EFHIFG3": "ETF_POSITIVLISTE",  // Amundi S&P World Communication Services 
+  "IE000ANYHV73": "ETF_POSITIVLISTE",  // Amundi S&P World Communication Services 
+  "IE000NM0ALX6": "ETF_POSITIVLISTE",  // Amundi S&P World Consumer Discretionary 
+  "IE00061J0RC6": "ETF_POSITIVLISTE",  // Amundi S&P World Consumer Discretionary 
+  "IE000ZIJ5B20": "ETF_POSITIVLISTE",  // Amundi S&P World Consumer Staples Screen
+  "IE0005NYD352": "ETF_POSITIVLISTE",  // Amundi S&P World Consumer Staples Screen
+  "IE000J0LN0R5": "ETF_POSITIVLISTE",  // Amundi S&P World Energy Screened UCITS E
+  "IE0009SJ3GE3": "ETF_POSITIVLISTE",  // Amundi S&P World Energy Screened UCITS E
+  "IE000KYX7IP4": "ETF_POSITIVLISTE",  // Amundi S&P World Financials Screened UCI
+  "IE000ENYES77": "ETF_POSITIVLISTE",  // Amundi S&P World Financials Screened UCI
+  "IE0006FM6MI8": "ETF_POSITIVLISTE",  // Amundi S&P World Health Care Screened UC
+  "IE000JKS50V3": "ETF_POSITIVLISTE",  // Amundi S&P World Health Care Screened UC
+  "IE000LTA2082": "ETF_POSITIVLISTE",  // Amundi S&P World Industrials Screened UC
+  "IE00026BEVM6": "ETF_POSITIVLISTE",  // Amundi S&P World Industrials Screened UC
+  "IE000E7EI9P0": "ETF_POSITIVLISTE",  // Amundi S&P World Information technology 
+  "IE000GEHNQU9": "ETF_POSITIVLISTE",  // Amundi S&P World Information technology 
+  "IE000FCGBU62": "ETF_POSITIVLISTE",  // Amundi S&P World Materials Screened UCIT
+  "IE000WP7CVZ7": "ETF_POSITIVLISTE",  // Amundi S&P World Materials Screened UCIT
+  "IE000PMX0MW6": "ETF_POSITIVLISTE",  // Amundi S&P World Utilities Screened UCIT
+  "IE00052T92P8": "ETF_POSITIVLISTE",  // Amundi S&P World Utilities Screened UCIT
+  "LU2611732475": "ETF_IKKE_POSITIVLISTE",  // Amundi SDAX UCITS ETF Dist
+  "LU2572257041": "ETF_IKKE_POSITIVLISTE",  // Amundi ShortDAX Daily (-1x) Inverse UCIT
+  "FR0010869495": "ETF_IKKE_POSITIVLISTE",  // Amundi ShortDAX Daily (-2x) Inverse UCIT
+  "LU1190417599": "ETF_IKKE_POSITIVLISTE",  // Amundi Smart Overnight Return UCITS ETF 
+  "LU2082999306": "ETF_IKKE_POSITIVLISTE",  // Amundi Smart Overnight Return UCITS ETF 
+  "LU1834983477": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Banks UCITS ETF 
+  "LU2082996112": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Banks UCITS ETF 
+  "LU1834983634": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Basic Materials 
+  "LU2082996542": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Basic Materials 
+  "LU1834983550": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Basic Resources 
+  "LU2082996385": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Basic Resources 
+  "LU1834988781": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Consumer Discret
+  "LU2082999132": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Consumer Discret
+  "LU1834985845": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Consumer Staples
+  "LU2082997359": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Consumer Staples
+  "LU1834988278": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Energy ESG Scree
+  "LU2082998167": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Energy Screened 
+  "DE000ETF9603": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 ESG II UCITS ETF
+  "LU1681040223": "ETF_POSITIVLISTE",  // Amundi Stoxx Europe 600 ESG UCITS ETF Ac
+  "LU1834986900": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Healthcare UCITS
+  "LU2082997516": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Healthcare UCITS
+  "LU1834987890": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Industrials UCIT
+  "LU2082997789": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Industrials UCIT
+  "LU1834987973": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Insurance UCITS 
+  "LU2082997946": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Insurance UCITS 
+  "LU1834988518": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Technology UCITS
+  "LU2082998837": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Technology UCITS
+  "LU1834988609": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Telecommunicatio
+  "LU2082999058": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Telecommunicatio
+  "LU0908500753": "ETF_POSITIVLISTE",  // Amundi Stoxx Europe 600 UCITS ETF Acc
+  "LU1574142243": "ETF_POSITIVLISTE",  // Amundi Stoxx Europe 600 UCITS ETF EUR He
+  "LU1834988864": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Utilities UCITS 
+  "LU2082999215": "ETF_POSITIVLISTE",  // Amundi STOXX Europe 600 Utilities UCITS 
+  "LU3038520774": "ETF_POSITIVLISTE",  // Amundi STOXX Europe Defense UCITS ETF Ac
+  "LU1812092168": "ETF_POSITIVLISTE",  // Amundi STOXX Europe Select Dividend 30 -
+  "DE000ETF9082": "ETF_IKKE_POSITIVLISTE",  // Amundi TecDAX UCITS ETF Dist
+  "LU1781541096": "ETF_IKKE_POSITIVLISTE",  // Amundi UK Equity All Cap UCITS ETF Dist
+  "LU2611732806": "ETF_OBLIGATIONSBASERET",  // Amundi US Aggregate Bond ESG UCITS ETF D
+  "LU2018762653": "ETF_IKKE_POSITIVLISTE",  // Amundi US Curve steepening 2-10Y UCITS E
+  "LU1390062831": "ETF_IKKE_POSITIVLISTE",  // Amundi US Inflation Expectations 10Y UCI
+  "IE000Y9MG996": "ETF_IKKE_POSITIVLISTE",  // Amundi US Tech 100 Equal Weight UCITS ET
+  "LU1452600270": "ETF_OBLIGATIONSBASERET",  // Amundi US TIPS Government Inflation-Link
+  "LU2182388665": "ETF_OBLIGATIONSBASERET",  // Amundi US Treasury Bond 0-1Y UCITS ETF A
+  "LU2182388749": "ETF_OBLIGATIONSBASERET",  // Amundi US Treasury Bond 0-1Y UCITS ETF E
+  "LU1407887915": "ETF_OBLIGATIONSBASERET",  // Amundi US Treasury Bond 7-10Y UCITS ETF 
+  "LU1407888137": "ETF_OBLIGATIONSBASERET",  // Amundi US Treasury Bond 7-10Y UCITS ETF 
+  "LU1407890620": "ETF_OBLIGATIONSBASERET",  // Amundi US Treasury Bond Long Dated UCITS
+  "LU2297533809": "ETF_OBLIGATIONSBASERET",  // Amundi USD Corporate Bond ESG UCITS ETF 
+  "LU1806495575": "ETF_OBLIGATIONSBASERET",  // Amundi USD Corporate Bond ESG UCITS ETF 
+  "LU2089239276": "ETF_OBLIGATIONSBASERET",  // Amundi USD Corporate Bond UCITS ETF Acc
+  "LU2037749152": "ETF_OBLIGATIONSBASERET",  // Amundi USD Corporate Bond UCITS ETF Dist
+  "LU2977997381": "ETF_OBLIGATIONSBASERET",  // Amundi USD Corporate Bond UCITS ETF EUR 
+  "LU1233598447": "ETF_IKKE_POSITIVLISTE",  // Amundi USD Fed Funds Rate UCITS ETF Acc
+  "LU2090062352": "ETF_IKKE_POSITIVLISTE",  // Amundi USD Fed Funds Rate UCITS ETF Dist
+  "LU1681040900": "ETF_OBLIGATIONSBASERET",  // Amundi USD Floating Rate Corporate Bond 
+  "LU1681041031": "ETF_OBLIGATIONSBASERET",  // Amundi USD Floating Rate Corporate Bond 
+  "LU1435356495": "ETF_OBLIGATIONSBASERET",  // Amundi USD High Yield Corporate Bond ESG
+  "IE0003A512E4": "ETF_IKKE_POSITIVLISTE",  // ARK Artificial Intelligence & Robotics U
+  "IE000O5M6XO1": "ETF_IKKE_POSITIVLISTE",  // ARK Genomic Revolution UCITS ETF
+  "IE000GA3D489": "ETF_IKKE_POSITIVLISTE",  // ARK Innovation UCITS ETF
+  "IE000AON7ET1": "ETF_IKKE_POSITIVLISTE",  // Ark Space & Defence Innovation UCITS ETF
+  "IE00020O1MD6": "ETF_POSITIVLISTE",  // comdirect S&P All World State Street UCI
+  "DE000ETFL664": "ETF_IKKE_POSITIVLISTE",  // Deka Europe Defense UCITS ETF
+  "IE00BYSX4846": "ETF_IKKE_POSITIVLISTE",  // Fidelity Emerging Markets Quality Income
+  "IE00BYSX4739": "ETF_IKKE_POSITIVLISTE",  // Fidelity Emerging Markets Quality Income
+  "IE00BM9GRP64": "ETF_OBLIGATIONSBASERET",  // Fidelity ESG USD EM Bond UCITS ETF - Inc
+  "IE000JEXZJT1": "ETF_OBLIGATIONSBASERET",  // Fidelity EUR Corp Bond Research Enhanced
+  "IE00BKSBGT50": "ETF_IKKE_POSITIVLISTE",  // Fidelity Europe Equity Research Enhanced
+  "IE00BYSX4283": "ETF_IKKE_POSITIVLISTE",  // Fidelity Europe Quality Income UCITS ETF
+  "IE00BYSX4176": "ETF_IKKE_POSITIVLISTE",  // Fidelity Europe Quality Income UCITS ETF
+  "IE00BM9GRM34": "ETF_OBLIGATIONSBASERET",  // Fidelity Global Corp Bond Research Enhan
+  "IE000AALNYM3": "ETF_OBLIGATIONSBASERET",  // Fidelity Global Corp Bond Research Enhan
+  "IE000TYGG0N6": "ETF_IKKE_POSITIVLISTE",  // Fidelity Global Equity Research Enhanced
+  "IE00BKSBGV72": "ETF_IKKE_POSITIVLISTE",  // Fidelity Global Equity Research Enhanced
+  "IE000G4ONBO6": "ETF_OBLIGATIONSBASERET",  // Fidelity Global Government Bond Climate 
+  "IE000IF0HTJ9": "ETF_OBLIGATIONSBASERET",  // Fidelity Global Government Bond Climate 
+  "IE0006KNOFD1": "ETF_OBLIGATIONSBASERET",  // Fidelity Global HY Corp Bond Research En
+  "IE000YUTMIU2": "ETF_IKKE_POSITIVLISTE",  // Fidelity Global Quality Income UCITS ETF
+  "IE00BYV1YH46": "ETF_IKKE_POSITIVLISTE",  // Fidelity Global Quality Income UCITS ETF
+  "IE00BYXVGZ48": "ETF_IKKE_POSITIVLISTE",  // Fidelity Global Quality Income UCITS ETF
+  "IE0002XFS025": "ETF_IKKE_POSITIVLISTE",  // Fidelity Global Quality Value UCITS ETF 
+  "IE00BNGFMX61": "ETF_IKKE_POSITIVLISTE",  // Fidelity Japan Equity Research Enhanced 
+  "IE00BNGFMY78": "ETF_IKKE_POSITIVLISTE",  // Fidelity Pacific ex-Japan Equity Researc
+  "IE0000VKUF67": "ETF_OBLIGATIONSBASERET",  // Fidelity Sustainable EUR Corporate Bond 
+  "IE000VQZQ963": "ETF_OBLIGATIONSBASERET",  // Fidelity Sustainable EUR Corporate Bond 
+  "IE000HDEYKM3": "ETF_OBLIGATIONSBASERET",  // Fidelity Sustainable EUR High Yield Bond
+  "IE0006QCIHM0": "ETF_OBLIGATIONSBASERET",  // Fidelity Sustainable Global Corporate Bo
+  "IE0006OIQXE9": "ETF_OBLIGATIONSBASERET",  // Fidelity Sustainable Global High Yield B
+  "IE00BLRPN388": "ETF_IKKE_POSITIVLISTE",  // Fidelity Sustainable Research Enhanced E
+  "IE000B5UZSG9": "ETF_IKKE_POSITIVLISTE",  // Fidelity Sustainable Research Enhanced J
+  "IE0001DM7O60": "ETF_OBLIGATIONSBASERET",  // Fidelity Sustainable USD Corporate Bond 
+  "IE000JJQ6248": "ETF_OBLIGATIONSBASERET",  // Fidelity Sustainable USD Corporate Bond 
+  "IE0007L3IJF6": "ETF_OBLIGATIONSBASERET",  // Fidelity Sustainable USD EM Bond UCITS E
+  "IE000FK14CA5": "ETF_OBLIGATIONSBASERET",  // Fidelity Sustainable USD High Yield Bond
+  "IE000ARLR807": "ETF_OBLIGATIONSBASERET",  // Fidelity Sustainable USD High Yield Bond
+  "IE00BKSBGS44": "ETF_IKKE_POSITIVLISTE",  // Fidelity US Equity Research Enhanced UCI
+  "IE0001W4ZVM2": "ETF_IKKE_POSITIVLISTE",  // Fidelity US Equity Research Enhanced UCI
+  "IE000IY9QFN9": "ETF_POSITIVLISTE",  // Fidelity US Fundamental Large Cap Core U
+  "IE000PNL0242": "ETF_IKKE_POSITIVLISTE",  // Fidelity US Fundamental Small-Mid Cap UC
+  "IE00BYV1Y969": "ETF_IKKE_POSITIVLISTE",  // Fidelity US Quality Income UCITS ETF ACC
+  "IE00BYXVGY31": "ETF_IKKE_POSITIVLISTE",  // Fidelity US Quality Income UCITS ETF ACC
+  "IE00BYXVGX24": "ETF_IKKE_POSITIVLISTE",  // Fidelity US Quality Income UCITS ETF INC
+  "IE000MKIH0W7": "ETF_IKKE_POSITIVLISTE",  // Fidelity US Quality Value UCITS ETF ACC-
+  "IE000SCAG5Q1": "ETF_OBLIGATIONSBASERET",  // Fidelity USD Corp Bond Research Enhanced
+  "IE000IM4K4K2": "ETF_IKKE_POSITIVLISTE",  // Franklin AI Metaverse and Blockchain UCI
+  "IE000YZIVX22": "ETF_IKKE_POSITIVLISTE",  // Franklin Catholic Principles Emerging Ma
+  "IE000CZU3JH0": "ETF_POSITIVLISTE",  // Franklin Core US Enhanced Equity UCITS E
+  "IE00BF2B0K52": "ETF_IKKE_POSITIVLISTE",  // Franklin EM Multi-Factor Equity UCITS ET
+  "IE000H0TSO96": "ETF_IKKE_POSITIVLISTE",  // Franklin Euro IG Corporate UCITS ETF
+  "IE000STIHQB2": "ETF_IKKE_POSITIVLISTE",  // Franklin Euro Short Maturity UCITS ETF (
+  "IE00BFWXDY69": "ETF_IKKE_POSITIVLISTE",  // Franklin Euro Short Maturity UCITS ETF (
+  "IE00BF2B0L69": "ETF_IKKE_POSITIVLISTE",  // Franklin European Quality Dividend UCITS
+  "IE000IMGE5W5": "ETF_IKKE_POSITIVLISTE",  // Franklin European Quality Dividend UCITS
+  "IE00BFWXDV39": "ETF_IKKE_POSITIVLISTE",  // Franklin FTSE Asia ex China ex Japan UCI
+  "IE00BHZRQY00": "ETF_IKKE_POSITIVLISTE",  // Franklin FTSE Brazil UCITS ETF
+  "IE00BHZRR147": "ETF_IKKE_POSITIVLISTE",  // Franklin FTSE China UCITS ETF
+  "IE000CVOSY02": "ETF_POSITIVLISTE",  // Franklin FTSE Developed World UCITS ETF
+  "IE0006D3PGW3": "ETF_IKKE_POSITIVLISTE",  // Franklin FTSE Emerging ex China UCITS ET
+  "IE0004I037N4": "ETF_IKKE_POSITIVLISTE",  // Franklin FTSE Emerging Markets UCITS ETF
+  "IE00BHZRQZ17": "ETF_IKKE_POSITIVLISTE",  // Franklin FTSE India UCITS ETF
+  "IE000D0T0BO1": "ETF_IKKE_POSITIVLISTE",  // Franklin FTSE Japan UCITS ETF
+  "IE00BHZRR030": "ETF_IKKE_POSITIVLISTE",  // Franklin FTSE Korea UCITS ETF
+  "IE000C7DDDX4": "ETF_IKKE_POSITIVLISTE",  // Franklin FTSE Saudi Arabia UCITS ETF
+  "IE000CM02H85": "ETF_IKKE_POSITIVLISTE",  // Franklin FTSE Taiwan UCITS ETF
+  "IE000ZOKLHY7": "ETF_IKKE_POSITIVLISTE",  // Franklin Future of Food UCITS ETF
+  "IE0003WEWAX4": "ETF_IKKE_POSITIVLISTE",  // Franklin Future of Health and Wellness U
+  "IE00BF2B0M76": "ETF_IKKE_POSITIVLISTE",  // Franklin Global Quality Dividend UCITS E
+  "IE000ZZJ48Q0": "ETF_IKKE_POSITIVLISTE",  // Franklin Global Quality Dividend UCITS E
+  "IE000EBPC0Z7": "ETF_POSITIVLISTE",  // Franklin MSCI China Paris Aligned Climat
+  "IE000QLV3SY5": "ETF_POSITIVLISTE",  // Franklin MSCI Emerging Markets Paris Ali
+  "IE000AZOUN82": "ETF_POSITIVLISTE",  // Franklin MSCI World Catholic Principles 
+  "IE00BMDPBZ72": "ETF_POSITIVLISTE",  // Franklin S&P 500 Paris Aligned Climate U
+  "IE0006FAD976": "ETF_POSITIVLISTE",  // Franklin S&P 500 Screened UCITS ETF (Acc
+  "IE0006WOV4I9": "ETF_POSITIVLISTE",  // Franklin S&P World Screened UCITS ETF (A
+  "IE00BMDPBY65": "ETF_POSITIVLISTE",  // Franklin STOXX Europe 600 Paris Aligned 
+  "IE00BHZRR253": "ETF_OBLIGATIONSBASERET",  // Franklin Sustainable Euro Green Bond UCI
+  "IE0006K7DEL9": "ETF_IKKE_POSITIVLISTE",  // Franklin Sustainable Euro Green Corp 1-5
+  "IE000P0R7WK6": "ETF_IKKE_POSITIVLISTE",  // Franklin Sustainable Euro Green Sovereig
+  "IE00BF2B0P08": "ETF_IKKE_POSITIVLISTE",  // Franklin U.S. Equity UCITS ETF
+  "IE000Z4OBQK4": "ETF_IKKE_POSITIVLISTE",  // Franklin US Dividend Tilt UCITS ETF (Dis
+  "IE0008M1R3N4": "ETF_IKKE_POSITIVLISTE",  // Franklin US Mega Cap 100 UCITS ETF
+  "IE000E02WFD5": "ETF_IKKE_POSITIVLISTE",  // Franklin US Treasury 0-1 Year UCITS ETF 
+  "IE00BFWXDX52": "ETF_OBLIGATIONSBASERET",  // Franklin USD Investment Grade Corporate 
+  "IE000GSIFIB0": "ETF_IKKE_POSITIVLISTE",  // Global X 1-3 Month T-Bill UCITS ETF USD 
+  "IE000EBFYWX3": "ETF_IKKE_POSITIVLISTE",  // Global X AgTech & Food Innovation UCITS 
+  "IE0000ZL1RD2": "ETF_IKKE_POSITIVLISTE",  // Global X AI Semiconductor & Quantum UCIT
+  "IE0000XTDDA8": "ETF_IKKE_POSITIVLISTE",  // Global X Artificial Intelligence UCITS E
+  "IE00BMH5YR69": "ETF_IKKE_POSITIVLISTE",  // Global X Autonomous & Electric Vehicles 
+  "IE000XAGSCY5": "ETF_IKKE_POSITIVLISTE",  // Global X Blockchain UCITS ETF USD Accumu
+  "IE00094FRAA6": "ETF_IKKE_POSITIVLISTE",  // Global X China Electric Vehicle and Batt
+  "IE000BWKUES1": "ETF_IKKE_POSITIVLISTE",  // Global X Clean Water UCITS ETF USD Accum
+  "IE00BMH5YL08": "ETF_IKKE_POSITIVLISTE",  // Global X CleanTech UCITS ETF USD Accumul
+  "IE00BMH5YF48": "ETF_IKKE_POSITIVLISTE",  // Global X Cloud Computing UCITS ETF USD A
+  "IE0003Z9E2Y3": "ETF_IKKE_POSITIVLISTE",  // Global X Copper Miners UCITS ETF USD Acc
+  "IE00BMH5Y871": "ETF_IKKE_POSITIVLISTE",  // Global X Cybersecurity UCITS ETF USD Acc
+  "IE00BMH5Y327": "ETF_IKKE_POSITIVLISTE",  // Global X Data Center REITs & Digital Inf
+  "IE000JCW3DZ3": "ETF_IKKE_POSITIVLISTE",  // Global X Defence Tech UCITS ETF USD Accu
+  "IE000FP52WM7": "ETF_IKKE_POSITIVLISTE",  // Global X Disruptive Materials UCITS ETF 
+  "IE00BMH5XY61": "ETF_IKKE_POSITIVLISTE",  // Global X E-commerce UCITS ETF USD Accumu
+  "IE000SAXJ1M1": "ETF_POSITIVLISTE",  // Global X Euro Stoxx 50 Covered Call UCIT
+  "IE000WRQ9RR1": "ETF_IKKE_POSITIVLISTE",  // Global X Europe Focused Defence Tech UCI
+  "IE000PS0J481": "ETF_IKKE_POSITIVLISTE",  // Global X European Infrastructure Develop
+  "IE00082MOBL9": "ETF_IKKE_POSITIVLISTE",  // Global X European SuperDividend UCITS ET
+  "IE00BLCHJZ35": "ETF_IKKE_POSITIVLISTE",  // Global X FinTech UCITS ETF USD Accumulat
+  "IE00BM8R0N95": "ETF_IKKE_POSITIVLISTE",  // Global X Genomics & Biotechnology UCITS 
+  "IE0002RPS3K2": "ETF_IKKE_POSITIVLISTE",  // Global X Hydrogen UCITS ETF USD Accumula
+  "IE00BLCHJT74": "ETF_IKKE_POSITIVLISTE",  // Global X Internet of Things UCITS ETF US
+  "IE00BLCHJN13": "ETF_IKKE_POSITIVLISTE",  // Global X Lithium & Battery Tech UCITS ET
+  "IE00BM8R0J59": "ETF_POSITIVLISTE",  // Global X Nasdaq 100 Covered Call UCITS E
+  "IE00BLCHJH52": "ETF_IKKE_POSITIVLISTE",  // Global X Renewable Energy Producers UCIT
+  "IE00BLCHJB90": "ETF_IKKE_POSITIVLISTE",  // Global X Robotics & Artificial Intellige
+  "IE0009BM62P2": "ETF_POSITIVLISTE",  // Global X S&P 500 Annual Buffer UCITS ETF
+  "IE000HGH8PV2": "ETF_POSITIVLISTE",  // Global X S&P 500 Annual Tail Hedge UCITS
+  "IE0002L5QB31": "ETF_POSITIVLISTE",  // Global X S&P 500 Covered Call UCITS ETF 
+  "IE000LSRKCB4": "ETF_POSITIVLISTE",  // Global X S&P 500 Quarterly Buffer UCITS 
+  "IE000EPX8KB7": "ETF_POSITIVLISTE",  // Global X S&P 500 Quarterly Tail Hedge UC
+  "IE000UL6CLP7": "ETF_IKKE_POSITIVLISTE",  // Global X Silver Miners UCITS ETF USD Acc
+  "IE000XD7KCJ7": "ETF_IKKE_POSITIVLISTE",  // Global X Solar UCITS ETF USD Accumulatin
+  "IE00077FRP95": "ETF_IKKE_POSITIVLISTE",  // Global X SuperDividend UCITS ETF USD Dis
+  "IE00BLR6QB00": "ETF_IKKE_POSITIVLISTE",  // Global X Telemedicine & Digital Health U
+  "IE00BLCHJ534": "ETF_IKKE_POSITIVLISTE",  // Global X U.S. Infrastructure Development
+  "IE000NDWFGA5": "ETF_IKKE_POSITIVLISTE",  // Global X Uranium UCITS ETF USD Accumulat
+  "IE00BLR6Q544": "ETF_IKKE_POSITIVLISTE",  // Global X Video Games & Esports UCITS ETF
+  "IE000JNHCBM6": "ETF_IKKE_POSITIVLISTE",  // Global X Wind Energy UCITS ETF USD Accum
+  "IE00BNTVVR89": "ETF_IKKE_POSITIVLISTE",  // Gold Miners Screened UCITS ETF
+  "IE00BKPTXQ89": "ETF_IKKE_POSITIVLISTE",  // HANetf Alerian Midstream Energy Dividend
+  "IE00BFYN8Y92": "ETF_IKKE_POSITIVLISTE",  // HANetf EMQQ Emerging Markets Internet UC
+  "IE000KDY10O3": "ETF_IKKE_POSITIVLISTE",  // HANetf ETC Group Web 3.0 UCITS ETF - Acc
+  "IE000C7EUDG1": "ETF_IKKE_POSITIVLISTE",  // HANetf Future of Defence Indo-Pac ex-Chi
+  "IE00041H4WT9": "ETF_IKKE_POSITIVLISTE",  // HANetf Future of Defence Screened UCITS 
+  "IE000OJ5TQP4": "ETF_IKKE_POSITIVLISTE",  // HANetf Future of Defence UCITS ETF - Acc
+  "IE000I7E6HL0": "ETF_IKKE_POSITIVLISTE",  // HANetf Future of European Defence UCITS 
+  "IE00BL643144": "ETF_IKKE_POSITIVLISTE",  // HANetf Goshawk Global Balanced UCITS ETF
+  "IE00BNC1F287": "ETF_IKKE_POSITIVLISTE",  // HANetf Guinness Sustainable Energy UCITS
+  "IE00BDDRF700": "ETF_IKKE_POSITIVLISTE",  // HANetf HAN-GINS Tech Megatrend Equal Wei
+  "IE00BJQTJ848": "ETF_IKKE_POSITIVLISTE",  // HANetf Harbor Health Care UCITS ETF - Ac
+  "IE0008LRGGP4": "ETF_IKKE_POSITIVLISTE",  // HANetf Infrastructure Capital Preferred 
+  "IE000WYTQSF9": "ETF_IKKE_POSITIVLISTE",  // HANetf INQQ India Internet UCITS ETF - A
+  "IE000GDU4WA8": "ETF_OBLIGATIONSBASERET",  // HANetf Jupiter Global Government Bond Ac
+  "IE000WOBV8X1": "ETF_OBLIGATIONSBASERET",  // HANetf Jupiter Global Government Bond Ac
+  "IE000AN3AFZ1": "ETF_IKKE_POSITIVLISTE",  // HANetf Jupiter Origin Global Smaller Com
+  "IE000UWJUW87": "ETF_OBLIGATIONSBASERET",  // HANetf KRC Cat Bond UCITS ETF - Acc
+  "IE000V0Q8BV4": "ETF_IKKE_POSITIVLISTE",  // HANetf ODDO BHF Global Balanced Allocati
+  "IE0001O9L5K4": "ETF_IKKE_POSITIVLISTE",  // HANetf ODDO BHF Global Equity Active UCI
+  "IE000YR7N5U8": "ETF_IKKE_POSITIVLISTE",  // HANetf ODDO BHF US Equity Active UCITS E
+  "IE000X5OD4M3": "ETF_OBLIGATIONSBASERET",  // HANetf Performance Trust Total Return Bo
+  "IE000TD32PU3": "ETF_IKKE_POSITIVLISTE",  // HANetf Regan Total Return Income UCITS E
+  "IE0008BA4TY1": "ETF_IKKE_POSITIVLISTE",  // HANetf REX Crypto Equity Income & Growth
+  "IE000OBK3UE0": "ETF_IKKE_POSITIVLISTE",  // HANetf REX Tech Innovation Income & Grow
+  "IE000HF69TA9": "ETF_IKKE_POSITIVLISTE",  // HANetf REX Tech Innovation Premium Incom
+  "IE00BMYMHS24": "ETF_IKKE_POSITIVLISTE",  // HANetf Saturna Al-Kawthar Global Focused
+  "IE00075IVKF9": "ETF_IKKE_POSITIVLISTE",  // HANetf Sprott Junior Uranium Miners UCIT
+  "IE000IQQEL77": "ETF_IKKE_POSITIVLISTE",  // HANetf Sprott Pure Play Copper Miners UC
+  "IE0005YK6564": "ETF_IKKE_POSITIVLISTE",  // HANetf Sprott Uranium Miners UCITS ETF -
+  "IE00BMFNW783": "ETF_IKKE_POSITIVLISTE",  // HANetf US Global Investors Travel UCITS 
+  "IE000MMRLY96": "ETF_IKKE_POSITIVLISTE",  // HANetf YieldMax Big Tech Option Income U
+  "IE000TAA0GK0": "ETF_IKKE_POSITIVLISTE",  // HANetf YieldMax Future of Defence Option
+  "IE000LGWDNE5": "ETF_IKKE_POSITIVLISTE",  // Invesco Artificial Intelligence Enablers
+  "IE00BFZPF439": "ETF_OBLIGATIONSBASERET",  // Invesco AT1 Capital Bond UCITS ETF EUR H
+  "IE000CYTPBT0": "ETF_IKKE_POSITIVLISTE",  // Invesco Bloomberg Commodity Carbon Tilte
+  "IE00BYXYX521": "ETF_IKKE_POSITIVLISTE",  // Invesco Bloomberg Commodity ex-Agricultu
+  "IE00BF4J0300": "ETF_IKKE_POSITIVLISTE",  // Invesco Bloomberg Commodity UCITS ETF EU
+  "IE0004QWOTD5": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2026 EUR Corporate 
+  "IE000AYJ75E5": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2026 EUR Corporate 
+  "IE000O36LOH8": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2026 USD Corporate 
+  "IE000LGHLQ71": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2027 EUR Corporate 
+  "IE000XOS4OJ6": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2027 EUR Corporate 
+  "IE000BMDG046": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2027 USD Corporate 
+  "IE00079EUF59": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2028 EUR Corporate 
+  "IE000LKGEZQ6": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2028 EUR Corporate 
+  "IE000A0RC215": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2028 USD Corporate 
+  "IE000P5IB8I8": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2029 EUR Corporate 
+  "IE000ZC4C5Q1": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2029 EUR Corporate 
+  "IE000C5Q64P6": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2029 USD Corporate 
+  "IE000I25S1V5": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2030 EUR Corporate 
+  "IE000W6YTDH7": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2030 EUR Corporate 
+  "IE000GB2EQ90": "ETF_OBLIGATIONSBASERET",  // Invesco BulletShares 2030 USD Corporate 
+  "IE000AWRDWI7": "ETF_IKKE_POSITIVLISTE",  // Invesco ChiNext 50 UCITS ETF Acc
+  "IE00BGBN6P67": "ETF_IKKE_POSITIVLISTE",  // Invesco CoinShares Global Blockchain UCI
+  "IE00072RHT03": "ETF_IKKE_POSITIVLISTE",  // Invesco Cybersecurity UCITS ETF Acc
+  "IE000BRM9046": "ETF_IKKE_POSITIVLISTE",  // Invesco Defence Innovation UCITS ETF Acc
+  "IE000U07IGB1": "ETF_IKKE_POSITIVLISTE",  // Invesco Emerging Markets Enhanced Equity
+  "IE00BF51K132": "ETF_OBLIGATIONSBASERET",  // Invesco Emerging Markets USD Bond UCITS 
+  "IE00BFZXGZ54": "ETF_POSITIVLISTE",  // Invesco EQQQ Nasdaq-100 UCITS ETF Acc
+  "IE0032077012": "ETF_POSITIVLISTE",  // Invesco EQQQ Nasdaq-100 UCITS ETF Dist
+  "IE00BYVTMS52": "ETF_POSITIVLISTE",  // Invesco EQQQ Nasdaq-100 UCITS ETF EUR Hd
+  "IE000Y2JPPS4": "ETF_IKKE_POSITIVLISTE",  // Invesco EUR AAA CLO UCITS ETF Acc
+  "IE000U7LIXH5": "ETF_IKKE_POSITIVLISTE",  // Invesco EUR AAA CLO UCITS ETF Dist
+  "IE000FG3UNB8": "ETF_OBLIGATIONSBASERET",  // Invesco EUR AT1 CoCo Bond UCITS ETF Acc
+  "IE000VVC8KW9": "ETF_OBLIGATIONSBASERET",  // Invesco EUR AT1 CoCo Bond UCITS ETF Dist
+  "IE00021E4FE3": "ETF_OBLIGATIONSBASERET",  // Invesco EUR Corporate Bond ESG Multi-Fac
+  "IE0006LBEDV2": "ETF_OBLIGATIONSBASERET",  // Invesco EUR Corporate Bond ESG Multi-Fac
+  "IE000PA766T7": "ETF_OBLIGATIONSBASERET",  // Invesco EUR Corporate Bond ESG Short Dur
+  "IE000MUAJIF4": "ETF_OBLIGATIONSBASERET",  // Invesco EUR Corporate Bond ESG Short Dur
+  "IE0007BT2BH8": "ETF_IKKE_POSITIVLISTE",  // Invesco EUR Government and Related Green
+  "IE0008SEV3B2": "ETF_IKKE_POSITIVLISTE",  // Invesco EUR Government and Related Green
+  "IE00BF51K249": "ETF_OBLIGATIONSBASERET",  // Invesco EUR IG Corporate Bond ESG UCITS 
+  "IE000YPOHA39": "ETF_IKKE_POSITIVLISTE",  // Invesco EUR Overnight Return Swap UCITS 
+  "IE00B3BPCH51": "ETF_IKKE_POSITIVLISTE",  // Invesco Euro Cash 3 Months UCITS ETF Acc
+  "IE00BKWD3B81": "ETF_OBLIGATIONSBASERET",  // Invesco Euro Corporate Hybrid Bond UCITS
+  "IE00BKWD3966": "ETF_OBLIGATIONSBASERET",  // Invesco Euro Corporate Hybrid Bond UCITS
+  "IE00BGJWWY63": "ETF_OBLIGATIONSBASERET",  // Invesco Euro Government Bond 1-3 Year UC
+  "IE00BGJWWV33": "ETF_OBLIGATIONSBASERET",  // Invesco Euro Government Bond 3-5 Year UC
+  "IE00BGJWWT11": "ETF_OBLIGATIONSBASERET",  // Invesco Euro Government Bond 5-7 Year UC
+  "IE000ESLTCW9": "ETF_OBLIGATIONSBASERET",  // Invesco Euro Government Bond 7-10 Year U
+  "IE00BGJWWW40": "ETF_OBLIGATIONSBASERET",  // Invesco Euro Government Bond 7-10 Year U
+  "IE00BGJWWX56": "ETF_OBLIGATIONSBASERET",  // Invesco Euro Government Bond UCITS ETF D
+  "IE00067X7JX0": "ETF_POSITIVLISTE",  // Invesco EURO STOXX 50 Equal Weight UCITS
+  "IE000DB78H45": "ETF_POSITIVLISTE",  // Invesco EURO STOXX 50 Equal Weight UCITS
+  "IE00B60SWX25": "ETF_POSITIVLISTE",  // Invesco EURO STOXX 50 UCITS ETF Acc
+  "IE00B5B5TG76": "ETF_POSITIVLISTE",  // Invesco EURO STOXX 50 UCITS ETF Dist
+  "IE00BZ4BMM98": "ETF_POSITIVLISTE",  // Invesco EURO STOXX High Dividend Low Vol
+  "IE00B3Q19T94": "ETF_POSITIVLISTE",  // Invesco EURO STOXX Optimised Banks UCITS
+  "IE000YNVI4W4": "ETF_IKKE_POSITIVLISTE",  // Invesco Europe Enhanced Equity UCITS ETF
+  "IE000716YHJ7": "ETF_POSITIVLISTE",  // Invesco FTSE All-World UCITS ETF Acc
+  "IE0000QLH0G6": "ETF_POSITIVLISTE",  // Invesco FTSE All-World UCITS ETF Dist
+  "IE0006VDD4K1": "ETF_POSITIVLISTE",  // Invesco FTSE All-World UCITS ETF EUR PfH
+  "IE00BYYXBF44": "ETF_IKKE_POSITIVLISTE",  // Invesco FTSE Emerging Markets High Divid
+  "IE00B23LNQ02": "ETF_POSITIVLISTE",  // Invesco FTSE RAFI All World 3000 UCITS E
+  "IE00B23D9570": "ETF_IKKE_POSITIVLISTE",  // Invesco FTSE RAFI Emerging Markets UCITS
+  "IE00B23D8X81": "ETF_IKKE_POSITIVLISTE",  // Invesco FTSE RAFI Europe UCITS ETF Dist
+  "IE00B23D8S39": "ETF_IKKE_POSITIVLISTE",  // Invesco FTSE RAFI US 1000 UCITS ETF Dist
+  "IE0005KF09R2": "ETF_IKKE_POSITIVLISTE",  // Invesco Global Active Defensive ESG Equi
+  "IE00BLSNMW37": "ETF_IKKE_POSITIVLISTE",  // Invesco Global Buyback Achievers UCITS E
+  "IE00BLRB0242": "ETF_IKKE_POSITIVLISTE",  // Invesco Global Clean Energy UCITS ETF Ac
+  "IE00BLRB0028": "ETF_IKKE_POSITIVLISTE",  // Invesco Global Clean Energy UCITS ETF Di
+  "IE000FVQW7E7": "ETF_OBLIGATIONSBASERET",  // Invesco Global Corporate Bond ESG UCITS 
+  "IE000TZ4SIN6": "ETF_IKKE_POSITIVLISTE",  // Invesco Global Enhanced Equity UCITS ETF
+  "IE000OHEH5Y9": "ETF_IKKE_POSITIVLISTE",  // Invesco Global Enhanced Equity UCITS ETF
+  "IE0001VDDL68": "ETF_OBLIGATIONSBASERET",  // Invesco Global High Yield Corporate Bond
+  "IE000ZWSN3F7": "ETF_OBLIGATIONSBASERET",  // Invesco Global High Yield Corporate Bond
+  "IE000XG0ZRI7": "ETF_OBLIGATIONSBASERET",  // Invesco Global High Yield Corporate Bond
+  "IE00053WDH64": "ETF_IKKE_POSITIVLISTE",  // Invesco Hydrogen Economy UCITS ETF Acc
+  "IE00BPRCH686": "ETF_IKKE_POSITIVLISTE",  // Invesco JPX-Nikkei 400 UCITS ETF Acc
+  "IE00BVGC6645": "ETF_IKKE_POSITIVLISTE",  // Invesco JPX-Nikkei 400 UCITS ETF EUR Hdg
+  "IE00BYMS5W68": "ETF_POSITIVLISTE",  // Invesco KBW NASDAQ Fintech UCITS ETF Acc
+  "IE00BHJYDV33": "ETF_IKKE_POSITIVLISTE",  // Invesco MDAX UCITS ETF Acc
+  "IE00B94ZB998": "ETF_IKKE_POSITIVLISTE",  // Invesco Morningstar US Energy Infrastruc
+  "IE00B8CJW150": "ETF_IKKE_POSITIVLISTE",  // Invesco Morningstar US Energy Infrastruc
+  "IE00BK80XL30": "ETF_POSITIVLISTE",  // Invesco MSCI China All Shares Stock Conn
+  "IE00BM8QS095": "ETF_POSITIVLISTE",  // Invesco MSCI China Technology All Shares
+  "IE000PJL7R74": "ETF_POSITIVLISTE",  // Invesco MSCI Emerging Markets ESG Climat
+  "IE00BMDBMY19": "ETF_POSITIVLISTE",  // Invesco MSCI Emerging Markets ESG Univer
+  "IE00B3DWVS88": "ETF_POSITIVLISTE",  // Invesco MSCI Emerging Markets UCITS ETF 
+  "IE000LUZJNI7": "ETF_POSITIVLISTE",  // Invesco MSCI Europe Equal Weight UCITS E
+  "IE000VDI16Q5": "ETF_POSITIVLISTE",  // Invesco MSCI Europe Equal Weight UCITS E
+  "IE000TI21P14": "ETF_POSITIVLISTE",  // Invesco MSCI Europe ESG Climate Paris Al
+  "IE00BG0NY640": "ETF_POSITIVLISTE",  // Invesco MSCI Europe ESG Leaders Catholic
+  "IE00BJQRDL90": "ETF_POSITIVLISTE",  // Invesco MSCI Europe ESG Universal Screen
+  "IE00BMDBMW94": "ETF_POSITIVLISTE",  // Invesco MSCI Europe Ex UK Universal Scre
+  "IE00BYX5K108": "ETF_POSITIVLISTE",  // Invesco MSCI Europe ex-UK UCITS ETF Acc
+  "IE00B60SWY32": "ETF_POSITIVLISTE",  // Invesco MSCI Europe UCITS ETF Acc
+  "IE000I8IKC59": "ETF_POSITIVLISTE",  // Invesco MSCI Japan ESG Climate Paris Ali
+  "IE00BMDBMV87": "ETF_POSITIVLISTE",  // Invesco MSCI Japan ESG Universal Screene
+  "IE00B60SX287": "ETF_POSITIVLISTE",  // Invesco MSCI Japan UCITS ETF Acc
+  "IE00BMDBMT65": "ETF_POSITIVLISTE",  // Invesco MSCI Pacific Ex Japan Universal 
+  "IE000RLUE8E9": "ETF_POSITIVLISTE",  // Invesco MSCI USA ESG Climate Paris Align
+  "IE00BJQRDM08": "ETF_POSITIVLISTE",  // Invesco MSCI USA ESG Universal Screened 
+  "IE00B60SX170": "ETF_POSITIVLISTE",  // Invesco MSCI USA UCITS ETF Acc
+  "IE00BK5LYT47": "ETF_POSITIVLISTE",  // Invesco MSCI USA UCITS ETF Dist
+  "IE000CH3OQ51": "ETF_POSITIVLISTE",  // Invesco MSCI USA UCITS ETF EUR Hgd Acc
+  "IE000OEF25S1": "ETF_POSITIVLISTE",  // Invesco MSCI World Equal Weight UCITS ET
+  "IE000V93BNU0": "ETF_POSITIVLISTE",  // Invesco MSCI World ESG Climate Paris Ali
+  "IE00BJQRDK83": "ETF_POSITIVLISTE",  // Invesco MSCI World ESG Universal Screene
+  "IE00B60SX394": "ETF_POSITIVLISTE",  // Invesco MSCI World UCITS ETF Acc
+  "IE00BQ70R696": "ETF_POSITIVLISTE",  // Invesco NASDAQ Biotech UCITS ETF Acc
+  "IE00BMD8KP97": "ETF_POSITIVLISTE",  // Invesco NASDAQ Next Generation 100 UCITS
+  "IE000L2SA8K5": "ETF_POSITIVLISTE",  // Invesco NASDAQ-100 Equal Weight UCITS ET
+  "IE000COQKPO9": "ETF_POSITIVLISTE",  // Invesco NASDAQ-100 ESG UCITS ETF Acc
+  "IE000JSJOR00": "ETF_POSITIVLISTE",  // Invesco NASDAQ-100 ESG UCITS ETF EUR Hdg
+  "IE0007YZZZN7": "ETF_POSITIVLISTE",  // Invesco Nasdaq-100 Income Advantage UCIT
+  "IE00BNRQM384": "ETF_POSITIVLISTE",  // Invesco NASDAQ-100 Swap UCITS ETF Acc
+  "IE000RUF4QN8": "ETF_POSITIVLISTE",  // Invesco NASDAQ-100 Swap UCITS ETF Dist
+  "IE00BDT8V027": "ETF_IKKE_POSITIVLISTE",  // Invesco Preferred Shares UCITS ETF EUR H
+  "IE00BJQRDN15": "ETF_IKKE_POSITIVLISTE",  // Invesco Quantitative Strategies ESG Glob
+  "IE00BJQRDP39": "ETF_IKKE_POSITIVLISTE",  // Invesco Quantitative Strategies ESG Glob
+  "IE0008YN55P8": "ETF_IKKE_POSITIVLISTE",  // Invesco Quantitative Strategies ESG Glob
+  "IE000N42HDP2": "ETF_IKKE_POSITIVLISTE",  // Invesco Quantitative Strategies Global E
+  "IE000XIBT2R7": "ETF_IKKE_POSITIVLISTE",  // Invesco Quantitative Strategies Global E
+  "IE00B60SX402": "ETF_IKKE_POSITIVLISTE",  // Invesco Russell 2000 UCITS ETF Acc
+  "IE000N1ZEIG9": "ETF_POSITIVLISTE",  // Invesco S&P 500 CTB Net Zero Pathway ESG
+  "IE0000TZZ2B2": "ETF_POSITIVLISTE",  // Invesco S&P 500 Equal Weight Swap UCITS 
+  "IE00BNGJJT35": "ETF_POSITIVLISTE",  // Invesco S&P 500 Equal Weight UCITS ETF A
+  "IE00BM8QRY62": "ETF_POSITIVLISTE",  // Invesco S&P 500 Equal Weight UCITS ETF D
+  "IE00BKS7L097": "ETF_POSITIVLISTE",  // Invesco S&P 500 ESG UCITS ETF Acc
+  "IE000QF66PE6": "ETF_POSITIVLISTE",  // Invesco S&P 500 ESG UCITS ETF EUR Hdg Ac
+  "IE00BWTN6Y99": "ETF_POSITIVLISTE",  // Invesco S&P 500 High Dividend Low Volati
+  "IE000E6TPCH9": "ETF_POSITIVLISTE",  // Invesco S&P 500 Quality UCITS ETF Acc
+  "IE000SNCKVM9": "ETF_POSITIVLISTE",  // Invesco S&P 500 Quality UCITS ETF Dist
+  "IE00BDZCKK11": "ETF_POSITIVLISTE",  // Invesco S&P 500 QVM UCITS ETF
+  "IE00B3YCGJ38": "ETF_POSITIVLISTE",  // Invesco S&P 500 UCITS ETF Acc
+  "IE00BYML9W36": "ETF_POSITIVLISTE",  // Invesco S&P 500 UCITS ETF Dist
+  "IE00BRKWGL70": "ETF_POSITIVLISTE",  // Invesco S&P 500 UCITS ETF EUR Hdg Acc
+  "IE000K9Z3SF5": "ETF_POSITIVLISTE",  // Invesco S&P China A 300 Swap UCITS ETF A
+  "IE0000FCGYF9": "ETF_POSITIVLISTE",  // Invesco S&P China A MidCap 500 Swap UCIT
+  "IE00BH3YZ803": "ETF_POSITIVLISTE",  // Invesco S&P SmallCap 600 UCITS ETF Acc
+  "IE000AIFGRB9": "ETF_POSITIVLISTE",  // Invesco S&P World Energy ESG UCITS ETF A
+  "IE00018LB0D8": "ETF_POSITIVLISTE",  // Invesco S&P World Financials ESG UCITS E
+  "IE000L4EH2K5": "ETF_POSITIVLISTE",  // Invesco S&P World Health Care ESG UCITS 
+  "IE000Q0IU5T1": "ETF_POSITIVLISTE",  // Invesco S&P World Information Technology
+  "IE00BM8QRZ79": "ETF_IKKE_POSITIVLISTE",  // Invesco Solar Energy UCITS ETF Acc
+  "IE00B5NLX835": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Autom
+  "IE00B5MTWD60": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Banks
+  "IE00B5MTWY73": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Basic
+  "IE00B5MTY077": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Chemi
+  "IE00B5MTY309": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Const
+  "IE00B5MTYK77": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Finan
+  "IE00B5MTYL84": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Food 
+  "IE00B5MJYY16": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Healt
+  "IE00B5MJYX09": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Indus
+  "IE00B5MTXJ97": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Insur
+  "IE00B5MTZ488": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Media
+  "IE00B5MTWH09": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Oil &
+  "IE00B5MTZ595": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Perso
+  "IE00B5MTZM66": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Retai
+  "IE00B5MTWZ80": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Techn
+  "IE00B5MJYB88": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Telec
+  "IE00B5MJYC95": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Trave
+  "IE00B5MTXK03": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 Optimised Utili
+  "IE00B60SWW18": "ETF_POSITIVLISTE",  // Invesco STOXX Europe 600 UCITS ETF Acc
+  "IE0009EGAHL0": "ETF_IKKE_POSITIVLISTE",  // Invesco US Enhanced Equity UCITS ETF Acc
+  "IE00BD0Q9673": "ETF_IKKE_POSITIVLISTE",  // Invesco US High Yield Fallen Angels UCIT
+  "IE00BYVTMZ20": "ETF_IKKE_POSITIVLISTE",  // Invesco US High Yield Fallen Angels UCIT
+  "IE00BKWD3C98": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 0-1 Year UCITS 
+  "IE00BLCH1X54": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 0-1 Year UCITS 
+  "IE00BF2FNH52": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 1-3 Year UCITS 
+  "IE00BF2FNG46": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 1-3 Year UCITS 
+  "IE00BF2FNJ76": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 1-3 Year UCITS 
+  "IE00BF2FNR50": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 3-7 Year UCITS 
+  "IE00BF2FNQ44": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 3-7 Year UCITS 
+  "IE00BF2FPB31": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 3-7 Year UCITS 
+  "IE00BF2FN752": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 7-10 Year UCITS
+  "IE00BF2FN646": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 7-10 Year UCITS
+  "IE00BF2FN869": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 7-10 Year UCITS
+  "IE000GE4QIR1": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 10+ Year UCITS 
+  "IE00BKWD3743": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 10+ Year UCITS 
+  "IE000FXHG8D6": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond 10+ Year UCITS 
+  "IE00BF2GFH28": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond UCITS ETF Dist
+  "IE00BF2GFK56": "ETF_OBLIGATIONSBASERET",  // Invesco US Treasury Bond UCITS ETF EUR H
+  "IE0008GO35B5": "ETF_IKKE_POSITIVLISTE",  // Invesco USD AAA CLO UCITS ETF Acc
+  "IE000PKN5N58": "ETF_IKKE_POSITIVLISTE",  // Invesco USD AAA CLO UCITS ETF Dist
+  "IE00BF51K025": "ETF_OBLIGATIONSBASERET",  // Invesco USD IG Corporate Bond ESG UCITS 
+  "IE0008RX29L5": "ETF_IKKE_POSITIVLISTE",  // Invesco Wind Energy UCITS ETF Acc
+  "IE00BG5QQ390": "ETF_OBLIGATIONSBASERET",  // iShares $ Corp Bond 0-3Yr ESG SRI UCITS 
+  "IE00BZ048579": "ETF_OBLIGATIONSBASERET",  // iShares $ Corp Bond 0-3Yr ESG SRI UCITS 
+  "IE000FZ1S3M3": "ETF_OBLIGATIONSBASERET",  // iShares $ Corp Bond ESG SRI UCITS ETF EU
+  "IE00BH4G7D40": "ETF_OBLIGATIONSBASERET",  // iShares $ Corp Bond ESG SRI UCITS ETF EU
+  "IE00BKKKWJ26": "ETF_OBLIGATIONSBASERET",  // iShares $ Corp Bond ESG SRI UCITS ETF US
+  "IE00BK4W7N32": "ETF_OBLIGATIONSBASERET",  // iShares $ Corp Bond ESG SRI UCITS ETF US
+  "IE0032895942": "ETF_OBLIGATIONSBASERET",  // iShares $ Corp Bond UCITS ETF USD (Dist)
+  "IE00BCLWRB83": "ETF_OBLIGATIONSBASERET",  // iShares $ Corporate Bond Interest Rate H
+  "IE00BMCZLH06": "ETF_OBLIGATIONSBASERET",  // iShares $ Development Bank Bonds UCITS E
+  "IE00BKRWN659": "ETF_OBLIGATIONSBASERET",  // iShares $ Development Bank Bonds UCITS E
+  "IE00BF11F458": "ETF_OBLIGATIONSBASERET",  // iShares $ Floating Rate Bond UCITS ETF E
+  "IE00BZ048462": "ETF_OBLIGATIONSBASERET",  // iShares $ Floating Rate Bond UCITS ETF U
+  "IE00BMDFDY08": "ETF_OBLIGATIONSBASERET",  // iShares $ High Yield Corp Bond ESG SRI U
+  "IE00BF3N7102": "ETF_OBLIGATIONSBASERET",  // iShares $ High Yield Corp Bond UCITS ETF
+  "IE00B4PY7Y77": "ETF_OBLIGATIONSBASERET",  // iShares $ High Yield Corp Bond UCITS ETF
+  "IE00BDQZ5152": "ETF_OBLIGATIONSBASERET",  // iShares $ Intermediate Credit Bond UCITS
+  "IE000AWT6D61": "ETF_OBLIGATIONSBASERET",  // iShares $ Short Duration Corp Bond UCITS
+  "IE000VNGJFV0": "ETF_OBLIGATIONSBASERET",  // iShares $ Short Duration Corp Bond UCITS
+  "IE00BCRY5Y77": "ETF_OBLIGATIONSBASERET",  // iShares $ Short Duration Corporate Bond 
+  "IE0000BQ75C2": "ETF_OBLIGATIONSBASERET",  // iShares $ Short Duration High Yield Corp
+  "IE00BCRY6003": "ETF_OBLIGATIONSBASERET",  // iShares $ Short Duration High Yield Corp
+  "IE000WIQIPT2": "ETF_IKKE_POSITIVLISTE",  // iShares $ TIPS 0-5 UCITS ETF EUR Hedged 
+  "IE00BDQYWQ65": "ETF_IKKE_POSITIVLISTE",  // iShares $ TIPS 0-5 UCITS ETF USD (Dist)
+  "IE00B1FZSC47": "ETF_IKKE_POSITIVLISTE",  // iShares $ TIPS UCITS ETF 
+  "IE00BDZVH966": "ETF_IKKE_POSITIVLISTE",  // iShares $ TIPS UCITS ETF EUR Hedged (Acc
+  "IE00BGR7L912": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond 0-1yr UCITS ETF 
+  "IE00BDFK1573": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond 1-3yr UCITS ETF 
+  "IE00B14X4S71": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond 1-3yr UCITS ETF 
+  "IE00BGPP6473": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond 3-7yr UCITS ETF 
+  "IE00BFXYHY63": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond 3-7yr UCITS ETF 
+  "IE000K1VI152": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond 7-10yr UCITS ETF
+  "IE00BGPP6697": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond 7-10yr UCITS ETF
+  "IE00B1FZS798": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond 7-10yr UCITS ETF
+  "IE00043L4HU0": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond 10-20yr UCITS ET
+  "IE00BSKRJZ44": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond 20+yr UCITS ETF 
+  "IE00BD8PGZ49": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond 20+yr UCITS ETF 
+  "IE00BK95B138": "ETF_OBLIGATIONSBASERET",  // iShares $ Treasury Bond UCITS ETF USD (D
+  "IE00BCRY6227": "ETF_OBLIGATIONSBASERET",  // iShares $ Ultrashort Bond UCITS ETF USD 
+  "IE000Q9IHH10": "ETF_IKKE_POSITIVLISTE",  // iShares € AAA CLO Active UCITS ETF EUR (
+  "IE000CR3ZDF9": "ETF_OBLIGATIONSBASERET",  // iShares € Aggregate Bond ESG SRI UCITS E
+  "IE00B3DKXQ41": "ETF_OBLIGATIONSBASERET",  // iShares € Aggregate Bond ESG SRI UCITS E
+  "IE000JJPY166": "ETF_IKKE_POSITIVLISTE",  // iShares € Cash UCITS ETF EUR (Acc)
+  "IE000AK4O3W6": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond 0-3Yr ESG SRI UCITS 
+  "IE000F6G1DE0": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond 1-5yr UCITS ETF EUR 
+  "IE00B4L60045": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond 1-5yr UCITS ETF EUR 
+  "IE00BSKRK281": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond BBB-BB UCITS ETF EUR
+  "IE000BUIVY49": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond Enhanced Active UCIT
+  "IE000SE6KPV2": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond ESG Paris-Aligned Cl
+  "IE000ZX8CQG2": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond ESG Paris-Aligned Cl
+  "IE000L2TO2T2": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond ESG SRI UCITS ETF EU
+  "IE00BYZTVT56": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond ESG SRI UCITS ETF EU
+  "IE00B4L5ZY03": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond ex-Financials 1-5Yr 
+  "IE0000BH4WF5": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond ex-Financials UCITS 
+  "IE00B4L5ZG21": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond ex-Financials UCITS 
+  "IE00B87RLX93": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond Financials UCITS ETF
+  "IE00B6X2VY59": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond Interest Rate Hedged
+  "IE0032523478": "ETF_OBLIGATIONSBASERET",  // iShares € Corp Bond Large Cap UCITS ETF 
+  "IE00B3B8Q275": "ETF_OBLIGATIONSBASERET",  // iShares € Covered Bond UCITS ETF EUR (Di
+  "IE000R7KKFN3": "ETF_OBLIGATIONSBASERET",  // iShares € Flexible Income Bond Active UC
+  "IE000NHAIBN0": "ETF_OBLIGATIONSBASERET",  // iShares € Flexible Income Bond Active UC
+  "IE000NVM56L3": "ETF_OBLIGATIONSBASERET",  // iShares € Floating Rate Bond Advanced UC
+  "IE00BF5GB717": "ETF_OBLIGATIONSBASERET",  // iShares € Floating Rate Bond Advanced UC
+  "IE000WV38GP5": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 0-1yr UCITS ETF EUR 
+  "IE00B3FH7618": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 0-1yr UCITS ETF EUR 
+  "IE000JLXYKJ8": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 0-3 month UCITS ETF 
+  "IE000LJ2O0V5": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 0-3 month UCITS ETF 
+  "IE00B14X4Q57": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 1-3yr UCITS ETF EUR 
+  "IE00B1FZS681": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 3-5yr UCITS ETF EUR 
+  "IE00B3VTML14": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 3-7yr UCITS ETF EUR 
+  "IE00B4WXJG34": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 5-7yr UCITS ETF EUR 
+  "IE00B3VTN290": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 7-10yr UCITS ETF EUR
+  "IE00B1FZS806": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 7-10yr UCITS ETF EUR
+  "IE00B4WXJH41": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 10-15yr UCITS ETF EU
+  "IE00B1FZS913": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 15-30yr UCITS ETF EU
+  "IE000GHXL2Q3": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 20yr Target Duration
+  "IE00BSKRJX20": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond 20yr Target Duration
+  "IE00BLDGH553": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond Climate UCITS ETF EU
+  "IE00BLDGH447": "ETF_OBLIGATIONSBASERET",  // iShares € Govt Bond Climate UCITS ETF EU
+  "IE000IZO7033": "ETF_OBLIGATIONSBASERET",  // iShares € Green Bond UCITS ETF EUR (Acc)
+  "IE00BMDBMN04": "ETF_OBLIGATIONSBASERET",  // iShares € Green Bond UCITS ETF EUR (Dist
+  "IE000H92C4B8": "ETF_OBLIGATIONSBASERET",  // iShares € High Yield Corp Bond ESG Paris
+  "IE00BJK55C48": "ETF_OBLIGATIONSBASERET",  // iShares € High Yield Corp Bond ESG SRI U
+  "IE00B66F4759": "ETF_OBLIGATIONSBASERET",  // iShares € High Yield Corp Bond UCITS ETF
+  "IE00B0M62X26": "ETF_OBLIGATIONSBASERET",  // iShares € Inflation Linked Govt Bond UCI
+  "IE0005RKXDO7": "ETF_IKKE_POSITIVLISTE",  // iShares € Overnight Rate Swap UCITS ETF 
+  "IE000NBRE3P7": "ETF_OBLIGATIONSBASERET",  // iShares € UltraShort Bond ESG SRI UCITS 
+  "IE00BJP26D89": "ETF_OBLIGATIONSBASERET",  // iShares € UltraShort Bond ESG SRI UCITS 
+  "IE000RHYOR04": "ETF_OBLIGATIONSBASERET",  // iShares € Ultrashort Bond UCITS ETF EUR 
+  "IE00BYZK4669": "ETF_IKKE_POSITIVLISTE",  // iShares Ageing Population UCITS ETF USD 
+  "IE000Q9W2IR3": "ETF_IKKE_POSITIVLISTE",  // iShares AI Adopters & Applications UCITS
+  "IE000X59ZHE2": "ETF_IKKE_POSITIVLISTE",  // iShares AI Infrastructure UCITS ETF USD 
+  "IE000G0E83X3": "ETF_IKKE_POSITIVLISTE",  // iShares AI Innovation Active UCITS ETF U
+  "IE000D5R9C23": "ETF_IKKE_POSITIVLISTE",  // iShares Asia ex Japan Equity Enhanced Ac
+  "IE00B14X4T88": "ETF_IKKE_POSITIVLISTE",  // iShares Asia Pacific Dividend UCITS ETF 
+  "IE00BGDPWV87": "ETF_IKKE_POSITIVLISTE",  // iShares Asia Property Yield UCITS ETF US
+  "IE00B1FZS244": "ETF_IKKE_POSITIVLISTE",  // iShares Asia Property Yield UCITS ETF US
+  "IE000DYQE2Q3": "ETF_OBLIGATIONSBASERET",  // iShares AT1 Bond Active UCITS ETF EUR Ac
+  "DE000A0D8Q23": "ETF_IKKE_POSITIVLISTE",  // iShares ATX UCITS ETF (DE)
+  "IE00BYZK4552": "ETF_IKKE_POSITIVLISTE",  // iShares Automation & Robotics UCITS ETF 
+  "IE00BYWZ0333": "ETF_IKKE_POSITIVLISTE",  // iShares Automation & Robotics UCITS ETF 
+  "IE00B1W57M07": "ETF_IKKE_POSITIVLISTE",  // iShares BIC 50 UCITS ETF USD (Dist)
+  "IE000RDRMSD1": "ETF_IKKE_POSITIVLISTE",  // iShares Blockchain Technology UCITS ETF 
+  "IE000VSFIC94": "ETF_OBLIGATIONSBASERET",  // iShares Broad $ High Yield Corp Bond UCI
+  "IE000EVUY6K9": "ETF_OBLIGATIONSBASERET",  // iShares Broad $ High Yield Corp Bond UCI
+  "IE00BG0J4957": "ETF_OBLIGATIONSBASERET",  // iShares Broad $ High Yield Corp Bond UCI
+  "IE00BG0J4B71": "ETF_OBLIGATIONSBASERET",  // iShares Broad € High Yield Corp Bond UCI
+  "IE000XFP47S2": "ETF_OBLIGATIONSBASERET",  // iShares Broad Global Govt Bond UCITS ETF
+  "IE000W336086": "ETF_OBLIGATIONSBASERET",  // iShares China CNY Bond UCITS ETF EUR Hed
+  "IE00BYPC1H27": "ETF_OBLIGATIONSBASERET",  // iShares China CNY Bond UCITS ETF USD (Di
+  "IE00B02KXK85": "ETF_IKKE_POSITIVLISTE",  // iShares China Large Cap UCITS ETF USD (D
+  "IE00BLP53M98": "ETF_IKKE_POSITIVLISTE",  // iShares Conservative Portfolio UCITS ETF
+  "IE00063FT9K6": "ETF_IKKE_POSITIVLISTE",  // iShares Copper Miners UCITS ETF USD (Acc
+  "IE000H22E3N8": "ETF_POSITIVLISTE",  // iShares Core £ Corp Bond UCITS ETF EUR H
+  "IE00B3F81R35": "ETF_POSITIVLISTE",  // iShares Core € Corp Bond UCITS ETF EUR (
+  "IE00B4WXJJ64": "ETF_POSITIVLISTE",  // iShares Core € Govt Bond UCITS ETF EUR (
+  "DE000A2QP331": "ETF_POSITIVLISTE",  // iShares Core DAX UCITS ETF (DE) EUR (Dis
+  "IE00B53L3W79": "ETF_POSITIVLISTE",  // iShares Core EURO STOXX 50 UCITS ETF EUR
+  "IE0008471009": "ETF_POSITIVLISTE",  // iShares Core EURO STOXX 50 UCITS ETF EUR
+  "IE000HARJEE2": "ETF_POSITIVLISTE",  // iShares Core FTSE 100 UCITS ETF EUR Hedg
+  "IE00B53HP851": "ETF_POSITIVLISTE",  // iShares Core FTSE 100 UCITS ETF GBP (Acc
+  "IE0005042456": "ETF_POSITIVLISTE",  // iShares Core FTSE 100 UCITS ETF GBP (Dis
+  "IE00BDBRDM35": "ETF_POSITIVLISTE",  // iShares Core Global Aggregate Bond UCITS
+  "IE00B3F81409": "ETF_POSITIVLISTE",  // iShares Core Global Aggregate Bond UCITS
+  "IE00BKM4GZ66": "ETF_POSITIVLISTE",  // iShares Core MSCI EM IMI UCITS ETF USD (
+  "IE00BD45KH83": "ETF_POSITIVLISTE",  // iShares Core MSCI EM IMI UCITS ETF USD (
+  "IE00B53QG562": "ETF_POSITIVLISTE",  // iShares Core MSCI EMU UCITS ETF EUR (Acc
+  "IE00B4K48X80": "ETF_POSITIVLISTE",  // iShares Core MSCI Europe UCITS ETF EUR (
+  "IE000MAO75G5": "ETF_POSITIVLISTE",  // iShares Core MSCI Europe UCITS ETF EUR (
+  "IE00B1YZSC51": "ETF_POSITIVLISTE",  // iShares Core MSCI Europe UCITS ETF EUR (
+  "IE00B4L5YX21": "ETF_POSITIVLISTE",  // iShares Core MSCI Japan IMI UCITS ETF US
+  "IE00B52MJY50": "ETF_POSITIVLISTE",  // iShares Core MSCI Pacific ex-Japan UCITS
+  "IE00BKBF6H24": "ETF_POSITIVLISTE",  // iShares Core MSCI World UCITS ETF EUR He
+  "IE00B4L5Y983": "ETF_POSITIVLISTE",  // iShares Core MSCI World UCITS ETF USD (A
+  "IE00B5BMR087": "ETF_POSITIVLISTE",  // iShares Core S&P 500 UCITS ETF USD (Acc)
+  "IE0031442068": "ETF_POSITIVLISTE",  // iShares Core S&P 500 UCITS ETF USD (Dist
+  "IE000PYIUPH0": "ETF_POSITIVLISTE",  // iShares Core UK Gilts UCITS ETF EUR Hedg
+  "IE000BI0GCN3": "ETF_POSITIVLISTE",  // iShares Core UK Gilts UCITS ETF EUR Hedg
+  "DE0005933931": "ETF_IKKE_POSITIVLISTE",  // iShares DAX  UCITS ETF (DE)
+  "DE000A0Q4R69": "ETF_IKKE_POSITIVLISTE",  // iShares DAX ESG UCITS ETF (DE)
+  "IE00B1FZS350": "ETF_IKKE_POSITIVLISTE",  // iShares Developed Markets Property Yield
+  "IE00023EZQ82": "ETF_IKKE_POSITIVLISTE",  // iShares Digital Entertainment and Educat
+  "IE00BG0J4C88": "ETF_IKKE_POSITIVLISTE",  // iShares Digital Security UCITS ETF USD (
+  "IE00BG0J4841": "ETF_IKKE_POSITIVLISTE",  // iShares Digital Security UCITS ETF USD (
+  "IE00BYZK4883": "ETF_IKKE_POSITIVLISTE",  // iShares Digitalisation UCITS ETF USD (Ac
+  "DE0002635273": "ETF_IKKE_POSITIVLISTE",  // iShares DivDAX  UCITS ETF (DE)
+  "IE00BDFL4P12": "ETF_IKKE_POSITIVLISTE",  // iShares Diversified Commodity Swap UCITS
+  "DE000A0H0744": "ETF_IKKE_POSITIVLISTE",  // iShares Dow Jones Asia Pacific Select Di
+  "DE000A0F5UE8": "ETF_IKKE_POSITIVLISTE",  // iShares Dow Jones China Offshore 50 UCIT
+  "DE000A0F5UG3": "ETF_IKKE_POSITIVLISTE",  // iShares Dow Jones Eurozone Sustainabilit
+  "IE00B57X3V84": "ETF_IKKE_POSITIVLISTE",  // iShares Dow Jones Global Leaders Screene
+  "DE0006289382": "ETF_IKKE_POSITIVLISTE",  // iShares Dow Jones Global Titans 50 UCITS
+  "DE000A2QP4C4": "ETF_IKKE_POSITIVLISTE",  // iShares Dow Jones Global Titans 50 UCITS
+  "DE0006289390": "ETF_IKKE_POSITIVLISTE",  // iShares Dow Jones Industrial Average UCI
+  "IE00B53L4350": "ETF_IKKE_POSITIVLISTE",  // iShares Dow Jones Industrial Average UCI
+  "DE000A0D8Q49": "ETF_IKKE_POSITIVLISTE",  // iShares Dow Jones U.S. Select Dividend U
+  "DE000A0H0728": "ETF_IKKE_POSITIVLISTE",  // iShares Dow Jones-UBS Commodity Swap UCI
+  "DE0006289473": "ETF_IKKE_POSITIVLISTE",  // iShares eb.rexx  Government Germany 1.5-
+  "DE0006289481": "ETF_IKKE_POSITIVLISTE",  // iShares eb.rexx  Government Germany 2.5-
+  "DE0006289499": "ETF_IKKE_POSITIVLISTE",  // iShares eb.rexx  Government Germany 5.5-
+  "DE000A0D8Q31": "ETF_IKKE_POSITIVLISTE",  // iShares eb.rexx  Government Germany 10.5
+  "DE0006289465": "ETF_IKKE_POSITIVLISTE",  // iShares eb.rexx  Government Germany UCIT
+  "DE000A0Q4RZ9": "ETF_IKKE_POSITIVLISTE",  // iShares eb.rexx  Money Market UCITS ETF 
+  "IE00B8KGV557": "ETF_POSITIVLISTE",  // iShares Edge MSCI EM Minimum Volatility 
+  "IE00BG0SKF03": "ETF_POSITIVLISTE",  // iShares Edge MSCI EM Value Factor UCITS 
+  "IE00BKVL7D31": "ETF_POSITIVLISTE",  // iShares Edge MSCI Europe Minimum Volatil
+  "IE00B86MWN23": "ETF_POSITIVLISTE",  // iShares Edge MSCI Europe Minimum Volatil
+  "IE00BQN1K786": "ETF_POSITIVLISTE",  // iShares Edge MSCI Europe Momentum Factor
+  "IE00BQN1K562": "ETF_POSITIVLISTE",  // iShares Edge MSCI Europe Quality Factor 
+  "IE00BQN1K901": "ETF_POSITIVLISTE",  // iShares Edge MSCI Europe Value Factor UC
+  "IE00BKVL7331": "ETF_POSITIVLISTE",  // iShares Edge MSCI USA Minimum Volatility
+  "IE00BD1F4N50": "ETF_POSITIVLISTE",  // iShares Edge MSCI USA Momentum Factor UC
+  "IE00BD1F4L37": "ETF_POSITIVLISTE",  // iShares Edge MSCI USA Quality Factor UCI
+  "IE00BD1F4M44": "ETF_POSITIVLISTE",  // iShares Edge MSCI USA Value Factor UCITS
+  "IE00BKVL7778": "ETF_POSITIVLISTE",  // iShares Edge MSCI World Minimum Volatili
+  "IE00BYXPXL17": "ETF_POSITIVLISTE",  // iShares Edge MSCI World Minimum Volatili
+  "IE00B8FHGS14": "ETF_POSITIVLISTE",  // iShares Edge MSCI World Minimum Volatili
+  "IE00BMCZLJ20": "ETF_POSITIVLISTE",  // iShares Edge MSCI World Minimum Volatili
+  "IE00BP3QZ825": "ETF_POSITIVLISTE",  // iShares Edge MSCI World Momentum Factor 
+  "IE00BP3QZ601": "ETF_POSITIVLISTE",  // iShares Edge MSCI World Quality Factor U
+  "IE00BP3QZD73": "ETF_POSITIVLISTE",  // iShares Edge MSCI World Size Factor UCIT
+  "IE00BP3QZB59": "ETF_POSITIVLISTE",  // iShares Edge MSCI World Value Factor UCI
+  "IE00BYX8XD24": "ETF_POSITIVLISTE",  // iShares Edge S&P 500 Minimum Volatility 
+  "IE00B6SPMN59": "ETF_POSITIVLISTE",  // iShares Edge S&P 500 Minimum Volatility 
+  "IE00BGL86Z12": "ETF_IKKE_POSITIVLISTE",  // iShares Electric Vehicles and Driving Te
+  "IE00B652H904": "ETF_IKKE_POSITIVLISTE",  // iShares EM Dividend UCITS ETF USD (Dist)
+  "IE00B6QGFW01": "ETF_OBLIGATIONSBASERET",  // iShares Emerging Asia Local Govt Bond UC
+  "IE000OVF8Q66": "ETF_IKKE_POSITIVLISTE",  // iShares Emerging Markets Equity Enhanced
+  "IE000ROSD5J6": "ETF_IKKE_POSITIVLISTE",  // iShares Essential Metals Producers UCITS
+  "IE00BYZTVV78": "ETF_OBLIGATIONSBASERET",  // iShares Euro Corporate Bond Sustainabili
+  "IE00B0M62S72": "ETF_IKKE_POSITIVLISTE",  // iShares Euro Dividend UCITS ETF EUR (Dis
+  "DE000A0H0785": "ETF_OBLIGATIONSBASERET",  // iShares Euro Government Bond Capped 1.5-
+  "IE000LXEN6X4": "ETF_POSITIVLISTE",  // iShares EURO STOXX 50 ESG UCITS ETF EUR 
+  "DE0005933956": "ETF_POSITIVLISTE",  // iShares EURO STOXX 50 UCITS ETF (DE)
+  "IE00B02KXL92": "ETF_POSITIVLISTE",  // iShares EURO STOXX Mid UCITS ETF EUR (Di
+  "DE0002635281": "ETF_POSITIVLISTE",  // iShares EURO STOXX Select Dividend 30 UC
+  "IE00B02KXM00": "ETF_POSITIVLISTE",  // iShares EURO STOXX Small UCITS ETF EUR (
+  "DE000A0D8Q07": "ETF_POSITIVLISTE",  // iShares EURO STOXX UCITS ETF (DE)
+  "IE00B0M62V02": "ETF_IKKE_POSITIVLISTE",  // iShares Euro Total Market Growth Large U
+  "IE00BCRY6557": "ETF_OBLIGATIONSBASERET",  // iShares Euro Ultrashort Bond UCITS ETF 
+  "IE000IAXNM41": "ETF_IKKE_POSITIVLISTE",  // iShares Europe Defence UCITS ETF EUR (Ac
+  "IE00000EF730": "ETF_IKKE_POSITIVLISTE",  // iShares Europe Equity Enhanced Active UC
+  "IE00BGDQ0L74": "ETF_IKKE_POSITIVLISTE",  // iShares European Property Yield UCITS ET
+  "IE00B0M63284": "ETF_IKKE_POSITIVLISTE",  // iShares European Property Yield UCITS ET
+  "IE00BF3N7219": "ETF_OBLIGATIONSBASERET",  // iShares Fallen Angels High Yield Corp Bo
+  "IE00BYM31M36": "ETF_OBLIGATIONSBASERET",  // iShares Fallen Angels High Yield Corp Bo
+  "IE00B53L4X51": "ETF_IKKE_POSITIVLISTE",  // iShares FTSE MIB UCITS ETF EUR (Acc)
+  "IE000WJWZK35": "ETF_OBLIGATIONSBASERET",  // iShares GBP Corp Bond 0-5yr UCITS ETF EU
+  "IE00B5V94313": "ETF_OBLIGATIONSBASERET",  // iShares Germany Govt Bond UCITS ETF EUR 
+  "IE00B87G8S03": "ETF_OBLIGATIONSBASERET",  // iShares Global AAA-AA Govt Bond UCITS ET
+  "IE000U9ODG19": "ETF_IKKE_POSITIVLISTE",  // iShares Global Aerospace & Defence UCITS
+  "IE000APK27S2": "ETF_OBLIGATIONSBASERET",  // iShares Global Aggregate Bond ESG SRI UC
+  "IE000U58J0M1": "ETF_IKKE_POSITIVLISTE",  // iShares Global Clean Energy Transition U
+  "IE00B1XNHC34": "ETF_IKKE_POSITIVLISTE",  // iShares Global Clean Energy Transition U
+  "IE000PLCL3C9": "ETF_OBLIGATIONSBASERET",  // iShares Global Corp Bond UCITS ETF EUR H
+  "IE00BJSFQW37": "ETF_OBLIGATIONSBASERET",  // iShares Global Corp Bond UCITS ETF EUR H
+  "IE00B7J7TB45": "ETF_OBLIGATIONSBASERET",  // iShares Global Corp Bond UCITS ETF USD (
+  "IE00B9M6SJ31": "ETF_OBLIGATIONSBASERET",  // iShares Global Corporate Bond EUR Hedged
+  "IE00B3F81K65": "ETF_OBLIGATIONSBASERET",  // iShares Global Govt Bond UCITS ETF USD (
+  "IE00091SR7N7": "ETF_OBLIGATIONSBASERET",  // iShares Global High Yield Corp Bond UCIT
+  "IE00BJSFR200": "ETF_OBLIGATIONSBASERET",  // iShares Global High Yield Corp Bond UCIT
+  "IE00B74DQ490": "ETF_OBLIGATIONSBASERET",  // iShares Global High Yield Corp Bond UCIT
+  "IE00BKPT2S34": "ETF_OBLIGATIONSBASERET",  // iShares Global Inflation Linked Govt Bon
+  "IE00B3B8PX14": "ETF_OBLIGATIONSBASERET",  // iShares Global Inflation Linked Govt Bon
+  "IE000CK5G8J7": "ETF_IKKE_POSITIVLISTE",  // iShares Global Infrastructure UCITS ETF 
+  "IE00B1FZS467": "ETF_IKKE_POSITIVLISTE",  // iShares Global Infrastructure UCITS ETF 
+  "IE0003ZXNJY5": "ETF_IKKE_POSITIVLISTE",  // iShares Global Timber & Forestry UCITS E
+  "IE00B27YCF74": "ETF_IKKE_POSITIVLISTE",  // iShares Global Timber & Forestry UCITS E
+  "IE00B1TXK627": "ETF_IKKE_POSITIVLISTE",  // iShares Global Water UCITS ETF USD (Dist
+  "IE00B6R52036": "ETF_IKKE_POSITIVLISTE",  // iShares Gold Producers UCITS ETF USD (Ac
+  "IE00BLLZQ805": "ETF_IKKE_POSITIVLISTE",  // iShares Growth Portfolio UCITS ETF EUR (
+  "IE00BYZK4776": "ETF_IKKE_POSITIVLISTE",  // iShares Healthcare Innovation UCITS ETF 
+  "IE000BWITBP9": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2026 Term $ Corp UCIT
+  "IE0007UPSEA3": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2026 Term $ Corp UCIT
+  "IE000WA6L436": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2026 Term € Corp UCIT
+  "IE000SIZJ2B2": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2026 Term € Corp UCIT
+  "IE000LZ7BZW8": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2026 Term € Italy Gov
+  "IE000I1D7D10": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2027 Term $ Corp UCIT
+  "IE000I1Q42S9": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2027 Term $ Corp UCIT
+  "IE000ZOI8OK5": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2027 Term € Corp UCIT
+  "IE000H5X52W8": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2027 Term € Corp UCIT
+  "IE0000UJ3480": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2028 Term $ Corp UCIT
+  "IE0000VITHT2": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2028 Term $ Corp UCIT
+  "IE0003HV7CS6": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2028 Term € Corp Cros
+  "IE000Q0UH3Y7": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2028 Term € Corp Cros
+  "IE0008UEVOE0": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2028 Term € Corp UCIT
+  "IE000264WWY0": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2028 Term € Corp UCIT
+  "IE000Q2EQ5K8": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2028 Term € Italy Gov
+  "IE000UJSC3C9": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2029 Term € Corp Cros
+  "IE000BUSGFL9": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2029 Term € Corp Cros
+  "IE000IHURBR0": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2029 Term € Corp UCIT
+  "IE000LX17BP9": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2030 Term € Corp UCIT
+  "IE000D9WMGF0": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2031 Term € Corp UCIT
+  "IE000I2WYEU9": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2031 Term € Corp UCIT
+  "IE000I660ZF8": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2032 Term € Corp UCIT
+  "IE0000MR4GH9": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2032 Term € Corp UCIT
+  "IE000ZBGZQM8": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2033 Term € Corp UCIT
+  "IE000E0NL9T3": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2033 Term € Corp UCIT
+  "IE000UY6XF65": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2034 Term € Corp UCIT
+  "IE000SBJO6L2": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2034 Term € Corp UCIT
+  "IE000O1FWAW6": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2035 Term € Corp UCIT
+  "IE000WLR06P0": "ETF_OBLIGATIONSBASERET",  // iShares iBonds Dec 2035 Term € Corp UCIT
+  "IE00BD0B9B76": "ETF_IKKE_POSITIVLISTE",  // iShares Inclusion and Diversity UCITS ET
+  "IE000ANOU8J3": "ETF_OBLIGATIONSBASERET",  // iShares India INR Govt Bond UCITS ETF US
+  "IE0004L9EID2": "ETF_OBLIGATIONSBASERET",  // iShares India INR Govt Bond UCITS ETF US
+  "IE00B7LW6Y90": "ETF_OBLIGATIONSBASERET",  // iShares Italy Govt Bond UCITS ETF EUR (D
+  "IE00B9M6RS56": "ETF_OBLIGATIONSBASERET",  // iShares J.P. Morgan $ EM Bond EUR Hedged
+  "IE00BJ5JPH63": "ETF_OBLIGATIONSBASERET",  // iShares J.P. Morgan $ EM Bond UCITS ETF 
+  "IE00BYXYYK40": "ETF_OBLIGATIONSBASERET",  // iShares J.P. Morgan $ EM Bond UCITS ETF 
+  "IE00B2NPKV68": "ETF_OBLIGATIONSBASERET",  // iShares J.P. Morgan $ EM Bond UCITS ETF 
+  "IE00BKT1CS59": "ETF_OBLIGATIONSBASERET",  // iShares J.P. Morgan $ EM Corp Bond UCITS
+  "IE00B6TLBW47": "ETF_OBLIGATIONSBASERET",  // iShares J.P. Morgan $ EM Corp Bond UCITS
+  "IE00B5M4WH52": "ETF_OBLIGATIONSBASERET",  // iShares J.P. Morgan EM Local Govt Bond U
+  "IE000TY854T9": "ETF_OBLIGATIONSBASERET",  // iShares Japan Govt Bond UCITS ETF EUR He
+  "IE00BKP5L730": "ETF_OBLIGATIONSBASERET",  // iShares JP Morgan Advanced $ EM Bond UCI
+  "IE00BDDRDW15": "ETF_OBLIGATIONSBASERET",  // iShares JP Morgan Advanced $ EM Bond UCI
+  "IE000D8FCSD8": "ETF_IKKE_POSITIVLISTE",  // iShares Listed Private Equity UCITS ETF 
+  "IE00B1TXHL60": "ETF_IKKE_POSITIVLISTE",  // iShares Listed Private Equity UCITS ETF 
+  "DE0005933923": "ETF_IKKE_POSITIVLISTE",  // iShares MDAX  UCITS ETF (DE) 
+  "DE000A2QP349": "ETF_IKKE_POSITIVLISTE",  // iShares MDAX UCITS ETF (DE) EUR (Dist)
+  "IE000RN58M26": "ETF_IKKE_POSITIVLISTE",  // iShares Metaverse UCITS ETF USD (Acc)
+  "IE00BLLZQS08": "ETF_IKKE_POSITIVLISTE",  // iShares Moderate Portfolio UCITS ETF EUR
+  "IE00B0M63730": "ETF_POSITIVLISTE",  // iShares MSCI AC Far East ex-Japan UCITS 
+  "IE000SNWS0L0": "ETF_POSITIVLISTE",  // iShares MSCI ACWI Screened UCITS ETF USD
+  "IE000JTPK610": "ETF_POSITIVLISTE",  // iShares MSCI ACWI SRI UCITS ETF USD (Acc
+  "IE00013A2XD6": "ETF_POSITIVLISTE",  // iShares MSCI ACWI SRI UCITS ETF USD (Dis
+  "IE00B6R52259": "ETF_POSITIVLISTE",  // iShares MSCI ACWI UCITS ETF USD (Acc)
+  "IE00B5377D42": "ETF_POSITIVLISTE",  // iShares MSCI Australia UCITS ETF USD (Ac
+  "IE00B0M63516": "ETF_POSITIVLISTE",  // iShares MSCI Brazil UCITS ETF USD (Dist)
+  "IE00B52SF786": "ETF_POSITIVLISTE",  // iShares MSCI Canada UCITS ETF USD (Acc)
+  "IE00BQT3WG13": "ETF_POSITIVLISTE",  // iShares MSCI China A UCITS ETF 
+  "IE000NFR7C63": "ETF_POSITIVLISTE",  // iShares MSCI China Tech UCITS ETF USD (A
+  "IE00BJ5JPG56": "ETF_POSITIVLISTE",  // iShares MSCI China UCITS ETF USD (Acc)
+  "IE00B5L8K969": "ETF_POSITIVLISTE",  // iShares MSCI EM Asia UCITS ETF USD (Acc)
+  "IE00BKM4H197": "ETF_POSITIVLISTE",  // iShares MSCI EM Consumer Growth UCITS ET
+  "IE00BHZPJ239": "ETF_POSITIVLISTE",  // iShares MSCI EM ESG Enhanced CTB UCITS E
+  "IE00BMG6Z448": "ETF_POSITIVLISTE",  // iShares MSCI EM ex-China UCITS ETF USD (
+  "IE00BFNM3P36": "ETF_POSITIVLISTE",  // iShares MSCI EM IMI Screened UCITS ETF U
+  "IE00BFNM3N12": "ETF_POSITIVLISTE",  // iShares MSCI EM IMI Screened UCITS ETF U
+  "IE00B27YCK28": "ETF_POSITIVLISTE",  // iShares MSCI EM Latin America UCITS ETF 
+  "IE00B3F81G20": "ETF_POSITIVLISTE",  // iShares MSCI EM Small Cap UCITS ETF USD 
+  "IE00BYVJRP78": "ETF_POSITIVLISTE",  // iShares MSCI EM SRI UCITS ETF USD (Acc)
+  "IE00BGDQ0T50": "ETF_POSITIVLISTE",  // iShares MSCI EM SRI UCITS ETF USD (Dist)
+  "IE00B4L5YC18": "ETF_POSITIVLISTE",  // iShares MSCI EM UCITS ETF USD (Acc)
+  "IE00B0M63177": "ETF_POSITIVLISTE",  // iShares MSCI EM UCITS ETF USD (Dist)
+  "IE0006PTRUI8": "ETF_POSITIVLISTE",  // iShares MSCI EMU Climate Transition Awar
+  "IE000E9XXE77": "ETF_POSITIVLISTE",  // iShares MSCI EMU Climate Transition Awar
+  "IE00BHZPJ015": "ETF_POSITIVLISTE",  // iShares MSCI EMU ESG Enhanced CTB UCITS 
+  "IE00BHZPHZ28": "ETF_POSITIVLISTE",  // iShares MSCI EMU ESG Enhanced CTB UCITS 
+  "IE00BCLWRD08": "ETF_POSITIVLISTE",  // iShares MSCI EMU Mid Cap UCITS ETF 
+  "IE00BFNM3B99": "ETF_POSITIVLISTE",  // iShares MSCI EMU Screened UCITS ETF EUR 
+  "IE00BFNM3C07": "ETF_POSITIVLISTE",  // iShares MSCI EMU Screened UCITS ETF EUR 
+  "IE00B3VWMM18": "ETF_POSITIVLISTE",  // iShares MSCI EMU Small Cap UCITS ETF EUR
+  "IE00BWZN1T31": "ETF_POSITIVLISTE",  // iShares MSCI EMU USD Hedged UCITS ETF 
+  "IE000U3XZQN5": "ETF_POSITIVLISTE",  // iShares MSCI Europe Climate Transition A
+  "IE000ZQF1PE1": "ETF_POSITIVLISTE",  // iShares MSCI Europe Climate Transition A
+  "IE00BMW42298": "ETF_POSITIVLISTE",  // iShares MSCI Europe Consumer Discretiona
+  "IE00BMW42074": "ETF_POSITIVLISTE",  // iShares MSCI Europe Consumer Staples Sec
+  "IE00BMW42637": "ETF_POSITIVLISTE",  // iShares MSCI Europe Energy Sector UCITS 
+  "IE00BHZPJ783": "ETF_POSITIVLISTE",  // iShares MSCI Europe ESG Enhanced CTB UCI
+  "IE00BHZPJ676": "ETF_POSITIVLISTE",  // iShares MSCI Europe ESG Enhanced CTB UCI
+  "IE00B14X4N27": "ETF_POSITIVLISTE",  // iShares MSCI Europe ex-UK UCITS ETF EUR 
+  "IE00BMW42306": "ETF_POSITIVLISTE",  // iShares MSCI Europe Financials Sector UC
+  "IE00BMW42181": "ETF_POSITIVLISTE",  // iShares MSCI Europe Health Care Sector U
+  "IE00BMW42520": "ETF_POSITIVLISTE",  // iShares MSCI Europe Industrials Sector U
+  "IE00BMW42413": "ETF_POSITIVLISTE",  // iShares MSCI Europe Information Technolo
+  "IE00BL6K8C82": "ETF_POSITIVLISTE",  // iShares MSCI Europe Paris-Aligned Climat
+  "IE000PYEKKW0": "ETF_POSITIVLISTE",  // iShares MSCI Europe Quality Dividend Adv
+  "IE00BYYHSM20": "ETF_POSITIVLISTE",  // iShares MSCI Europe Quality Dividend Adv
+  "IE00BFNM3D14": "ETF_POSITIVLISTE",  // iShares MSCI Europe Screened UCITS ETF E
+  "IE00BFNM3F38": "ETF_POSITIVLISTE",  // iShares MSCI Europe Screened UCITS ETF E
+  "IE00B52VJ196": "ETF_POSITIVLISTE",  // iShares MSCI Europe SRI UCITS ETF EUR (A
+  "IE00BGDPWW94": "ETF_POSITIVLISTE",  // iShares MSCI Europe SRI UCITS ETF EUR (D
+  "IE000CR424L6": "ETF_POSITIVLISTE",  // iShares MSCI Europe SRI UCITS ETF EUR He
+  "IE00BP3QZJ36": "ETF_POSITIVLISTE",  // iShares MSCI France UCITS ETF 
+  "IE000I8KRLL9": "ETF_POSITIVLISTE",  // iShares MSCI Global Semiconductors UCITS
+  "IE00BZCQB185": "ETF_POSITIVLISTE",  // iShares MSCI India UCITS ETF USD (Acc)
+  "IE0002SCQ8X0": "ETF_POSITIVLISTE",  // iShares MSCI Japan ESG Enhanced CTB UCIT
+  "IE00BHZPJ452": "ETF_POSITIVLISTE",  // iShares MSCI Japan ESG Enhanced CTB UCIT
+  "IE00BHZPJ346": "ETF_POSITIVLISTE",  // iShares MSCI Japan ESG Enhanced CTB UCIT
+  "IE00B42Z5J44": "ETF_POSITIVLISTE",  // iShares MSCI Japan EUR Hedged UCITS ETF 
+  "IE00BFNM3L97": "ETF_POSITIVLISTE",  // iShares MSCI Japan Screened UCITS ETF US
+  "IE00BFNM3M05": "ETF_POSITIVLISTE",  // iShares MSCI Japan Screened UCITS ETF US
+  "IE00B2QWDY88": "ETF_POSITIVLISTE",  // iShares MSCI Japan Small Cap UCITS ETF (
+  "IE000QWO5FT3": "ETF_POSITIVLISTE",  // iShares MSCI Japan SRI UCITS ETF EUR Hed
+  "IE00BYX8XC17": "ETF_POSITIVLISTE",  // iShares MSCI Japan SRI UCITS ETF USD (Ac
+  "IE00BGDQ0V72": "ETF_POSITIVLISTE",  // iShares MSCI Japan SRI UCITS ETF USD (Di
+  "IE00B53QDK08": "ETF_POSITIVLISTE",  // iShares MSCI Japan UCITS ETF USD (Acc)
+  "IE00B02KXH56": "ETF_POSITIVLISTE",  // iShares MSCI Japan UCITS ETF USD (Dist)
+  "IE00B0M63391": "ETF_POSITIVLISTE",  // iShares MSCI Korea UCITS ETF USD (Dist)
+  "IE00B5WHFQ43": "ETF_POSITIVLISTE",  // iShares MSCI Mexico Capped UCITS ETF USD
+  "IE00B14X4M10": "ETF_POSITIVLISTE",  // iShares MSCI North America UCITS ETF USD
+  "IE00BMDBMK72": "ETF_POSITIVLISTE",  // iShares MSCI Pacific ex-Japan ESG Enhanc
+  "IE00B4WXJD03": "ETF_POSITIVLISTE",  // iShares MSCI Pacific ex-Japan UCITS ETF 
+  "IE00B4M7GH52": "ETF_POSITIVLISTE",  // iShares MSCI Poland UCITS ETF USD (Acc)
+  "IE00BYYR0489": "ETF_POSITIVLISTE",  // iShares MSCI Saudi Arabia Capped UCITS E
+  "IE00BJ5JPJ87": "ETF_POSITIVLISTE",  // iShares MSCI Saudi Arabia Capped UCITS E
+  "IE00B52XQP83": "ETF_POSITIVLISTE",  // iShares MSCI South Africa UCITS ETF 
+  "IE00B0M63623": "ETF_POSITIVLISTE",  // iShares MSCI Taiwan UCITS ETF USD (Dist)
+  "IE00B1FZS574": "ETF_POSITIVLISTE",  // iShares MSCI Turkey UCITS ETF USD (Dist)
+  "IE00B3VWLG82": "ETF_POSITIVLISTE",  // iShares MSCI UK Small Cap UCITS ETF GBP 
+  "IE000U7L59A3": "ETF_POSITIVLISTE",  // iShares MSCI USA ESG Enhanced CTB UCITS 
+  "IE00BHZPJ908": "ETF_POSITIVLISTE",  // iShares MSCI USA ESG Enhanced CTB UCITS 
+  "IE00BHZPJ890": "ETF_POSITIVLISTE",  // iShares MSCI USA ESG Enhanced CTB UCITS 
+  "IE000C5YJ791": "ETF_POSITIVLISTE",  // iShares MSCI USA Leaders UCITS ETF USD (
+  "IE00BD1F4K20": "ETF_POSITIVLISTE",  // iShares MSCI USA Mid-Cap Equal Weight UC
+  "IE00BKM4H312": "ETF_POSITIVLISTE",  // iShares MSCI USA Quality Dividend Advanc
+  "IE000G2LIHG9": "ETF_POSITIVLISTE",  // iShares MSCI USA Screened UCITS ETF EUR 
+  "IE00BFNM3G45": "ETF_POSITIVLISTE",  // iShares MSCI USA Screened UCITS ETF USD 
+  "IE00BFNM3H51": "ETF_POSITIVLISTE",  // iShares MSCI USA Screened UCITS ETF USD 
+  "IE00B3VWM098": "ETF_POSITIVLISTE",  // iShares MSCI USA Small Cap ESG Enhanced 
+  "IE000ATRYEA4": "ETF_POSITIVLISTE",  // iShares MSCI USA SRI UCITS ETF EUR Hedge
+  "IE00BZ173V67": "ETF_POSITIVLISTE",  // iShares MSCI USA SRI UCITS ETF EUR Hedge
+  "IE00BYVJRR92": "ETF_POSITIVLISTE",  // iShares MSCI USA SRI UCITS ETF USD (Acc)
+  "IE00BZ173T46": "ETF_POSITIVLISTE",  // iShares MSCI USA SRI UCITS ETF USD (Dist
+  "IE000QZ7JON9": "ETF_POSITIVLISTE",  // iShares MSCI USA Swap UCITS ETF EUR Hedg
+  "IE000YD0IAD2": "ETF_POSITIVLISTE",  // iShares MSCI USA Swap UCITS ETF EUR Hedg
+  "IE00B52SFT06": "ETF_POSITIVLISTE",  // iShares MSCI USA UCITS ETF USD (Acc)
+  "IE00BJ5JP212": "ETF_POSITIVLISTE",  // iShares MSCI World Consumer Discretionar
+  "IE00BJ5JP329": "ETF_POSITIVLISTE",  // iShares MSCI World Consumer Staples Sect
+  "IE00BJ5JP105": "ETF_POSITIVLISTE",  // iShares MSCI World Energy Sector UCITS E
+  "IE000R3K9FF7": "ETF_POSITIVLISTE",  // iShares MSCI World ESG Enhanced CTB UCIT
+  "IE00BHZPJ569": "ETF_POSITIVLISTE",  // iShares MSCI World ESG Enhanced CTB UCIT
+  "IE00BG11HV38": "ETF_POSITIVLISTE",  // iShares MSCI World ESG Enhanced CTB UCIT
+  "IE00B441G979": "ETF_POSITIVLISTE",  // iShares MSCI World EUR Hedged UCITS ETF 
+  "IE000R4ZNTN3": "ETF_POSITIVLISTE",  // iShares MSCI World ex-USA UCITS ETF USD 
+  "IE00BJ5JNZ06": "ETF_POSITIVLISTE",  // iShares MSCI World Health Care Sector Ad
+  "IE00BJ5JNY98": "ETF_POSITIVLISTE",  // iShares MSCI World Information Technolog
+  "IE00B27YCN58": "ETF_POSITIVLISTE",  // iShares MSCI World Islamic UCITS ETF USD
+  "IE000L5NW549": "ETF_POSITIVLISTE",  // iShares MSCI World Momentum Factor Advan
+  "IE00BMXC7W70": "ETF_POSITIVLISTE",  // iShares MSCI World Paris-Aligned Climate
+  "IE00BYYHSQ67": "ETF_POSITIVLISTE",  // iShares MSCI World Quality Dividend Adva
+  "IE00BFNM3J75": "ETF_POSITIVLISTE",  // iShares MSCI World Screened UCITS ETF US
+  "IE00BFNM3K80": "ETF_POSITIVLISTE",  // iShares MSCI World Screened UCITS ETF US
+  "IE000T9EOCL3": "ETF_POSITIVLISTE",  // iShares MSCI World Small Cap ESG Enhance
+  "IE00BF4RFH31": "ETF_POSITIVLISTE",  // iShares MSCI World Small Cap UCITS ETF U
+  "IE00BYX2JD69": "ETF_POSITIVLISTE",  // iShares MSCI World SRI UCITS ETF EUR (Ac
+  "IE00BMZ17W23": "ETF_POSITIVLISTE",  // iShares MSCI World SRI UCITS ETF EUR Hed
+  "IE00BDZZTM54": "ETF_POSITIVLISTE",  // iShares MSCI World SRI UCITS ETF USD (Di
+  "IE0002VEN3U3": "ETF_POSITIVLISTE",  // iShares MSCI World Swap UCITS ETF EUR He
+  "IE00B0M62Q58": "ETF_POSITIVLISTE",  // iShares MSCI World UCITS ETF USD (Dist)
+  "IE000H1H16W5": "ETF_POSITIVLISTE",  // iShares MSCI World Value Factor Advanced
+  "IE000SVXJH05": "ETF_POSITIVLISTE",  // iShares Nasdaq 100 ex-Top 30 UCITS ETF U
+  "IE000Z7P04F4": "ETF_POSITIVLISTE",  // iShares Nasdaq 100 Top 30 UCITS ETF USD 
+  "IE00BYVQ9F29": "ETF_POSITIVLISTE",  // iShares NASDAQ 100 UCITS ETF EUR Hedged 
+  "IE00B53SZB19": "ETF_POSITIVLISTE",  // iShares NASDAQ 100 UCITS ETF USD (Acc)
+  "IE00BYXG2H39": "ETF_POSITIVLISTE",  // iShares Nasdaq US Biotechnology UCITS ET
+  "DE000A0F5UF5": "ETF_POSITIVLISTE",  // iShares NASDAQ-100  UCITS ETF (DE)
+  "DE000A0H08D2": "ETF_IKKE_POSITIVLISTE",  // iShares Nikkei 225  UCITS ETF (DE)
+  "IE00B52MJD48": "ETF_IKKE_POSITIVLISTE",  // iShares Nikkei 225 UCITS ETF JPY (Acc)
+  "IE00B6R51Z18": "ETF_IKKE_POSITIVLISTE",  // iShares Oil & Gas Exploration & Producti
+  "DE0002635265": "ETF_IKKE_POSITIVLISTE",  // iShares Pfandbriefe UCITS ETF (DE)
+  "IE000C6ITGC8": "ETF_IKKE_POSITIVLISTE",  // iShares Quantum Computing UCITS ETF USD 
+  "IE000YIXESS9": "ETF_POSITIVLISTE",  // iShares S&P 500 3% Capped UCITS ETF USD 
+  "IE00BDDRF478": "ETF_POSITIVLISTE",  // iShares S&P 500 Communication Sector UCI
+  "IE00B4MCHD36": "ETF_POSITIVLISTE",  // iShares S&P 500 Consumer Discretionary S
+  "IE00B40B8R38": "ETF_POSITIVLISTE",  // iShares S&P 500 Consumer Staples Sector 
+  "IE00B42NKQ00": "ETF_POSITIVLISTE",  // iShares S&P 500 Energy Sector UCITS ETF 
+  "IE000DVLBQ03": "ETF_POSITIVLISTE",  // iShares S&P 500 Equal Weight UCITS ETF E
+  "IE000MLMNYS0": "ETF_POSITIVLISTE",  // iShares S&P 500 Equal Weight UCITS ETF U
+  "IE00B3ZW0K18": "ETF_POSITIVLISTE",  // iShares S&P 500 EUR Hedged UCITS ETF (Ac
+  "IE00B4JNQZ49": "ETF_POSITIVLISTE",  // iShares S&P 500 Financials Sector UCITS 
+  "IE00B43HR379": "ETF_POSITIVLISTE",  // iShares S&P 500 Health Care Sector UCITS
+  "IE00B4LN9N13": "ETF_POSITIVLISTE",  // iShares S&P 500 Industrials Sector UCITS
+  "IE00B3WJKG14": "ETF_POSITIVLISTE",  // iShares S&P 500 Information Technology S
+  "IE00B4MKCJ84": "ETF_POSITIVLISTE",  // iShares S&P 500 Materials Sector UCITS E
+  "IE00BMXC7V63": "ETF_POSITIVLISTE",  // iShares S&P 500 Paris-Aligned Climate UC
+  "IE000CR7DJI8": "ETF_POSITIVLISTE",  // iShares S&P 500 Scored and Screened UCIT
+  "IE000R9FA4A0": "ETF_POSITIVLISTE",  // iShares S&P 500 Scored and Screened UCIT
+  "IE000Z3S26J2": "ETF_POSITIVLISTE",  // iShares S&P 500 Swap UCITS ETF EUR Hedge
+  "IE00BMTX1Y45": "ETF_POSITIVLISTE",  // iShares S&P 500 Swap UCITS ETF USD (Acc)
+  "IE000VA628D5": "ETF_POSITIVLISTE",  // iShares S&P 500 Top 20 UCITS ETF USD (Ac
+  "IE00B4KBBD01": "ETF_POSITIVLISTE",  // iShares S&P 500 Utilities Sector UCITS E
+  "IE00B2QWCY14": "ETF_POSITIVLISTE",  // iShares S&P SmallCap 600 UCITS ETF USD (
+  "IE00BD3V0B10": "ETF_POSITIVLISTE",  // iShares S&P U.S. Banks UCITS ETF USD (Ac
+  "IE00BKTLJC87": "ETF_IKKE_POSITIVLISTE",  // iShares Smart City Infrastructure UCITS 
+  "IE00BKTLJB70": "ETF_IKKE_POSITIVLISTE",  // iShares Smart City Infrastructure UCITS 
+  "IE00B428Z604": "ETF_OBLIGATIONSBASERET",  // iShares Spain Govt Bond UCITS ETF EUR (D
+  "DE0005933949": "ETF_POSITIVLISTE",  // iShares STOXX Europe 50 UCITS ETF (DE)
+  "IE0008470928": "ETF_POSITIVLISTE",  // iShares STOXX Europe 50 UCITS ETF EUR (D
+  "DE000A0Q4R28": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Automobiles & P
+  "DE000A2QP4A8": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Automobiles & P
+  "DE000A0F5UJ7": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Banks UCITS ETF
+  "DE000A0F5UK5": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Basic Resources
+  "DE000A0H08E0": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Chemicals UCITS
+  "DE000A0H08F7": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Construction & 
+  "DE000A0H08G5": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Financial Servi
+  "DE000A0H08H3": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Food & Beverage
+  "DE000A0Q4R36": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Health Care UCI
+  "DE000A0H08J9": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Industrial Good
+  "DE000A0H08K7": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Insurance UCITS
+  "DE000A0H08L5": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Media UCITS ETF
+  "DE000A0H08M3": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Oil & Gas UCITS
+  "DE000A0H08N1": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Personal & Hous
+  "DE000A0Q4R44": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Real Estate UCI
+  "DE000A0H08P6": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Retail UCITS ET
+  "DE000A0H08Q4": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Technology UCIT
+  "DE000A0H08R2": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Telecommunicati
+  "DE000A0H08S0": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Travel & Leisur
+  "DE0002635307": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 UCITS ETF (DE)
+  "DE000A2QP4B6": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 UCITS ETF (DE) 
+  "DE000A0Q4R02": "ETF_POSITIVLISTE",  // iShares STOXX Europe 600 Utilities UCITS
+  "IE00BZ0PKV06": "ETF_POSITIVLISTE",  // iShares STOXX Europe Equity Multifactor 
+  "DE0005933980": "ETF_POSITIVLISTE",  // iShares STOXX Europe Large 200 UCITS ETF
+  "DE0005933998": "ETF_POSITIVLISTE",  // iShares STOXX Europe Mid 200 UCITS ETF (
+  "DE0002635299": "ETF_POSITIVLISTE",  // iShares STOXX Europe Select Dividend 30 
+  "DE000A0D8QZ7": "ETF_POSITIVLISTE",  // iShares STOXX Europe Small 200 UCITS ETF
+  "DE000A0F5UH1": "ETF_POSITIVLISTE",  // iShares STOXX Global Select Dividend 100
+  "IE00BYXPXK00": "ETF_POSITIVLISTE",  // iShares STOXX World Equity Multifactor U
+  "IE00BZ0PKT83": "ETF_POSITIVLISTE",  // iShares STOXX World Equity Multifactor U
+  "DE0005933972": "ETF_IKKE_POSITIVLISTE",  // iShares TecDAX  UCITS ETF (DE)
+  "DE000A2QP323": "ETF_IKKE_POSITIVLISTE",  // iShares TecDAX UCITS ETF (DE) EUR (Dist)
+  "IE000WHL2ZK1": "ETF_IKKE_POSITIVLISTE",  // iShares U.S. Equity High Income Active U
+  "IE00B0M63060": "ETF_IKKE_POSITIVLISTE",  // iShares UK Dividend UCITS ETF GBP (Dist)
+  "IE000FI414K7": "ETF_IKKE_POSITIVLISTE",  // iShares UK Property UCITS ETF EUR Hedged
+  "IE00093SKUY4": "ETF_OBLIGATIONSBASERET",  // iShares US Aggregate Bond UCITS ETF EUR 
+  "IE00B44CGS96": "ETF_OBLIGATIONSBASERET",  // iShares US Aggregate Bond UCITS ETF USD 
+  "IE0009VWHAE6": "ETF_IKKE_POSITIVLISTE",  // iShares US Equity Enhanced Active UCITS 
+  "IE000EOFR2K5": "ETF_IKKE_POSITIVLISTE",  // iShares US Large Cap Deep Buffer UCITS E
+  "IE000Y1595P8": "ETF_IKKE_POSITIVLISTE",  // iShares US Large Cap Max Buffer Dec UCIT
+  "IE000ON9GR24": "ETF_IKKE_POSITIVLISTE",  // iShares US Large Cap Max Buffer Sep UCIT
+  "IE000Z5YU8X3": "ETF_IKKE_POSITIVLISTE",  // iShares US Large Cap Moderate Buffer Dec
+  "IE00BMX0DF60": "ETF_IKKE_POSITIVLISTE",  // iShares US Medical Devices UCITS ETF USD
+  "IE00BZ6V7883": "ETF_IKKE_POSITIVLISTE",  // iShares US Mortgage Backed Securities UC
+  "IE000EEJLWG1": "ETF_IKKE_POSITIVLISTE",  // iShares US Mortgage Backed Securities UC
+  "IE00B1FZSF77": "ETF_IKKE_POSITIVLISTE",  // iShares US Property Yield UCITS ETF USD 
+  "IE000D8XC064": "ETF_POSITIVLISTE",  // iShares World Equity Enhanced Active UCI
+  "IE0009Y1MQJ2": "ETF_POSITIVLISTE",  // iShares World Equity Factor Rotation Act
+  "IE000KJPDY61": "ETF_POSITIVLISTE",  // iShares World Equity High Income Active 
+  "IE00BMDV7354": "ETF_IKKE_POSITIVLISTE",  // JPM AC Asia Pacific ex Japan Research En
+  "IE000PQQLZM7": "ETF_OBLIGATIONSBASERET",  // JPM Active Global Aggregate Bond UCITS E
+  "IE0006MM8VN6": "ETF_OBLIGATIONSBASERET",  // JPM Active Global Aggregate Bond UCITS E
+  "IE000LHP8TA1": "ETF_OBLIGATIONSBASERET",  // JPM Active Global Aggregate Bond UCITS E
+  "IE000BZFW5H7": "ETF_IKKE_POSITIVLISTE",  // JPM Active US Equity UCITS ETF - EUR Hed
+  "IE000RSCXLM4": "ETF_IKKE_POSITIVLISTE",  // JPM Active US Equity UCITS ETF - USD (ac
+  "IE0007ILCZU4": "ETF_IKKE_POSITIVLISTE",  // JPM Active US Equity UCITS ETF - USD (di
+  "IE000UZZ5SU2": "ETF_IKKE_POSITIVLISTE",  // JPM Active US Growth UCITS ETF - EUR Hed
+  "IE0005CH3U28": "ETF_IKKE_POSITIVLISTE",  // JPM Active US Growth UCITS ETF - USD (ac
+  "IE0003KQ8JX1": "ETF_IKKE_POSITIVLISTE",  // JPM Active US Growth UCITS ETF - USD (di
+  "IE000CQQ22C8": "ETF_IKKE_POSITIVLISTE",  // JPM Active US Value UCITS ETF - EUR Hedg
+  "IE000TD3TI26": "ETF_IKKE_POSITIVLISTE",  // JPM Active US Value UCITS ETF - USD (acc
+  "IE000DTA2ZH9": "ETF_IKKE_POSITIVLISTE",  // JPM Active US Value UCITS ETF - USD (dis
+  "IE000T4LTZ00": "ETF_IKKE_POSITIVLISTE",  // JPM All Country Research Enhanced Index 
+  "IE0001JABD69": "ETF_IKKE_POSITIVLISTE",  // JPM All Country Research Enhanced Index 
+  "IE000A7N3IV0": "ETF_IKKE_POSITIVLISTE",  // JPM All Country Research Enhanced Index 
+  "IE000JLILKH0": "ETF_IKKE_POSITIVLISTE",  // JPM All Country Research Enhanced Index 
+  "IE00BYVZV757": "ETF_OBLIGATIONSBASERET",  // JPM BetaBuilders EUR Govt Bond 1-3 yr UC
+  "IE00BJK9HD13": "ETF_OBLIGATIONSBASERET",  // JPM BetaBuilders EUR Govt Bond UCITS ETF
+  "IE00BJK9H753": "ETF_IKKE_POSITIVLISTE",  // JPM BetaBuilders US Equity UCITS ETF - U
+  "IE000JNKVS10": "ETF_IKKE_POSITIVLISTE",  // JPM BetaBuilders US Small Cap Equity UCI
+  "IE00BJK3WF00": "ETF_OBLIGATIONSBASERET",  // JPM BetaBuilders US Treasury Bond 0-1 yr
+  "IE00BD9MMD49": "ETF_OBLIGATIONSBASERET",  // JPM BetaBuilders US Treasury Bond 1-3 yr
+  "IE00BJK9HH50": "ETF_OBLIGATIONSBASERET",  // JPM BetaBuilders US Treasury Bond UCITS 
+  "IE0009TJ5T70": "ETF_IKKE_POSITIVLISTE",  // JPM Carbon Transition Global Equity (CTB
+  "IE000W95TAE6": "ETF_IKKE_POSITIVLISTE",  // JPM Carbon Transition Global Equity UCIT
+  "IE00BMDWYZ92": "ETF_IKKE_POSITIVLISTE",  // JPM Carbon Transition Global Equity UCIT
+  "IE00BMDV7578": "ETF_IKKE_POSITIVLISTE",  // JPM China A Research Enhanced Index Equi
+  "IE000DS9ZCL4": "ETF_IKKE_POSITIVLISTE",  // JPM China A Research Enhanced Index Equi
+  "IE000O8S1EX4": "ETF_IKKE_POSITIVLISTE",  // JPM Climate Change Solutions UCITS ETF -
+  "IE000TGCBXG8": "ETF_OBLIGATIONSBASERET",  // JPM Emerging Markets Local Currency Bond
+  "IE000BS9KP42": "ETF_OBLIGATIONSBASERET",  // JPM Emerging Markets Local Currency Bond
+  "IE00049TNTV6": "ETF_OBLIGATIONSBASERET",  // JPM EUR Aggregate Bond Active UCITS ETF 
+  "IE0008QIFH42": "ETF_OBLIGATIONSBASERET",  // JPM EUR Aggregate Bond Active UCITS ETF 
+  "IE00BF59RW70": "ETF_OBLIGATIONSBASERET",  // JPM EUR Corporate Bond 1-5 yr Research E
+  "IE00BF59RX87": "ETF_OBLIGATIONSBASERET",  // JPM EUR Corporate Bond Research Enhanced
+  "IE000JUREXG2": "ETF_OBLIGATIONSBASERET",  // JPM EUR Government Bond Active UCITS ETF
+  "IE00081SF8K7": "ETF_OBLIGATIONSBASERET",  // JPM EUR Government Bond Active UCITS ETF
+  "IE000IEOQSJ3": "ETF_OBLIGATIONSBASERET",  // JPM EUR High Yield Bond Active UCITS ETF
+  "IE000YSJPNV8": "ETF_OBLIGATIONSBASERET",  // JPM EUR High Yield Bond Active UCITS ETF
+  "IE000WAKWCV7": "ETF_OBLIGATIONSBASERET",  // JPM EUR IG Corporate Bond Active UCITS E
+  "IE00BD9MMF62": "ETF_IKKE_POSITIVLISTE",  // JPM EUR Ultra-Short Income UCITS ETF - E
+  "IE00BF4G7183": "ETF_IKKE_POSITIVLISTE",  // JPM Europe Research Enhanced Index Equit
+  "IE000WGK3YY5": "ETF_IKKE_POSITIVLISTE",  // JPM Europe Research Enhanced Index Equit
+  "IE0003UN5CT1": "ETF_IKKE_POSITIVLISTE",  // JPM Europe Research Enhanced Index Equit
+  "IE000QOLLXO2": "ETF_IKKE_POSITIVLISTE",  // JPM Europe Research Enhanced Index Equit
+  "IE00004PGEY9": "ETF_IKKE_POSITIVLISTE",  // JPM Eurozone Research Enhanced Index Equ
+  "IE000783LRG9": "ETF_IKKE_POSITIVLISTE",  // JPM Eurozone Research Enhanced Index Equ
+  "IE000AGCIYE6": "ETF_OBLIGATIONSBASERET",  // JPM Global Aggregate Bond Active UCITS E
+  "IE00BF4G6Z54": "ETF_IKKE_POSITIVLISTE",  // JPM Global Emerging Markets Research Enh
+  "IE0006SEWKA2": "ETF_IKKE_POSITIVLISTE",  // JPM Global Emerging Markets Research Enh
+  "IE000AV35A01": "ETF_IKKE_POSITIVLISTE",  // JPM Global Emerging Markets Research Enh
+  "IE000CYGD0V1": "ETF_IKKE_POSITIVLISTE",  // JPM Global Emerging Markets Research Enh
+  "IE000ANHU3J3": "ETF_IKKE_POSITIVLISTE",  // JPM Global Emerging Markets Research Enh
+  "IE00BJRCLL96": "ETF_IKKE_POSITIVLISTE",  // JPM Global Equity Multi-Factor UCITS ETF
+  "IE000AP27VA7": "ETF_IKKE_POSITIVLISTE",  // JPM Global Equity Premium Income Active 
+  "IE000WX7BVB0": "ETF_IKKE_POSITIVLISTE",  // JPM Global Equity Premium Income UCITS E
+  "IE0003UVYC20": "ETF_IKKE_POSITIVLISTE",  // JPM Global Equity Premium Income UCITS E
+  "IE0008P6LL15": "ETF_OBLIGATIONSBASERET",  // JPM Global Government Bond Active UCITS 
+  "IE000JS4ANL9": "ETF_OBLIGATIONSBASERET",  // JPM Global Government Bond Active UCITS 
+  "IE000YK1TO74": "ETF_OBLIGATIONSBASERET",  // JPM Global High Yield Corporate Bond Mul
+  "IE00BKKCKJ46": "ETF_OBLIGATIONSBASERET",  // JPM Global High Yield Corporate Bond Mul
+  "IE00048C5NZ0": "ETF_OBLIGATIONSBASERET",  // JPM Global IG Corporate Bond Active UCIT
+  "IE000S2QZKI8": "ETF_OBLIGATIONSBASERET",  // JPM Global IG Corporate Bond Active UCIT
+  "IE0000UW95D6": "ETF_IKKE_POSITIVLISTE",  // JPM Global Research Enhanced Index Equit
+  "IE00BF4G6Y48": "ETF_IKKE_POSITIVLISTE",  // JPM Global Research Enhanced Index Equit
+  "IE000HFXP0D2": "ETF_IKKE_POSITIVLISTE",  // JPM Global Research Enhanced Index Equit
+  "IE0005MWBFR7": "ETF_IKKE_POSITIVLISTE",  // JPM Global Research Enhanced Index Equit
+  "IE0003JSNHV9": "ETF_IKKE_POSITIVLISTE",  // JPM Global Research Enhanced Index Equit
+  "IE000UZIKD07": "ETF_IKKE_POSITIVLISTE",  // JPM Global Research Enhanced Index Equit
+  "IE000BXC49I6": "ETF_IKKE_POSITIVLISTE",  // JPM Global Research Enhanced Index Equit
+  "IE000FYTRRJ6": "ETF_IKKE_POSITIVLISTE",  // JPM Global Research Enhanced Index Equit
+  "IE000FBG59J1": "ETF_OBLIGATIONSBASERET",  // JPM Green Social Sustainable Bond UCITS 
+  "IE0005FKEK99": "ETF_OBLIGATIONSBASERET",  // JPM Green Social Sustainable Bond UCITS 
+  "IE000ZAJ6XQ2": "ETF_IKKE_POSITIVLISTE",  // JPM India Research Enhanced Index Equity
+  "IE000QGWZZO0": "ETF_IKKE_POSITIVLISTE",  // JPM Japan Research Enhanced Index Equity
+  "IE00BP2NF958": "ETF_IKKE_POSITIVLISTE",  // JPM Japan Research Enhanced Index Equity
+  "IE00005YSIA4": "ETF_IKKE_POSITIVLISTE",  // JPM Japan Research Enhanced Index Equity
+  "IE0006CJGQR9": "ETF_POSITIVLISTE",  // JPM Nasdaq Equity Premium Income Active 
+  "IE0006FIW9Z0": "ETF_POSITIVLISTE",  // JPM Nasdaq Equity Premium Income Active 
+  "IE000N6I8IU2": "ETF_POSITIVLISTE",  // JPM Nasdaq Equity Premium Income Active 
+  "IE000U9J8HX9": "ETF_POSITIVLISTE",  // JPM Nasdaq Equity Premium Income Active 
+  "IE000JIPY1U8": "ETF_POSITIVLISTE",  // JPM Nasdaq Hedged Equity Laddered Overla
+  "IE0006UQKVQ0": "ETF_POSITIVLISTE",  // JPM Nasdaq Hedged Equity Laddered Overla
+  "IE000RE0SQM6": "ETF_IKKE_POSITIVLISTE",  // JPM US Equity Premium Income Active UCIT
+  "IE0006YCYW06": "ETF_IKKE_POSITIVLISTE",  // JPM US Equity Premium Income Active UCIT
+  "IE0000EAPBT6": "ETF_IKKE_POSITIVLISTE",  // JPM US Equity Premium Income Active UCIT
+  "IE000U5MJOZ6": "ETF_IKKE_POSITIVLISTE",  // JPM US Equity Premium Income Active UCIT
+  "IE000VAZZYM3": "ETF_IKKE_POSITIVLISTE",  // JPM US Hedged Equity Laddered Overlay Ac
+  "IE000K4JG8P9": "ETF_IKKE_POSITIVLISTE",  // JPM US Hedged Equity Laddered Overlay Ac
+  "IE000CN8T855": "ETF_IKKE_POSITIVLISTE",  // JPM US Research Enhanced Index Equity (E
+  "IE00BF4G7076": "ETF_IKKE_POSITIVLISTE",  // JPM US Research Enhanced Index Equity (E
+  "IE00BJ06C044": "ETF_IKKE_POSITIVLISTE",  // JPM US Research Enhanced Index Equity (E
+  "IE000W85O7M4": "ETF_IKKE_POSITIVLISTE",  // JPM US Research Enhanced Index Equity Ac
+  "IE000I5MBLC4": "ETF_IKKE_POSITIVLISTE",  // JPM US Research Enhanced Index Equity SR
+  "IE0006HMLPV6": "ETF_IKKE_POSITIVLISTE",  // JPM US Research Enhanced Index Equity SR
+  "IE00069JGT58": "ETF_IKKE_POSITIVLISTE",  // JPM US Research Enhanced Index Equity SR
+  "IE0002UMVXQ1": "ETF_IKKE_POSITIVLISTE",  // JPM US Research Enhanced Index Equity SR
+  "IE0000J0F3C5": "ETF_OBLIGATIONSBASERET",  // JPM USD Corporate Bond Research Enhanced
+  "IE00BF59RV63": "ETF_OBLIGATIONSBASERET",  // JPM USD Corporate Bond Research Enhanced
+  "IE00BDDRDY39": "ETF_OBLIGATIONSBASERET",  // JPM USD Emerging Markets Sovereign Bond 
+  "IE00BJ06C937": "ETF_OBLIGATIONSBASERET",  // JPM USD Emerging Markets Sovereign Bond 
+  "IE00BDFC6G93": "ETF_OBLIGATIONSBASERET",  // JPM USD Emerging Markets Sovereign Bond 
+  "IE000CQMYME2": "ETF_OBLIGATIONSBASERET",  // JPM USD High Yield Bond Active UCITS ETF
+  "IE000R7DCW45": "ETF_OBLIGATIONSBASERET",  // JPM USD High Yield Bond Active UCITS ETF
+  "IE000LZI2UH4": "ETF_OBLIGATIONSBASERET",  // JPM USD High Yield Bond Active UCITS ETF
+  "IE000R88UVN6": "ETF_OBLIGATIONSBASERET",  // JPM USD High Yield Bond Active UCITS ETF
+  "IE00BG8BCY43": "ETF_IKKE_POSITIVLISTE",  // JPM USD Ultra-Short Income UCITS ETF - U
+  "IE00BDFC6Q91": "ETF_IKKE_POSITIVLISTE",  // JPM USD Ultra-Short Income UCITS ETF - U
+  "IE00BF0BCP69": "ETF_IKKE_POSITIVLISTE",  // L&G All Commodities UCITS ETF - USD Acc
+  "IE00BK5BCD43": "ETF_IKKE_POSITIVLISTE",  // L&G Artificial Intelligence UCITS ETF - 
+  "IE00BFXR5W90": "ETF_IKKE_POSITIVLISTE",  // L&G Asia Pacific ex Japan Equity UCITS E
+  "IE000Z9UVQ99": "ETF_IKKE_POSITIVLISTE",  // L&G Asia Pacific ex Japan ESG Exclusions
+  "IE00BF0M2Z96": "ETF_IKKE_POSITIVLISTE",  // L&G Battery Value-Chain UCITS ETF - USD 
+  "IE000F472DU7": "ETF_OBLIGATIONSBASERET",  // L&G China CNY Bond UCITS ETF - EUR Dist
+  "IE00BLRPQL76": "ETF_OBLIGATIONSBASERET",  // L&G China CNY Bond UCITS ETF - USD Dist
+  "IE00BK5BCH80": "ETF_IKKE_POSITIVLISTE",  // L&G Clean Energy UCITS ETF - USD Acc
+  "IE00BK5BC891": "ETF_IKKE_POSITIVLISTE",  // L&G Clean Water UCITS ETF - USD Acc
+  "IE000YMQ2SC9": "ETF_OBLIGATIONSBASERET",  // L&G Corporate Bond ex-Banks Higher Ratin
+  "IE000CWS09Q9": "ETF_OBLIGATIONSBASERET",  // L&G Corporate Bond ex-Banks Higher Ratin
+  "IE00BYPLS672": "ETF_IKKE_POSITIVLISTE",  // L&G Cyber Security UCITS ETF - USD Acc
+  "IE00B4QNHH68": "ETF_IKKE_POSITIVLISTE",  // L&G DAX Daily 2x Long UCITS ETF - EUR Ac
+  "IE00B4QNHZ41": "ETF_IKKE_POSITIVLISTE",  // L&G DAX Daily 2x Short UCITS ETF - EUR A
+  "IE00BF92J153": "ETF_IKKE_POSITIVLISTE",  // L&G Digital Payments UCITS ETF - USD Acc
+  "IE00BF0M6N54": "ETF_IKKE_POSITIVLISTE",  // L&G Ecommerce Logistics UCITS ETF - USD 
+  "IE000ST40PX8": "ETF_IKKE_POSITIVLISTE",  // L&G Emerging Cyber Security ESG Exclusio
+  "IE000CBYU7J5": "ETF_IKKE_POSITIVLISTE",  // L&G Emerging Markets ESG Exclusions Pari
+  "IE000BLN64M9": "ETF_IKKE_POSITIVLISTE",  // L&G Energy Transition Commodities UCITS 
+  "IE00BLRPRF81": "ETF_OBLIGATIONSBASERET",  // L&G ESG Emerging Markets Corporate Bond 
+  "IE000MINO564": "ETF_OBLIGATIONSBASERET",  // L&G ESG Emerging Markets Government Bond
+  "IE00BLRPQP15": "ETF_OBLIGATIONSBASERET",  // L&G ESG Emerging Markets Government Bond
+  "IE000NA8E2W0": "ETF_OBLIGATIONSBASERET",  // L&G ESG USD Corporate Bond UCITS ETF - E
+  "IE00BLRPRD67": "ETF_OBLIGATIONSBASERET",  // L&G ESG USD Corporate Bond UCITS ETF - U
+  "IE00BKLTRN76": "ETF_IKKE_POSITIVLISTE",  // L&G Europe ESG Exclusions Paris Aligned 
+  "IE00BFXR5V83": "ETF_IKKE_POSITIVLISTE",  // L&G Europe ex UK Equity UCITS ETF - EUR 
+  "IE0001UQQ933": "ETF_IKKE_POSITIVLISTE",  // L&G Gerd Kommer Multifactor Equity UCITS
+  "IE000FPWSL69": "ETF_IKKE_POSITIVLISTE",  // L&G Gerd Kommer Multifactor Equity UCITS
+  "IE0007HKA9K1": "ETF_IKKE_POSITIVLISTE",  // L&G Global Brands UCITS ETF - USD Acc
+  "IE00BFXR5S54": "ETF_IKKE_POSITIVLISTE",  // L&G Global Equity UCITS ETF - USD Acc
+  "IE000MRIQ479": "ETF_IKKE_POSITIVLISTE",  // L&G Global Quality Dividends UCITS ETF -
+  "IE0005AJA0P1": "ETF_IKKE_POSITIVLISTE",  // L&G Global Quality Dividends UCITS ETF -
+  "IE00B3CNHG25": "ETF_IKKE_POSITIVLISTE",  // L&G Gold Mining UCITS ETF - USD Acc
+  "IE00BK5BC677": "ETF_IKKE_POSITIVLISTE",  // L&G Healthcare Breakthrough UCITS ETF - 
+  "IE00BMYDM794": "ETF_IKKE_POSITIVLISTE",  // L&G Hydrogen Economy UCITS ETF - USD Acc
+  "IE000YSUEJ32": "ETF_OBLIGATIONSBASERET",  // L&G India INR Government Bond UCITS ETF 
+  "IE00BL6K6H97": "ETF_OBLIGATIONSBASERET",  // L&G India INR Government Bond UCITS ETF 
+  "IE00BFXR5T61": "ETF_IKKE_POSITIVLISTE",  // L&G Japan Equity UCITS ETF - USD Acc
+  "IE00B4WPHX27": "ETF_IKKE_POSITIVLISTE",  // L&G Longer Dated All Commodities UCITS E
+  "IE000IIHLZL0": "ETF_IKKE_POSITIVLISTE",  // L&G Market Neutral Commodities UCITS ETF
+  "IE0004U3TX15": "ETF_IKKE_POSITIVLISTE",  // L&G Metaverse ESG Exclusions UCITS ETF -
+  "IE000DPO6LM8": "ETF_POSITIVLISTE",  // L&G MSCI World Mid Cap UCITS ETF - USD A
+  "IE00022GJEG1": "ETF_IKKE_POSITIVLISTE",  // L&G Multi Strategy Enhanced Commodities 
+  "IE000MQ5XEW1": "ETF_IKKE_POSITIVLISTE",  // L&G Multi-Strategy Enhanced Commodities 
+  "IE00BFXR6159": "ETF_IKKE_POSITIVLISTE",  // L&G Multi-Strategy Enhanced Commodities 
+  "IE00BF0H7608": "ETF_IKKE_POSITIVLISTE",  // L&G Pharma Breakthrough UCITS ETF - USD 
+  "IE00BMYDMB35": "ETF_IKKE_POSITIVLISTE",  // L&G Quality Equity Dividends ESG Exclusi
+  "IE00BMYDMC42": "ETF_IKKE_POSITIVLISTE",  // L&G Quality Equity Dividends ESG Exclusi
+  "IE00BMYDM919": "ETF_IKKE_POSITIVLISTE",  // L&G Quality Equity Dividends ESG Exclusi
+  "IE00BMYDM802": "ETF_IKKE_POSITIVLISTE",  // L&G Quality Equity Dividends ESG Exclusi
+  "IE00BMW3QX54": "ETF_IKKE_POSITIVLISTE",  // L&G ROBO Global Robotics and Automation 
+  "IE00B3CNHJ55": "ETF_IKKE_POSITIVLISTE",  // L&G Russell 2000 US Small Cap Quality UC
+  "IE000YELA4E3": "ETF_POSITIVLISTE",  // L&G S&P 100 Equal Weight UCITS ETF - USD
+  "IE000MU0FDZ8": "ETF_POSITIVLISTE",  // L&G S&P 100 UCITS ETF - USD Acc
+  "IE00BFXR5R48": "ETF_IKKE_POSITIVLISTE",  // L&G UK Equity UCITS ETF - GBP Acc
+  "IE00BFXR5Q31": "ETF_IKKE_POSITIVLISTE",  // L&G US Equity UCITS ETF - USD Acc
+  "IE00BKLWY790": "ETF_IKKE_POSITIVLISTE",  // L&G US ESG Exclusions Paris Aligned UCIT
+  "IE00BGV5VN51": "ETF_IKKE_POSITIVLISTE",  // Levler AI & Big Data by Xtrackers UCITS 
+  "LU0274211480": "ETF_IKKE_POSITIVLISTE",  // Levler DAX by Xtrackers UCITS ETF
+  "LU3061478973": "ETF_IKKE_POSITIVLISTE",  // Levler EuroDefence Tech by Xtrackers UCI
+  "LU2376679564": "ETF_POSITIVLISTE",  // Levler MSCI China Tech by Xtrackers UCIT
+  "IE00BTJRMP35": "ETF_POSITIVLISTE",  // Levler MSCI EM by Xtrackers UCITS ETF
+  "IE000BO2Y0T8": "ETF_POSITIVLISTE",  // Levler MSCI Nordic by Xtrackers UCITS ET
+  "IE0006WW1TQ4": "ETF_POSITIVLISTE",  // Levler MSCI World ex US by Xtrackers UCI
+  "IE00BM67HK77": "ETF_POSITIVLISTE",  // Levler MSCI World Health Care by Xtracke
+  "IE000F354Q61": "ETF_POSITIVLISTE",  // Levler MSCI World Small Cap by Xtrackers
+  "IE00BMFKG444": "ETF_POSITIVLISTE",  // Levler Nasdaq 100 by Xtrackers UCITS ETF
+  "IE00BJZ2DD79": "ETF_IKKE_POSITIVLISTE",  // Levler Russell 2000 by Xtrackers UCITS E
+  "IE000Z9SJA06": "ETF_POSITIVLISTE",  // Levler S&P 500 by Xtrackers UCITS ETF
+  "LU1435356149": "ETF_IKKE_POSITIVLISTE",  // Lyxor ESG USD High Yield (DR) UCITS ETF 
+  "FR0007054358": "ETF_POSITIVLISTE",  // Lyxor EURO STOXX 50 (DR) UCITS ETF - Acc
+  "LU1900068328": "ETF_POSITIVLISTE",  // Lyxor MSCI AC Asia Pacific Ex Japan UCIT
+  "LU1900066462": "ETF_POSITIVLISTE",  // Lyxor MSCI Eastern Europe ex Russia UCIT
+  "LU0832435464": "ETF_POSITIVLISTE",  // Lyxor S&P 500 VIX Futures Enhanced Roll 
+  "LU1812091194": "ETF_POSITIVLISTE",  // Lyxor STOXX Europe 600 Real Estate UCITS
+  "IE0007WMHDE3": "ETF_IKKE_POSITIVLISTE",  // Making Europe Great Again UCITS ETF
+  "IE000RMSPY39": "ETF_IKKE_POSITIVLISTE",  // Rize Circular Economy Enablers UCITS ETF
+  "IE00BJXRZJ40": "ETF_IKKE_POSITIVLISTE",  // Rize Cybersecurity and Data Privacy UCIT
+  "IE00BLRPRR04": "ETF_IKKE_POSITIVLISTE",  // Rize Environmental Impact 100 UCITS ETF 
+  "IE000QUCVEN9": "ETF_IKKE_POSITIVLISTE",  // Rize Global Sustainable Infrastructure U
+  "IE00BLRPQH31": "ETF_IKKE_POSITIVLISTE",  // Rize Sustainable Future of Food UCITS ET
+  "IE000PY7F8J9": "ETF_IKKE_POSITIVLISTE",  // Rize USA Environmental Impact UCITS ETF 
+  "LU2903252349": "ETF_POSITIVLISTE",  // Scalable MSCI AC World Xtrackers UCITS E
+  "IE00BCLWRF22": "ETF_POSITIVLISTE",  // Shares MSCI EMU Large Cap UCITS ETF 
+  "IE000IUNJSL2": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 0-3 Year Euro Corporate B
+  "IE00BC7GZW19": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 0-3 Year Euro Corporate B
+  "IE00B6YX5H87": "ETF_POSITIVLISTE",  // SPDR Bloomberg 0-3 Year Euro Corporate S
+  "IE00BC7GZX26": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 0-3 Year U.S. Corporate B
+  "IE00BCBJF711": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 0-5 Year Sterling Corpora
+  "IE00B6YX5F63": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 1-3 Year Euro Government 
+  "IE00BC7GZJ81": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 1-3 Year U.S. Treasury Bo
+  "IE00B6YX5K17": "ETF_IKKE_POSITIVLISTE",  // SPDR Bloomberg 1-5 Year Gilt UCITS ETF (
+  "IE0002H3JQ66": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 1-5 Year U.S. Corporate B
+  "IE00BYV12Y75": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 1-10 Year U.S. Corporate 
+  "IE00BS7K8821": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 3-5 Year Euro Government 
+  "IE00BYSZ5R67": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 3-7 Year U.S. Treasury Bo
+  "IE00BYSZ5T81": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 7-10 Year U.S. Treasury B
+  "IE00BYSZ6062": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 10+ Year Euro Government 
+  "IE00BZ0G8860": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 10+ Year U.S. Corporate B
+  "IE00BYSZ5V04": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg 10+ Year U.S. Treasury Bo
+  "IE00B6YX5L24": "ETF_IKKE_POSITIVLISTE",  // SPDR Bloomberg 15+ Year Gilt UCITS ETF (
+  "IE00BFWFPY67": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg Emerging Markets Local Bo
+  "IE00B4613386": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg Emerging Markets Local Bo
+  "IE00BK8JH525": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg Emerging Markets Local Bo
+  "IE00B41RYL63": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg Euro Aggregate Bond UCITS
+  "IE00B3T9LM79": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg Euro Corporate Bond UCITS
+  "IE00B3S5XW04": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg Euro Government Bond UCIT
+  "IE00B6YX5M31": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg Euro High Yield Bond UCIT
+  "IE000AQ7A2X6": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg Global Aggregate Bond EUR
+  "IE00BF1QPL78": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg Global Aggregate Bond EUR
+  "IE00B43QJJ40": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg Global Aggregate Bond UCI
+  "IE00BYTH5602": "ETF_IKKE_POSITIVLISTE",  // SPDR Bloomberg SASB U.S. High Yield Corp
+  "IE00B99FL386": "ETF_IKKE_POSITIVLISTE",  // SPDR Bloomberg SASB U.S. High Yield Corp
+  "IE00B4694Z11": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg Sterling Corporate Bond U
+  "IE00B459R192": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg U.S. Aggregate Bond UCITS
+  "IE00BLF7VX27": "ETF_POSITIVLISTE",  // SPDR Bloomberg U.S. Corporate Scored UCI
+  "IE00BZ0G8977": "ETF_IKKE_POSITIVLISTE",  // SPDR Bloomberg U.S. TIPS UCITS ETF (Dist
+  "IE00B44CND37": "ETF_OBLIGATIONSBASERET",  // SPDR Bloomberg U.S. Treasury Bond UCITS 
+  "IE00B3W74078": "ETF_IKKE_POSITIVLISTE",  // SPDR Bloomberg UK Gilt UCITS ETF (Dist)
+  "IE00BH4GR342": "ETF_IKKE_POSITIVLISTE",  // SPDR Dow Jones Global Real Estate UCITS 
+  "IE00B8GF1M35": "ETF_IKKE_POSITIVLISTE",  // SPDR Dow Jones Global Real Estate UCITS 
+  "IE00BFTWP510": "ETF_POSITIVLISTE",  // SPDR EURO STOXX Low Volatility UCITS ETF
+  "IE00BSJCQV56": "ETF_IKKE_POSITIVLISTE",  // SPDR FTSE EPRA Europe ex UK Real Estate 
+  "IE00BDT6FP91": "ETF_OBLIGATIONSBASERET",  // SPDR FTSE Global Convertible Bond EUR Hd
+  "IE00B7452L46": "ETF_IKKE_POSITIVLISTE",  // SPDR FTSE UK All Share UCITS ETF (Acc)
+  "IE00BJL36X53": "ETF_OBLIGATIONSBASERET",  // SPDR ICE BofA 0-5 Year EM USD Government
+  "IE00BP46NG52": "ETF_OBLIGATIONSBASERET",  // SPDR ICE BofA 0-5 Year EM USD Government
+  "IE000QRDCYW2": "ETF_OBLIGATIONSBASERET",  // SPDR J.P. Morgan Saudi Arabia Aggregate 
+  "IE00BQWJFQ70": "ETF_IKKE_POSITIVLISTE",  // SPDR Morningstar Multi-Asset Global Infr
+  "IE00B3YLTY66": "ETF_POSITIVLISTE",  // SPDR MSCI ACWI IMI UCITS ETF
+  "IE00BF1B7389": "ETF_POSITIVLISTE",  // SPDR MSCI All Country World EUR Hdg UCIT
+  "IE000DD75KQ5": "ETF_POSITIVLISTE",  // SPDR MSCI All Country World Investable M
+  "IE00B44Z5B48": "ETF_POSITIVLISTE",  // SPDR MSCI All Country World UCITS ETF
+  "IE00B466KX20": "ETF_POSITIVLISTE",  // SPDR MSCI EM Asia UCITS ETF
+  "IE00B48X4842": "ETF_POSITIVLISTE",  // SPDR MSCI Emerging Markets Small Cap UCI
+  "IE00B469F816": "ETF_POSITIVLISTE",  // SPDR MSCI Emerging Markets UCITS ETF
+  "IE00B910VR50": "ETF_POSITIVLISTE",  // SPDR MSCI EMU UCITS ETF
+  "IE00BKWQ0N82": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Communication Services 
+  "IE00BKWQ0C77": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Consumer Discretionary 
+  "IE00BKWQ0D84": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Consumer Staples UCITS 
+  "IE00BKWQ0F09": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Energy UCITS ETF
+  "IE00BKWQ0G16": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Financials UCITS ETF
+  "IE00BKWQ0H23": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Health Care UCITS ETF
+  "IE00BKWQ0J47": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Industrials UCITS ETF
+  "IE00BKWQ0L68": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Materials UCITS ETF
+  "IE00BSPLC298": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Small Cap Value Weighte
+  "IE00BKWQ0K51": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Technology UCITS ETF
+  "IE00BKWQ0Q14": "ETF_POSITIVLISTE",  // SPDR MSCI Europe UCITS ETF
+  "IE00BKWQ0P07": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Utilities UCITS ETF
+  "IE00BSPLC306": "ETF_POSITIVLISTE",  // SPDR MSCI Europe Value UCITS ETF
+  "IE00BZ0G8C04": "ETF_POSITIVLISTE",  // SPDR MSCI Japan EUR Hdg UCITS ETF
+  "IE00BZ0G8B96": "ETF_POSITIVLISTE",  // SPDR MSCI Japan UCITS ETF
+  "IE00059GZ051": "ETF_POSITIVLISTE",  // SPDR MSCI Resilient Future UCITS ETF (Ac
+  "IE00BSPLC413": "ETF_POSITIVLISTE",  // SPDR MSCI USA Small Cap Value Weighted U
+  "IE00BSPLC520": "ETF_POSITIVLISTE",  // SPDR MSCI USA Value UCITS ETF
+  "IE000BZ1HVL2": "ETF_POSITIVLISTE",  // SPDR MSCI World EUR Hdg UCITS ETF (Acc)
+  "IE00BYTRRB94": "ETF_POSITIVLISTE",  // SPDR MSCI World Health Care UCITS ETF
+  "IE00BCBJG560": "ETF_POSITIVLISTE",  // SPDR MSCI World Small Cap UCITS ETF
+  "IE000SU1VJ03": "ETF_POSITIVLISTE",  // SPDR MSCI World Small Cap UCITS ETF (Dis
+  "IE00BYTRRD19": "ETF_POSITIVLISTE",  // SPDR MSCI World Technology UCITS ETF
+  "IE00BFY0GT14": "ETF_POSITIVLISTE",  // SPDR MSCI WORLD UCITS ETF
+  "IE00BNH72088": "ETF_OBLIGATIONSBASERET",  // SPDR Refinitiv Global Convertible Bond U
+  "IE00BJ38QD84": "ETF_IKKE_POSITIVLISTE",  // SPDR Russell 2000 U.S. Small Cap UCITS E
+  "IE000G8WOLX8": "ETF_POSITIVLISTE",  // SPDR S&P 400 U.S. Mid Cap EUR Hdg UCITS 
+  "IE000Q4EBR54": "ETF_POSITIVLISTE",  // SPDR S&P 400 U.S. Mid Cap Leaders UCITS 
+  "IE00B4YBJ215": "ETF_POSITIVLISTE",  // SPDR S&P 400 U.S. Mid Cap UCITS ETF (Acc
+  "IE000UYVEVN3": "ETF_POSITIVLISTE",  // SPDR S&P 400 U.S. Mid Cap UCITS ETF (Dis
+  "IE00BH4GPZ28": "ETF_POSITIVLISTE",  // SPDR S&P 500 ESG Leaders UCITS ETF (Acc)
+  "IE00BYYW2V44": "ETF_POSITIVLISTE",  // SPDR S&P 500 EUR Hdg UCITS ETF (Acc)
+  "IE00B802KR88": "ETF_POSITIVLISTE",  // SPDR S&P 500 Low Volatility UCITS ETF (A
+  "IE000FJJZA01": "ETF_POSITIVLISTE",  // SPDR S&P 500 Quality Aristocrats UCITS E
+  "IE000XZSV718": "ETF_POSITIVLISTE",  // SPDR S&P 500 UCITS ETF (Acc)
+  "IE00B6YX5C33": "ETF_POSITIVLISTE",  // SPDR S&P 500 UCITS ETF (Dist)
+  "IE000IISJT64": "ETF_POSITIVLISTE",  // SPDR S&P Developed Quality Aristocrats U
+  "IE00B6YX5B26": "ETF_POSITIVLISTE",  // SPDR S&P Emerging Markets Dividend Arist
+  "IE00BYTH5T38": "ETF_POSITIVLISTE",  // SPDR S&P Euro Dividend Aristocrats ESG U
+  "IE00B5M1WJ87": "ETF_POSITIVLISTE",  // SPDR S&P Euro Dividend Aristocrtas UCITS
+  "IE0008GRJRO8": "ETF_POSITIVLISTE",  // SPDR S&P Europe Defense Vision UCITS ETF
+  "IE00BYTH5S21": "ETF_POSITIVLISTE",  // SPDR S&P Global Dividend Aristocrats ESG
+  "IE00B9CQXS71": "ETF_POSITIVLISTE",  // SPDR S&P Global Dividend Aristocrats UCI
+  "IE00B9KNR336": "ETF_POSITIVLISTE",  // SPDR S&P Pan Asia Dividend Aristocrats U
+  "IE00BFWFPX50": "ETF_POSITIVLISTE",  // SPDR S&P U.S. COMMUNICATION SERVICES SEL
+  "IE00BWBXM278": "ETF_POSITIVLISTE",  // SPDR S&P U.S. CONSUMER DISCRETIONARY SEL
+  "IE00BWBXM385": "ETF_POSITIVLISTE",  // SPDR S&P U.S. CONSUMER STAPLES SELECT SE
+  "IE00BYTH5R14": "ETF_POSITIVLISTE",  // SPDR S&P U.S. Dividend Aristocrats ESG U
+  "IE00B979GK47": "ETF_POSITIVLISTE",  // SPDR S&P U.S. Dividend Aristocrats EUR H
+  "IE00B6YX5D40": "ETF_POSITIVLISTE",  // SPDR S&P U.S. Dividend Aristocrats UCITS
+  "IE00BWBXM492": "ETF_POSITIVLISTE",  // SPDR S&P U.S. ENERGY SELECT SECTOR UCITS
+  "IE00BWBXM500": "ETF_POSITIVLISTE",  // SPDR S&P U.S. Financials Select Sector U
+  "IE00BWBXM617": "ETF_POSITIVLISTE",  // SPDR S&P U.S. HEALTH CARE SELECT SECTOR 
+  "IE00BWBXM724": "ETF_POSITIVLISTE",  // SPDR S&P U.S. INDUSTRIALS SELECT SECTOR 
+  "IE00BWBXM831": "ETF_POSITIVLISTE",  // SPDR S&P U.S. Materials Select Sector UC
+  "IE00BWBXM948": "ETF_POSITIVLISTE",  // SPDR S&P U.S. TECHNOLOGY SELECT SECTOR U
+  "IE00BWBXMB69": "ETF_POSITIVLISTE",  // SPDR S&P U.S. Utilities Select Sector UC
+  "IE00BK5H8015": "ETF_POSITIVLISTE",  // SPDR STOXX Europe 600 SRI UCITS ETF (Acc
+  "IE00B6S2Z822": "ETF_POSITIVLISTE",  // SSGA SPDR ETFS EUROPE I PLC SPDR S&P U.K
+  "IE000VU9AUN9": "ETF_IKKE_POSITIVLISTE",  // State Street Blackstone Euro AAA CLO UCI
+  "IE0005TF96I9": "ETF_IKKE_POSITIVLISTE",  // VanEck Bionic Engineering UCITS ETF
+  "IE0001J5A2T9": "ETF_IKKE_POSITIVLISTE",  // VanEck Circular Economy UCITS ETF
+  "IE00BMDKNW35": "ETF_IKKE_POSITIVLISTE",  // VanEck Crypto and Blockchain Innovators 
+  "IE000YYE6WK5": "ETF_IKKE_POSITIVLISTE",  // VanEck Defense UCITS ETF
+  "IE00BF541080": "ETF_OBLIGATIONSBASERET",  // VanEck Emerging Markets High Yield Bond 
+  "NL0010731816": "ETF_IKKE_POSITIVLISTE",  // Vaneck European Equal Weight Screened UC
+  "IE000B9PQW54": "ETF_IKKE_POSITIVLISTE",  // VanEck Genomics and Healthcare Innovator
+  "IE00BF540Z61": "ETF_OBLIGATIONSBASERET",  // VanEck Global Fallen Angel High Yield Bo
+  "IE00BDFBTQ78": "ETF_IKKE_POSITIVLISTE",  // VanEck Global Mining UCITS ETF
+  "NL0009690239": "ETF_IKKE_POSITIVLISTE",  // VanEck Global Real Estate UCITS ETF
+  "IE00BQQP9F84": "ETF_IKKE_POSITIVLISTE",  // VanEck Gold Miners UCITS ETF
+  "IE00BMDH1538": "ETF_IKKE_POSITIVLISTE",  // VanEck Hydrogen Economy UCITS ETF
+  "NL0009690247": "ETF_IKKE_POSITIVLISTE",  // VanEck iBoxx EUR Corporates UCITS ETF
+  "NL0010273801": "ETF_IKKE_POSITIVLISTE",  // VanEck iBoxx EUR Sovereign Capped AAA-AA
+  "NL0009690254": "ETF_IKKE_POSITIVLISTE",  // VanEck iBoxx EUR Sovereign Diversified 1
+  "IE00BDS67326": "ETF_OBLIGATIONSBASERET",  // VanEck J.P. Morgan EM Local Currency Bon
+  "IE00BQQP9G91": "ETF_IKKE_POSITIVLISTE",  // VanEck Junior Gold Miners UCITS ETF
+  "NL0011683594": "ETF_IKKE_POSITIVLISTE",  // VanEck Morningstar Developed Markets Div
+  "IE00BL0BMZ89": "ETF_IKKE_POSITIVLISTE",  // VanEck Morningstar Global Wide Moat UCIT
+  "IE00BQQP9H09": "ETF_IKKE_POSITIVLISTE",  // VanEck Morningstar US ESG Wide Moat UCIT
+  "IE000SBU19F7": "ETF_IKKE_POSITIVLISTE",  // VanEck Morningstar US SMID Moat UCITS ET
+  "IE0007I99HX7": "ETF_IKKE_POSITIVLISTE",  // VanEck Morningstar US Wide Moat UCITS ET
+  "IE0000H445G8": "ETF_IKKE_POSITIVLISTE",  // VanEck New China UCITS ETF
+  "IE000NXF88S1": "ETF_IKKE_POSITIVLISTE",  // VanEck Oil Services UCITS ETF
+  "IE0007Y8Y157": "ETF_IKKE_POSITIVLISTE",  // VanEck Quantum Computing UCITS ETF
+  "IE0002PG6CA6": "ETF_IKKE_POSITIVLISTE",  // VanEck Rare Earth and Strategic Metals U
+  "IE00BMC38736": "ETF_IKKE_POSITIVLISTE",  // VanEck Semiconductor UCITS ETF - USD Acc
+  "IE000YU9K6K2": "ETF_IKKE_POSITIVLISTE",  // VanEck Space Innovators UCITS ETF
+  "IE0005B8WVT6": "ETF_IKKE_POSITIVLISTE",  // VanEck Sustainable Future of Food UCITS 
+  "IE000M7V94E1": "ETF_IKKE_POSITIVLISTE",  // VanEck Uranium and Nuclear Technologies 
+  "IE000J6CHW80": "ETF_OBLIGATIONSBASERET",  // VanEck US Fallen Angel High Yield Bond U
+  "IE00BYWQWR46": "ETF_IKKE_POSITIVLISTE",  // VanEck Video Gaming and eSports UCITS ET
+  "NL0010408704": "ETF_POSITIVLISTE",  // VanEck World Equal Weight Screened UCITS
+  "IE000GOJO2A3": "ETF_IKKE_POSITIVLISTE",  // Vanguard ESG Developed Asia Pacific All 
+  "IE0008T6IUX0": "ETF_IKKE_POSITIVLISTE",  // Vanguard ESG Developed Asia Pacific All 
+  "IE000QUOSE01": "ETF_IKKE_POSITIVLISTE",  // Vanguard ESG Developed Europe All Cap UC
+  "IE000NRGX9M3": "ETF_IKKE_POSITIVLISTE",  // Vanguard ESG Developed Europe All Cap UC
+  "IE0001VXZTV7": "ETF_IKKE_POSITIVLISTE",  // Vanguard Esg Emerg Mark Ucits Etf Usd D
+  "IE000KPJJWM6": "ETF_IKKE_POSITIVLISTE",  // Vanguard Esg Emerg Mark Ucits Etf Usd D
+  "IE000QADMYA3": "ETF_OBLIGATIONSBASERET",  // Vanguard ESG EUR Corporate Bond UCITS ET
+  "IE000F37PGZ3": "ETF_OBLIGATIONSBASERET",  // Vanguard ESG EUR Corporate Bond UCITS ET
+  "IE00BNG8L278": "ETF_IKKE_POSITIVLISTE",  // Vanguard ESG Global All Cap UCITS ETF - 
+  "IE00BNG8L385": "ETF_IKKE_POSITIVLISTE",  // Vanguard ESG Global All Cap UCITS ETF - 
+  "IE00BNDS1P30": "ETF_OBLIGATIONSBASERET",  // Vanguard ESG Global Corporate Bond UCITS
+  "IE00BNDS1Q47": "ETF_OBLIGATIONSBASERET",  // Vanguard ESG Global Corporate Bond UCITS
+  "IE000O58J820": "ETF_IKKE_POSITIVLISTE",  // Vanguard ESG North America All Cap UCITS
+  "IE000L2ZNB07": "ETF_IKKE_POSITIVLISTE",  // Vanguard ESG North America All Cap UCITS
+  "IE000SOORXS0": "ETF_IKKE_POSITIVLISTE",  // Vanguard EUR Cash UCITS ETF - (EUR) Accu
+  "IE000AFVKJZ0": "ETF_IKKE_POSITIVLISTE",  // Vanguard EUR Cash UCITS ETF - (EUR) Dist
+  "IE00BH04FZ00": "ETF_OBLIGATIONSBASERET",  // Vanguard EUR Corporate 1-3 Year Bond UCI
+  "IE00BDD48S37": "ETF_OBLIGATIONSBASERET",  // Vanguard EUR Corporate 1-3 Year Bond UCI
+  "IE00BGYWT403": "ETF_OBLIGATIONSBASERET",  // Vanguard EUR Corporate Bond UCITS ETF - 
+  "IE00BZ163G84": "ETF_OBLIGATIONSBASERET",  // Vanguard EUR Corporate Bond UCITS ETF - 
+  "IE00004S2680": "ETF_OBLIGATIONSBASERET",  // Vanguard EUR Eurozone Government 1-3 Yea
+  "IE000HARFTG3": "ETF_OBLIGATIONSBASERET",  // Vanguard EUR Eurozone Government 1-3 Yea
+  "IE00BH04GL39": "ETF_OBLIGATIONSBASERET",  // Vanguard EUR Eurozone Government Bond UC
+  "IE00BZ163H91": "ETF_OBLIGATIONSBASERET",  // Vanguard EUR Eurozone Government Bond UC
+  "IE00BFMXYP42": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE 100 UCITS ETF - (GBP) Acc
+  "IE00B810Q511": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE 100 UCITS ETF - (GBP) Dist
+  "IE00BFMXVQ44": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE 250 UCITS ETF - (GBP) Acc
+  "IE00BKX55Q28": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE 250 UCITS ETF - (GBP) Dist
+  "IE00BK5BR626": "ETF_POSITIVLISTE",  // Vanguard FTSE All-World High Dividend Yi
+  "IE00B8GKDB10": "ETF_POSITIVLISTE",  // Vanguard FTSE All-World High Dividend Yi
+  "IE00BK5BQT80": "ETF_POSITIVLISTE",  // Vanguard FTSE All-World UCITS ETF - (USD
+  "IE00B3RBWM25": "ETF_POSITIVLISTE",  // Vanguard FTSE All-World UCITS ETF - (USD
+  "IE00BK5BQZ41": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE Developed Asia Pacific ex 
+  "IE00B9F5YL18": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE Developed Asia Pacific ex 
+  "IE00BK5BQY34": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE Developed Europe ex UK UCI
+  "IE00BKX55S42": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE Developed Europe ex UK UCI
+  "IE00BK5BQX27": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE Developed Europe UCITS ETF
+  "IE00B945VV12": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE Developed Europe UCITS ETF
+  "IE00BK5BQV03": "ETF_POSITIVLISTE",  // Vanguard FTSE Developed World UCITS ETF 
+  "IE00BKX55T58": "ETF_POSITIVLISTE",  // Vanguard FTSE Developed World UCITS ETF 
+  "IE00BK5BR733": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE Emerging Markets UCITS ETF
+  "IE00B3VVMM84": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE Emerging Markets UCITS ETF
+  "IE00BFMXYX26": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE Japan UCITS ETF - (USD) Ac
+  "IE00B95PGT31": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE Japan UCITS ETF - (USD) Di
+  "IE00BFMXYY33": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE Japan UCITS ETF - EUR Hedg
+  "IE00BK5BQW10": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE North America UCITS ETF - 
+  "IE00BKX55R35": "ETF_IKKE_POSITIVLISTE",  // Vanguard FTSE North America UCITS ETF - 
+  "IE00BG143G97": "ETF_IKKE_POSITIVLISTE",  // Vanguard Germany All Cap UCITS ETF - (EU
+  "IE00BG47KH54": "ETF_OBLIGATIONSBASERET",  // Vanguard Global Aggregate Bond UCITS ETF
+  "IE00BG47KB92": "ETF_OBLIGATIONSBASERET",  // Vanguard Global Aggregate Bond UCITS ETF
+  "IE000B1A2798": "ETF_OBLIGATIONSBASERET",  // Vanguard Global Government Bond UCITS ET
+  "IE0003HUCA83": "ETF_OBLIGATIONSBASERET",  // Vanguard Global Government Bond UCITS ET
+  "IE00BMVB5K07": "ETF_IKKE_POSITIVLISTE",  // Vanguard LifeStrategy 20% Equity UCITS E
+  "IE00BMVB5L14": "ETF_IKKE_POSITIVLISTE",  // Vanguard LifeStrategy 20% Equity UCITS E
+  "IE00BMVB5M21": "ETF_IKKE_POSITIVLISTE",  // Vanguard LifeStrategy 40% Equity UCITS E
+  "IE00BMVB5N38": "ETF_IKKE_POSITIVLISTE",  // Vanguard LifeStrategy 40% Equity UCITS E
+  "IE00BMVB5P51": "ETF_IKKE_POSITIVLISTE",  // Vanguard LifeStrategy 60% Equity UCITS E
+  "IE00BMVB5Q68": "ETF_IKKE_POSITIVLISTE",  // Vanguard LifeStrategy 60% Equity UCITS E
+  "IE00BMVB5R75": "ETF_IKKE_POSITIVLISTE",  // Vanguard LifeStrategy 80% Equity UCITS E
+  "IE00BMVB5S82": "ETF_IKKE_POSITIVLISTE",  // Vanguard LifeStrategy 80% Equity UCITS E
+  "IE00BFMXXD54": "ETF_POSITIVLISTE",  // Vanguard S&P 500 UCITS ETF - (USD) Acc
+  "IE00B3XXRP09": "ETF_POSITIVLISTE",  // Vanguard S&P 500 UCITS ETF - (USD) Dist
+  "IE00BH04GW44": "ETF_IKKE_POSITIVLISTE",  // Vanguard U.K. Gilt UCITS ETF - (GBP) Acc
+  "IE00B42WWV65": "ETF_IKKE_POSITIVLISTE",  // Vanguard U.K. Gilt UCITS ETF - (GBP) Dis
+  "IE00BMX0B524": "ETF_IKKE_POSITIVLISTE",  // Vanguard U.K. Gilt UCITS ETF - EUR Hedge
+  "IE00BLRPPV00": "ETF_OBLIGATIONSBASERET",  // Vanguard U.S. Treasury 0-1 Year Bond UCI
+  "IE000H3Q3AF6": "ETF_OBLIGATIONSBASERET",  // Vanguard U.S. Treasury 1-3 Year Bond UCI
+  "IE000GU6MFI0": "ETF_OBLIGATIONSBASERET",  // Vanguard U.S. Treasury 1-3 Year Bond UCI
+  "IE000TAV7246": "ETF_OBLIGATIONSBASERET",  // Vanguard U.S. Treasury 1-3 Year Bond UCI
+  "IE000M6STPW4": "ETF_OBLIGATIONSBASERET",  // Vanguard U.S. Treasury 1-3 Year Bond UCI
+  "IE000VZ8BBU9": "ETF_OBLIGATIONSBASERET",  // Vanguard U.S. Treasury 3-7 Year Bond UCI
+  "IE000128BSS1": "ETF_OBLIGATIONSBASERET",  // Vanguard U.S. Treasury 3-7 Year Bond UCI
+  "IE000UXDT343": "ETF_OBLIGATIONSBASERET",  // Vanguard U.S. Treasury 7-10 Year Bond UC
+  "IE000U882CN5": "ETF_OBLIGATIONSBASERET",  // Vanguard U.S. Treasury 7-10 Year Bond UC
+  "IE00BGYWSV06": "ETF_OBLIGATIONSBASERET",  // Vanguard USD Corporate 1-3 Year Bond UCI
+  "IE00BDD48R20": "ETF_OBLIGATIONSBASERET",  // Vanguard USD Corporate 1-3 Year Bond UCI
+  "IE00BGYWSW13": "ETF_OBLIGATIONSBASERET",  // Vanguard USD Corporate 1-3 Year Bond UCI
+  "IE00BGYWFK87": "ETF_OBLIGATIONSBASERET",  // Vanguard USD Corporate Bond UCITS ETF - 
+  "IE00BZ163K21": "ETF_OBLIGATIONSBASERET",  // Vanguard USD Corporate Bond UCITS ETF - 
+  "IE00BGYWFL94": "ETF_OBLIGATIONSBASERET",  // Vanguard USD Corporate Bond UCITS ETF - 
+  "IE00BGYWCB81": "ETF_OBLIGATIONSBASERET",  // Vanguard USD Emerging Markets Government
+  "IE00BZ163L38": "ETF_OBLIGATIONSBASERET",  // Vanguard USD Emerging Markets Government
+  "IE00BGYWFS63": "ETF_OBLIGATIONSBASERET",  // Vanguard USD Treasury Bond UCITS ETF - (
+  "IE00BZ163M45": "ETF_OBLIGATIONSBASERET",  // Vanguard USD Treasury Bond UCITS ETF - (
+  "IE00BMX0B631": "ETF_OBLIGATIONSBASERET",  // Vanguard USD Treasury Bond UCITS ETF - E
+  "IE00BDVPNG13": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Artificial Intelligence UCITS
+  "IE00BZ0XVG69": "ETF_OBLIGATIONSBASERET",  // WisdomTree AT1 CoCo Bond UCITS ETF - USD
+  "IE00BFNNN236": "ETF_OBLIGATIONSBASERET",  // WisdomTree AT1 CoCo Bond UCITS ETF – EUR
+  "IE00BZ0XVF52": "ETF_OBLIGATIONSBASERET",  // WisdomTree AT1 CoCo Bond UCITS ETF – USD
+  "IE00BKLF1R75": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Battery Solutions UCITS ETF –
+  "IE000O8KMPM1": "ETF_IKKE_POSITIVLISTE",  // WisdomTree BioRevolution UCITS ETF - USD
+  "IE000940RNE6": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Blockchain UCITS ETF - USD Ac
+  "IE00BKY4W127": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Broad Commodities UCITS ETF –
+  "IE00BJGWQN72": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Cloud Computing UCITS ETF - U
+  "IE00BLPK3577": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Cybersecurity UCITS ETF - USD
+  "IE00BQQ3Q067": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Emerging Markets Equity Incom
+  "IE00BDF12W49": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Emerging Markets Equity Incom
+  "IE00BM9TSP27": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Emerging Markets ex-State-Own
+  "IE00BQZJBM26": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Emerging Markets SmallCap Div
+  "IE00BDVPNV63": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Enhanced Commodity ex-Agricul
+  "IE00BDVPNS35": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Enhanced Commodity ex-Agricul
+  "IE00BG88WG77": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Enhanced Commodity UCITS ETF 
+  "IE00BYMLZY74": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Enhanced Commodity UCITS ETF 
+  "IE0002Y8CX98": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Europe Defence UCITS ETF - EU
+  "IE00BQZJBX31": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Europe Equity Income UCITS ET
+  "IE00BVXBH163": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Europe Equity UCITS ETF - USD
+  "IE00BYQCZX56": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Europe Equity UCITS ETF – EUR
+  "IE00BQZJC527": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Europe SmallCap Dividend UCIT
+  "IE00BDF16114": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Europe SmallCap Dividend UCIT
+  "IE0005HNE843": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Europe Value UCITS ETF - EUR 
+  "IE000OV4XWA3": "ETF_POSITIVLISTE",  // WisdomTree Eurozone Efficient Core UCITS
+  "IE00BZ56TQ67": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Eurozone Quality Dividend Gro
+  "IE00077IIPQ8": "ETF_POSITIVLISTE",  // WisdomTree Global Efficient Core UCITS E
+  "IE000X7DRW38": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Global Ex-USA Quality Dividen
+  "IE0007M3MLF3": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Global Quality Dividend Growt
+  "IE00BZ56RN96": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Global Quality Dividend Growt
+  "IE00BZ56SW52": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Global Quality Dividend Growt
+  "IE000Y83YZ44": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Global Quality Growth UCITS E
+  "IE000XNILW20": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Global Sustainable Equity UCI
+  "IE000D1017N2": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Global Value UCITS ETF - USD 
+  "IE00BYQCZJ13": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Japan Equity UCITS ETF - EUR 
+  "IE00BYQCZN58": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Japan Equity UCITS ETF - USD 
+  "IE00BVXC4854": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Japan Equity UCITS ETF - USD 
+  "IE0000902GT6": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Megatrends UCITS ETF - USD Ac
+  "IE000X9TLGN8": "ETF_IKKE_POSITIVLISTE",  // WisdomTree New Economy Real Estate UCITS
+  "IE000MO2MB07": "ETF_IKKE_POSITIVLISTE",  // WisdomTree New Economy Real Estate UCITS
+  "IE000W8WMSL2": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Quantum Computing UCITS ETF -
+  "IE000P3D0W60": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Renewable Energy UCITS ETF - 
+  "IE000KHX9DX6": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Strategic Metals and Rare Ear
+  "IE000611IJM3": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Strategic Metals UCITS ETF - 
+  "IE0007UE04X9": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Strategic Metals UCITS ETF - 
+  "IE0003BJ2JS4": "ETF_IKKE_POSITIVLISTE",  // WisdomTree Uranium and Nuclear Energy UC
+  "IE000KF370H3": "ETF_POSITIVLISTE",  // WisdomTree US Efficient Core UCITS ETF -
+  "IE00BQZJBQ63": "ETF_IKKE_POSITIVLISTE",  // WisdomTree US Equity Income UCITS ETF
+  "IE00BD6RZT93": "ETF_IKKE_POSITIVLISTE",  // WisdomTree US Equity Income UCITS ETF - 
+  "IE00BD6RZW23": "ETF_IKKE_POSITIVLISTE",  // WisdomTree US Equity Income UCITS ETF - 
+  "IE000CXVOXQ1": "ETF_IKKE_POSITIVLISTE",  // WisdomTree US Quality Dividend Growth UC
+  "IE00BZ56RG20": "ETF_IKKE_POSITIVLISTE",  // WisdomTree US Quality Dividend Growth UC
+  "IE000YGEAK03": "ETF_IKKE_POSITIVLISTE",  // WisdomTree US Quality Growth UCITS ETF -
+  "IE000F9AQNW6": "ETF_IKKE_POSITIVLISTE",  // WisdomTree US Value UCITS ETF - USD Acc
+  "SE0005466513": "ETF_IKKE_POSITIVLISTE",  // XACT BEAR
+  "SE0005466505": "ETF_IKKE_POSITIVLISTE",  // XACT BEAR 2
+  "SE0001342395": "ETF_IKKE_POSITIVLISTE",  // XACT BULL
+  "SE0003051010": "ETF_IKKE_POSITIVLISTE",  // XACT BULL 2
+  "SE0001710914": "ETF_IKKE_POSITIVLISTE",  // XACT Norden (UCITS ETF)
+  "SE0009778954": "ETF_IKKE_POSITIVLISTE",  // XACT Norden Högutdelande (UCITS ETF)
+  "SE0007491287": "ETF_OBLIGATIONSBASERET",  // XACT Obligation (UCITS ETF)
+  "SE0011452127": "ETF_IKKE_POSITIVLISTE",  // XACT OMXC25 ESG (UCITS ETF)
+  "SE0000693293": "ETF_IKKE_POSITIVLISTE",  // XACT OMXS30 ESG (UCITS ETF)
+  "SE0007491261": "ETF_IKKE_POSITIVLISTE",  // XACT Svenska Småbolag (UCITS ETF)
+  "SE0001056045": "ETF_IKKE_POSITIVLISTE",  // XACT Sverige (UCITS ETF)
+  "LU0659579063": "ETF_IKKE_POSITIVLISTE",  // Xtrackers ATX UCITS ETF 1C
+  "LU0292106167": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Bloomberg Commodity ex-Agricul
+  "LU0460391732": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Bloomberg Commodity ex-Agricul
+  "LU2278080713": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Bloomberg Commodity Swap UCITS
+  "LU0429790743": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Bloomberg Commodity Swap UCITS
+  "LU0322250985": "ETF_IKKE_POSITIVLISTE",  // Xtrackers CAC 40 UCITS ETF 1D
+  "LU0779800910": "ETF_IKKE_POSITIVLISTE",  // Xtrackers CSI300 Swap UCITS ETF 1C
+  "LU2788421340": "ETF_IKKE_POSITIVLISTE",  // Xtrackers CSI500 Swap UCITS ETF 1C
+  "LU0838782315": "ETF_IKKE_POSITIVLISTE",  // Xtrackers DAX ESG Screened UCITS ETF 1D
+  "LU1349386927": "ETF_IKKE_POSITIVLISTE",  // Xtrackers DAX UCITS ETF 1D
+  "IE00BN2BCY94": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Developed Green Real Estate ES
+  "IE000VKFA2D2": "ETF_IKKE_POSITIVLISTE",  // Xtrackers DJE Europe Equity Research UCI
+  "IE00050EGWG5": "ETF_IKKE_POSITIVLISTE",  // Xtrackers DJE US Equity Research UCITS E
+  "IE000TZT8TI0": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Emerging Markets Net Zero Path
+  "IE000Y6L6LE6": "ETF_IKKE_POSITIVLISTE",  // Xtrackers EMU Net Zero Pathway Paris Ali
+  "IE00BFMKQ930": "ETF_OBLIGATIONSBASERET",  // Xtrackers ESG USD Corporate Bond Short D
+  "IE0004KLW911": "ETF_OBLIGATIONSBASERET",  // Xtrackers ESG USD Emerging Markets Bond 
+  "IE00BD4DX952": "ETF_OBLIGATIONSBASERET",  // Xtrackers ESG USD Emerging Markets Bond 
+  "IE00BD4DXB77": "ETF_OBLIGATIONSBASERET",  // Xtrackers ESG USD Emerging Markets Bond 
+  "IE000MCVFK47": "ETF_OBLIGATIONSBASERET",  // Xtrackers EUR Corporate Green Bond UCITS
+  "IE0006GNB732": "ETF_OBLIGATIONSBASERET",  // Xtrackers EUR High Yield Corporate Bond 
+  "LU0292106753": "ETF_POSITIVLISTE",  // Xtrackers Euro STOXX 50 Short Daily Swap
+  "LU0380865021": "ETF_POSITIVLISTE",  // Xtrackers Euro Stoxx 50 UCITS ETF 1C
+  "LU0274211217": "ETF_POSITIVLISTE",  // Xtrackers Euro Stoxx 50 UCITS ETF 1D
+  "LU0292095535": "ETF_POSITIVLISTE",  // Xtrackers Euro Stoxx Quality Dividend UC
+  "IE000VMAR5O6": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Europe Biodiversity Focus SRI 
+  "IE00002ZKAP0": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Europe Equity Enhanced Active 
+  "IE0001JH5CB4": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Europe Net Zero Pathway Paris 
+  "IE000F04HGE5": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Floating Rate Notes Active UCI
+  "LU0292097234": "ETF_IKKE_POSITIVLISTE",  // Xtrackers FTSE 100 Income UCITS ETF 1D
+  "LU0328473581": "ETF_IKKE_POSITIVLISTE",  // Xtrackers FTSE 100 Short Daily Swap UCIT
+  "LU0838780707": "ETF_IKKE_POSITIVLISTE",  // Xtrackers FTSE 100 UCITS ETF 1C
+  "LU0292097317": "ETF_IKKE_POSITIVLISTE",  // Xtrackers FTSE 250 UCITS ETF 1D
+  "IE00BP8FKB21": "ETF_IKKE_POSITIVLISTE",  // Xtrackers FTSE Developed Europe ex UK Re
+  "LU0489337690": "ETF_IKKE_POSITIVLISTE",  // Xtrackers FTSE Developed Europe Real Est
+  "LU0274212538": "ETF_IKKE_POSITIVLISTE",  // Xtrackers FTSE MIB UCITS ETF 1D
+  "IE00BGV5VR99": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Future Mobility UCITS ETF 1C
+  "IE00BYZNF849": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Global Infrastructure ESG UCIT
+  "LU1310477036": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Harvest FTSE China A-H 50 UCIT
+  "IE000UX5WPU4": "ETF_OBLIGATIONSBASERET",  // Xtrackers iBoxx EUR Corporate Bond Yield
+  "IE00BYPHT736": "ETF_OBLIGATIONSBASERET",  // Xtrackers iBoxx EUR Corporate Bond Yield
+  "LU3003218016": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Australia Government Bond U
+  "LU0494592974": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Australia Government Bond U
+  "LU2468423459": "ETF_OBLIGATIONSBASERET",  // Xtrackers II ESG Eurozone Government Bon
+  "LU0942970103": "ETF_OBLIGATIONSBASERET",  // Xtrackers II ESG Global Aggregate Bond U
+  "LU0942970798": "ETF_OBLIGATIONSBASERET",  // Xtrackers II ESG Global Aggregate Bond U
+  "LU2462217071": "ETF_OBLIGATIONSBASERET",  // Xtrackers II ESG Global Government Bond 
+  "LU2385068163": "ETF_OBLIGATIONSBASERET",  // Xtrackers II ESG Global Government Bond 
+  "LU2385068593": "ETF_OBLIGATIONSBASERET",  // Xtrackers II ESG Global Government Bond 
+  "LU2178481649": "ETF_OBLIGATIONSBASERET",  // Xtrackers II EUR Corporate Bond Short Du
+  "LU0484968903": "ETF_OBLIGATIONSBASERET",  // Xtrackers II EUR Corporate Bond SRI PAB 
+  "LU0484968812": "ETF_OBLIGATIONSBASERET",  // Xtrackers II EUR Corporate Bond SRI PAB 
+  "LU0478205379": "ETF_OBLIGATIONSBASERET",  // Xtrackers II EUR Corporate Bond UCITS ET
+  "LU0478205965": "ETF_OBLIGATIONSBASERET",  // Xtrackers II EUR Corporate Bond UCITS ET
+  "LU0820950128": "ETF_OBLIGATIONSBASERET",  // Xtrackers II EUR Covered Bond Swap UCITS
+  "LU1109943388": "ETF_OBLIGATIONSBASERET",  // Xtrackers II EUR High Yield Corporate Bo
+  "LU1109942653": "ETF_OBLIGATIONSBASERET",  // Xtrackers II EUR High Yield Corporate Bo
+  "LU0290358497": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II EUR Overnight Rate Swap UCI
+  "LU0335044896": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II EUR Overnight Rate Swap UCI
+  "LU2641054122": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 0-
+  "LU3119430067": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 1-
+  "LU0290356871": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 1-
+  "LU0614173549": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 1-
+  "LU3119430141": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 3-
+  "LU0290356954": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 3-
+  "LU0614173895": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 3-
+  "LU3119430224": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 5-
+  "LU0290357176": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 5-
+  "LU3119430497": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 7-
+  "LU0290357259": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 7-
+  "LU3119430570": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 10
+  "LU0290357507": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 15
+  "LU0290357846": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond 25
+  "LU2504537445": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond ES
+  "LU0321463258": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond Sh
+  "LU0290355717": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond UC
+  "LU0643975591": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond UC
+  "LU2009147591": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Government Bond UC
+  "LU0290358224": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Eurozone Inflation-Linked B
+  "LU0321464652": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II GBP Overnight Rate Swap UCI
+  "LU2641054551": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Germany Government Bond 0-1
+  "LU0468897110": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Germany Government Bond 1-3
+  "LU0643975161": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Germany Government Bond UCI
+  "LU0468896575": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Germany Government Bond UCI
+  "LU0378818131": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Global Government Bond UCIT
+  "LU0690964092": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Global Government Bond UCIT
+  "LU0908508731": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Global Government Bond UCIT
+  "LU0290357929": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Global Inflation-Linked Bon
+  "LU0962078753": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Global Inflation-Linked Bon
+  "LU0908508814": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Global Inflation-Linked Bon
+  "LU1094612022": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Harvest China Government Bo
+  "LU2641053827": "ETF_OBLIGATIONSBASERET",  // Xtrackers II iBoxx Eurozone Government B
+  "LU2552296563": "ETF_OBLIGATIONSBASERET",  // Xtrackers II iBoxx Eurozone Government B
+  "LU0925589839": "ETF_OBLIGATIONSBASERET",  // Xtrackers II iBoxx Eurozone Government B
+  "LU0524480265": "ETF_OBLIGATIONSBASERET",  // Xtrackers II iBoxx Eurozone Government B
+  "LU0962071741": "ETF_OBLIGATIONSBASERET",  // Xtrackers II iBoxx Eurozone Government B
+  "LU0321463506": "ETF_OBLIGATIONSBASERET",  // Xtrackers II iBoxx Germany Covered Bond 
+  "LU0613540268": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Italy Government Bond 0-1 S
+  "LU0321462870": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II iTraxx Crossover Short Dail
+  "LU2158769930": "ETF_OBLIGATIONSBASERET",  // Xtrackers II J.P. Morgan EM Local Govern
+  "LU0321462953": "ETF_OBLIGATIONSBASERET",  // Xtrackers II J.P. Morgan USD Emerging Ma
+  "LU1920015440": "ETF_OBLIGATIONSBASERET",  // Xtrackers II J.P. Morgan USD Emerging Ma
+  "LU0677077884": "ETF_OBLIGATIONSBASERET",  // Xtrackers II J.P. Morgan USD Emerging Ma
+  "LU3003218446": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Japan Government Bond UCITS
+  "LU0952581584": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Japan Government Bond UCITS
+  "LU1109941689": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II Rolling Target Maturity Sep
+  "LU1109939865": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II Rolling Target Maturity Sep
+  "LU2673523218": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2027 E
+  "LU2673522830": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2027 E
+  "LU2810185665": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2028 E
+  "LU2673523309": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2029 E
+  "LU2673522913": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2029 E
+  "LU0484969463": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2029 I
+  "LU2809864296": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2030 E
+  "LU2673523481": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2031 E
+  "LU2673523135": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2031 E
+  "LU2809864452": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2032 E
+  "LU2673523564": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2033 E
+  "LU2673523051": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2033 E
+  "LU2809864619": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2034 E
+  "LU3152892546": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2035 E
+  "LU3152892629": "ETF_OBLIGATIONSBASERET",  // Xtrackers II Target Maturity Sept 2036 E
+  "LU2504532131": "ETF_OBLIGATIONSBASERET",  // Xtrackers II TIPS US Inflation-Linked Bo
+  "LU0429458895": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II US Treasuries 1-3 UCITS ETF
+  "LU2662649503": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II US Treasuries 3-7 UCITS ETF
+  "LU2662649685": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II US Treasuries 7-10 UCITS ET
+  "LU2662649412": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II US Treasuries 10+ UCITS ETF
+  "LU0429459356": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II US Treasuries UCITS ETF 1D
+  "LU1399300455": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II US Treasuries UCITS ETF 2D 
+  "LU2361257269": "ETF_OBLIGATIONSBASERET",  // Xtrackers II USD Emerging Markets Bond U
+  "LU0321465469": "ETF_IKKE_POSITIVLISTE",  // Xtrackers II USD Overnight Rate Swap UCI
+  "IE000QVYFUT7": "ETF_OBLIGATIONSBASERET",  // Xtrackers India Government Bond UCITS ET
+  "IE00074JLU02": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Japan Net Zero Pathway Paris A
+  "LU0411075376": "ETF_IKKE_POSITIVLISTE",  // Xtrackers LevDAX Daily Swap UCITS ETF 1C
+  "LU0322250712": "ETF_IKKE_POSITIVLISTE",  // Xtrackers LPX Private Equity Swap UCITS 
+  "IE00B9MRJJ36": "ETF_IKKE_POSITIVLISTE",  // Xtrackers MDAX ESG Screened UCITS ETF 1D
+  "LU0322252171": "ETF_POSITIVLISTE",  // Xtrackers MSCI AC Asia ex Japan ESG Swap
+  "IE00BGHQ0G80": "ETF_POSITIVLISTE",  // Xtrackers MSCI AC World Screened UCITS E
+  "IE000VXC51U5": "ETF_POSITIVLISTE",  // Xtrackers MSCI AC World Screened UCITS E
+  "LU0592217524": "ETF_POSITIVLISTE",  // Xtrackers MSCI Africa Top 50 Swap UCITS 
+  "LU0292109344": "ETF_POSITIVLISTE",  // Xtrackers MSCI Brazil UCITS ETF 1C
+  "LU0476289540": "ETF_POSITIVLISTE",  // Xtrackers MSCI Canada Screened UCITS ETF
+  "LU2469465822": "ETF_POSITIVLISTE",  // Xtrackers MSCI China A Screened Swap UCI
+  "LU0292109856": "ETF_POSITIVLISTE",  // Xtrackers MSCI China A UCITS ETF 1C
+  "LU0514695690": "ETF_POSITIVLISTE",  // Xtrackers MSCI China UCITS ETF 1C
+  "LU2456436083": "ETF_POSITIVLISTE",  // Xtrackers MSCI China UCITS ETF 1D
+  "LU2296661775": "ETF_POSITIVLISTE",  // Xtrackers MSCI EM Asia ESG Screened Swap
+  "LU0292107991": "ETF_POSITIVLISTE",  // Xtrackers MSCI EM Asia Screened Swap UCI
+  "LU0292109005": "ETF_POSITIVLISTE",  // Xtrackers MSCI EM Europe, Middle East & 
+  "LU0292108619": "ETF_POSITIVLISTE",  // Xtrackers MSCI EM Latin America ESG Swap
+  "IE000DNSAS54": "ETF_POSITIVLISTE",  // Xtrackers MSCI Emerging Markets Climate 
+  "IE00BG370F43": "ETF_POSITIVLISTE",  // Xtrackers MSCI Emerging Markets ESG UCIT
+  "IE00BM67HJ62": "ETF_POSITIVLISTE",  // Xtrackers MSCI Emerging Markets ex China
+  "LU0292107645": "ETF_POSITIVLISTE",  // Xtrackers MSCI Emerging Markets Swap UCI
+  "LU2675291913": "ETF_POSITIVLISTE",  // Xtrackers MSCI Emerging Markets Swap UCI
+  "IE000GWA2J58": "ETF_POSITIVLISTE",  // Xtrackers MSCI Emerging Markets UCITS ET
+  "IE000W6L2AI3": "ETF_POSITIVLISTE",  // Xtrackers MSCI EMU Climate Transition UC
+  "IE00BNC1G699": "ETF_POSITIVLISTE",  // Xtrackers MSCI EMU ESG UCITS ETF 1C
+  "IE000VCBWFL8": "ETF_POSITIVLISTE",  // Xtrackers MSCI EMU High Dividend Yield E
+  "IE00BDGN9Z19": "ETF_POSITIVLISTE",  // Xtrackers MSCI EMU Screened UCITS ETF 1D
+  "LU0846194776": "ETF_POSITIVLISTE",  // Xtrackers MSCI EMU UCITS ETF 1D
+  "LU1920015366": "ETF_POSITIVLISTE",  // Xtrackers MSCI EMU UCITS ETF 4C
+  "IE000N9MLVT1": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Climate Transition
+  "LU0292104030": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Communication Serv
+  "IE00BNKF6C99": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Consumer Discretio
+  "LU0292105359": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Consumer Staples S
+  "IE00BFMNHK08": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe ESG UCITS ETF 1C
+  "IE0004ZJGWT9": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe ESG UCITS ETF 1D
+  "LU0292103651": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Financials Screene
+  "LU0292103222": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Health Care Screen
+  "IE000WQ16XQ4": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe High Dividend Yiel
+  "LU0292106084": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Industrials Screen
+  "LU0292104469": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Information Techno
+  "LU0292100806": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Materials Screened
+  "LU0322253732": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Screened UCITS ETF
+  "IE000ER61U30": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Small Cap ESG UCIT
+  "LU0322253906": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Small Cap UCITS ET
+  "LU0274209237": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe UCITS ETF 1C
+  "LU1242369327": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe UCITS ETF 1D
+  "LU0292104899": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Utilities Screened
+  "LU0486851024": "ETF_POSITIVLISTE",  // Xtrackers MSCI Europe Value UCITS ETF 1C
+  "IE000YDOORK7": "ETF_POSITIVLISTE",  // Xtrackers MSCI Fintech Innovation UCITS 
+  "IE00BQXKVQ19": "ETF_POSITIVLISTE",  // Xtrackers MSCI GCC Select Swap UCITS ETF
+  "IE000KD0BZ68": "ETF_POSITIVLISTE",  // Xtrackers MSCI Genomic Healthcare Innova
+  "IE000Y6ZXZ48": "ETF_POSITIVLISTE",  // Xtrackers MSCI Global Circular Economy U
+  "IE0007WJ6B10": "ETF_POSITIVLISTE",  // Xtrackers MSCI Global Clean Water & Sani
+  "IE00036F4K40": "ETF_POSITIVLISTE",  // Xtrackers MSCI Global SDG 3 Good Health 
+  "IE000JZYIUN0": "ETF_POSITIVLISTE",  // Xtrackers MSCI Global SDG 7 Affordable a
+  "IE0005E47AH7": "ETF_POSITIVLISTE",  // Xtrackers MSCI Global SDG 9 Industry, In
+  "IE000V0GDVU7": "ETF_POSITIVLISTE",  // Xtrackers MSCI Global SDG 11 Sustainable
+  "IE000PSF3A70": "ETF_POSITIVLISTE",  // Xtrackers MSCI Global SDGs UCITS ETF 1C
+  "IE000L2IS494": "ETF_POSITIVLISTE",  // Xtrackers MSCI Global Social Fairness Co
+  "LU0514695187": "ETF_POSITIVLISTE",  // Xtrackers MSCI India Swap UCITS ETF 1C
+  "LU0476289623": "ETF_POSITIVLISTE",  // Xtrackers MSCI Indonesia Swap UCITS ETF 
+  "IE0006FFX5U1": "ETF_POSITIVLISTE",  // Xtrackers MSCI Innovation UCITS ETF 1C
+  "IE0006FDYJF8": "ETF_POSITIVLISTE",  // Xtrackers MSCI Japan Climate Transition 
+  "IE00BG36TC12": "ETF_POSITIVLISTE",  // Xtrackers MSCI Japan ESG UCITS ETF 1C
+  "IE00BPVLQD13": "ETF_POSITIVLISTE",  // Xtrackers MSCI Japan Screened UCITS ETF 
+  "IE00BRB36B93": "ETF_POSITIVLISTE",  // Xtrackers MSCI Japan Screened UCITS ETF 
+  "LU0274209740": "ETF_POSITIVLISTE",  // Xtrackers MSCI Japan UCITS ETF 1C
+  "LU2581375230": "ETF_POSITIVLISTE",  // Xtrackers MSCI Japan UCITS ETF 1D
+  "LU0659580079": "ETF_POSITIVLISTE",  // Xtrackers MSCI Japan UCITS ETF 4C EUR He
+  "LU0292100046": "ETF_POSITIVLISTE",  // Xtrackers MSCI Korea UCITS ETF 1C
+  "LU0514694370": "ETF_POSITIVLISTE",  // Xtrackers MSCI Malaysia UCITS ETF 1C
+  "LU0476289466": "ETF_POSITIVLISTE",  // Xtrackers MSCI Mexico UCITS ETF 1C
+  "IE000XOQ9TK4": "ETF_POSITIVLISTE",  // Xtrackers MSCI Next Generation Internet 
+  "IE00B9MRHC27": "ETF_POSITIVLISTE",  // Xtrackers MSCI Nordic UCITS ETF 1D
+  "IE00BH361H73": "ETF_POSITIVLISTE",  // Xtrackers MSCI North America High Divide
+  "LU2755521270": "ETF_POSITIVLISTE",  // Xtrackers MSCI Pacific ex Japan Screened
+  "LU0322252338": "ETF_POSITIVLISTE",  // Xtrackers MSCI Pacific ex Japan Screened
+  "LU0659579147": "ETF_POSITIVLISTE",  // Xtrackers MSCI Pakistan Swap UCITS ETF 1
+  "LU0592215403": "ETF_POSITIVLISTE",  // Xtrackers MSCI Philippines UCITS ETF 1C
+  "LU0659578842": "ETF_POSITIVLISTE",  // Xtrackers MSCI Singapore UCITS ETF 1C
+  "LU2928641757": "ETF_POSITIVLISTE",  // Xtrackers MSCI Taiwan UCITS ETF
+  "LU0292109187": "ETF_POSITIVLISTE",  // Xtrackers MSCI Taiwan UCITS ETF 1C
+  "LU0514694701": "ETF_POSITIVLISTE",  // Xtrackers MSCI Thailand UCITS ETF 1C
+  "LU0292097747": "ETF_POSITIVLISTE",  // Xtrackers MSCI UK ESG UCITS ETF 1D
+  "IE000GYDNJS5": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Climate Transition UC
+  "IE00BNC1G707": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Communication Service
+  "IE00BGQYRR35": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Consumer Discretionar
+  "IE00BGQYRQ28": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Consumer Staples UCIT
+  "IE00BCHWNS19": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Energy UCITS ETF 1D
+  "IE00BFMNPS42": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA ESG UCITS ETF 1C
+  "IE000UMV0L21": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA ESG UCITS ETF 1D
+  "IE0000MMQ5M5": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA ESG UCITS ETF 2C EUR 
+  "IE00BCHWNT26": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Financials UCITS ETF 
+  "IE00BCHWNW54": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Health Care UCITS ETF
+  "IE000V04SL39": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA High Dividend Yield E
+  "IE00BCHWNV48": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Industrials UCITS ETF
+  "IE00BGQYRS42": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Information Technolog
+  "IE000EVOVOG1": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Positioning Screened 
+  "IE00BJZ2DC62": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Screened UCITS ETF 1C
+  "IE000TSML5I8": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Screened UCITS ETF 2C
+  "LU0274210672": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Swap UCITS ETF 1C
+  "LU2581375073": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA Swap UCITS ETF 1D
+  "IE00BJ0KDR00": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA UCITS ETF 1C
+  "IE00BK1PV445": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA UCITS ETF 1D
+  "IE00BG04M077": "ETF_POSITIVLISTE",  // Xtrackers MSCI USA UCITS ETF 2C - EUR He
+  "IE000P4AYI47": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Climate Transition 
+  "IE00BM67HR47": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Communication Servi
+  "IE00BM67HP23": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Consumer Discretion
+  "IE00BM67HN09": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Consumer Staples UC
+  "IE00BM67HM91": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Energy UCITS ETF 1C
+  "IE00BZ02LR44": "ETF_POSITIVLISTE",  // Xtrackers MSCI World ESG UCITS ETF 1C
+  "IE000E4BATC9": "ETF_POSITIVLISTE",  // Xtrackers MSCI World ESG UCITS ETF 1D
+  "IE00BMY76136": "ETF_POSITIVLISTE",  // Xtrackers MSCI World ESG UCITS ETF 2C EU
+  "IE000Z0FC0G5": "ETF_POSITIVLISTE",  // Xtrackers MSCI World ex USA UCITS ETF 1D
+  "IE00BM67HL84": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Financials UCITS ET
+  "IE000NS5HRY9": "ETF_POSITIVLISTE",  // Xtrackers MSCI World High Dividend Yield
+  "IE00BM67HV82": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Industrials UCITS E
+  "IE00BM67HT60": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Information Technol
+  "IE00BM67HS53": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Materials UCITS ETF
+  "IE0008YN0OY8": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Minimum Volatility 
+  "IE00BL25JN58": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Minimum Volatility 
+  "IE000TL3PL69": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Momentum ESG UCITS 
+  "IE00BL25JP72": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Momentum UCITS ETF 
+  "IE0003NQ0IY5": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Quality ESG UCITS E
+  "IE00BL25JL35": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Quality UCITS ETF 1
+  "IE000I9HGDZ3": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Screened UCITS ETF 
+  "IE00BCHWNQ94": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Screened UCITS ETF 
+  "IE000UATQPE2": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Small Cap ESG UCITS
+  "IE000ISS8DB2": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Small Cap UCITS ETF
+  "LU0274208692": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Swap UCITS ETF 1C
+  "LU2263803533": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Swap UCITS ETF 1D
+  "LU0659579733": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Swap UCITS ETF 4C E
+  "IE00BJ0KDQ92": "ETF_POSITIVLISTE",  // Xtrackers MSCI World UCITS ETF 1C
+  "IE00BK1PV551": "ETF_POSITIVLISTE",  // Xtrackers MSCI World UCITS ETF 1D
+  "IE000ONQ3X90": "ETF_POSITIVLISTE",  // Xtrackers MSCI World UCITS ETF 2C - EUR 
+  "IE00BM67HQ30": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Utilities UCITS ETF
+  "IE000LAUZQT6": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Value ESG UCITS ETF
+  "IE00BL25JM42": "ETF_POSITIVLISTE",  // Xtrackers MSCI World Value UCITS ETF 1C
+  "IE000472H9T4": "ETF_POSITIVLISTE",  // Xtrackers Nasdaq 100 Swap UCITS ETF 1C
+  "IE000EXUE0G2": "ETF_POSITIVLISTE",  // Xtrackers Nasdaq 100 Swap UCITS ETF 1D
+  "LU0292109690": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Nifty 50 Swap UCITS ETF 1C
+  "LU2196470426": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Nikkei 225 UCITS ETF 1C
+  "LU0839027447": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Nikkei 225 UCITS ETF 1D
+  "LU1875395870": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Nikkei 225 UCITS ETF 2D EUR He
+  "IE000HT7E0B1": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Nordic Net Zero Pathway Paris 
+  "IE00B3Y8D011": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Portfolio Income UCITS ETF 1D
+  "LU0397221945": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Portfolio UCITS ETF 1C
+  "LU0411078636": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 2x Inverse Daily Swap 
+  "LU0411078552": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 2x Leveraged Daily Swa
+  "IE000SRQBBT6": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Defensive Shareholder 
+  "IE0004MFRED4": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Equal Weight Scored & 
+  "IE000IDLWOL4": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Equal Weight Scored & 
+  "IE000FO1A5D1": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Equal Weight Swap UCIT
+  "IE000FL46JJ1": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Equal Weight Swap UCIT
+  "IE00BLNMYC90": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Equal Weight UCITS ETF
+  "IE0002EI5AG0": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Equal Weight UCITS ETF
+  "IE000CXLGK86": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Equal Weight UCITS ETF
+  "IE0001TLQX55": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 GARP UCITS ETF 1C
+  "LU0322251520": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Inverse Daily Swap UCI
+  "IE000DVHJV46": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Market Leaders UCITS E
+  "IE0007ULOZS8": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Scored & Screened UCIT
+  "IE000HY30YW6": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Swap II UCITS ETF 1C
+  "IE000FO05UG4": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Swap II UCITS ETF 1D
+  "LU0490618542": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Swap UCITS ETF 1C
+  "LU2009147757": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Swap UCITS ETF 1D
+  "LU2196472984": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 Swap UCITS ETF 5C EUR 
+  "IE00BM67HW99": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 UCITS ETF 1C EUR Hedge
+  "IE00BGJWX091": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 UCITS ETF 1D EUR Hedge
+  "IE000UP2BIZ9": "ETF_POSITIVLISTE",  // Xtrackers S&P 500 UCITS ETF 4D
+  "LU0328474803": "ETF_POSITIVLISTE",  // Xtrackers S&P ASX 200 UCITS ETF 1D
+  "IE00BGV5VM45": "ETF_POSITIVLISTE",  // Xtrackers S&P Europe ex UK UCITS ETF 1D
+  "LU0322253229": "ETF_POSITIVLISTE",  // Xtrackers S&P Global Infrastructure Swap
+  "LU0328476410": "ETF_POSITIVLISTE",  // Xtrackers S&P Select Frontier Swap UCITS
+  "LU0292106241": "ETF_IKKE_POSITIVLISTE",  // Xtrackers ShortDAX Daily Swap UCITS ETF 
+  "LU0411075020": "ETF_IKKE_POSITIVLISTE",  // Xtrackers ShortDAX x2 Daily Swap UCITS E
+  "LU0322248146": "ETF_IKKE_POSITIVLISTE",  // Xtrackers SLI UCITS ETF 1D
+  "LU0592216393": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Spain UCITS ETF 1C
+  "LU0994505336": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Spain UCITS ETF 1D
+  "LU0328475792": "ETF_POSITIVLISTE",  // Xtrackers Stoxx Europe 600 UCITS ETF 1C
+  "LU2581375156": "ETF_POSITIVLISTE",  // Xtrackers Stoxx Europe 600 UCITS ETF 1D
+  "LU1772333404": "ETF_POSITIVLISTE",  // Xtrackers STOXX Europe 600 UCITS ETF 2C 
+  "LU0292096186": "ETF_POSITIVLISTE",  // Xtrackers Stoxx Global Select Dividend 1
+  "LU0274221281": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Switzerland UCITS ETF 1D
+  "IE0002PGSLZ5": "ETF_IKKE_POSITIVLISTE",  // Xtrackers US Equity Enhanced Active UCIT
+  "IE00BM97MR69": "ETF_OBLIGATIONSBASERET",  // Xtrackers US Treasuries Ultrashort Bond 
+  "IE000LOSV2D0": "ETF_IKKE_POSITIVLISTE",  // Xtrackers USA Biodiversity Focus SRI UCI
+  "IE0002ZM3JI1": "ETF_IKKE_POSITIVLISTE",  // Xtrackers USA Net Zero Pathway Paris Ali
+  "IE00BF8J5974": "ETF_OBLIGATIONSBASERET",  // Xtrackers USD Corporate Bond Short Durat
+  "IE00BL58LJ19": "ETF_OBLIGATIONSBASERET",  // Xtrackers USD Corporate Bond SRI PAB UCI
+  "IE00BL58LL31": "ETF_OBLIGATIONSBASERET",  // Xtrackers USD Corporate Bond SRI PAB UCI
+  "IE00BZ036H21": "ETF_OBLIGATIONSBASERET",  // Xtrackers USD Corporate Bond UCITS ETF 1
+  "IE00BZ036J45": "ETF_OBLIGATIONSBASERET",  // Xtrackers USD Corporate Bond UCITS ETF 2
+  "IE00028H9QJ8": "ETF_OBLIGATIONSBASERET",  // Xtrackers USD Corporate Green Bond UCITS
+  "IE0003W9O921": "ETF_OBLIGATIONSBASERET",  // Xtrackers USD Corporate Green Bond UCITS
+  "IE0006YM7D84": "ETF_OBLIGATIONSBASERET",  // Xtrackers USD High Yield Corporate Bond 
+  "IE00BDR5HM97": "ETF_OBLIGATIONSBASERET",  // Xtrackers USD High Yield Corporate Bond 
+  "IE00BG04LT92": "ETF_OBLIGATIONSBASERET",  // Xtrackers USD High Yield Corporate Bond 
+  "LU0322252924": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Vietnam Swap UCITS ETF 1C
+  "IE000E0V65D8": "ETF_POSITIVLISTE",  // Xtrackers World Biodiversity Focus SRI U
+  "IE00094GSCQ4": "ETF_POSITIVLISTE",  // Xtrackers World Equity Enhanced Active U
+  "LU2859392081": "ETF_POSITIVLISTE",  // Xtrackers World Green Tech Innovators UC
+  "IE000UZCJS58": "ETF_POSITIVLISTE",  // Xtrackers World Net Zero Pathway Paris A
+  "LU2859297330": "ETF_POSITIVLISTE",  // Xtrackers World Small Cap Green Tech Inn
+  "LU3146950038": "ETF_IKKE_POSITIVLISTE",  // Xtrackers Zurich ESG Allocation Equities
+};
+
+// Total: 3446 værdipapirer

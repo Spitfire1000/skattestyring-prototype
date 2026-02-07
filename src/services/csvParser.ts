@@ -1,46 +1,102 @@
 /**
- * CSV Parser for Nordnet format
+ * CSV PARSER SERVICE
  *
- * Nordnet CSV eksporterer positioner i dette format:
- * - Tab-separeret eller semicolon-separeret
- * - Dansk talformat (komma som decimal)
- * - Headers på dansk
+ * Parser portefølje-data fra CSV-filer og mapper til interne typer.
+ * Understøtter Nordnet CSV format.
  */
 
-import type { AktivType } from '../types/skat';
+import type { KontoType, AktivType, TabsPulje } from '../types/skat';
+import { getTabspulje } from '../constants/skatteRegler';
 
-export interface ParsedPosition {
+// ============================================================
+// TYPES
+// ============================================================
+
+export interface PortfolioAsset {
   id: string;
   navn: string;
   isin: string;
-  ticker: string;
-  antal: number;
-  gnsKurs: number;           // Gennemsnitlig anskaffelseskurs
-  aktuelKurs: number;
-  anskaffelsessum: number;   // antal * gnsKurs
-  aktuelVærdi: number;       // antal * aktuelKurs
-  urealiseret: number;       // aktuelVærdi - anskaffelsessum
-  ureasliseretPct: number;
   valuta: string;
+  antal: number;
+  anskaffelseskurs: number;  // Per enhed
+  aktuelKurs: number;        // Per enhed
+  værdi: number;             // Total værdi
+  urealiseret: number;       // Afkast i kr
+  ureasliseretPct: number;   // Afkast i %
+  kontoNavn: string;         // Original streng fra CSV
+
+  // Afledt
   aktivType: AktivType;
-  konto: string;             // "Aktiesparekonto", "Frie midler", etc.
+  kontoType: KontoType;
+  tabsPulje: TabsPulje | null;
+
+  // Gruppering
+  gruppe: AssetGruppe;
 }
 
+export type AssetGruppe =
+  | 'DANSKE_AKTIER'
+  | 'UDENLANDSKE_AKTIER'
+  | 'ETF_POSITIVLISTE'
+  | 'ETF_IKKE_POSITIVLISTE'
+  | 'ETF_OBLIGATIONSBASERET'
+  | 'INVF_UDBYTTEBETALTENDE'
+  | 'INVF_AKKUMULERENDE'
+  | 'INVF_AKKUMULERENDE_KAPITAL'
+  | 'BLANDET_FOND'
+  | 'OBLIGATION'
+  | 'FINANSIEL_KONTRAKT';
+
+// ============================================================
+// ISIN-BASERET POSITIVLISTE (ETF'er på SKATs positivliste)
+// ============================================================
+
+const POSITIVLISTE_ISINS = new Set([
+  // iShares
+  'IE00B4L5Y983',  // iShares Core MSCI World
+  'IE00B5BMR087',  // iShares Core S&P 500
+  'IE00B4L5YC18',  // iShares MSCI EM
+  'IE00BJ0KDQ92',  // Xtrackers MSCI World
+  'IE00BJ0KDR00',  // Xtrackers MSCI Japan
+  'IE00B53L3W79',  // iShares Euro Stoxx 50
+
+  // Vanguard
+  'IE00B3RBWM25',  // Vanguard FTSE All-World
+]);
+
+// ============================================================
+// DANSKE INVESTERINGSFORENINGER
+// ============================================================
+
+const DANSKE_INVF_PATTERNS = [
+  /sparindex/i,
+  /danske\s*inv/i,
+  /nordea\s*invest/i,
+  /bankinvest/i,
+  /nykredit\s*invest/i,
+  /maj\s*invest/i,
+  /sydinvest/i,
+  /jyske\s*invest/i,
+  /seb\s*invest/i,
+];
+
+const AKKUMULERENDE_PATTERN = /akk(umulerende)?/i;
+
+// ============================================================
+// PARSER FUNKTIONER
+// ============================================================
+
 /**
- * Parse dansk tal (1.234,56 → 1234.56 eller 1234,56 → 1234.56)
+ * Parse dansk tal (1.234,56 → 1234.56)
  */
-function parseDanskTal(str: string): number {
+function parseDanskTal(str: string | undefined): number {
   if (!str || str.trim() === '' || str === '-') return 0;
 
-  // Fjern whitespace og %-tegn
   let cleaned = str.replace(/\s/g, '').replace('%', '');
 
-  // Hvis der er både . og , - antag . er tusindtalsseparator
   if (cleaned.includes('.') && cleaned.includes(',')) {
     cleaned = cleaned.replace(/\./g, '').replace(',', '.');
-  }
-  // Hvis kun komma - det er decimal
-  else if (cleaned.includes(',')) {
+  } else if (cleaned.includes(',')) {
     cleaned = cleaned.replace(',', '.');
   }
 
@@ -48,69 +104,163 @@ function parseDanskTal(str: string): number {
 }
 
 /**
- * Gæt aktivtype baseret på navn og ISIN
+ * Mapper konto-streng fra CSV til KontoType
  */
-function gætAktivType(navn: string): AktivType {
-  const navnLower = navn.toLowerCase();
+export function mapKontoType(kontoStr: string): KontoType {
+  const lower = kontoStr.toLowerCase();
 
-  // ETF'er (typisk indeholder "ETF" eller kendte navne)
-  if (
-    navnLower.includes('etf') ||
-    navnLower.includes('ishares') ||
-    navnLower.includes('vanguard') ||
-    navnLower.includes('xtrackers') ||
-    navnLower.includes('invesco') ||
-    navnLower.includes('spdr')
-  ) {
-    return 'ETF_POSITIVLISTE';
+  if (lower.includes('aktiesparekonto') || lower === 'ask') {
+    return 'ASK';
+  }
+  if (lower.includes('ratepension')) {
+    return 'RATEPENSION';
+  }
+  if (lower.includes('aldersopsparing')) {
+    return 'ALDERSOPSPARING';
+  }
+  if (lower.includes('kapitalpension')) {
+    return 'KAPITALPENSION';
+  }
+  if (lower.includes('livrente')) {
+    return 'LIVRENTE';
+  }
+  if (lower.includes('børneopsparing') || lower.includes('boerneopsparing')) {
+    return 'BOERNEOPSPARING';
   }
 
-  // Investeringsforeninger (danske)
-  if (
-    navnLower.includes('sparindex') ||
-    navnLower.includes('danske invest') ||
-    navnLower.includes('nordea invest') ||
-    navnLower.includes('jyske invest') ||
-    navnLower.includes('sydinvest')
-  ) {
-    if (navnLower.includes('akk') || navnLower.includes('accumulating')) {
-      return 'INVESTERINGSFORENING_AKKUM';
-    }
-    return 'INVESTERINGSFORENING_UDBYTTE';
-  }
+  return 'FRIT_DEPOT';
+}
 
-  // Obligationer
-  if (
-    navnLower.includes('obligation') ||
-    navnLower.includes('realkredit') ||
-    navnLower.includes('bond') ||
-    navnLower.includes('nykredit') ||
-    navnLower.includes('totalkredit')
-  ) {
+// Patterns for obligationsbaserede ETF'er
+const OBLIGATION_ETF_PATTERNS = [
+  /bond/i,
+  /obligat/i,
+  /fixed.?income/i,
+  /treasury/i,
+  /govt/i,
+  /government/i,
+  /corporate/i,
+  /credit/i,
+  /aggregate/i,
+];
+
+// Patterns for blandede fonde
+const BLANDET_FOND_PATTERNS = [
+  /blandet/i,
+  /balanced/i,
+  /mixed/i,
+  /multi.?asset/i,
+];
+
+/**
+ * Detekterer aktivtype baseret på ISIN og navn
+ */
+export function detectAktivType(isin: string, navn: string): AktivType {
+  const upperIsin = isin.toUpperCase();
+  const lowerNavn = navn.toLowerCase();
+
+  // Check for direkte obligationer (typisk DK-præfiks med obligation/statsobligation i navn)
+  if (lowerNavn.includes('obligation') && !lowerNavn.includes('fond') && !lowerNavn.includes('etf')) {
     return 'OBLIGATION';
   }
 
-  // Krypto
-  if (
-    navnLower.includes('bitcoin') ||
-    navnLower.includes('ethereum') ||
-    navnLower.includes('crypto') ||
-    navnLower.includes('coinbase')
-  ) {
-    return 'KRYPTO';
+  // Check for danske investeringsforeninger først (DK-præfiks + invest-pattern)
+  if (upperIsin.startsWith('DK')) {
+    const erInvf = DANSKE_INVF_PATTERNS.some(p => p.test(lowerNavn));
+
+    if (erInvf) {
+      // Check for obligationsbaseret fond
+      if (OBLIGATION_ETF_PATTERNS.some(p => p.test(lowerNavn))) {
+        return 'ETF_OBLIGATIONSBASERET';
+      }
+
+      // Check for blandet fond
+      if (BLANDET_FOND_PATTERNS.some(p => p.test(lowerNavn))) {
+        // Default til aktie-blandet, da vi ikke kan afgøre fordelingen
+        return 'BLANDET_FOND_AKTIE';
+      }
+
+      if (AKKUMULERENDE_PATTERN.test(lowerNavn)) {
+        // Check om den er på positivlisten
+        if (POSITIVLISTE_ISINS.has(upperIsin)) {
+          return 'INVF_AKKUMULERENDE';
+        }
+        // Ellers kapitalindkomst
+        return 'INVF_AKKUMULERENDE_KAPITAL';
+      }
+      return 'INVF_UDBYTTEBETALTENDE';
+    }
+
+    return 'AKTIE_DK';
   }
 
-  // Default: Aktie (noteret)
-  return 'AKTIE_NOTERET';
+  // Check for ETF'er (IE, LU præfiks eller kendte navne)
+  if (upperIsin.startsWith('IE') || upperIsin.startsWith('LU') ||
+      lowerNavn.includes('etf') || lowerNavn.includes('ishares') ||
+      lowerNavn.includes('vanguard') || lowerNavn.includes('xtrackers')) {
+
+    // Check for obligationsbaseret ETF
+    if (OBLIGATION_ETF_PATTERNS.some(p => p.test(lowerNavn))) {
+      return 'ETF_OBLIGATIONSBASERET';
+    }
+
+    if (POSITIVLISTE_ISINS.has(upperIsin)) {
+      return 'ETF_POSITIVLISTE';
+    }
+    return 'ETF_IKKE_POSITIVLISTE';
+  }
+
+  // US-præfiks = udenlandsk aktie
+  if (upperIsin.startsWith('US')) {
+    return 'AKTIE_UDENLANDSK';
+  }
+
+  // Andre præfikser = udenlandsk aktie
+  if (upperIsin.length >= 2 && /^[A-Z]{2}/.test(upperIsin) && !upperIsin.startsWith('DK')) {
+    return 'AKTIE_UDENLANDSK';
+  }
+
+  return 'AKTIE_DK';
 }
 
 /**
- * Parse Nordnet CSV
- *
- * Understøtter format:
- * Id	Værdipapir	ISIN	Valuta	Antal	Anskaffelseskurs	Kurs	Værdi	Afkast	Afkast %	Konto
+ * Bestemmer gruppering for visning i UI
  */
-export function parseNordnetCSV(csvText: string): ParsedPosition[] {
+function getAssetGruppe(aktivType: AktivType): AssetGruppe {
+  switch (aktivType) {
+    case 'AKTIE_DK':
+      return 'DANSKE_AKTIER';
+    case 'AKTIE_UDENLANDSK':
+    case 'AKTIE_UNOTERET':
+      return 'UDENLANDSKE_AKTIER';
+    case 'ETF_POSITIVLISTE':
+      return 'ETF_POSITIVLISTE';
+    case 'ETF_IKKE_POSITIVLISTE':
+      return 'ETF_IKKE_POSITIVLISTE';
+    case 'ETF_OBLIGATIONSBASERET':
+      return 'ETF_OBLIGATIONSBASERET';
+    case 'INVF_UDBYTTEBETALTENDE':
+      return 'INVF_UDBYTTEBETALTENDE';
+    case 'INVF_AKKUMULERENDE':
+      return 'INVF_AKKUMULERENDE';
+    case 'INVF_AKKUMULERENDE_KAPITAL':
+      return 'INVF_AKKUMULERENDE_KAPITAL';
+    case 'BLANDET_FOND_AKTIE':
+    case 'BLANDET_FOND_OBLIGATION':
+      return 'BLANDET_FOND';
+    case 'OBLIGATION':
+      return 'OBLIGATION';
+    case 'FINANSIEL_KONTRAKT':
+      return 'FINANSIEL_KONTRAKT';
+    default:
+      return 'DANSKE_AKTIER';
+  }
+}
+
+/**
+ * Parse CSV til PortfolioAsset array
+ */
+export function parsePortfolioCSV(csvText: string): PortfolioAsset[] {
   const lines = csvText.trim().split('\n');
   if (lines.length < 2) {
     throw new Error('CSV-filen er tom eller har ingen data');
@@ -120,12 +270,7 @@ export function parseNordnetCSV(csvText: string): ParsedPosition[] {
   let headerIndex = 0;
   for (let i = 0; i < Math.min(10, lines.length); i++) {
     const line = lines[i].toLowerCase();
-    if (
-      line.includes('værdipapir') ||
-      line.includes('instrument') ||
-      line.includes('isin') ||
-      line.includes('antal')
-    ) {
+    if (line.includes('værdipapir') || line.includes('isin') || line.includes('antal')) {
       headerIndex = i;
       break;
     }
@@ -133,7 +278,7 @@ export function parseNordnetCSV(csvText: string): ParsedPosition[] {
 
   const headerLine = lines[headerIndex];
 
-  // Detect separator (tab eller semicolon)
+  // Detect separator
   let separator = '\t';
   if (!headerLine.includes('\t')) {
     separator = headerLine.includes(';') ? ';' : ',';
@@ -142,66 +287,34 @@ export function parseNordnetCSV(csvText: string): ParsedPosition[] {
   const headers = headerLine.split(separator).map(h => h.trim().toLowerCase());
 
   // Find kolonneindekser
-  const findCol = (test: (h: string) => boolean): number => {
-    return headers.findIndex(test);
+  const findCol = (patterns: string[]): number => {
+    return headers.findIndex(h => patterns.some(p => h.includes(p)));
   };
 
-  // Log headers for debugging
-  console.log('[CSV Parser] Headers:', headers);
+  const colId = findCol(['id']);
+  const colNavn = findCol(['værdipapir', 'instrument', 'navn']);
+  const colISIN = findCol(['isin']);
+  const colValuta = findCol(['valuta', 'currency']);
+  const colAntal = findCol(['antal', 'quantity']);
+  const colGnsKurs = findCol(['anskaffelseskurs', 'anskaffelse']);
+  const colAktuelKurs = headers.findIndex(h => h === 'kurs' || h === 'seneste kurs' || h === 'aktuel kurs');
+  const colVærdi = findCol(['værdi', 'markedsværdi']);
+  const colAfkast = headers.findIndex(h => h === 'afkast');
+  const colAfkastPct = headers.findIndex(h => h.includes('afkast') && h.includes('%'));
+  const colKonto = findCol(['konto', 'depot']);
 
-  const colId = findCol(h => h === 'id');
-  const colNavn = findCol(h => h === 'værdipapir' || h === 'instrument' || h === 'navn');
-  const colISIN = findCol(h => h === 'isin');
-  const colValuta = findCol(h => h === 'valuta' || h === 'currency');
-  const colAntal = findCol(h => h === 'antal' || h === 'quantity');
-  const colGnsKurs = findCol(h => h === 'anskaffelseskurs' || h === 'gns. kurs' || h.includes('anskaffelse'));
-  // "kurs" eksakt match - IKKE "anskaffelseskurs"
-  const colAktuelKurs = findCol(h => h === 'kurs' || h === 'seneste kurs' || h === 'aktuel kurs');
-  const colVærdi = findCol(h => h === 'værdi' || h === 'markedsværdi');
-  const colAfkast = findCol(h => h === 'afkast');
-  const colAfkastPct = findCol(h => h === 'afkast %' || h.endsWith('%'));
-  const colKonto = findCol(h => h === 'konto' || h === 'depot');
+  const positions: PortfolioAsset[] = [];
 
-  console.log('[CSV Parser] Column indices:');
-  console.log('  colGnsKurs (anskaffelseskurs):', colGnsKurs, '→ header:', colGnsKurs >= 0 ? headers[colGnsKurs] : 'NOT FOUND!');
-  console.log('  colAktuelKurs (kurs):', colAktuelKurs, '→ header:', colAktuelKurs >= 0 ? headers[colAktuelKurs] : 'NOT FOUND!');
-  console.log('  colVærdi:', colVærdi, '→ header:', colVærdi >= 0 ? headers[colVærdi] : 'NOT FOUND!');
-  console.log('  colAfkast:', colAfkast, '→ header:', colAfkast >= 0 ? headers[colAfkast] : 'NOT FOUND!');
-
-  // ADVARSEL hvis kritiske kolonner mangler
-  if (colGnsKurs < 0) {
-    console.warn('[CSV Parser] ⚠️ ADVARSEL: Anskaffelseskurs-kolonne IKKE FUNDET! Anskaffelsessum bliver 0.');
-  }
-
-  const positions: ParsedPosition[] = [];
-
-  // Parse data-linjer
   for (let i = headerIndex + 1; i < lines.length; i++) {
     const line = lines[i].trim();
     if (!line) continue;
 
     const cols = line.split(separator).map(c => c.trim());
-
-    // Skip hvis ikke nok kolonner
     if (cols.length < 5) continue;
 
-    // Skip summary/total linjer
     const firstCol = cols[0]?.toLowerCase() || '';
-    if (
-      firstCol.includes('sum') ||
-      firstCol.includes('total') ||
-      firstCol.includes('i alt') ||
-      firstCol === ''
-    ) {
+    if (firstCol.includes('sum') || firstCol.includes('total') || firstCol.includes('i alt') || firstCol === '') {
       continue;
-    }
-
-    // Log første række for debugging
-    if (i === headerIndex + 1) {
-      console.log('[CSV Parser] Første række cols:', cols);
-      console.log('[CSV Parser] cols[5] (anskaffelseskurs):', cols[5]);
-      console.log('[CSV Parser] cols[6] (kurs):', cols[6]);
-      console.log('[CSV Parser] cols[7] (værdi):', cols[7]);
     }
 
     const id = colId >= 0 ? cols[colId] : String(i);
@@ -209,133 +322,164 @@ export function parseNordnetCSV(csvText: string): ParsedPosition[] {
     const isin = colISIN >= 0 ? cols[colISIN] : '';
     const valuta = colValuta >= 0 ? cols[colValuta] : 'DKK';
     const antal = colAntal >= 0 ? parseDanskTal(cols[colAntal]) : 0;
-    const gnsKurs = colGnsKurs >= 0 ? parseDanskTal(cols[colGnsKurs]) : 0;
+    const anskaffelseskurs = colGnsKurs >= 0 ? parseDanskTal(cols[colGnsKurs]) : 0;
     const aktuelKurs = colAktuelKurs >= 0 ? parseDanskTal(cols[colAktuelKurs]) : 0;
     const værdi = colVærdi >= 0 ? parseDanskTal(cols[colVærdi]) : antal * aktuelKurs;
     const afkast = colAfkast >= 0 ? parseDanskTal(cols[colAfkast]) : 0;
     const afkastPct = colAfkastPct >= 0 ? parseDanskTal(cols[colAfkastPct]) : 0;
-    const konto = colKonto >= 0 ? cols[colKonto] : 'Frie midler';
+    const kontoNavn = colKonto >= 0 ? cols[colKonto] : 'Frie midler';
 
-    // Log parsed værdier for første række
-    if (i === headerIndex + 1) {
-      console.log('[CSV Parser] Parsed: gnsKurs=', gnsKurs, 'aktuelKurs=', aktuelKurs, 'værdi=', værdi);
-    }
-
-    // Skip hvis ingen antal
     if (antal === 0) continue;
 
-    // Beregn anskaffelsessum
-    const anskaffelsessum = antal * gnsKurs;
-
-    // Brug afkast fra CSV hvis tilgængelig, ellers beregn
+    const anskaffelsessum = antal * anskaffelseskurs;
     const urealiseret = afkast !== 0 ? afkast : (værdi - anskaffelsessum);
     const ureasliseretPct = afkastPct !== 0 ? afkastPct : (anskaffelsessum > 0 ? (urealiseret / anskaffelsessum) * 100 : 0);
+
+    const aktivType = detectAktivType(isin, navn);
+    const kontoType = mapKontoType(kontoNavn);
+    const tabsPulje = getTabspulje(kontoType, aktivType);
+    const gruppe = getAssetGruppe(aktivType);
 
     positions.push({
       id: `${id}-${isin || navn}`,
       navn,
       isin,
-      ticker: '',
+      valuta,
       antal,
-      gnsKurs,
+      anskaffelseskurs,
       aktuelKurs,
-      anskaffelsessum,
-      aktuelVærdi: værdi,
+      værdi,
       urealiseret,
       ureasliseretPct,
-      valuta,
-      aktivType: gætAktivType(navn),
-      konto,
+      kontoNavn,
+      aktivType,
+      kontoType,
+      tabsPulje,
+      gruppe,
     });
   }
 
   return positions;
 }
 
+// ============================================================
+// GRUPPERING
+// ============================================================
+
+export interface GroupedAssets {
+  gruppe: AssetGruppe;
+  label: string;
+  beskrivelse: string;
+  assets: PortfolioAsset[];
+  totalVærdi: number;
+  totalUrealiseret: number;
+}
+
+const GRUPPE_INFO: Record<AssetGruppe, { label: string; beskrivelse: string }> = {
+  DANSKE_AKTIER: {
+    label: 'Danske aktier',
+    beskrivelse: 'Noterede danske aktier (DK-ISIN)',
+  },
+  UDENLANDSKE_AKTIER: {
+    label: 'Udenlandske aktier',
+    beskrivelse: 'Noterede udenlandske aktier',
+  },
+  ETF_POSITIVLISTE: {
+    label: 'ETF (positivliste)',
+    beskrivelse: 'ETF\'er på SKATs positivliste - aktieindkomst',
+  },
+  ETF_IKKE_POSITIVLISTE: {
+    label: 'ETF (ikke-positivliste)',
+    beskrivelse: 'ETF\'er IKKE på positivliste - kapitalindkomst',
+  },
+  ETF_OBLIGATIONSBASERET: {
+    label: 'ETF (obligationsbaseret)',
+    beskrivelse: 'Obligationsbaserede ETF\'er - ALTID kapitalindkomst',
+  },
+  INVF_UDBYTTEBETALTENDE: {
+    label: 'Invf. udbyttebet.',
+    beskrivelse: 'Danske investeringsforeninger med udbytte',
+  },
+  INVF_AKKUMULERENDE: {
+    label: 'Invf. akkumulerende',
+    beskrivelse: 'Danske akkumulerende investeringsforeninger på positivliste',
+  },
+  INVF_AKKUMULERENDE_KAPITAL: {
+    label: 'Invf. akk. (kapital)',
+    beskrivelse: 'Akkumulerende fonde IKKE på positivliste - kapitalindkomst',
+  },
+  BLANDET_FOND: {
+    label: 'Blandede fonde',
+    beskrivelse: 'Fonde med blanding af aktier og obligationer',
+  },
+  OBLIGATION: {
+    label: 'Obligationer',
+    beskrivelse: 'Direkte obligationer og renter - kapitalindkomst',
+  },
+  FINANSIEL_KONTRAKT: {
+    label: 'Finansielle kontrakter',
+    beskrivelse: 'CFD, futures, optioner, warrants - kapitalindkomst med isoleret tabspool',
+  },
+};
+
 /**
- * Eksempel på manuelt oprettet testdata
+ * Grupperer assets efter aktivtype
  */
-export function getTestPositioner(): ParsedPosition[] {
-  return [
-    {
-      id: '1',
-      navn: 'Novo Nordisk B',
-      isin: 'DK0062498333',
-      ticker: 'NOVO B',
-      antal: 50,
-      gnsKurs: 650,
-      aktuelKurs: 780,
-      anskaffelsessum: 32500,
-      aktuelVærdi: 39000,
-      urealiseret: 6500,
-      ureasliseretPct: 20,
-      valuta: 'DKK',
-      aktivType: 'AKTIE_NOTERET',
-      konto: 'Frie midler',
-    },
-    {
-      id: '2',
-      navn: 'Apple Inc',
-      isin: 'US0378331005',
-      ticker: 'AAPL',
-      antal: 20,
-      gnsKurs: 1200,
-      aktuelKurs: 1350,
-      anskaffelsessum: 24000,
-      aktuelVærdi: 27000,
-      urealiseret: 3000,
-      ureasliseretPct: 12.5,
-      valuta: 'DKK',
-      aktivType: 'AKTIE_NOTERET',
-      konto: 'Aktiesparekonto',
-    },
-    {
-      id: '3',
-      navn: 'iShares Core MSCI World ETF',
-      isin: 'IE00B4L5Y983',
-      ticker: 'IWDA',
-      antal: 100,
-      gnsKurs: 550,
-      aktuelKurs: 620,
-      anskaffelsessum: 55000,
-      aktuelVærdi: 62000,
-      urealiseret: 7000,
-      ureasliseretPct: 12.7,
-      valuta: 'DKK',
-      aktivType: 'ETF_POSITIVLISTE',
-      konto: 'Frie midler',
-    },
-    {
-      id: '4',
-      navn: 'Sparindex INDEX Globale Aktier',
-      isin: 'DK0060747822',
-      ticker: 'SPVIGAKL',
-      antal: 200,
-      gnsKurs: 180,
-      aktuelKurs: 165,
-      anskaffelsessum: 36000,
-      aktuelVærdi: 33000,
-      urealiseret: -3000,
-      ureasliseretPct: -8.3,
-      valuta: 'DKK',
-      aktivType: 'INVESTERINGSFORENING_AKKUM',
-      konto: 'Frie midler',
-    },
-    {
-      id: '5',
-      navn: 'Tesla Inc',
-      isin: 'US88160R1014',
-      ticker: 'TSLA',
-      antal: 10,
-      gnsKurs: 2800,
-      aktuelKurs: 2200,
-      anskaffelsessum: 28000,
-      aktuelVærdi: 22000,
-      urealiseret: -6000,
-      ureasliseretPct: -21.4,
-      valuta: 'DKK',
-      aktivType: 'AKTIE_NOTERET',
-      konto: 'Aktiesparekonto',
-    },
+export function groupAssetsByType(assets: PortfolioAsset[]): GroupedAssets[] {
+  const grouped = new Map<AssetGruppe, PortfolioAsset[]>();
+
+  for (const asset of assets) {
+    const existing = grouped.get(asset.gruppe) || [];
+    existing.push(asset);
+    grouped.set(asset.gruppe, existing);
+  }
+
+  const result: GroupedAssets[] = [];
+
+  const gruppeOrder: AssetGruppe[] = [
+    'DANSKE_AKTIER',
+    'UDENLANDSKE_AKTIER',
+    'ETF_POSITIVLISTE',
+    'ETF_IKKE_POSITIVLISTE',
+    'ETF_OBLIGATIONSBASERET',
+    'INVF_UDBYTTEBETALTENDE',
+    'INVF_AKKUMULERENDE',
+    'INVF_AKKUMULERENDE_KAPITAL',
+    'BLANDET_FOND',
+    'OBLIGATION',
+    'FINANSIEL_KONTRAKT',
   ];
+
+  for (const gruppe of gruppeOrder) {
+    const assets = grouped.get(gruppe);
+    if (assets && assets.length > 0) {
+      const info = GRUPPE_INFO[gruppe];
+      result.push({
+        gruppe,
+        label: info.label,
+        beskrivelse: info.beskrivelse,
+        assets: assets.sort((a, b) => Math.abs(b.urealiseret) - Math.abs(a.urealiseret)),
+        totalVærdi: assets.reduce((sum, a) => sum + a.værdi, 0),
+        totalUrealiseret: assets.reduce((sum, a) => sum + a.urealiseret, 0),
+      });
+    }
+  }
+
+  return result;
+}
+
+/**
+ * Grupperer assets efter konto
+ */
+export function groupAssetsByKonto(assets: PortfolioAsset[]): Map<string, PortfolioAsset[]> {
+  const grouped = new Map<string, PortfolioAsset[]>();
+
+  for (const asset of assets) {
+    const key = asset.kontoNavn;
+    const existing = grouped.get(key) || [];
+    existing.push(asset);
+    grouped.set(key, existing);
+  }
+
+  return grouped;
 }

@@ -7,26 +7,39 @@
  * Tab kan IKKE trækkes fra i andre indkomsttyper (løn, etc.)
  * Tab kan KUN modregnes i gevinster af samme type.
  *
+ * ⚠️ VIGTIGE BEGRÆNSNINGER:
+ * - Ægtefælleberegninger (obligatorisk overførsel for noterede aktier) kræver MANUEL håndtering
+ * - Kapitalindkomst-tab håndteres IKKE via fradragsbank (bruger beregnSkat() direkte)
+ *
  * TABSPULJER:
  *
  * 1. NOTERET_AKTIE (tab på børsnoterede aktier)
- *    - Kan modregnes i: Gevinst på noterede aktier, udbytter
- *    - Ægtefælle: JA (kan overføres)
+ *    - Kan modregnes i: Gevinst på noterede aktier, udbytter, positivliste-ETF
+ *    - Ægtefælle: OBLIGATORISK overførsel (ABL § 13A, stk. 3) - kræver manuel håndtering!
  *    - Fremførsel: Ubegrænset
  *
  * 2. UNOTERET_AKTIE (tab på unoterede aktier)
  *    - Kan modregnes i: AL aktieindkomst (bredere end noterede)
- *    - Ægtefælle: JA
+ *    - Ægtefælle: JA (valgfri)
  *    - Fremførsel: Ubegrænset
  *
- * 3. KAPITAL_GENEREL (tab på obligationer, krypto, ETF ikke-positivliste)
- *    - Kan modregnes i: Kapitalindkomst (IKKE finansielle kontrakter!)
- *    - Ægtefælle: JA
- *    - Fremførsel: Ubegrænset
+ * 3. KAPITAL_GENEREL (⚠️ DEPRECATED - BRUGES IKKE!)
+ *    ─────────────────────────────────────────────────────────────
+ *    ⚠️ VIGTIG: Kapitalindkomst har INGEN tabsbank!
+ *
+ *    Kapitalindkomst håndteres via KapitalindkomstSaldo i App.tsx:
+ *    - Tab/gevinst samles i en ÅRS-SALDO (nulstilles 1. januar)
+ *    - Beregning sker via beregnKapitalindkomstFradrag() i skatteRegler.ts
+ *    - PSL § 11 fradrag: ~33% under 50.000 kr, ~25% over
+ *    - INGEN fremførsel til næste år!
+ *
+ *    Denne pulje-type eksisterer kun for dokumentation.
+ *    Ingen aktivtype mapper til den (tabspulje = null for kapitalindkomst).
+ *    ─────────────────────────────────────────────────────────────
  *
  * 4. FINANSIEL_KONTRAKT (tab på optioner, warrants, CFD, futures)
  *    - Kan KUN modregnes i: Andre finansielle kontrakter!
- *    - Ægtefælle: JA
+ *    - Ægtefælle: JA (KGL § 32 stk. 2 - kan overføres til ægtefælles kontrakt-gevinster)
  *    - Fremførsel: Ubegrænset
  *    - ⚠️ MEGET BEGRÆNSET - kan ikke bruges mod andet!
  *
@@ -40,7 +53,7 @@
  *    - Ægtefælle: NEJ
  *    - Fremførsel: Ubegrænset (men isoleret til kontoen)
  *
- * @version 1.0
+ * @version 1.1
  * @author Skattestyring-prototype
  */
 

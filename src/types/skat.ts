@@ -5,11 +5,14 @@
 export type KontoType =
   | 'FRIT_DEPOT'
   | 'ASK'
+  | 'BOERNEOPSPARING'
   | 'RATEPENSION'
   | 'ALDERSOPSPARING'
   | 'KAPITALPENSION'
-  | 'LIVRENTE'
-  | 'BØRNEOPSPARING';
+  | 'LIVRENTE';
+
+// Alias for bagudkompatibilitet
+export type KontoTypeLegacy = KontoType | 'BØRNEOPSPARING';
 
 export interface Konto {
   id: string;
@@ -25,20 +28,43 @@ export interface Konto {
 // ============================================================
 
 export type AktivType =
-  | 'AKTIE_NOTERET'
-  | 'AKTIE_UNOTERET'
-  | 'ETF_POSITIVLISTE'
-  | 'ETF_IKKE_POSITIVLISTE'
-  | 'INVESTERINGSFORENING_UDBYTTE'
-  | 'INVESTERINGSFORENING_AKKUM'
-  | 'OBLIGATION'
-  | 'OPTION'
-  | 'WARRANT'
-  | 'CFD'
-  | 'FUTURE'
-  | 'KRYPTO';
+  | 'AKTIE_DK'                    // Dansk noteret aktie
+  | 'AKTIE_UDENLANDSK'            // Udenlandsk noteret aktie
+  | 'AKTIE_UNOTERET'              // Unoteret aktie
+  | 'ETF_POSITIVLISTE'            // ETF på SKATs positivliste (aktiebaseret)
+  | 'ETF_IKKE_POSITIVLISTE'       // ETF IKKE på positivliste (aktiebaseret)
+  | 'ETF_OBLIGATIONSBASERET'      // Obligationsbaseret ETF/fond - ALTID kapitalindkomst
+  | 'INVF_UDBYTTEBETALTENDE'      // Dansk inv.forening, udbyttebetalende (aktiebaseret)
+  | 'INVF_AKKUMULERENDE'          // Dansk inv.forening, akkumulerende (aktiebaseret på positivliste)
+  | 'INVF_AKKUMULERENDE_KAPITAL'  // Dansk inv.forening, akkumulerende IKKE på positivliste
+  | 'BLANDET_FOND_AKTIE'          // Blandet fond >50% aktier - aktieindkomst
+  | 'BLANDET_FOND_OBLIGATION'     // Blandet fond >50% obligationer - kapitalindkomst
+  | 'OBLIGATION'                  // Direkte obligationer og renter
+  | 'FINANSIEL_KONTRAKT';         // Option, CFD, Future, Warrant
 
-export type IndkomstType = 'AKTIEINDKOMST' | 'KAPITALINDKOMST';
+// Legacy types (for backwards compatibility with existing data)
+export type AktivTypeLegacy =
+  | AktivType
+  | 'AKTIE_NOTERET'               // → maps to AKTIE_DK
+  | 'INVESTERINGSFORENING_UDBYTTE'// → maps to INVF_UDBYTTEBETALTENDE
+  | 'INVESTERINGSFORENING_AKKUM'  // → maps to INVF_AKKUMULERENDE
+  | 'OPTION'                      // → maps to FINANSIEL_KONTRAKT
+  | 'WARRANT'                     // → maps to FINANSIEL_KONTRAKT
+  | 'CFD'                         // → maps to FINANSIEL_KONTRAKT
+  | 'FUTURE'                      // → maps to FINANSIEL_KONTRAKT
+  | 'KRYPTO';                     // → maps to ETF_IKKE_POSITIVLISTE (kapitalindkomst)
+  // FJERNET: 'OBLIGATION' - nu en rigtig AktivType
+
+// ============================================================
+// INDKOMST- OG SKATTETYPER
+// ============================================================
+
+export type IndkomstType =
+  | 'AKTIEINDKOMST'
+  | 'KAPITALINDKOMST'
+  | 'ASK_INDKOMST'
+  | 'PAL_INDKOMST'
+  | 'SKATTEFRI';
 
 export type BeskatningsMetode = 'REALISATION' | 'LAGER';
 
@@ -144,10 +170,8 @@ export interface KontoSkatteBeregning {
 
   // Kapitalindkomst
   kapitalindkomst: {
-    obligationer: number;
     etfIkkePositivliste: number;
     finansielleKontrakter: number;
-    krypto: number;
     netto: number;
   };
 
@@ -206,6 +230,60 @@ export interface SamletSkatteBeregning {
 }
 
 // ============================================================
+// KAPITALINDKOMST-SALDO (ÅRS-BASERET)
+// ============================================================
+
+/**
+ * Kapitalindkomst-saldo – ÅRSKONTO (nulstilles 1. januar)
+ *
+ * ⚠️ KRITISK: Dette er IKKE en tabsbank-pulje!
+ * - Tab kan ALDRIG fremføres til næste år
+ * - Kun PSL § 11-fradrag i SAMME skatteår
+ * - Gevinster og tab modregnes STRAKS i saldoen
+ * - Nulstilles automatisk ved årsskift
+ *
+ * PSL § 11 fradragsværdi (brug getSatserForÅr() for dynamiske værdier):
+ * - Op til 50.000 kr (enlig) / 100.000 kr (gift): ~33% (25% kommuneskat + 8% PSL § 11 nedslag)
+ * - Over grænsen: ~25% (kun kommuneskat)
+ *
+ * Aktivtyper der påvirker saldoen:
+ * - ETF_IKKE_POSITIVLISTE
+ * - ETF_OBLIGATIONSBASERET
+ * - INVF_AKKUMULERENDE_KAPITAL
+ * - BLANDET_FOND_OBLIGATION
+ * - OBLIGATION
+ */
+export interface KapitalindkomstSaldo {
+  skatteår: number;
+  beløb: number;               // Positivt = gevinst, negativt = tab
+  gevinster: number;           // Sum af alle gevinster
+  tab: number;                 // Sum af alle tab (positivt tal)
+  posteringer: KapitalindkomstPost[];
+}
+
+export interface KapitalindkomstPost {
+  id: string;
+  dato: Date;
+  aktivNavn: string;
+  aktivType: AktivType;
+  beløb: number;               // Positivt = gevinst, negativt = tab
+  beskrivelse: string;
+}
+
+/**
+ * Beregnet PSL § 11 fradrag for kapitalindkomst
+ */
+export interface KapitalindkomstFradrag {
+  bruttoTab: number;           // Samlet tab (absolut værdi)
+  underGrænse: number;         // Beløb under PSL § 11 grænsen
+  overGrænse: number;          // Beløb over PSL § 11 grænsen
+  fradragUnder: number;        // Fradragsværdi (~33%)
+  fradragOver: number;         // Fradragsværdi (~25%)
+  totalFradrag: number;        // Samlet fradragsværdi
+  effektivSats: number;        // Effektiv fradragssats
+}
+
+// ============================================================
 // FRADRAGSBANK
 // ============================================================
 
@@ -225,4 +303,55 @@ export interface FradragsbankPost {
 export interface Fradragsbank {
   profilId: string;
   poster: FradragsbankPost[];
+}
+
+// ============================================================
+// TABSBANK UI STATE
+// ============================================================
+
+export interface TabPost {
+  id: string;
+  år: number;
+  beløb: number;
+  beskrivelse: string;
+  kontoId?: string;  // For ASK/pension isolation
+}
+
+export interface TabspuljeStatus {
+  beløb: number;
+  posteringer: TabPost[];
+}
+
+export type TabsbankState = Record<TabsPulje, TabspuljeStatus>;
+
+// ============================================================
+// HELPER: Konverter legacy types
+// ============================================================
+
+export function normalizeAktivType(type: AktivTypeLegacy): AktivType {
+  switch (type) {
+    case 'AKTIE_NOTERET':
+      return 'AKTIE_DK';
+    case 'INVESTERINGSFORENING_UDBYTTE':
+      return 'INVF_UDBYTTEBETALTENDE';
+    case 'INVESTERINGSFORENING_AKKUM':
+      return 'INVF_AKKUMULERENDE';
+    case 'OPTION':
+    case 'WARRANT':
+    case 'CFD':
+    case 'FUTURE':
+      return 'FINANSIEL_KONTRAKT';
+    case 'KRYPTO':
+      return 'ETF_IKKE_POSITIVLISTE'; // Behandles som kapitalindkomst
+    // OBLIGATION er nu en selvstændig AktivType - ingen mapping nødvendig
+    default:
+      return type as AktivType;
+  }
+}
+
+export function normalizeKontoType(type: KontoTypeLegacy): KontoType {
+  if (type === 'BØRNEOPSPARING') {
+    return 'BOERNEOPSPARING';
+  }
+  return type as KontoType;
 }
