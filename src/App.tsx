@@ -11,6 +11,9 @@ import { TabsbankPanel } from './components/TabsbankPanel';
 import { TransaktionsPanel, createSalgsTransaktion, type Transaktion } from './components/TransaktionsPanel';
 import { SkatteberegningBar } from './components/SkatteberegningBar';
 import { SkatteFlowChart } from './components/SkatteFlowChart';
+import { DynamiskLagerSkatPanel } from './components/DynamiskLagerSkatPanel';
+import { OnboardingWizard } from './components/OnboardingWizard';
+import type { OnboardingState } from './services/onboarding';
 import { getSatserForÅr, getTabspulje, klassificerIndkomst, MODREGNING_REGLER, erKapitalindkomstAktiv } from './constants/skatteRegler';
 import { KONTO_TILLADELSER } from './constants/kontoTilladelser';
 import type { TabsPulje, TabsbankState, TabPost, KontoType, AktivType, KapitalindkomstSaldo, KapitalindkomstPost } from './types/skat';
@@ -101,6 +104,64 @@ function App() {
       });
     }
   }, [skatteår, kapitalIndkomstSaldo.skatteår]);
+
+  // Onboarding modal
+  const [visOnboarding, setVisOnboarding] = useState(false);
+
+  const handleOnboardingKomplet = useCallback((onboardingState: OnboardingState) => {
+    // Opdater tabsbank med værdier fra onboarding
+    const { saldoer, saldoÅr } = onboardingState;
+
+    setTabsbank(prev => ({
+      ...prev,
+      NOTERET_AKTIE: {
+        beløb: saldoer.noteretAktieTab,
+        posteringer: saldoer.noteretAktieTab > 0 ? [{
+          id: 'onboarding-noteret',
+          år: saldoÅr,
+          beløb: saldoer.noteretAktieTab,
+          beskrivelse: `Fremført tab fra ${saldoÅr}-årsopgørelse`,
+        }] : [],
+      },
+      UNOTERET_AKTIE: {
+        beløb: saldoer.unoteretAktieTab,
+        posteringer: saldoer.unoteretAktieTab > 0 ? [{
+          id: 'onboarding-unoteret',
+          år: saldoÅr,
+          beløb: saldoer.unoteretAktieTab,
+          beskrivelse: `Fremført tab fra ${saldoÅr}-årsopgørelse`,
+        }] : [],
+      },
+      FINANSIEL_KONTRAKT: {
+        beløb: saldoer.finansielKontraktIkkeAktie + saldoer.finansielKontraktAktie,
+        posteringer: [
+          ...(saldoer.finansielKontraktIkkeAktie > 0 ? [{
+            id: 'onboarding-finkontrakt-85',
+            år: saldoÅr,
+            beløb: saldoer.finansielKontraktIkkeAktie,
+            beskrivelse: `Rubrik 85 — ikke-aktiebaserede fra ${saldoÅr}`,
+          }] : []),
+          ...(saldoer.finansielKontraktAktie > 0 ? [{
+            id: 'onboarding-finkontrakt-86',
+            år: saldoÅr,
+            beløb: saldoer.finansielKontraktAktie,
+            beskrivelse: `Rubrik 86 — aktiebaserede fra ${saldoÅr}`,
+          }] : []),
+        ],
+      },
+      ASK_ISOLERET: {
+        beløb: saldoer.askFremførtTab,
+        posteringer: saldoer.askFremførtTab > 0 ? [{
+          id: 'onboarding-ask',
+          år: saldoÅr,
+          beløb: saldoer.askFremførtTab,
+          beskrivelse: `Fremført negativt afkast fra ${saldoÅr}`,
+        }] : [],
+      },
+    }));
+
+    setVisOnboarding(false);
+  }, []);
 
   // Købte base IDs (uden depot-suffix)
   const købteBaseIds = useMemo(() => {
@@ -525,8 +586,16 @@ function App() {
 
             {/* RESULTAT: Tabsbank + Transaktioner + Skat */}
             <div className="grid grid-cols-3 gap-2 items-start">
-              <div className="border border-white/20 rounded-lg overflow-hidden">
-                <TabsbankPanel
+              <div className="space-y-1">
+                <button
+                  onClick={() => setVisOnboarding(true)}
+                  className="w-full px-2 py-1.5 rounded text-[10px] bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 border border-emerald-500/30 transition-colors flex items-center justify-center gap-2"
+                >
+                  <span>⚙️</span>
+                  <span>Opsæt Tabsbank fra Årsopgørelse</span>
+                </button>
+                <div className="border border-white/20 rounded-lg overflow-hidden">
+                  <TabsbankPanel
                   tabsbank={tabsbank}
                   onTilføjTab={tilføjTab}
                   onFjernTab={fjernTab}
@@ -535,6 +604,7 @@ function App() {
                   kapitalIndkomstSaldo={kapitalIndkomstSaldo}
                   erGift={erGift}
                 />
+                </div>
               </div>
               <div className="border border-white/20 rounded-lg overflow-hidden">
                 <TransaktionsPanel
@@ -553,6 +623,18 @@ function App() {
                 />
               </div>
             </div>
+
+            {/* DYNAMISK LAGERBESKATNING */}
+            {portefølje.length > 0 && (
+              <DynamiskLagerSkatPanel
+                aktiver={portefølje}
+                skatteår={skatteår}
+                erGift={erGift}
+                realiseretAktieindkomst={transaktioner
+                  .filter(t => t.år === skatteår && t.type === 'SALG' && t.kontoType === 'FRIT_DEPOT')
+                  .reduce((sum, t) => sum + t.nettoGevinstTab, 0)}
+              />
+            )}
           </div>
 
           {/* KOLONNE 2: Audit Panel */}
@@ -612,6 +694,18 @@ function App() {
       <section className="max-w-[1800px] mx-auto px-2 pb-4">
         <SkatteFlowChart />
       </section>
+
+      {/* ONBOARDING MODAL */}
+      {visOnboarding && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
+          <div className="max-h-[90vh] overflow-y-auto">
+            <OnboardingWizard
+              onKomplet={handleOnboardingKomplet}
+              onAfbryd={() => setVisOnboarding(false)}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
